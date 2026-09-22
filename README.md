@@ -22,6 +22,12 @@ Machine-readable repository manifest:
 
 A MOS installation may automatically **discover and verify** a newer release.
 
+For scheduled checks, network-capable installations can use the privacy-preserving check path:
+
+https://www.ijaspers.com/mos/check
+
+That path redirects to the official release channel and supports aggregate check counting without requiring an installation ID or user identity.
+
 It must **not automatically install a behavior-changing update**.
 
 Before adoption, the local human operator must be shown:
@@ -58,6 +64,7 @@ See:
 - `SECURITY.md`
 - `CONTRIBUTING.md`
 - `docs/UPDATE_PROTOCOL.md`
+- `docs/OBSERVABILITY.md`
 - `docs/AIRLOCK.md`
 
 ## Design principle
