@@ -18,6 +18,11 @@ Machine-readable repository manifest:
 
 `RELEASE_MANIFEST.json`
 
+Stable public package links:
+
+- PDF handbook: https://www.ijaspers.com/mos/download/pdf
+- TXT pack: https://www.ijaspers.com/mos/download/txt
+
 ## Update model
 
 A MOS installation may automatically **discover and verify** a newer release.
