@@ -10,6 +10,10 @@ It is not a separate AI model. MOS supplies the operating rules around the model
 Generation: **v3**  
 Channel: **stable**
 
+Project page (GitHub-attributed route):
+
+https://www.ijaspers.com/go/mos-github
+
 Official public release pointer:
 
 https://www.ijaspers.com/post/manager-os-release-channel
@@ -53,7 +57,7 @@ For scheduled checks, network-capable installations can use the privacy-preservi
 
 https://www.ijaspers.com/mos/check
 
-That path redirects to the official release channel and supports aggregate check counting without requiring an installation ID or user identity.
+That path currently redirects to the official release channel without requiring an installation ID or local project data. **Route-level aggregate check counting is not yet verified in production**, so do not interpret website analytics as an update-check count.
 
 It must **not automatically install a behavior-changing update**.
 
