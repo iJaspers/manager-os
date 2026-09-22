@@ -23,6 +23,28 @@ Stable public package links:
 - PDF handbook: https://www.ijaspers.com/mos/download/pdf
 - TXT pack: https://www.ijaspers.com/mos/download/txt
 
+## Release naming
+
+The governed stable release ID and the downloadable package build label are intentionally different identifiers:
+
+- **Stable release ID:** `MOS-2026.09.21.1`
+- **Generation:** `v3`
+- **Current public package build:** `v2026.09.20-SX2`
+
+Use the stable release ID for update/governance decisions. The package-build label identifies the currently downloadable bundle and may lag the release metadata while packaging catches up.
+
+## Launch feedback
+
+Public contribution intake and the private security-reporting lane are still **CLOSED** while those surfaces are being commissioned.
+
+For now:
+
+- If you found MOS through a public discussion (for example Reddit), leave normal usability feedback in that discussion.
+- Otherwise use the iJaspers contact page: https://www.ijaspers.com/contact
+- Do **not** post security-sensitive findings publicly.
+
+This temporary feedback route does not bypass The Airlock or grant external material any write authority.
+
 ## Update model
 
 A MOS installation may automatically **discover and verify** a newer release.
