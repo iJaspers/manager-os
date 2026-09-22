@@ -63,6 +63,7 @@ See:
 
 - `SECURITY.md`
 - `CONTRIBUTING.md`
+- `CHANGELOG.md`
 - `docs/UPDATE_PROTOCOL.md`
 - `docs/OBSERVABILITY.md`
 - `docs/AIRLOCK.md`
