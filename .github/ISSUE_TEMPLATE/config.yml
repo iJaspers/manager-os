@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Contributions are currently closed
+    url: https://github.com/iJaspers/manager-os/blob/main/CONTRIBUTING.md
+    about: Read the current intake status and Airlock rules before submitting anything.
