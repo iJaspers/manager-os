@@ -1,15 +1,21 @@
 {
   "protocol": "MOS_UPDATE_EXCHANGE",
   "schema_version": 1,
-  "release_id": "MOS-2026.09.21.1",
+  "release_id": "MOS-2026.09.24.1",
   "generation": "v3",
   "channel": "stable",
-  "published_at": "2026-09-21",
+  "published_at": "2026-09-24",
+  "package_build": "v2026.09.24-CG1",
   "source": "ijaspers.com",
   "authoritative_release_url": "https://www.ijaspers.com/post/manager-os-release-channel",
+  "text_download_url": "https://raw.githubusercontent.com/iJaspers/manager-os/main/downloads/MOS_PUBLIC_PACK_v2026.09.24-CG1.txt",
+  "pdf_download_url": "https://raw.githubusercontent.com/iJaspers/manager-os/main/downloads/MOS_Public_Handbook_v2026.09.24-CG1.pdf",
   "update_policy": "human_approval_required",
   "contribution_intake": "closed",
   "security_lane": "closed_pending_private_reporting_verification",
   "automatic_install": false,
+  "capability_catalog": true,
+  "context_layers": ["HOT", "WARM", "COLD", "ARCHIVE"],
+  "clever_girl_protocol": "weekly_discovery_only",
   "notes": "Discovery and verification may be automated. Behavior-changing adoption requires explicit local human approval."
 }
