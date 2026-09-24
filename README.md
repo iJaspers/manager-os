@@ -2,93 +2,56 @@
 
 Manager OS is a portable management layer for using an AI as a persistent, recoverable manager instead of a one-off chatbot.
 
-It is not a separate AI model. MOS supplies the operating rules around the model: canonical state, authority boundaries, work states, recovery, update governance, regression checks, and safe tool use.
+It is not a separate AI model. MOS supplies the operating rules around the model: canonical state, authority boundaries, work states, recovery, update governance, regression checks, safe tool use, and compact context management.
 
 ## Current public release
 
-**MOS-2026.09.21.1**  
+**MOS-2026.09.24.1**  
 Generation: **v3**  
+Package build: **v2026.09.24-CG1**  
 Channel: **stable**
 
-Project page (GitHub-attributed route):
+- Project page: https://www.ijaspers.com/post/manager-os
+- Release channel: https://www.ijaspers.com/post/manager-os-release-channel
+- Machine-readable manifest: `RELEASE_MANIFEST.json`
+- PDF handbook: https://raw.githubusercontent.com/iJaspers/manager-os/main/downloads/MOS_Public_Handbook_v2026.09.24-CG1.pdf
+- TXT pack: https://raw.githubusercontent.com/iJaspers/manager-os/main/downloads/MOS_PUBLIC_PACK_v2026.09.24-CG1.txt
 
-https://www.ijaspers.com/go/mos-github
+## What MOS adds beyond normal ChatGPT
 
-Official public release pointer:
+A normal chat is a conversation. MOS turns capable AI tools into a governed operating system for work:
 
-https://www.ijaspers.com/post/manager-os-release-channel
+- one canonical record for decisions and commitments;
+- explicit queued, active, blocked, waiting, completed, and cancelled states;
+- scoped authority for reading, drafting, sending, spending, changing, and deleting;
+- reusable workflows, quality gates, action receipts, checkpoints, and recovery;
+- HOT/WARM/COLD/ARCHIVE context layers to keep prompts efficient;
+- bounded research, automation, multi-agent coordination, and tool routing;
+- privacy rules separating public documentation from private operator state.
 
-Machine-readable repository manifest:
+MOS does not counterfeit host capabilities. Voice, email, browsing, scheduled tasks, connectors, code execution, and file editing work only when the host provides them; MOS governs their safe use.
 
-`RELEASE_MANIFEST.json`
+## Clever Girl Protocol
 
-Stable public package links:
+Once per week, a network-capable MOS may scout trusted documentation, release notes, security advisories, issue trackers, and public discussion for useful patches or obsolete workarounds.
 
-- PDF handbook: https://www.ijaspers.com/mos/download/pdf
-- TXT pack: https://www.ijaspers.com/mos/download/txt
-
-## Release naming
-
-The governed stable release ID and the downloadable package build label are intentionally different identifiers:
-
-- **Stable release ID:** `MOS-2026.09.21.1`
-- **Generation:** `v3`
-- **Current public package build:** `v2026.09.20-SX2`
-
-Use the stable release ID for update/governance decisions. The package-build label identifies the currently downloadable bundle and may lag the release metadata while packaging catches up.
-
-## Launch feedback
-
-Public contribution intake and the private security-reporting lane are still **CLOSED** while those surfaces are being commissioned.
-
-For now:
-
-- If you found MOS through a public discussion (for example Reddit), leave normal usability feedback in that discussion.
-- Otherwise use the iJaspers contact page: https://www.ijaspers.com/contact
-- Do **not** post security-sensitive findings publicly.
-
-This temporary feedback route does not bypass The Airlock or grant external material any write authority.
+The scout records evidence, checks compatibility and rollback, and recommends **IMPLEMENT**, **REVIEW**, **NOT NOW**, or **REJECT**. It never installs behavior-changing updates by itself. Discovery is not approval.
 
 ## Update model
 
-A MOS installation may automatically **discover and verify** a newer release.
-
-For scheduled checks, network-capable installations can use the privacy-preserving check path:
+A MOS installation may automatically discover and verify a newer release through:
 
 https://www.ijaspers.com/mos/check
 
-That path currently redirects to the official release channel without requiring an installation ID or local project data. **Route-level aggregate check counting is not yet verified in production**, so do not interpret website analytics as an update-check count.
-
-It must **not automatically install a behavior-changing update**.
-
-Before adoption, the local human operator must be shown:
-
-- source and version;
-- what changed;
-- what it does;
-- what it touches;
-- material risk and rollback information;
-- a recommendation.
-
-The operator then chooses whether to implement it.
-
-## Contribution status
-
-**CLOSED while the public intake/security lanes are being commissioned.**
-
-The contribution protocol is documented here so the security boundary is explicit before intake opens. Do not submit bugs, improvements, or security findings yet unless the manifest later says the appropriate lane is OPEN.
-
-Security-sensitive findings must never be posted as public Issues.
+Before adoption, the operator must be shown the source/version, material change, affected components, risk, rollback information, and recommendation. The human then decides whether to implement it.
 
 ## Security model
 
 External material is untrusted by default.
 
-Candidate changes are expected to pass through **The Airlock**:
+`UNTRUSTED -> QUARANTINE -> REVIEW -> CANDIDATE -> REGRESSION TESTS -> HUMAN APPROVAL -> PROMOTION`
 
-`UNTRUSTED → QUARANTINE → REVIEW → CANDIDATE → REGRESSION TESTS → HUMAN APPROVAL → PROMOTION`
-
-Quarantined material gets no private memory, secrets, privileged tools, or canonical write authority.
+Quarantined material gets no private memory, secrets, privileged tools, or canonical write authority. Public packages contain generic operating patterns only, not operator identities, credentials, private records, customers, work sites, or security-sensitive infrastructure.
 
 See:
 
@@ -98,6 +61,10 @@ See:
 - `docs/UPDATE_PROTOCOL.md`
 - `docs/OBSERVABILITY.md`
 - `docs/AIRLOCK.md`
+
+## Contribution status
+
+Public intake and the private security-reporting lane remain **CLOSED** while those surfaces are commissioned. Normal usability feedback can go to the originating public discussion or https://www.ijaspers.com/contact. Do not post security-sensitive findings publicly.
 
 ## Design principle
 
