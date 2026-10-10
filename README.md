@@ -6,16 +6,23 @@ It is not a separate AI model. MOS supplies the operating rules around the model
 
 ## Current public release
 
-**MOS-2026.09.24.1**  
+**MOS-2026.10.10.1**  
 Generation: **v3**  
-Package build: **v2026.09.24-CG1**  
+Package build: **v2026.10.10-R1**  
 Channel: **stable**
 
 - Project page: https://www.ijaspers.com/post/manager-os
-- Release channel: https://www.ijaspers.com/post/manager-os-release-channel
+- Current release and downloads: https://www.ijaspers.com/post/manager-os
+- Historical releases: https://www.ijaspers.com/post/manager-os-release-channel
 - Machine-readable manifest: `RELEASE_MANIFEST.json`
-- PDF handbook: https://raw.githubusercontent.com/iJaspers/manager-os/main/downloads/MOS_Public_Handbook_v2026.09.24-CG1.pdf
-- TXT pack: https://raw.githubusercontent.com/iJaspers/manager-os/main/downloads/MOS_PUBLIC_PACK_v2026.09.24-CG1.txt
+- PDF handbook: https://0673fc92-1e06-494f-9e10-27641a3a4576.usrfiles.com/ugd/ecce1a_c858ad092002431292ca1ce860360497.pdf
+- TXT pack: https://0673fc92-1e06-494f-9e10-27641a3a4576.usrfiles.com/ugd/ecce1a_48abde3c7ce0459e810ea3f785d8495e.txt
+
+## Reliability update - October 10, 2026
+
+This documentation release adds one-owner handoffs, current-versus-historical state, compact startup, bounded peer checks, separate execution health and objective progress, explicit recovery coverage, and evidence-level evaluations. A rule's presence is not proof that an installation executes it. Fresh reads do not provide atomic writes without host support; backups remain unverified until isolated recovery checks succeed.
+
+Hold architecture steady after material repairs and judge it through completed work, saved-output traces and appropriate recovery exercises. No new tools, permissions or autonomous guarantees are granted.
 
 ## What MOS adds beyond normal ChatGPT
 
