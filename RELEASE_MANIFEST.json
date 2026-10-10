@@ -1,21 +1,38 @@
 {
   "protocol": "MOS_UPDATE_EXCHANGE",
   "schema_version": 1,
-  "release_id": "MOS-2026.09.24.1",
+  "release_id": "MOS-2026.10.10.1",
   "generation": "v3",
   "channel": "stable",
-  "published_at": "2026-09-24",
-  "package_build": "v2026.09.24-CG1",
+  "published_at": "2026-10-10",
+  "package_build": "v2026.10.10-R1",
   "source": "ijaspers.com",
-  "authoritative_release_url": "https://www.ijaspers.com/post/manager-os-release-channel",
-  "text_download_url": "https://raw.githubusercontent.com/iJaspers/manager-os/main/downloads/MOS_PUBLIC_PACK_v2026.09.24-CG1.txt",
-  "pdf_download_url": "https://raw.githubusercontent.com/iJaspers/manager-os/main/downloads/MOS_Public_Handbook_v2026.09.24-CG1.pdf",
+  "authoritative_release_url": "https://www.ijaspers.com/post/manager-os",
+  "text_download_url": "https://0673fc92-1e06-494f-9e10-27641a3a4576.usrfiles.com/ugd/ecce1a_48abde3c7ce0459e810ea3f785d8495e.txt",
+  "pdf_download_url": "https://0673fc92-1e06-494f-9e10-27641a3a4576.usrfiles.com/ugd/ecce1a_c858ad092002431292ca1ce860360497.pdf",
   "update_policy": "human_approval_required",
   "contribution_intake": "closed",
   "security_lane": "closed_pending_private_reporting_verification",
   "automatic_install": false,
   "capability_catalog": true,
-  "context_layers": ["HOT", "WARM", "COLD", "ARCHIVE"],
+  "context_layers": [
+    "HOT",
+    "WARM",
+    "COLD",
+    "ARCHIVE"
+  ],
   "clever_girl_protocol": "weekly_discovery_only",
-  "notes": "Discovery and verification may be automated. Behavior-changing adoption requires explicit local human approval."
+  "notes": "One owner and current record per fact; compact startup; bounded peer checks; execution health separated from objective progress; evidence-level tests; explicit recovery coverage and honest host limits. Checksums verify artifact integrity, not publisher authenticity. Human approval remains required for behavior-changing adoption.",
+  "release_type": "documentation_and_starter_pack",
+  "verification_scope": "Content consistency, public privacy review and rendered handbook inspection; host execution and restore readiness require installation-specific tests.",
+  "artifacts": {
+    "txt": {
+      "sha256": "e8c6caef88fc97d8d8f32d1ff9b0466f56c5942a7ef72c2db461725e0cbc7fe0",
+      "size_bytes": 15563
+    },
+    "pdf": {
+      "sha256": "8e957d055dc443761f3c5a6c9704ebad94400af79a7463624622a5ea893aff71",
+      "size_bytes": 17820
+    }
+  }
 }
