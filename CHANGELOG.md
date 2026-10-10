@@ -2,6 +2,24 @@
 
 All notable public Manager OS changes are recorded here. The authoritative machine-readable release state remains `RELEASE_MANIFEST.json`.
 
+## MOS-2026.10.10.1
+
+Released: 2026-10-10  
+Channel: stable documentation  
+Generation: v3  
+Package: v2026.10.10-R1
+
+- Added one-owner handoffs and explicit current-versus-historical records.
+- Added compact startup and truthful context measurement guidance.
+- Added bounded loop/buddy contracts, shared-service limits and separate execution health/objective progress.
+- Prioritized decisive blockers over unsupported readiness percentages.
+- Added RULE_PRESENT, SCENARIO_CHECKED and EXECUTION_VERIFIED evaluation levels and bounded regression cases.
+- Clarified write races without conditional updates and required recovery manifests plus isolated restore evidence.
+- Added a stop-check against unnecessary architecture growth.
+- Published matching privacy-safe TXT/PDF artifacts with SHA-256 checksums in the release manifest.
+
+Validation: public content review, privacy scan and rendered seven-page PDF inspection. No claim of a fresh-agent behavioral benchmark, host-wide scheduler verification or complete restore test. Existing contribution/security intake stays closed. Human approval remains required for behavior-changing adoption.
+
 ## MOS-2026.09.24.1
 
 Released: 2026-09-24  
