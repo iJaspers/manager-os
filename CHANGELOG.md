@@ -2,6 +2,22 @@
 
 All notable public Manager OS changes are recorded here. The authoritative machine-readable release state remains `RELEASE_MANIFEST.json`.
 
+## MOS-2026.10.12.1
+
+Released: 2026-10-12 (America/Vancouver)  
+Channel: stable documentation  
+Generation: v3  
+Package: v2026.10.12-R1
+
+- Linked the compact starter to the separate Public Framework Reference, edition 2026-10-12 / public revision 1.
+- Added explicit Nerd-rules and Combo-breaker definitions near the start of the TXT/PDF pack.
+- Clarified minimum local setup, material state upkeep, consolidation, bounded loops and the distinction between workflow definitions and enabled jobs.
+- Published the sanitized reference with generic setup/record templates, operating rules, workflows, security specification, 21 capability modules, roadmap and evaluation scenarios.
+- Preserved the reference's existing bytes and checksum; no private operational records or profile values are included.
+- Published matching starter/handbook files and all three artifact hashes in the release manifest.
+
+Validation: public content/privacy review, verified sanitized-reference checksum, rendered eight-page PDF inspection and artifact byte/hash checks. No new measured performance, host execution, recovery or fresh-session comparative test claims. No change to local adoption approval or closed intake policy. The separate demo remains version 2026-10-11.1.
+
 ## MOS-2026.10.10.1
 
 Released: 2026-10-10  

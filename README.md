@@ -1,32 +1,45 @@
 # Manager OS (MOS)
 
-Manager OS is a portable management layer for using an AI as a persistent, recoverable manager instead of a one-off chatbot.
+Manager OS is a portable set of operating rules and project records for keeping ongoing work consistent across AI sessions: what is current, where the evidence lives, what changed, who owns the next action and what the assistant may do.
 
 It is not a separate AI model. MOS supplies the operating rules around the model: canonical state, authority boundaries, work states, recovery, update governance, regression checks, safe tool use, and compact context management.
 
 ## Current public release
 
-**MOS-2026.10.10.1**  
+**MOS-2026.10.12.1**  
 Generation: **v3**  
-Package build: **v2026.10.10-R1**  
+Package build: **v2026.10.12-R1**  
 Channel: **stable**
 
 - Project page: https://www.ijaspers.com/post/manager-os
 - Current release and downloads: https://www.ijaspers.com/post/manager-os
 - Historical releases: https://www.ijaspers.com/post/manager-os-release-channel
 - Machine-readable manifest: `RELEASE_MANIFEST.json`
-- PDF handbook: https://0673fc92-1e06-494f-9e10-27641a3a4576.usrfiles.com/ugd/ecce1a_c858ad092002431292ca1ce860360497.pdf
-- TXT pack: https://0673fc92-1e06-494f-9e10-27641a3a4576.usrfiles.com/ugd/ecce1a_48abde3c7ce0459e810ea3f785d8495e.txt
+- PDF handbook: https://0673fc92-1e06-494f-9e10-27641a3a4576.usrfiles.com/ugd/ecce1a_95815257af704d0c893463799a498150.pdf
+- TXT pack: https://0673fc92-1e06-494f-9e10-27641a3a4576.usrfiles.com/ugd/ecce1a_d29f6d32214a424888f40278f1d1b8a9.txt
 
-## Reliability update - October 10, 2026
+- Full public framework (TXT): https://0673fc92-1e06-494f-9e10-27641a3a4576.usrfiles.com/ugd/ecce1a_d0737e9fc1db4155834db538e26472ec.txt
+- Versioned reference in this repository: [`downloads/MOS_Public_Framework_2026-10-12.txt`](downloads/MOS_Public_Framework_2026-10-12.txt)
+
+## Linked framework release - October 12, 2026
+
+Start with the compact TXT starter or matching PDF handbook. They introduce the standard rules and link to the full public framework: operating contracts, workflows, generic templates, 21 capability modules, the roadmap and evaluation scenarios. Keep the full reference outside routine startup context and retrieve the relevant sections when needed. If the host cannot fetch it, attach the file.
+
+**Nerd-rules** covers dates/times, versions, naming, filing, sorting, indexing, retrieval and organizational efficiency. **Combo-breaker** is its upkeep and consolidation component: crunch repeated summaries without losing evidence, combine compatible work under existing owners, use bounded resources and stop when another pass adds no material value.
+
+Authorized session work can save material updates; existing daily or weekly owners can catch missed handoffs and stale state when configured. A loop definition is not an enabled schedule, and a successful run is not proof of project progress. Setup selects local storage, owners, permissions and tools. This public package grants no private access or inherited authority.
+
+The reference is a sanitized specification, not a copy of a live installation. Its generic missing-upstream/intake conditions describe unconfigured installations; this manifest supplies current public download locations. Cryptographic signing and private inbound reporting are not supplied. Behavior-changing adoption still requires local operator approval.
+
+## Retained reliability contract - October 10, 2026
 
 This documentation release adds one-owner handoffs, current-versus-historical state, compact startup, bounded peer checks, separate execution health and objective progress, explicit recovery coverage, and evidence-level evaluations. A rule's presence is not proof that an installation executes it. Fresh reads do not provide atomic writes without host support; backups remain unverified until isolated recovery checks succeed.
 
 Hold architecture steady after material repairs and judge it through completed work, saved-output traces and appropriate recovery exercises. No new tools, permissions or autonomous guarantees are granted.
 
-## What MOS adds beyond normal ChatGPT
+## What MOS organizes
 
-A normal chat is a conversation. MOS turns capable AI tools into a governed operating system for work:
+MOS brings familiar techniques into an explicit workflow around the model and tools your host already provides:
 
 - one canonical record for decisions and commitments;
 - explicit queued, active, blocked, waiting, completed, and cancelled states;
