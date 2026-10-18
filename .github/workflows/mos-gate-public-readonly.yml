@@ -1,0 +1,26 @@
+name: MOS Argus Gate Candidate (public read-only)
+
+# One-off operator-triggered canary ONLY. No schedule, pull_request, or push trigger.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: mos-argus-public-metadata-canary
+  cancel-in-progress: false
+
+jobs:
+  synthetic-test-and-public-read:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 3
+    steps:
+      - name: Checkout public repository
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4 tag resolved 2026-10-17
+        with:
+          persist-credentials: false
+      - name: Verify safety gate in a local fake-provider test
+        run: python -m unittest discover -s pilot -p 'test_*.py' -q
+      - name: Gate then read exact public GitHub metadata
+        run: python pilot/gate_canary.py
