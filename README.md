@@ -1,8 +1,20 @@
-# Manager OS (MOS)
+# Witburrow (formerly Manager OS / MOS)
 
-Manager OS is a portable set of operating rules and project records for keeping ongoing work consistent across AI sessions: what is current, where the evidence lives, what changed, who owns the next action and what the assistant may do.
+Witburrow is a portable set of operating rules and project records for keeping ongoing work consistent across AI sessions: what is current, where the evidence lives, what changed, who owns the next action and what the assistant may do.
 
-It is not a separate AI model. MOS supplies the operating rules around the model: canonical state, authority boundaries, work states, recovery, update governance, regression checks, safe tool use, and compact context management.
+It is not a separate AI model. Witburrow supplies the operating rules around the model: canonical state, authority boundaries, work states, recovery, update governance, regression checks, safe tool use, and compact context management.
+
+## Name transition - October 22, 2026
+
+Manager OS (MOS) is now **Witburrow**. The manager's default name is **Wit**. This is a soft rename, not a new stable package or a forced remote change.
+
+- Optional naming update: [WIT-NAME-2026.10.22.1](docs/WITBURROW_BRAND_TRANSITION_2026-10-22.json).
+- Existing installations must review the change and explicitly approve it locally. Preserve all chosen custom names. If a saved preference is missing or ambiguous, keep the name and ask rather than assume it was a default.
+- Existing `/mos` links, commands, schema identifiers, version pins and historical release records stay valid. The three stable download files below retain their original names and checksums.
+- The existing `/mos/check` manifest includes this notice and an optional extension. Clients that only compare `release_id` may not offer it automatically; ask the installed manager to review `WIT-NAME-2026.10.22.1` or use the [setup/reference page](https://www.ijaspers.com/post/manager-os-public-bootstrap-v2026-09-20).
+- [Tool library and community boards](https://www.ijaspers.com/post/witburrow-tools): the catalogue distinguishes the public starter from private candidates. Rankings are empty and community intake is still closed.
+
+Publication is not proof that any existing installation adopted the name. No new permissions, schedules, executable installer or private tools are supplied by this supplement.
 
 ## Current public release
 
@@ -37,9 +49,9 @@ This documentation release adds one-owner handoffs, current-versus-historical st
 
 Hold architecture steady after material repairs and judge it through completed work, saved-output traces and appropriate recovery exercises. No new tools, permissions or autonomous guarantees are granted.
 
-## What MOS organizes
+## What Witburrow organizes
 
-MOS brings familiar techniques into an explicit workflow around the model and tools your host already provides:
+Witburrow brings familiar techniques into an explicit workflow around the model and tools your host already provides:
 
 - one canonical record for decisions and commitments;
 - explicit queued, active, blocked, waiting, completed, and cancelled states;
@@ -49,17 +61,17 @@ MOS brings familiar techniques into an explicit workflow around the model and to
 - bounded research, automation, multi-agent coordination, and tool routing;
 - privacy rules separating public documentation from private operator state.
 
-MOS does not counterfeit host capabilities. Voice, email, browsing, scheduled tasks, connectors, code execution, and file editing work only when the host provides them; MOS governs their safe use.
+Witburrow does not counterfeit host capabilities. Voice, email, browsing, scheduled tasks, connectors, code execution, and file editing work only when the host provides them; Witburrow governs their safe use.
 
 ## Clever Girl Protocol
 
-Once per week, a network-capable MOS may scout trusted documentation, release notes, security advisories, issue trackers, and public discussion for useful patches or obsolete workarounds.
+Once per week, a network-capable Witburrow installation may scout trusted documentation, release notes, security advisories, issue trackers, and public discussion for useful patches or obsolete workarounds.
 
 The scout records evidence, checks compatibility and rollback, and recommends **IMPLEMENT**, **REVIEW**, **NOT NOW**, or **REJECT**. It never installs behavior-changing updates by itself. Discovery is not approval.
 
 ## Update model
 
-A MOS installation may automatically discover and verify a newer release through:
+A Witburrow or legacy MOS installation may automatically discover and verify a newer release through:
 
 https://www.ijaspers.com/mos/check
 
@@ -90,4 +102,4 @@ Public intake and the private security-reporting lane remain **CLOSED** while th
 
 > The internet may suggest changes. It does not get admin rights.
 
-MOS is AI-agnostic. The model is replaceable; durable operating state and human authority are not.
+Witburrow is AI-agnostic. The model is replaceable; durable operating state and human authority are not.

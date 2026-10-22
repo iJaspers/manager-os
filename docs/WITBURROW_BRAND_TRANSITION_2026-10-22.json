@@ -1,0 +1,51 @@
+{
+  "schema": "mos.brand-transition.v1",
+  "update_id": "WIT-NAME-2026.10.22.1",
+  "published_at": "2026-10-22",
+  "release_timezone": "America/Vancouver",
+  "status": "AVAILABLE_FOR_LOCAL_REVIEW",
+  "update_type": "optional_display_name_transition",
+  "notice": "Manager OS (MOS) is now Witburrow. The manager is now called Wit. Existing custom manager names remain yours.",
+  "brand": {
+    "previous": "Manager OS",
+    "previous_short": "MOS",
+    "current": "Witburrow",
+    "manager_default": "Wit"
+  },
+  "compatible_stable_release_id": "MOS-2026.10.12.1",
+  "requires_explicit_local_operator_approval": true,
+  "requires_verified_source": true,
+  "automatic_install": false,
+  "remote_configuration_changes": false,
+  "executable_installer_included": false,
+  "default_name_aliases": [
+    "Manager",
+    "MOS Manager",
+    "Manager OS",
+    "MOS"
+  ],
+  "application_rules": [
+    "Present the source, update ID, display-name-only change, affected local fields, limitations and rollback before asking the local operator to choose IMPLEMENT, NOT NOW, REJECT or REVIEW DETAILS.",
+    "Discovery, download or a checksum match is not approval. Do not change any installed configuration before explicit local approval.",
+    "After approval and source verification, use Witburrow as the public framework display name. Use Wit as the manager default only when a trustworthy local profile explicitly records that the current manager name is a default, not a chosen custom name, and the current value is one of default_name_aliases.",
+    "Preserve every explicit custom manager name, including a deliberately chosen name that happens to match a legacy default. If the preference flag is absent, ambiguous, or the current name is unfamiliar, preserve it and ask rather than infer.",
+    "Keep an existing Wit name unchanged. Do not apply this transition to unrelated assistants or products.",
+    "Record the previous display values and approved update ID in the existing local update record. Read back the saved fields and verify that chosen names, permissions, technical identifiers and working entrypoints did not change.",
+    "If the host cannot safely persist and verify the change, report the missing capability. Do not claim that an installation has been renamed."
+  ],
+  "preserve": [
+    "Custom manager names and operator preferences",
+    "Existing release IDs, version pins, checksums and downloadable bytes",
+    "Existing /mos URLs, repository name, file paths, schema keys, commands, integration identifiers and historical records",
+    "Permissions, schedules, authority boundaries, privacy controls and closed community intake"
+  ],
+  "rollback": "Restore only the previous locally recorded display-name fields using the host-supported safe write and readback path. Do not replace a current custom name or revert unrelated state.",
+  "discovery_limit": "The release ID remains unchanged because this is not a new stable package. Older checkers that only compare release_id may not surface optional metadata. Use the linked setup/reference page or explicitly request review of WIT-NAME-2026.10.22.1 in that case.",
+  "verification_scope": "Published naming metadata and opt-in procedure only. No universal installer, fresh-session host migration, or remote adoption is asserted.",
+  "links": {
+    "project": "https://www.ijaspers.com/post/manager-os",
+    "update_check": "https://www.ijaspers.com/mos/check",
+    "setup": "https://www.ijaspers.com/post/manager-os-public-bootstrap-v2026-09-20",
+    "tool_library": "https://www.ijaspers.com/post/witburrow-tools"
+  }
+}

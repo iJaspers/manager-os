@@ -22,7 +22,7 @@
     "ARCHIVE"
   ],
   "clever_girl_protocol": "weekly_discovery_only",
-  "notes": "Compact starter links to the separate full public framework. Nerd-rules covers date/time, versioning, filing, sorting and organizational efficiency; Combo-breaker governs bounded upkeep, consolidation and materiality stops. Existing host limits, local approval for behavior changes and closed contribution intake remain in force. Checksums verify bytes, not publisher authenticity.",
+  "notes": "Compact starter links to the separate full public framework. Nerd-rules covers date/time, versioning, filing, sorting and organizational efficiency; Combo-breaker governs bounded upkeep, consolidation and materiality stops. Existing host limits, local approval for behavior changes and closed contribution intake remain in force. Checksums verify bytes, not publisher authenticity. Naming notice 2026-10-22: Manager OS (MOS) is now Witburrow; the manager default is Wit. Optional update WIT-NAME-2026.10.22.1 is available in extensions.witburrow_brand_transition_v1. Local operator approval is required; custom names are preserved. Stable release ID, package URLs and checksums are unchanged. Release-ID-only checkers may need a manual review of this naming notice.",
   "release_type": "documentation_and_starter_pack",
   "verification_scope": "Public content/privacy review, unchanged previously sanitized reference, rendered eight-page handbook inspection, and artifact hash checks. No fresh-session comparative benchmark, universal compatibility, autonomous runtime or restore-readiness claim.",
   "artifacts": {
@@ -48,5 +48,23 @@
   "release_timezone": "America/Vancouver",
   "published_at_utc": "2026-10-13T00:48:44+00:00",
   "framework_download_url": "https://0673fc92-1e06-494f-9e10-27641a3a4576.usrfiles.com/ugd/ecce1a_d0737e9fc1db4155834db538e26472ec.txt",
-  "reference_edition": "2026-10-12 / public revision 1"
+  "reference_edition": "2026-10-12 / public revision 1",
+  "extensions": {
+    "witburrow_brand_transition_v1": {
+      "metadata_revision": "2026-10-22.1",
+      "update_id": "WIT-NAME-2026.10.22.1",
+      "status": "available_for_local_review",
+      "framework_display_name": "Witburrow",
+      "manager_default_name": "Wit",
+      "requires_explicit_local_operator_approval": true,
+      "preserve_custom_manager_names": true,
+      "automatic_install": false,
+      "supplement_url": "https://raw.githubusercontent.com/iJaspers/manager-os/main/docs/WITBURROW_BRAND_TRANSITION_2026-10-22.json",
+      "review_url": "https://github.com/iJaspers/manager-os/blob/main/docs/WITBURROW_BRAND_TRANSITION_2026-10-22.json",
+      "size_bytes": 3589,
+      "sha256": "7fe1c52e2da520065a7fabefe6ee20291dfc46e5b4251d2b32a03632759a3c7e",
+      "stable_artifacts_unchanged": true,
+      "discovery_limit": "The release ID remains unchanged because this is not a new stable package. Older checkers that only compare release_id may not surface optional metadata. Use the linked setup/reference page or explicitly request review of WIT-NAME-2026.10.22.1 in that case."
+    }
+  }
 }

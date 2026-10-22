@@ -1,18 +1,18 @@
-# Manager OS Update Protocol
+# Witburrow Update Protocol (MOS-compatible)
 
 ## Purpose
 
-Manager OS can check an official upstream release record and compare it with the locally installed version.
+Witburrow and legacy Manager OS installations can check an official upstream release record and compare it with the locally installed version.
 
 ## Weekly check
 
 1. When network access is available, request the privacy-preserving public check URL once for the scheduled check cycle: `https://www.ijaspers.com/mos/check`.
 2. Read the configured official release manifest.
 3. Confirm the expected protocol, schema, channel, and source.
-4. Compare the release ID with the last locally trusted release.
+4. Compare the release ID with the last locally trusted release. Separately inspect known optional manifest extensions and their metadata revisions. A naming notice does not change the stable release ID or authorize installing anything. Unknown extensions are informational only; do not execute their contents or relax local schema/security validation.
 5. Treat unexpected rollback, stale metadata, replay, or source mismatch as a reason to stop and request review.
-6. If nothing material changed, record the successful check and continue.
-7. If a newer release is available, present the local human operator with:
+6. If neither a release nor a supported optional notice materially changed, record the successful check and continue.
+7. If a newer release or supported optional notice is available, present the local human operator with:
    - source and version;
    - material changes;
    - practical effect;
@@ -21,6 +21,14 @@ Manager OS can check an official upstream release record and compare it with the
    - a recommendation.
 8. The human operator chooses IMPLEMENT, NOT NOW, REJECT, or REVIEW DETAILS.
 9. Only an explicitly approved change proceeds through local compatibility, recovery, and regression checks.
+
+## Optional Witburrow name transition - October 22, 2026
+
+The manifest retains `protocol: MOS_UPDATE_EXCHANGE`, `schema_version: 1`, the stable release ID, and every existing artifact record. Its existing `notes` field announces the soft rename; `extensions.witburrow_brand_transition_v1` points to [WIT-NAME-2026.10.22.1](WITBURROW_BRAND_TRANSITION_2026-10-22.json), with its own metadata revision, byte length and SHA-256. A checksum checks byte consistency, not publisher authenticity.
+
+This supplement is an opt-in display-name procedure, not a replacement package or executable installer. After verified-source review and explicit local approval, the framework display name becomes Witburrow. The manager default becomes Wit only when the local profile explicitly identifies the current name as an uncustomized legacy default. Preserve custom names, including deliberately chosen legacy-sounding names. Preserve unknown preferences and ask; never guess. Record prior display values, apply only the approved display changes, read back the result and retain rollback. No new permissions, schedules, technical identifiers or private data are involved.
+
+Older installations may read only `release_id` and therefore not surface this optional notice automatically. A strict legacy parser may reject unfamiliar optional fields; do not disable validation. In either case, review the official setup/reference page or ask the manager to inspect this named supplement. Updating these public records does not update an existing installation remotely or prove host compatibility.
 
 ## Privacy-preserving check counter
 
