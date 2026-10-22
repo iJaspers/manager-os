@@ -1,0 +1,14 @@
+{
+  "public_id": "wit.invoice-reference-review",
+  "version": "0.1.0",
+  "original_prototype_title": "Invoice Indiana",
+  "original_source_sha256": "f4d52148d09064bdf38b11091d8535de2982836fc7ba51bbff2cd96b0169ddf4",
+  "derivative_source": "tool.html",
+  "license": "MIT",
+  "license_scope": "This version directory only; no grant for unrelated repository content or private originals.",
+  "dependencies": [],
+  "provenance_note": "Owner-authorized sanitized derivative of the supplied private single-file prototype. No external bundled code/assets or license notices were found during source inspection. Private ledger proof counts and same-numbered tools are not attributed to this derivative.",
+  "private_original_preserved": true,
+  "fixtures": "synthetic only",
+  "claims": "No production, financial, host-integration or community-adoption guarantee."
+}
