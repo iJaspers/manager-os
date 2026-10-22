@@ -11,3 +11,5 @@ Use the exact public ID, version, source and test evidence. Similar private cata
 You may fork, modify and redistribute these licensed directories. Pull-request intake is open only for these three public tool IDs, under the privacy, license and isolated-manual-test gates in CONTRIBUTING.md. No automatic execution or merging is enabled. Broader framework and security-sensitive intake remain closed. Older version directories and ZIPs are historical; current repository CONTRIBUTING.md governs intake. The public tool board is not a ranking or endorsement system.
 
 Live catalogue: https://www.ijaspers.com/post/witburrow-tools
+
+New here? [Follow the versioned first everyday task guide](FIRST_TASK_2026-10-22.md), including task/input fit, explicit consent, no-payment CSV headers and result handoff.

@@ -33,6 +33,8 @@ Channel: **stable**
 - Full public framework (TXT): https://0673fc92-1e06-494f-9e10-27641a3a4576.usrfiles.com/ugd/ecce1a_d0737e9fc1db4155834db538e26472ec.txt
 - Versioned reference in this repository: [`downloads/MOS_Public_Framework_2026-10-12.txt`](downloads/MOS_Public_Framework_2026-10-12.txt)
 
+New here? [Your first everyday task](tools/FIRST_TASK_2026-10-22.md) connects this unchanged starter to the current public tools, exact input requirements, local consent and result handoff.
+
 ## Linked framework release - October 12, 2026
 
 Start with the compact TXT starter or matching PDF handbook. They introduce the standard rules and link to the full public framework: operating contracts, workflows, generic templates, 21 capability modules, the roadmap and evaluation scenarios. Keep the full reference outside routine startup context and retrieve the relevant sections when needed. If the host cannot fetch it, attach the file.
