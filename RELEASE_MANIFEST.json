@@ -87,8 +87,8 @@
       "current_tool_version_scope": "Legacy common baseline only. Use current_tool_versions for the latest per-tool pins.",
       "current_tool_versions": {
         "wit.invoice-reference-review": "0.1.2",
-        "wit.pretax-role-comparison": "0.1.1",
-        "wit.documented-compensation-comparison": "0.1.1"
+        "wit.pretax-role-comparison": "0.1.2",
+        "wit.documented-compensation-comparison": "0.1.2"
       },
       "known_version_issues": [
         {
@@ -99,6 +99,24 @@
           ],
           "corrected_version": "0.1.2",
           "summary": "Malformed CSV quote handling and UTF-8 size enforcement corrected. Do not rely on affected-version matching output."
+        },
+        {
+          "tool_id": "wit.pretax-role-comparison",
+          "affected_versions": [
+            "0.1.0",
+            "0.1.1"
+          ],
+          "corrected_version": "0.1.2",
+          "summary": "Finite individual scenarios could overflow their difference. The correction returns UNKNOWN and displays a range warning."
+        },
+        {
+          "tool_id": "wit.documented-compensation-comparison",
+          "affected_versions": [
+            "0.1.0",
+            "0.1.1"
+          ],
+          "corrected_version": "0.1.2",
+          "summary": "Unbounded/deep CLI JSON could exhaust resources or raise recursion errors. The correction enforces explicit byte, row, depth and text limits and duplicate-key rejection."
         }
       ]
     }

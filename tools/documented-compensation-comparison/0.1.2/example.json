@@ -1,0 +1,40 @@
+{
+  "offers": [
+    {
+      "name": "Synthetic A",
+      "source_ref": "Fictional demonstration, not an employment offer",
+      "currency": "CAD",
+      "hourly_rate": "30",
+      "paid_regular_hours_per_week": "40",
+      "paid_weeks_per_year": "52",
+      "guaranteed_ot_hours_per_week": "0",
+      "documented_ot_multiplier": "1.5",
+      "documented_guaranteed_cash_per_year": "0",
+      "round_trip_commute_km_per_day": "20",
+      "commute_days_per_week": "5",
+      "commute_weeks_per_year": "48",
+      "documented_cost_per_km": "0.25",
+      "annual_parking_cost": "0",
+      "annual_union_dues": "0",
+      "round_trip_commute_hours_per_day": "1"
+    },
+    {
+      "name": "Synthetic B",
+      "source_ref": "Fictional demonstration, not an employment offer",
+      "currency": "CAD",
+      "hourly_rate": "31",
+      "paid_regular_hours_per_week": "40",
+      "paid_weeks_per_year": "52",
+      "guaranteed_ot_hours_per_week": "0",
+      "documented_ot_multiplier": "1.5",
+      "documented_guaranteed_cash_per_year": "0",
+      "round_trip_commute_km_per_day": "20",
+      "commute_days_per_week": "5",
+      "commute_weeks_per_year": "48",
+      "documented_cost_per_km": "0.25",
+      "annual_parking_cost": "0",
+      "annual_union_dues": "0",
+      "round_trip_commute_hours_per_day": "1"
+    }
+  ]
+}
