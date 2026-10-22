@@ -2,7 +2,7 @@
 
 Three distinct tools, each versioned, unranked and separately MIT-licensed inside its own version directory. That license does not apply to the rest of this repository or any private originals.
 
-- [Invoice Reference Review](invoice-reference-review/0.1.1/README.md)
+- [Invoice Reference Review](invoice-reference-review/0.1.2/README.md)
 - [Pretax Role Comparison](pretax-role-comparison/0.1.1/README.md)
 - [Documented Compensation Comparison](documented-compensation-comparison/0.1.1/README.md)
 
@@ -12,4 +12,6 @@ You may fork, modify and redistribute these licensed directories. Pull-request i
 
 Live catalogue: https://www.ijaspers.com/post/witburrow-tools
 
-New here? [Follow the versioned first everyday task guide](FIRST_TASK_2026-10-22.md), including task/input fit, explicit consent, no-payment CSV headers and result handoff.
+New here? [Follow the versioned first everyday task guide](FIRST_TASK_2026-10-22.2.md), including task/input fit, explicit consent, no-payment CSV headers and result handoff.
+
+Current versions: Invoice Reference Review 0.1.2; Pretax Role Comparison and Documented Compensation Comparison 0.1.1. Invoice 0.1.1 has known malformed-CSV/UTF-8-size defects and must not be relied on for matching output; use the versioned correction. Historical directories remain immutable.

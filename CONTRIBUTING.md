@@ -8,7 +8,7 @@
 - `wit.pretax-role-comparison`
 - `wit.documented-compensation-comparison`
 
-Current version: 0.1.1. The general framework contribution intake and private security-reporting lane remain CLOSED. The manifest’s legacy `contribution_intake: closed` still describes that general framework lane; the explicit `extensions.public_tool_contributions` record describes this narrower open lane. This dated policy supersedes older closed-intake text inside historical packages only for these three IDs.
+Current per-tool versions: Invoice Reference Review 0.1.2; Pretax Role Comparison and Documented Compensation Comparison 0.1.1. Invoice 0.1.1 has known malformed-CSV and UTF-8 size-limit defects; use the corrected current version. The general framework contribution intake and private security-reporting lane remain CLOSED. The manifest’s legacy `contribution_intake: closed` still describes that general framework lane; the explicit `extensions.public_tool_contributions` record describes this narrower open lane. This dated policy supersedes older closed-intake text inside historical packages only for these three IDs.
 
 ## Public route
 

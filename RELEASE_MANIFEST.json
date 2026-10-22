@@ -83,7 +83,24 @@
       "requires_privacy_license_safety_review": true,
       "requires_isolated_manual_tests": true,
       "general_framework_intake": "closed",
-      "security_sensitive_intake": "closed"
+      "security_sensitive_intake": "closed",
+      "current_tool_version_scope": "Legacy common baseline only. Use current_tool_versions for the latest per-tool pins.",
+      "current_tool_versions": {
+        "wit.invoice-reference-review": "0.1.2",
+        "wit.pretax-role-comparison": "0.1.1",
+        "wit.documented-compensation-comparison": "0.1.1"
+      },
+      "known_version_issues": [
+        {
+          "tool_id": "wit.invoice-reference-review",
+          "affected_versions": [
+            "0.1.0",
+            "0.1.1"
+          ],
+          "corrected_version": "0.1.2",
+          "summary": "Malformed CSV quote handling and UTF-8 size enforcement corrected. Do not rely on affected-version matching output."
+        }
+      ]
     }
   }
 }
