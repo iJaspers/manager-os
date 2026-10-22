@@ -1,0 +1,14 @@
+{
+  "public_id": "wit.documented-compensation-comparison",
+  "version": "0.1.1",
+  "original_prototype_title": "Total Comp Compass",
+  "original_source_sha256": "2083cc2e47ce04f28823e7ae832db27f71228d34415540ecfb773a6e92f037ba",
+  "derivative_source": "tool.py",
+  "license": "MIT",
+  "license_scope": "This version directory only; no grant for unrelated repository content or private originals.",
+  "dependencies": [],
+  "provenance_note": "Owner-authorized sanitized derivative of the supplied private single-file prototype. No external bundled code/assets or license notices were found during source inspection. Private ledger proof counts and same-numbered tools are not attributed to this derivative.",
+  "private_original_preserved": true,
+  "fixtures": "synthetic only",
+  "claims": "No production, financial, host-integration or community-adoption guarantee."
+}

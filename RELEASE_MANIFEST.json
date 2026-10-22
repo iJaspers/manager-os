@@ -22,7 +22,7 @@
     "ARCHIVE"
   ],
   "clever_girl_protocol": "weekly_discovery_only",
-  "notes": "Compact starter links to the separate full public framework. Nerd-rules covers date/time, versioning, filing, sorting and organizational efficiency; Combo-breaker governs bounded upkeep, consolidation and materiality stops. Existing host limits, local approval for behavior changes and closed contribution intake remain in force. Checksums verify bytes, not publisher authenticity. Naming notice 2026-10-22: Manager OS (MOS) is now Witburrow; the manager default is Wit. Optional update WIT-NAME-2026.10.22.1 is available in extensions.witburrow_brand_transition_v1. Local operator approval is required; custom names are preserved. Stable release ID, package URLs and checksums are unchanged. Release-ID-only checkers may need a manual review of this naming notice.",
+  "notes": "Compact starter links to the separate full public framework. Nerd-rules covers date/time, versioning, filing, sorting and organizational efficiency; Combo-breaker governs bounded upkeep, consolidation and materiality stops. Existing host limits, local approval for behavior changes and closed general-framework and security-sensitive intake remain in force. Checksums verify bytes, not publisher authenticity. Naming notice 2026-10-22: Manager OS (MOS) is now Witburrow; the manager default is Wit. Optional update WIT-NAME-2026.10.22.1 is available in extensions.witburrow_brand_transition_v1. Local operator approval is required; custom names are preserved. Stable release ID, package URLs and checksums are unchanged. Release-ID-only checkers may need a manual review of this naming notice. Scoped public-tool pull-request intake opened 2026-10-22 for exactly the three IDs in extensions.public_tool_contributions. General framework and security-sensitive intake remain closed. Review before isolated manual testing and merging; no automatic execution or auto-merge.",
   "release_type": "documentation_and_starter_pack",
   "verification_scope": "Public content/privacy review, unchanged previously sanitized reference, rendered eight-page handbook inspection, and artifact hash checks. No fresh-session comparative benchmark, universal compatibility, autonomous runtime or restore-readiness claim.",
   "artifacts": {
@@ -65,6 +65,25 @@
       "sha256": "7fe1c52e2da520065a7fabefe6ee20291dfc46e5b4251d2b32a03632759a3c7e",
       "stable_artifacts_unchanged": true,
       "discovery_limit": "The release ID remains unchanged because this is not a new stable package. Older checkers that only compare release_id may not surface optional metadata. Use the linked setup/reference page or explicitly request review of WIT-NAME-2026.10.22.1 in that case."
+    },
+    "public_tool_contributions": {
+      "schema_version": 1,
+      "status": "open_scoped",
+      "opened_at": "2026-10-22",
+      "allowed_tool_ids": [
+        "wit.invoice-reference-review",
+        "wit.pretax-role-comparison",
+        "wit.documented-compensation-comparison"
+      ],
+      "current_tool_version": "0.1.1",
+      "route": "https://github.com/iJaspers/manager-os/compare",
+      "policy_url": "https://github.com/iJaspers/manager-os/blob/main/CONTRIBUTING.md",
+      "automatic_execution": false,
+      "automatic_merge": false,
+      "requires_privacy_license_safety_review": true,
+      "requires_isolated_manual_tests": true,
+      "general_framework_intake": "closed",
+      "security_sensitive_intake": "closed"
     }
   }
 }

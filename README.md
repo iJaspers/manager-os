@@ -12,7 +12,7 @@ Manager OS (MOS) is now **Witburrow**. The manager's default name is **Wit**. Th
 - Existing installations must review the change and explicitly approve it locally. Preserve all chosen custom names. If a saved preference is missing or ambiguous, keep the name and ask rather than assume it was a default.
 - Existing `/mos` links, commands, schema identifiers, version pins and historical release records stay valid. The three stable download files below retain their original names and checksums.
 - The existing `/mos/check` manifest includes this notice and an optional extension. Clients that only compare `release_id` may not offer it automatically; ask the installed manager to review `WIT-NAME-2026.10.22.1` or use the [setup/reference page](https://www.ijaspers.com/post/manager-os-public-bootstrap-v2026-09-20).
-- [Tool library and community boards](https://www.ijaspers.com/post/witburrow-tools): the catalogue distinguishes the public starter from private candidates. Rankings are empty and community intake is still closed.
+- [Tool library and community boards](https://www.ijaspers.com/post/witburrow-tools): the catalogue distinguishes the public starter from private candidates. Three separately MIT-licensed source tools now have scoped pull-request intake; broader framework/security intake remains closed. Rankings remain empty.
 
 Publication is not proof that any existing installation adopted the name. No new permissions, schedules, executable installer or private tools are supplied by this supplement.
 
@@ -96,7 +96,7 @@ See:
 
 ## Contribution status
 
-Public intake and the private security-reporting lane remain **CLOSED** while those surfaces are commissioned. Normal usability feedback can go to the originating public discussion or https://www.ijaspers.com/contact. Do not post security-sensitive findings publicly.
+Public pull-request intake is **OPEN ONLY for the three sanitized MIT-licensed public tools** listed in [CONTRIBUTING.md](CONTRIBUTING.md). See [current source previews and continuation guides](tools/README.md). General framework intake and the private security-reporting lane remain **CLOSED**. No automatic untrusted execution or merging is enabled. Normal usability feedback can go to the originating public discussion or https://www.ijaspers.com/contact. Do not post security-sensitive findings publicly.
 
 ## Design principle
 
