@@ -44,7 +44,7 @@
         "cash flow",
         "budget"
       ],
-      "availability": "UNVERIFIED WIP source · MIT",
+      "availability": "UNVERIFIED WIP source \u00b7 MIT",
       "public_ready": false,
       "publicly_available": true,
       "public_tool": true,
@@ -72,9 +72,9 @@
         "Outsider pickup and handback"
       ],
       "next_step": "Add bounded recurring-event previews without inventing posting dates.",
-      "contribution_url": "https://github.com/iJaspers/manager-os/blob/8a2aaca268d1b8b690c57548c31307fbd1fec64e/tools/bill-calendar-preview/0.1.0/HANDOFF_TEMPLATE.md",
+      "contribution_url": "https://github.com/iJaspers/manager-os/compare",
       "contribution_policy_url": "https://github.com/iJaspers/manager-os/blob/main/CONTRIBUTING.md",
-      "contribution_status": "MIT fork and patch handoff; upstream PR allowlist unchanged",
+      "contribution_status": "Scoped upstream PR intake open; reviewed WIP source only; no automatic execution or merge",
       "publication_review": {
         "decision": "approved_sanitized_wip_source_only",
         "reference": "Owner-authorized staged WIP publication 2026-10-23"
@@ -96,7 +96,7 @@
         "work hours",
         "overtime"
       ],
-      "availability": "UNVERIFIED WIP source · MIT",
+      "availability": "UNVERIFIED WIP source \u00b7 MIT",
       "public_ready": false,
       "publicly_available": true,
       "public_tool": true,
@@ -124,9 +124,9 @@
         "Outsider pickup and handback"
       ],
       "next_step": "Add an explicit date/timezone mode with daylight-saving fixtures.",
-      "contribution_url": "https://github.com/iJaspers/manager-os/blob/8a2aaca268d1b8b690c57548c31307fbd1fec64e/tools/field-hours-review/0.1.0/HANDOFF_TEMPLATE.md",
+      "contribution_url": "https://github.com/iJaspers/manager-os/compare",
       "contribution_policy_url": "https://github.com/iJaspers/manager-os/blob/main/CONTRIBUTING.md",
-      "contribution_status": "MIT fork and patch handoff; upstream PR allowlist unchanged",
+      "contribution_status": "Scoped upstream PR intake open; reviewed WIP source only; no automatic execution or merge",
       "publication_review": {
         "decision": "approved_sanitized_wip_source_only",
         "reference": "Owner-authorized staged WIP publication 2026-10-23"
@@ -172,7 +172,7 @@
         "pantry",
         "shopping list"
       ],
-      "availability": "UNVERIFIED WIP source · MIT",
+      "availability": "UNVERIFIED WIP source \u00b7 MIT",
       "public_ready": false,
       "publicly_available": true,
       "public_tool": true,
@@ -200,9 +200,9 @@
         "Outsider pickup and handback"
       ],
       "next_step": "Add bounded mixed-pack optimization with a counterexample fixture.",
-      "contribution_url": "https://github.com/iJaspers/manager-os/blob/8a2aaca268d1b8b690c57548c31307fbd1fec64e/tools/grocery-planning-preview/0.1.0/HANDOFF_TEMPLATE.md",
+      "contribution_url": "https://github.com/iJaspers/manager-os/compare",
       "contribution_policy_url": "https://github.com/iJaspers/manager-os/blob/main/CONTRIBUTING.md",
-      "contribution_status": "MIT fork and patch handoff; upstream PR allowlist unchanged",
+      "contribution_status": "Scoped upstream PR intake open; reviewed WIP source only; no automatic execution or merge",
       "publication_review": {
         "decision": "approved_sanitized_wip_source_only",
         "reference": "Owner-authorized staged WIP publication 2026-10-23"
@@ -292,7 +292,7 @@
         "commute",
         "offer"
       ],
-      "availability": "Public source preview · MIT",
+      "availability": "Public source preview \u00b7 MIT",
       "public_ready": true,
       "public_tool": true,
       "download_url": "https://0673fc92-1e06-494f-9e10-27641a3a4576.usrfiles.com/archives/ecce1a_a912d88e6c614197b0a7a3cb5705e3d3.zip",
@@ -326,7 +326,7 @@
         "accounts receivable",
         "reconcile"
       ],
-      "availability": "Public source preview · MIT",
+      "availability": "Public source preview \u00b7 MIT",
       "public_ready": true,
       "public_tool": true,
       "download_url": "https://0673fc92-1e06-494f-9e10-27641a3a4576.usrfiles.com/archives/ecce1a_d07ad9c7a35d4bff9d737cf4ef598313.zip",
@@ -361,7 +361,7 @@
         "offer",
         "compensation"
       ],
-      "availability": "Public source preview · MIT",
+      "availability": "Public source preview \u00b7 MIT",
       "public_ready": true,
       "public_tool": true,
       "download_url": "https://0673fc92-1e06-494f-9e10-27641a3a4576.usrfiles.com/archives/ecce1a_e6a7171df1814a4ba4b59de851f8a245.zip",
@@ -427,13 +427,16 @@
   "public_intake_scope": [
     "wit.documented-compensation-comparison",
     "wit.invoice-reference-review",
-    "wit.pretax-role-comparison"
+    "wit.pretax-role-comparison",
+    "wit.bill-calendar-preview",
+    "wit.field-hours-review",
+    "wit.grocery-planning-preview"
   ],
   "general_framework_intake_open": false,
   "expected_total_entries": 12,
   "schema_version": 1,
   "expected_tool_count": 11,
-  "catalogue_revision": "2026-10-23-wip-batch-1",
+  "catalogue_revision": "2026-10-23-six-tool-reviewed-intake",
   "public_ready_semantics": "Deprecated legacy availability flag. Use publicly_available for availability and readiness_status/lifecycle_status for readiness; WIP publication does not imply ready to use.",
   "management": {
     "schema": "witburrow.management.v1",

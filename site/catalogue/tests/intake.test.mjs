@@ -1,0 +1,13 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+const read=p=>fs.readFileSync(new URL('../../../'+p,import.meta.url),'utf8');
+const catalogue=JSON.parse(read('tools/CATALOGUE.json'));
+const manifest=JSON.parse(read('RELEASE_MANIFEST.json'));
+const intake=manifest.extensions.public_tool_contributions;
+const ids=['wit.invoice-reference-review','wit.pretax-role-comparison','wit.documented-compensation-comparison','wit.bill-calendar-preview','wit.field-hours-review','wit.grocery-planning-preview'];
+test('intake allowlists exactly the six published tools',()=>{assert.deepEqual([...intake.allowed_tool_ids].sort(),[...ids].sort());assert.deepEqual([...catalogue.public_intake_scope].sort(),[...ids].sort());});
+test('all six identities and base versions have policy handoff',()=>{const policy=read('CONTRIBUTING.md');for(const id of ids){assert.ok(policy.includes('`'+id+'`'));const t=catalogue.tools.find(t=>t.id===id);assert.equal(intake.current_tool_versions[id],t.version);assert.equal(t.publicly_available,true);}});
+test('three WIPs retain false readiness and reviewed PR route',()=>{for(const id of ids.slice(3)){const t=catalogue.tools.find(t=>t.id===id);assert.equal(t.public_ready,false);assert.equal(t.lifecycle_status,'published_wip');assert.equal(t.contribution_url,'https://github.com/iJaspers/manager-os/compare');}});
+test('same human gates, no automatic execution or merging',()=>{assert.equal(intake.automatic_execution,false);assert.equal(intake.automatic_merge,false);assert.equal(intake.requires_isolated_manual_tests,true);assert.equal(intake.requires_privacy_license_safety_review,true);assert.equal(intake.general_framework_intake,'closed');assert.equal(intake.security_sensitive_intake,'closed');assert.ok(read('CONTRIBUTING.md').includes('Failed, ambiguous or unavailable checks remain explicit holds.'));});
+test('no fabricated credit or candidate downloads',()=>{assert.deepEqual(catalogue.management.contribution_events,[]);assert.equal(catalogue.management.review_records.length,6);const privateTools=catalogue.tools.filter(t=>!t.publicly_available);assert.equal(privateTools.length,5);assert.ok(privateTools.every(t=>t.download_url===null));});
