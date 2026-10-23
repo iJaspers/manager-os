@@ -1,0 +1,12 @@
+{
+  "public_id": "wit.grocery-planning-preview",
+  "version": "0.1.0",
+  "source_component_version": "0.1",
+  "original_source_sha256": "dbf34b856552214be129e3ae7f578799ed3cbe4dbc7f89aa3eadef60168f6db2",
+  "private_original_preserved": true,
+  "dependencies": [],
+  "license": "MIT",
+  "license_scope": "This sanitized version only; not private originals, third-party services or unrelated content.",
+  "provenance": "Owner-authorized derivative of the existing offline stdlib proof. Third-party project links in the private planning note were references only; no third-party code or assets are bundled.",
+  "changes": "Required inputs no longer become an empty successful basket; bounded CLI/list/depth/text admission, duplicate-key rejection and exact integer money formatting."
+}

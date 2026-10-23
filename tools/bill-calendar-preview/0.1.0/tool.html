@@ -1,0 +1,90 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'none'; img-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'"><!-- SPDX-License-Identifier: MIT; Copyright (c) 2026 iJaspers. See LICENSE. --><title>Bill Calendar Preview | Witburrow Offline Tool</title><style>:root{font-family:system-ui,-apple-system,Segoe UI,Arial,sans-serif;color-scheme:light}body{margin:0;padding:24px;background:#f3f6fa;color:#132a43}.wrap{max-width:680px;margin:0 auto}.shell{border-radius:20px;background:white;border:1px solid #dbe3ef;padding:26px;box-shadow:0 10px 32px #152c4215}h1{margin:10px 0;font-size:1.9rem}p{line-height:1.6}.sub{color:#58708b}.pill{color:#375a80;font-size:.78rem;font-weight:750;letter-spacing:.05em;text-transform:uppercase}.fields{display:grid;gap:12px;margin:20px 0}label{display:grid;gap:6px;font-weight:650}input,textarea{font:inherit;border:1px solid #b9c9dd;border-radius:9px;padding:12px;width:100%;box-sizing:border-box}textarea{min-height:155px}button{font:inherit;border:0;border-radius:10px;padding:12px 18px;font-weight:700;background:#194e85;color:white;cursor:pointer}button:hover{background:#123b66}output,pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#eaf1f8;padding:15px;border-radius:10px;display:block;margin-top:16px;line-height:1.5}.fine{font-size:.83rem;color:#506780;margin-top:20px}@media(max-width:480px){body{padding:10px}.shell{padding:17px}}</style></head><body><main class="wrap"><div class="shell"><div class="pill">WITBURROW • UNVERIFIED WIP SOURCE 0.1.0 • MIT</div><h1>Bill Calendar Preview</h1><p><strong>Work in progress. Source is shared for inspection and continuation, not a production-readiness endorsement. See README.md for checks and unfinished work.</strong></p><p class="sub">Check dated cash gaps, then see which labelled bills contribute. The debit-first estimate is a what-if, not a bank posting prediction. No money movement.</p><div class="fields"><label>Starting balance (CAD) <input id="starting" inputmode="decimal" value="500.00"></label><label>Entries, one per line (date, signed dollars, optional short label)<textarea id="entries" maxlength="8192" spellcheck="false">2030-04-01, -125.00, Fictional bill
+2030-04-03, 250.00, Fictional income</textarea></label></div><button id="calc">Check cash buffers</button><output id="result" aria-live="polite">Check dated cash changes. This is a simulation, not a balance guarantee.</output><p class="fine">Use simple descriptions such as Rent, Fuel or Paycheque; never account numbers or private identifiers. Missing labels become Entry 1, Entry 2, etc.</p><p class="fine">This tool does not send inputs or store them. Browser/session behavior is outside its control; clear sensitive inputs before sharing. No accounts, network, payments, payroll or tax submissions. Public ID: wit.bill-calendar-preview@0.1.0.</p></div></main><script>"use strict";
+const $ = id => document.getElementById(id);
+function cents(raw) {
+  const s = raw.trim();
+  if (!/^[+-]?\d{1,6}(?:\.\d{1,2})?$/.test(s)) throw Error('Use plain dollars and up to two decimal places (under 1,000,000 per entry)');
+  const sign = s[0] === '-' ? -1n : 1n;
+  const parts = s.replace(/^[+-]/, '').split('.');
+  return sign * (BigInt(parts[0])*100n + BigInt((parts[1] || '').padEnd(2,'0')));
+}
+function cad(amount) {
+  const sign = amount < 0n ? '-':'';
+  const positive = amount < 0n ? -amount : amount;
+  return sign + '$' + (positive/100n) + '.' + (positive%100n).toString().padStart(2,'0');
+}
+function date(s) {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(s)) throw Error('Use YYYY-MM-DD dates');
+  const d = new Date(s + 'T00:00:00Z');
+  if (!Number.isFinite(d.getTime()) || d.toISOString().slice(0,10) !== s) throw Error('Invalid date: ' + s);
+  return s;
+}
+function run() {
+  try {
+    const opening = cents($('starting').value);
+    if ($('entries').value.length > 8192) throw Error('Maximum 8192 input characters');
+    const lines = $('entries').value.trim().split(/\r?\n/).filter(Boolean);
+    if (!lines.length) throw Error('Enter at least one dated entry');
+    if (lines.length > 20) throw Error('Maximum 20 lines');
+    const rows = lines.map((line, index) => {
+      const parts = line.split(',');
+      if (parts.length !== 2 && parts.length !== 3) throw Error('Line ' + (index+1) + ' needs date, amount, optional label');
+      const when = date(parts[0].trim()), delta = cents(parts[1]);
+      const label = parts.length === 3 ? parts[2].trim() : 'Entry ' + (index+1);
+      if (!/^[A-Za-z0-9][A-Za-z0-9 ._'\/-]{0,39}$/.test(label) || /\d{7,}/.test(label))
+        throw Error('Line ' + (index+1) + ' label must be 1–40 plain characters (no account numbers or markup)');
+      return {when, delta, label};
+    }).sort((a,b) => a.when.localeCompare(b.when));
+    let balance = opening;
+    let lowest = opening;
+    let firstGap = opening < 0n ? 'before the first listed date' : null;
+    let lowestDebitFirst = opening;
+    let firstDebitFirstGap = opening < 0n ? 'before the first listed date' : null;
+    const days = [], gapDetails = [];
+    for (let i = 0; i < rows.length;) {
+      const when = rows[i].when;
+      let net = 0n, debits = 0n;
+      const lineItems = [];
+      while (i < rows.length && rows[i].when === when) {
+        const row = rows[i++];
+        net += row.delta;
+        if (row.delta < 0n) debits += row.delta;
+        lineItems.push(row);
+      }
+      // Conservatively assume every debit clears before any credit on this day.
+      // No ordering prediction or bank guarantee is implied.
+      const debitFirstFloor = balance + debits;
+      if (debitFirstFloor < lowestDebitFirst) lowestDebitFirst = debitFirstFloor;
+      if (debitFirstFloor < 0n && firstDebitFirstGap === null) {
+        firstDebitFirstGap = when;
+        gapDetails.push('First possible debit-first gap (' + when + '): ' +
+          lineItems.filter(row => row.delta < 0n).map(row => row.label + ' ' + cad(row.delta)).join('; '));
+      }
+      balance += net;
+      if (balance < lowest) lowest = balance;
+      if (balance < 0n && firstGap === null) firstGap = when;
+      days.push(when + ' | net ' + cad(net) + ' | day-end ' + cad(balance) + '\n' +
+        lineItems.map(row => '  ' + row.label + ': ' + cad(row.delta)).join('\n'));
+    }
+    const gap = lowest < 0n ? -lowest : 0n;
+    const headline = gap > 0n
+      ? 'DAY-END GAP: ' + cad(gap) + ' additional starting funds would prevent any projected day-end negative balance. First gap: ' + firstGap + '.'
+      : 'NO PROJECTED DAY-END GAP in the dates entered.';
+    const debitFirstBuffer = lowestDebitFirst < 0n ? -lowestDebitFirst : 0n;
+    const conservativeHeadline = debitFirstBuffer > 0n
+      ? 'SAME-DAY DEBIT-FIRST BUFFER: ' + cad(debitFirstBuffer) + ' additional starting funds would cover the simulated debit-first scenario. First possible gap: ' + firstDebitFirstGap + '.'
+      : 'NO SIMULATED SAME-DAY DEBIT-FIRST GAP in the dates entered.';
+    const report = [headline, conservativeHeadline, 'Starting balance: ' + cad(opening), ...days,
+      'Lowest projected day-end/opening balance: ' + cad(lowest),
+      'Lowest simulated same-day debit-first balance: ' + cad(lowestDebitFirst),
+      ...gapDetails,
+      'Final projected balance: ' + cad(balance),
+      'ORDER UNKNOWN: Debits-first is a conservative what-if, not a prediction of posting order. Real holds, earlier pending items and deposit availability can change the result.',
+      'Estimate only. No bank link, transfer, payment or guarantee of bill coverage.'];
+    $('result').textContent = report.join('\n');
+  } catch (error) {
+    $('result').textContent = 'HOLD: ' + error.message;
+  }
+}
+$('calc').addEventListener('click', run);
+</script></body></html>

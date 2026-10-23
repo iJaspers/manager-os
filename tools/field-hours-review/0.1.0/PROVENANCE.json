@@ -1,0 +1,11 @@
+{
+  "public_id": "wit.field-hours-review",
+  "version": "0.1.0",
+  "source_component_version": "0.3.2.1",
+  "original_source_sha256": "aac8081f15b4a1bcf49163b966e483d385409f611536508555475e7399b5aa4b",
+  "private_original_preserved": true,
+  "dependencies": [],
+  "license": "MIT",
+  "license_scope": "This sanitized tool version only; not private originals or unrelated content.",
+  "provenance": "Owner-authorized derivative of an existing internal offline component. No third-party runtime, asset or package was imported. Internal handoff notes and private locators are not included."
+}

@@ -1,0 +1,15 @@
+{
+  "budget_cad": "20.00",
+  "recipes": [
+    {"id":"rice_bowl","ingredients":[{"item":"rice","unit":"g","qty":300},{"item":"beans","unit":"g","qty":200}]},
+    {"id":"bean_wrap","ingredients":[{"item":"beans","unit":"g","qty":150},{"item":"tortilla","unit":"each","qty":2}]}
+  ],
+  "plan": [{"recipe":"rice_bowl","count":2},{"recipe":"bean_wrap","count":1}],
+  "pantry": [{"item":"rice","unit":"g","qty":200},{"item":"beans","unit":"g","qty":100}],
+  "offers": [
+    {"item":"rice","unit":"g","pack_qty":500,"price_cad":"2.40","store":"store_a"},
+    {"item":"rice","unit":"g","pack_qty":1000,"price_cad":"4.40","store":"store_b"},
+    {"item":"beans","unit":"g","pack_qty":400,"price_cad":"1.99","store":"store_a"},
+    {"item":"tortilla","unit":"each","pack_qty":8,"price_cad":"3.29","store":"store_b"}
+  ]
+}
