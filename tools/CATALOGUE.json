@@ -434,5 +434,116 @@
   "schema_version": 1,
   "expected_tool_count": 11,
   "catalogue_revision": "2026-10-23-wip-batch-1",
-  "public_ready_semantics": "Deprecated legacy availability flag. Use publicly_available for availability and readiness_status/lifecycle_status for readiness; WIP publication does not imply ready to use."
+  "public_ready_semantics": "Deprecated legacy availability flag. Use publicly_available for availability and readiness_status/lifecycle_status for readiness; WIP publication does not imply ready to use.",
+  "management": {
+    "schema": "witburrow.management.v1",
+    "source_commit": "0762957a43309b4d1c2a945018f68ce7c019e56f",
+    "review_records": [
+      {
+        "id": "wit.bill-calendar-preview",
+        "version": "0.1.0",
+        "source_commit": "8a2aaca268d1b8b690c57548c31307fbd1fec64e",
+        "provenance_url": "https://github.com/iJaspers/manager-os/blob/8a2aaca268d1b8b690c57548c31307fbd1fec64e/tools/bill-calendar-preview/0.1.0/PROVENANCE.json",
+        "review": {
+          "privacy": "approved",
+          "license": "approved",
+          "authority": "approved",
+          "reference": "https://github.com/iJaspers/manager-os/blob/8a2aaca268d1b8b690c57548c31307fbd1fec64e/tools/bill-calendar-preview/0.1.0/PROVENANCE.json",
+          "scope": "Previously published owner-authorized sanitized source and directory-scoped MIT provenance; not production-readiness approval."
+        },
+        "known_failures": [],
+        "no_known_failures_declared": true,
+        "known_failures_scope": "No failing check in named local suite; unsupported cases are in limits. Not a no-bugs claim.",
+        "test_evidence_url": "https://github.com/iJaspers/manager-os/blob/8a2aaca268d1b8b690c57548c31307fbd1fec64e/tools/bill-calendar-preview/0.1.0/TEST_RESULTS.md"
+      },
+      {
+        "id": "wit.field-hours-review",
+        "version": "0.1.0",
+        "source_commit": "8a2aaca268d1b8b690c57548c31307fbd1fec64e",
+        "provenance_url": "https://github.com/iJaspers/manager-os/blob/8a2aaca268d1b8b690c57548c31307fbd1fec64e/tools/field-hours-review/0.1.0/PROVENANCE.json",
+        "review": {
+          "privacy": "approved",
+          "license": "approved",
+          "authority": "approved",
+          "reference": "https://github.com/iJaspers/manager-os/blob/8a2aaca268d1b8b690c57548c31307fbd1fec64e/tools/field-hours-review/0.1.0/PROVENANCE.json",
+          "scope": "Previously published owner-authorized sanitized source and directory-scoped MIT provenance; not production-readiness approval."
+        },
+        "known_failures": [],
+        "no_known_failures_declared": true,
+        "known_failures_scope": "No failing check in named local suite; unsupported cases are in limits. Not a no-bugs claim.",
+        "test_evidence_url": "https://github.com/iJaspers/manager-os/blob/8a2aaca268d1b8b690c57548c31307fbd1fec64e/tools/field-hours-review/0.1.0/TEST_RESULTS.md"
+      },
+      {
+        "id": "wit.grocery-planning-preview",
+        "version": "0.1.0",
+        "source_commit": "8a2aaca268d1b8b690c57548c31307fbd1fec64e",
+        "provenance_url": "https://github.com/iJaspers/manager-os/blob/8a2aaca268d1b8b690c57548c31307fbd1fec64e/tools/grocery-planning-preview/0.1.0/PROVENANCE.json",
+        "review": {
+          "privacy": "approved",
+          "license": "approved",
+          "authority": "approved",
+          "reference": "https://github.com/iJaspers/manager-os/blob/8a2aaca268d1b8b690c57548c31307fbd1fec64e/tools/grocery-planning-preview/0.1.0/PROVENANCE.json",
+          "scope": "Previously published owner-authorized sanitized source and directory-scoped MIT provenance; not production-readiness approval."
+        },
+        "known_failures": [],
+        "no_known_failures_declared": true,
+        "known_failures_scope": "No failing check in named local suite; unsupported cases are in limits. Not a no-bugs claim.",
+        "test_evidence_url": "https://github.com/iJaspers/manager-os/blob/8a2aaca268d1b8b690c57548c31307fbd1fec64e/tools/grocery-planning-preview/0.1.0/TEST_RESULTS.md"
+      },
+      {
+        "id": "wit.documented-compensation-comparison",
+        "version": "0.1.2",
+        "source_commit": "feff5942080c9da535359f085fb867d3a76f38a2",
+        "provenance_url": "https://github.com/iJaspers/manager-os/blob/feff5942080c9da535359f085fb867d3a76f38a2/tools/documented-compensation-comparison/0.1.2/PROVENANCE.json",
+        "review": {
+          "privacy": "approved",
+          "license": "approved",
+          "authority": "approved",
+          "reference": "https://github.com/iJaspers/manager-os/blob/feff5942080c9da535359f085fb867d3a76f38a2/tools/documented-compensation-comparison/0.1.2/PROVENANCE.json",
+          "scope": "Previously published owner-authorized sanitized source and directory-scoped MIT provenance; not production-readiness approval."
+        },
+        "known_failures": [],
+        "no_known_failures_declared": true,
+        "known_failures_scope": "No failing checks reported in the pinned current-version TEST_RESULTS.md. Historical defects and unsupported cases remain in README/CHANGELOG/limits. This is not a no-bugs claim.",
+        "test_evidence_url": "https://github.com/iJaspers/manager-os/blob/feff5942080c9da535359f085fb867d3a76f38a2/tools/documented-compensation-comparison/0.1.2/TEST_RESULTS.md"
+      },
+      {
+        "id": "wit.invoice-reference-review",
+        "version": "0.1.2",
+        "source_commit": "48c5af388a328636a22cf7b95cea7bd5c48eb6a5",
+        "provenance_url": "https://github.com/iJaspers/manager-os/blob/48c5af388a328636a22cf7b95cea7bd5c48eb6a5/tools/invoice-reference-review/0.1.2/PROVENANCE.json",
+        "review": {
+          "privacy": "approved",
+          "license": "approved",
+          "authority": "approved",
+          "reference": "https://github.com/iJaspers/manager-os/blob/48c5af388a328636a22cf7b95cea7bd5c48eb6a5/tools/invoice-reference-review/0.1.2/PROVENANCE.json",
+          "scope": "Previously published owner-authorized sanitized source and directory-scoped MIT provenance; not production-readiness approval."
+        },
+        "known_failures": [],
+        "no_known_failures_declared": true,
+        "known_failures_scope": "No failing checks reported in the pinned current-version TEST_RESULTS.md. Historical defects and unsupported cases remain in README/CHANGELOG/limits. This is not a no-bugs claim.",
+        "test_evidence_url": "https://github.com/iJaspers/manager-os/blob/48c5af388a328636a22cf7b95cea7bd5c48eb6a5/tools/invoice-reference-review/0.1.2/TEST_RESULTS.md"
+      },
+      {
+        "id": "wit.pretax-role-comparison",
+        "version": "0.1.2",
+        "source_commit": "feff5942080c9da535359f085fb867d3a76f38a2",
+        "provenance_url": "https://github.com/iJaspers/manager-os/blob/feff5942080c9da535359f085fb867d3a76f38a2/tools/pretax-role-comparison/0.1.2/PROVENANCE.json",
+        "review": {
+          "privacy": "approved",
+          "license": "approved",
+          "authority": "approved",
+          "reference": "https://github.com/iJaspers/manager-os/blob/feff5942080c9da535359f085fb867d3a76f38a2/tools/pretax-role-comparison/0.1.2/PROVENANCE.json",
+          "scope": "Previously published owner-authorized sanitized source and directory-scoped MIT provenance; not production-readiness approval."
+        },
+        "known_failures": [],
+        "no_known_failures_declared": true,
+        "known_failures_scope": "No failing checks reported in the pinned current-version TEST_RESULTS.md. Historical defects and unsupported cases remain in README/CHANGELOG/limits. This is not a no-bugs claim.",
+        "test_evidence_url": "https://github.com/iJaspers/manager-os/blob/feff5942080c9da535359f085fb867d3a76f38a2/tools/pretax-role-comparison/0.1.2/TEST_RESULTS.md"
+      }
+    ],
+    "contribution_events": [],
+    "mode": "request_time_public_metadata_projection",
+    "credit_basis": "Reviewed accepted contributions and pickups only; never usage or quality rankings."
+  }
 }

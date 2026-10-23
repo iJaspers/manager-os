@@ -1,0 +1,139 @@
+<script>(function(){window.__witburrowLibraryParts=window.__witburrowLibraryParts||[];window.__witburrowLibraryParts[2]="";window.dispatchEvent(new Event("witburrow-library-ready"));})();</script><script id="witburrow-library-renderer-v2">
+(function () {
+  if (window.__witburrowLibraryRenderer2) return;
+  window.__witburrowLibraryRenderer2 = true;
+const load=(...args)=>window.__witManaged.load(...args);
+
+  var managedRequest = null;
+  var routeGeneration = 0;
+  var lastRouteKey = location.pathname + location.search;
+  var oldOverflow = null;
+  var rootId = 'witburrow-library';
+  function restore() {
+    var current = document.getElementById(rootId);
+    if (current) current.remove();
+    var obsolete = document.getElementById('witburrow-library-frame');
+    if (obsolete) obsolete.remove();
+    document.querySelectorAll('[data-wit-library-mask]').forEach(function (node) {
+      var aria = node.getAttribute('data-wit-library-aria');
+      if (aria === '__none__') node.removeAttribute('aria-hidden');
+      else node.setAttribute('aria-hidden', aria);
+      if ('inert' in node && node.getAttribute('data-wit-library-inert') === '0') node.inert = false;
+      node.removeAttribute('data-wit-library-mask');
+      node.removeAttribute('data-wit-library-aria');
+      node.removeAttribute('data-wit-library-inert');
+    });
+    if (oldOverflow !== null) {
+      document.body.style.overflow = oldOverflow;
+      oldOverflow = null;
+    }
+  }
+  function initializeLibrary(root, catalogue) {
+
+'use strict';
+
+const stable={id:'public.starter.oct12',name:'Current public starter',category:'Getting started',runtime:'AI instructions + PDF reference',version:'MOS-2026.10.12.1',description:'The existing free starter and reference files. The new tools below are not included in that public package.',keywords:['starter','MOS','Manager OS','Witburrow','Wit','setup','download'],availability:'Public release',public_ready:true,download_url:null,release_url:'https://www.ijaspers.com/post/manager-os',limits:'No additional tools or permissions are granted. Cross-AI reliability is not established.',requirements:'An AI host able to read the instructions; storage you can actually access.',verification:'The release page and its existing download routes were observed on 22 October. Actual Wix-downloaded bytes and independent host installation remain unverified.'};
+const items=[stable,...catalogue.tools];
+const publicItems=catalogue.tools.filter(t=>t.publicly_available),wipItems=publicItems.filter(t=>t.lifecycle_status==='published_wip'),privateItems=catalogue.tools.filter(t=>t.lifecycle_status==='private_candidate');
+root.querySelector('.draft').textContent=`${publicItems.length} SOURCE TOOLS · ${wipItems.length} UNVERIFIED WIP HANDOFFS · UNRANKED`;
+root.querySelector('main.wrap > p').textContent='Unfinished tools can be shared, not just finished ones. This library reads maintainer-reviewed versioned metadata when the page opens. Publication is not production readiness, a ranking or permission to run anything automatically.';
+root.querySelector('#library .section-head div.small').textContent=`${publicItems.length} public source tools, including ${wipItems.length} unfinished WIPs; ${privateItems.length} private candidates plus the unchanged starter.`;
+root.querySelector('#library .section-head > span').textContent='Catalogue '+catalogue.catalogue_revision;
+const category=root.getElementById('category');category.replaceChildren();const allCategory=el('option','All categories');allCategory.value='all';category.append(allCategory);for(const name of [...new Set(items.map(t=>t.category))].sort())category.append(el('option',name));
+const boards=root.querySelector('#leaderboards .boards');boards.replaceChildren();
+const board=el('article',undefined,'board');board.append(el('h3','Tool continuation board · unranked'),el('p','Source availability is not a quality, safety, popularity or adoption score. Check the exact contribution policy before submitting.'));
+const list=el('ul');for(const t of publicItems.slice().sort((a,b)=>a.name.localeCompare(b.name))){const li=el('li'),link=el('a',`${t.name} · ${t.version}${t.lifecycle_status==='published_wip'?' · UNVERIFIED WIP':''}`);link.href=t.source_url;link.target='_blank';link.rel='noopener noreferrer';li.append(link);list.append(li);}board.append(list);boards.append(board);
+const credit=el('article',undefined,'board');credit.append(el('h3','Reviewed contribution credit · unranked'),el('p','Accepted contributions and recorded pickups are distinct. Neither measures usage, popularity or production readiness.'));
+if(!catalogue.board.contributors.length)credit.append(el('p','No verified public contribution credit recorded. Usage is not measured.'));
+for(const c of catalogue.board.contributors){credit.append(el('p',`${c.display_name}: ${c.accepted_contributions} accepted contributions; ${c.pickups} pickups.`));for(const e of c.evidence){const a=el('a',`${e.kind}: ${e.tool_id}@${e.version}`);a.href=e.url;a.target='_blank';a.rel='noopener noreferrer';credit.append(a);}}
+if(catalogue.holds.length)credit.append(el('p',`${catalogue.holds.length} records held for metadata review; no unverified credit added.`));boards.append(credit);
+
+const available=t=>t.publicly_available===undefined?t.public_ready:t.publicly_available;
+function el(tag,text,cls){const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;}
+function render(){const q=root.getElementById('search').value.trim().toLowerCase(),a=root.getElementById('availability').value,c=root.getElementById('category').value;const shown=items.filter(t=>(a==='all'||(a==='wip'?t.lifecycle_status==='published_wip':(a==='public')===available(t)))&&(c==='all'||t.category===c)&&[t.name,t.legacy_name||'',t.description,t.category,...t.keywords].join(' ').toLowerCase().includes(q)).sort((a,b)=>a.name.localeCompare(b.name));const grid=root.getElementById('cards');grid.replaceChildren();root.getElementById('result-count').textContent=shown.length+' '+(shown.length===1?'entry':'entries')+' shown · Alphabetical, not ranked';if(!shown.length){grid.append(el('div','No matching entries. Try another word or clear the filters.','empty-filter'));return;}for(const t of shown){const card=el('article',undefined,'card');card.dataset.id=t.id;card.append(el('span',t.availability,'badge'+(t.lifecycle_status==='published_wip'?' wip':available(t)?' public':'')),el('h3',t.name));const meta=el('div',undefined,'meta');meta.append(el('span',t.category),el('span','·'),el('span',t.runtime));card.append(meta,el('p',t.description));const details=el('details');details.append(el('summary','Requirements & evidence'));details.append(el('p','Version: '+t.version),el('p','Needs: '+t.requirements),el('p','Limits: '+t.limits),el('p',t.verification));if(t.tests_not_run)details.append(el('p','Not run / not established: '+t.tests_not_run.join('; ')));if(t.known_failures_scope)details.append(el('p','Known-failure scope: '+t.known_failures_scope));if(t.known_failures)for(const failure of t.known_failures)details.append(el('p','Known failure: '+failure));for(const key of ['provenance_url','review_reference'])if(t[key]){const proof=el('a',key==='provenance_url'?'Pinned provenance':'Review evidence');proof.href=t[key];proof.target='_blank';proof.rel='noopener noreferrer';details.append(proof);}if(t.license)details.append(el('p','License: '+t.license));if(t.next_step)details.append(el('p','Next step: '+t.next_step));if(t.zip_sha256){const checksum=el('p','ZIP SHA-256: '+t.zip_sha256);checksum.style.overflowWrap='anywhere';details.append(checksum);}card.append(details);if(t.download_url){const download=el('a',t.lifecycle_status==='published_wip'?'WIP source ZIP ↓':'Download ZIP ↓','button');download.href=t.download_url;download.download=t.filename||'';download.style.marginTop='16px';card.append(download);}if(t.release_url){const link=el('a',t.source_url?'Source & handoff ↗':'View public release ↗','button secondary');link.href=t.release_url;link.target='_blank';link.rel='noopener noreferrer';link.style.marginTop='16px';card.append(link);}else card.append(el('div','Not available for public download','unavailable'));grid.append(card);}}
+for(const id of ['search','availability','category'])root.getElementById(id).addEventListener(id==='search'?'input':'change',render);render();
+
+    root.addEventListener('click', function (event) {
+      var anchor = event.target.closest && event.target.closest('a[href^="#"]');
+      if (!anchor) return;
+      var id = anchor.getAttribute('href').slice(1);
+      var target = root.getElementById(id);
+      if (target) {
+        event.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  }
+  async function run() {
+    const generation = routeGeneration;
+    if (!document.body) return;
+    var path = (location.pathname || '/').replace(/\/+$/, '');
+    if (path !== '/post/witburrow-tools' || new URLSearchParams(location.search).get('native') === '1') {
+      restore();
+      return;
+    }
+    if (document.getElementById(rootId)) return;
+    if (!window.__witManaged || !window.__witManaged.parseStrictJSON || !window.__witManaged.project || !window.__witManaged.projectWebsite) return;
+    var parts = window.__witburrowLibraryParts || [];
+    if (typeof parts[0] !== 'string' || typeof parts[1] !== 'string' || typeof parts[2] !== 'string') return;
+    try {
+      var parsed = new DOMParser().parseFromString(parts[0] + parts[1] + parts[2], 'text/html');
+      if (!managedRequest) managedRequest = load();
+      var data = await managedRequest;
+      if (generation !== routeGeneration || (location.pathname || '').replace(/\/+$/, '') !== '/post/witburrow-tools' || new URLSearchParams(location.search).get('native') === '1' || document.getElementById(rootId)) return;
+      if (data.tools.length + 1 !== data.expected_total_entries || new Set(data.tools.map(t => t.id)).size !== data.tools.length) throw new Error('Catalogue count or identity mismatch');
+      var css = parsed.querySelector('style').textContent.replace(/:root/g, ':host').replace(/body\{/g, '.wit-library-body{');
+      parsed.querySelectorAll('script,meta,title,noscript').forEach(function (node) { node.remove(); });
+      var host = document.createElement('div');
+      host.id = rootId;
+      host.style.cssText = 'position:fixed;inset:0;z-index:2147483005;overflow:auto;background:#f6f5ee;display:block;width:100%;height:100%;isolation:isolate';
+      var root = host.attachShadow({ mode: 'open' });
+      var style = document.createElement('style');
+      style.textContent = css;
+      root.appendChild(style);
+      var body = document.createElement('div');
+      body.className = 'wit-library-body';
+      Array.from(parsed.body.childNodes).forEach(function (node) { body.appendChild(document.importNode(node, true)); });
+      root.appendChild(body);
+      initializeLibrary(root, data);
+      if (root.querySelectorAll('#cards article').length !== data.expected_total_entries) throw new Error('Expected declared initial catalogue entries');
+      document.getElementById('wit-managed-status')?.remove();
+      oldOverflow = document.body.style.overflow;
+      document.body.appendChild(host);
+      document.body.style.overflow = 'hidden';
+      Array.from(document.body.children).forEach(function (node) {
+        if (node.id === rootId || node.hasAttribute('data-wit-library-mask') || node.tagName === 'SCRIPT' || node.tagName === 'STYLE') return;
+        node.setAttribute('data-wit-library-mask', '1');
+        node.setAttribute('data-wit-library-aria', node.hasAttribute('aria-hidden') ? node.getAttribute('aria-hidden') : '__none__');
+        node.setAttribute('aria-hidden', 'true');
+        if ('inert' in node) {
+          node.setAttribute('data-wit-library-inert', node.inert ? '1' : '0');
+          node.inert = true;
+        }
+      });
+    } catch (error) {
+      if (generation !== routeGeneration || (location.pathname || '').replace(/\/+$/, '') !== '/post/witburrow-tools') return;
+      restore();
+      if (!document.getElementById('wit-managed-status') && location.pathname.replace(/\/+$/, '') === '/post/witburrow-tools') {var status=document.createElement('p');status.id='wit-managed-status';status.setAttribute('role','status');status.textContent='Live catalogue unavailable or held for metadata review. The native page below is the last manually published snapshot, not confirmed current. Consult the versioned repository for release evidence.';document.body.prepend(status);}
+      console.warn('Witburrow library enhancement unavailable; native catalogue remains visible.', error);
+    }
+  }
+  function watchRoute() {
+    const key = location.pathname + location.search;
+    if (key === lastRouteKey) return;
+    lastRouteKey = key; routeGeneration++; managedRequest = null; restore();
+    document.getElementById('wit-managed-status')?.remove();
+    run();
+  }
+  setInterval(watchRoute, 250);
+  window.addEventListener('popstate', watchRoute);
+  function kick() { setTimeout(() => { watchRoute(); run(); }, 180); }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', run);
+  else run();
+  window.addEventListener('popstate', kick);
+  window.addEventListener('witburrow-library-ready', kick);
+  document.addEventListener('click', function (event) {
+    if (event.target.closest && event.target.closest('a[href]')) kick();
+  });
+})();
+</script>
