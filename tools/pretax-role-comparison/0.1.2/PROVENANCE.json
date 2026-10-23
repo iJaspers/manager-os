@@ -1,0 +1,18 @@
+{
+  "public_id": "wit.pretax-role-comparison",
+  "version": "0.1.2",
+  "original_prototype_title": "The Paycheck Awakens",
+  "original_source_sha256": "51c74ad7dfd587ddd7897cb33cdedb96bbbcca193d1ac939e50e75bc6d06418b",
+  "derivative_source": "tool.html",
+  "license": "MIT",
+  "license_scope": "This version directory only; no grant for unrelated repository content or private originals.",
+  "dependencies": [],
+  "provenance_note": "Owner-authorized sanitized derivative of the supplied private single-file prototype. No external bundled code/assets or license notices were found during source inspection. Private ledger proof counts and same-numbered tools are not attributed to this derivative.",
+  "private_original_preserved": true,
+  "fixtures": "synthetic only",
+  "claims": "No production, financial, host-integration or community-adoption guarantee.",
+  "parent_public_version": "0.1.1",
+  "parent_public_commit": "99b013ca1f9470b4f1aececaccd67b92a4d9cd12",
+  "parent_public_source_sha256": "67cd8dc00dd68cda22f0beb500be90a74503c60bf972d8e9cb90768716d603ab",
+  "changes": "Hold non-finite comparison differences even when each individual scenario is finite."
+}
