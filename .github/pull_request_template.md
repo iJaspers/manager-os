@@ -1,6 +1,6 @@
 ## Public tool handoff
 
-This lane accepts only the three IDs listed in CONTRIBUTING.md. Do not attach private data, secrets, binary bundles or security-sensitive material. Do not request automatic execution or workflow/permission changes.
+This lane accepts only the six IDs listed in CONTRIBUTING.md. Do not attach private data, secrets, binary bundles or security-sensitive material. Do not request automatic execution or workflow/permission changes.
 
 - Tool ID:
 - Base version and exact commit:
