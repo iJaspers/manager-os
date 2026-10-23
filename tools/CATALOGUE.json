@@ -72,7 +72,7 @@
         "Outsider pickup and handback"
       ],
       "next_step": "Add bounded recurring-event previews without inventing posting dates.",
-      "contribution_url": "https://github.com/iJaspers/manager-os/tree/8a2aaca268d1b8b690c57548c31307fbd1fec64e/tools/bill-calendar-preview/0.1.0/HANDOFF_TEMPLATE.md",
+      "contribution_url": "https://github.com/iJaspers/manager-os/blob/8a2aaca268d1b8b690c57548c31307fbd1fec64e/tools/bill-calendar-preview/0.1.0/HANDOFF_TEMPLATE.md",
       "contribution_policy_url": "https://github.com/iJaspers/manager-os/blob/main/CONTRIBUTING.md",
       "contribution_status": "MIT fork and patch handoff; upstream PR allowlist unchanged",
       "publication_review": {
@@ -124,7 +124,7 @@
         "Outsider pickup and handback"
       ],
       "next_step": "Add an explicit date/timezone mode with daylight-saving fixtures.",
-      "contribution_url": "https://github.com/iJaspers/manager-os/tree/8a2aaca268d1b8b690c57548c31307fbd1fec64e/tools/field-hours-review/0.1.0/HANDOFF_TEMPLATE.md",
+      "contribution_url": "https://github.com/iJaspers/manager-os/blob/8a2aaca268d1b8b690c57548c31307fbd1fec64e/tools/field-hours-review/0.1.0/HANDOFF_TEMPLATE.md",
       "contribution_policy_url": "https://github.com/iJaspers/manager-os/blob/main/CONTRIBUTING.md",
       "contribution_status": "MIT fork and patch handoff; upstream PR allowlist unchanged",
       "publication_review": {
@@ -200,7 +200,7 @@
         "Outsider pickup and handback"
       ],
       "next_step": "Add bounded mixed-pack optimization with a counterexample fixture.",
-      "contribution_url": "https://github.com/iJaspers/manager-os/tree/8a2aaca268d1b8b690c57548c31307fbd1fec64e/tools/grocery-planning-preview/0.1.0/HANDOFF_TEMPLATE.md",
+      "contribution_url": "https://github.com/iJaspers/manager-os/blob/8a2aaca268d1b8b690c57548c31307fbd1fec64e/tools/grocery-planning-preview/0.1.0/HANDOFF_TEMPLATE.md",
       "contribution_policy_url": "https://github.com/iJaspers/manager-os/blob/main/CONTRIBUTING.md",
       "contribution_status": "MIT fork and patch handoff; upstream PR allowlist unchanged",
       "publication_review": {
