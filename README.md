@@ -12,7 +12,7 @@ Manager OS (MOS) is now **Witburrow**. The manager's default name is **Wit**. Th
 - Existing installations must review the change and explicitly approve it locally. Preserve all chosen custom names. If a saved preference is missing or ambiguous, keep the name and ask rather than assume it was a default.
 - Existing `/mos` links, commands, schema identifiers, version pins and historical release records stay valid. The three stable download files below retain their original names and checksums.
 - The existing `/mos/check` manifest includes this notice and an optional extension. Clients that only compare `release_id` may not offer it automatically; ask the installed manager to review `WIT-NAME-2026.10.22.1` or use the [setup/reference page](https://www.ijaspers.com/post/manager-os-public-bootstrap-v2026-09-20).
-- [Tool library and community boards](https://www.ijaspers.com/post/witburrow-tools): the catalogue distinguishes the public starter from private candidates. Three separately MIT-licensed source tools now have scoped pull-request intake; broader framework/security intake remains closed. Rankings remain empty.
+- [Tool library and community boards](https://www.ijaspers.com/post/witburrow-tools): the catalogue separates the unchanged starter, three existing source previews, three UNVERIFIED work-in-progress source packages and private candidates. Unfinished source can be picked up under its scoped MIT license without a production-readiness claim. Existing three-tool pull-request intake is unchanged; the new WIP packages provide fork/patch handoffs. All listings are unranked.
 
 Publication is not proof that any existing installation adopted the name. No new permissions, schedules, executable installer or private tools are supplied by this supplement.
 
@@ -105,3 +105,4 @@ Public pull-request intake is **OPEN ONLY for the three sanitized MIT-licensed p
 > The internet may suggest changes. It does not get admin rights.
 
 Witburrow is AI-agnostic. The model is replaceable; durable operating state and human authority are not.
+
