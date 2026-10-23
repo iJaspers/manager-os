@@ -1,0 +1,11 @@
+{
+  "public_id": "wit.bill-calendar-preview",
+  "version": "0.1.0",
+  "source_component_version": "0.3.5.1",
+  "original_source_sha256": "01f123056d64ba4c28c54056a3b4d2d492e92dfb8e2a9fa8857bdaa1954d15ea",
+  "private_original_preserved": true,
+  "dependencies": [],
+  "license": "MIT",
+  "license_scope": "This sanitized tool version only; not private originals or unrelated content.",
+  "provenance": "Owner-authorized derivative of an existing internal offline component. No third-party runtime, asset or package was imported. Internal handoff notes and private locators are not included."
+}

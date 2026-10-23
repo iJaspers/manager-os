@@ -119,6 +119,17 @@
           "summary": "Unbounded/deep CLI JSON could exhaust resources or raise recursion errors. The correction enforces explicit byte, row, depth and text limits and duplicate-key rejection."
         }
       ]
+    },
+    "public_tool_catalogue": {
+      "schema_version": 1,
+      "revision": "2026-10-23-wip-batch-1",
+      "path": "tools/CATALOGUE.json",
+      "published_tool_count": 6,
+      "work_in_progress_count": 3,
+      "source_publication_is_not_production_acceptance": true,
+      "automatic_execution": false,
+      "automatic_merge": false,
+      "contribution_allowlist_unchanged": true
     }
   }
 }
