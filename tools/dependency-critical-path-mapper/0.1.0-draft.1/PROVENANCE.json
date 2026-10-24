@@ -1,0 +1,66 @@
+{
+  "schema": "wit.source-handoff-provenance.v1",
+  "tool_id": "wit.dependency-critical-path-mapper",
+  "draft_version": "0.1.0-draft.1",
+  "source_package_version": "v2.0",
+  "source_package_date": "2026-10-24",
+  "source_claim": "Original first-party browser prototypes and fictional fixtures; source documentation only, not independently verified authorship.",
+  "reviewed_source_license": "No LICENSE or COPYING found; source documentation explicitly denies inferred open-source rights.",
+  "license_status": "OWNER_AUTHORIZED_SCOPED_MIT",
+  "source_members": [
+    {
+      "source_member": "11_Project_Dependency_Map.html",
+      "source_sha256": "57ef935809bef6ca5c3e41d4b1063a973e3cae3a4cda76bbc4a5d3d04d1055a7",
+      "source_manifest_match": true
+    },
+    {
+      "source_member": "common.js",
+      "source_sha256": "5d455b8b7dddd4b60b2cad7ee0bebb063410b2da62b7f071d252f116e41fbe58",
+      "source_manifest_match": true
+    },
+    {
+      "source_member": "styles.css",
+      "source_sha256": "b22ae2fb77436d425e1616224f1f153aa45f7be5be759b5020177b96e44bb6e8",
+      "source_manifest_match": true
+    },
+    {
+      "source_member": "tests/dependency_browser_checks.py",
+      "source_sha256": "7ce11a388c1fcceea36cef75ed8209e29629f74775a3bb03f72985b396e7d955",
+      "source_manifest_match": true
+    },
+    {
+      "source_member": "examples/dependency_tasks_fictional.csv",
+      "source_sha256": "1b9e2396fe7cb7adef896d275c2c21caf7084c3d95547d45b129a8adf15c3011",
+      "source_manifest_match": true
+    }
+  ],
+  "derivative_changes": [
+    "Removed all cross-tool trade/service navigation.",
+    "Changed prototype labels to a sanitized WIP source-handoff draft.",
+    "Removed one cross-tool Change Order reference where present.",
+    "Made the existing test browser path portable with CHROMIUM_PATH/system discovery.",
+    "Added standalone handoff documentation and local verification metadata."
+  ],
+  "runtime_dependencies": [],
+  "test_prerequisites": [
+    "Python 3",
+    "Playwright Python package",
+    "Chromium"
+  ],
+  "not_included": [
+    "Private package README and release notes",
+    "Private manifests and AI-contract documents",
+    "Unrelated trade/service applications",
+    "Historical test logs",
+    "Browser binaries and third-party dependencies"
+  ],
+  "contribution_policy_verified_on": "2026-10-24",
+  "contribution_policy_url": "https://github.com/iJaspers/manager-os/blob/main/CONTRIBUTING.md",
+  "contribution_intake": "SCOPED_MANUAL_INTAKE_FOR_THIS_TOOL_ID",
+  "license": "MIT",
+  "license_scope": "This sanitized tool/version directory only. Excludes private originals, unrelated tools and third-party materials.",
+  "license_authorized_on": "2026-10-24",
+  "rights_review": "Source package identifies original first-party code/fixtures. Selected source inspected: no external runtime dependencies, imported third-party code/assets or conflicting notices found. Not an independent legal audit.",
+  "contribution_policy_baseline_blob_sha": "6ceceb8eaafa254adeba14212dc624822739a311",
+  "publication_scope": "Sanitized unfinished source only; no production or outsider acceptance claim."
+}

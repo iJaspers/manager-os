@@ -76,7 +76,10 @@
         "wit.documented-compensation-comparison",
         "wit.bill-calendar-preview",
         "wit.field-hours-review",
-        "wit.grocery-planning-preview"
+        "wit.grocery-planning-preview",
+        "wit.two-source-csv-reconciler",
+        "wit.regression-plan-forge",
+        "wit.dependency-critical-path-mapper"
       ],
       "current_tool_version": "0.1.1",
       "route": "https://github.com/iJaspers/manager-os/compare",
@@ -94,7 +97,10 @@
         "wit.documented-compensation-comparison": "0.1.2",
         "wit.bill-calendar-preview": "0.1.0",
         "wit.field-hours-review": "0.1.0",
-        "wit.grocery-planning-preview": "0.1.0"
+        "wit.grocery-planning-preview": "0.1.0",
+        "wit.two-source-csv-reconciler": "0.1.0-draft.1",
+        "wit.regression-plan-forge": "0.1.0-draft.1",
+        "wit.dependency-critical-path-mapper": "0.1.0-draft.1"
       },
       "known_version_issues": [
         {
@@ -123,9 +129,33 @@
           ],
           "corrected_version": "0.1.2",
           "summary": "Unbounded/deep CLI JSON could exhaust resources or raise recursion errors. The correction enforces explicit byte, row, depth and text limits and duplicate-key rejection."
+        },
+        {
+          "tool_id": "wit.two-source-csv-reconciler",
+          "affected_versions": [
+            "0.1.0-draft.1"
+          ],
+          "corrected_version": null,
+          "summary": "Known CSV-BARE-QUOTE: shared parser accepts a quote in an unquoted field. Unfinished source; current browser and outsider acceptance not established."
+        },
+        {
+          "tool_id": "wit.regression-plan-forge",
+          "affected_versions": [
+            "0.1.0-draft.1"
+          ],
+          "corrected_version": null,
+          "summary": "Known CSV-BARE-QUOTE: shared parser accepts a quote in an unquoted field. Unfinished source; current browser and outsider acceptance not established."
+        },
+        {
+          "tool_id": "wit.dependency-critical-path-mapper",
+          "affected_versions": [
+            "0.1.0-draft.1"
+          ],
+          "corrected_version": null,
+          "summary": "Known CSV-BARE-QUOTE: shared parser accepts a quote in an unquoted field. Unfinished source; current browser and outsider acceptance not established."
         }
       ],
-      "scope_updated_at": "2026-10-23"
+      "scope_updated_at": "2026-10-24"
     },
     "public_tool_catalogue": {
       "schema_version": 1,
@@ -137,6 +167,17 @@
       "automatic_execution": false,
       "automatic_merge": false,
       "contribution_allowlist_unchanged": false
+    },
+    "unfinished_source_handoffs_2026_10_24": {
+      "tool_ids": [
+        "wit.two-source-csv-reconciler",
+        "wit.regression-plan-forge",
+        "wit.dependency-critical-path-mapper"
+      ],
+      "version": "0.1.0-draft.1",
+      "published_source_ids_total": 9,
+      "legacy_catalogue_snapshot_unchanged": true,
+      "source_publication_is_not_end_to_end_acceptance": true
     }
   }
 }

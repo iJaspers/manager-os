@@ -1,6 +1,6 @@
 # Contributing to Witburrow
 
-## Current status — 2026-10-23
+## Current status — 2026-10-24
 
 **Scoped public-tool pull-request intake is OPEN for exactly these MIT-licensed public tools:**
 
@@ -10,14 +10,19 @@
 - `wit.bill-calendar-preview` (unverified WIP source)
 - `wit.field-hours-review` (unverified WIP source)
 - `wit.grocery-planning-preview` (unverified WIP source)
+- `wit.two-source-csv-reconciler` (unfinished source, known CSV parser issue)
+- `wit.regression-plan-forge` (unfinished source, known CSV parser issue)
+- `wit.dependency-critical-path-mapper` (unfinished source, known CSV parser issue)
 
-The three Everyday WIP packages are 0.1.0, explicitly unverified and non-production. Source and handoff completeness are separate from functional acceptance. Current original preview versions: Invoice Reference Review 0.1.2; Pretax Role Comparison and Documented Compensation Comparison 0.1.2. Invoice 0.1.1 has known malformed-CSV and UTF-8 size-limit defects; use the corrected current version. The general framework contribution intake and private security-reporting lane remain CLOSED. The manifest’s legacy `contribution_intake: closed` still describes that general framework lane; the explicit `extensions.public_tool_contributions` record describes this narrower open lane. This dated policy supersedes older closed-intake text inside historical packages only for these six IDs.
+The three Everyday WIP packages are 0.1.0, explicitly unverified and non-production. Source and handoff completeness are separate from functional acceptance. Current original preview versions: Invoice Reference Review 0.1.2; Pretax Role Comparison and Documented Compensation Comparison 0.1.2. Invoice 0.1.1 has known malformed-CSV and UTF-8 size-limit defects; use the corrected current version. The general framework contribution intake and private security-reporting lane remain CLOSED. The manifest’s legacy `contribution_intake: closed` still describes that general framework lane; the explicit `extensions.public_tool_contributions` record describes this narrower open lane. This dated policy supersedes older closed-intake text inside historical packages only for these nine IDs.
+
+The three additional 0.1.0-draft.1 handoffs retain a reproduced CSV bare-quote parser defect. They have bounded static and Node checks, not current rendered-browser or independent outsider acceptance. The full descriptive inventory is not an intake allowlist.
 
 ## Public route
 
 Fork this public repository, prepare a bounded source change and open a pull request to `main` using the public-tool template. The existing route is https://github.com/iJaspers/manager-os/compare . A GitHub account is needed to submit; no account is needed to read source or download a published bundle. No new form, service, credentials, permissions, payment or automatic intake job is created.
 
-Accepted scope: source, documentation, synthetic fixtures and tests for the six IDs above. Preserve exact tool identity and base version. Do not submit binary packages, archives, executables, unrelated tools, private ledgers or changes to workflows, permissions, credentials, the stable framework or its checksummed artifacts through this lane. An out-of-scope proposal is not authority to expand it.
+Accepted scope: source, documentation, synthetic fixtures and tests for the nine IDs above. Preserve exact tool identity and base version. Do not submit binary packages, archives, executables, unrelated tools, private ledgers or changes to workflows, permissions, credentials, the stable framework or its checksummed artifacts through this lane. An out-of-scope proposal is not authority to expand it.
 
 ## Required handoff
 
@@ -40,4 +45,5 @@ No automatic execution of untrusted pull requests and no auto-merge are enabled 
 Before merge, record what was reviewed, the exact test scope, known limitations, approval and rollback. Release a new tool version, preserve prior source/ZIP history and hashes, then update the public catalogue, download links and agreed contributor credit. Verify saved source and published bytes/links. A maintainer may request changes, decline, or park a contribution; publication does not mean someone must maintain it forever.
 
 A small internal documentation-only canary exercises this route. It is not an outsider contribution, independent security review, production integration or community adoption.
+
 

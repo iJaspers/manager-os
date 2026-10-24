@@ -1,0 +1,80 @@
+{
+  "algorithm": "SHA-256",
+  "files": [
+    {
+      "path": "10_Regression_Plan_Forge.html",
+      "bytes": 14839,
+      "sha256": "aaf6bc4ad4c129842f0c5641e97aba5ca740a9f571c31a4d8670cd3ec703054c"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 821,
+      "sha256": "9562b12cbc876161d3cada2514191971bda5e23dc7a5e9d4f842abf991e22d28"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 1592,
+      "sha256": "7206964bd47bb314dd0288df6c18df084b098c4d1dbc626e1b30f7bbc146c84c"
+    },
+    {
+      "path": "HANDOFF_TEMPLATE.md",
+      "bytes": 595,
+      "sha256": "53d0b671821c0668cbb688aa7c784e4cf2923180ce9ab1aeb52ba4fb3b8b3db4"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1065,
+      "sha256": "7f91c512ba41e11fc68fb65c5023e632e3c13708e9dc2376df8fa8001111a876"
+    },
+    {
+      "path": "LICENSE_SCOPE.md",
+      "bytes": 1179,
+      "sha256": "89d3bc38e74363a864bc1eb7d962ccf349607e0ba90b9f05f4305ddcfbceacaa"
+    },
+    {
+      "path": "PROVENANCE.json",
+      "bytes": 3135,
+      "sha256": "926a7c13f7af41be63f5c8be2ff93145c1c00b01b7e2217b757f230d7f65033d"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5056,
+      "sha256": "ae2fb70ec497e2e5182e0edf7f565d543658ac0b86376bba8f9e98cdda890dc3"
+    },
+    {
+      "path": "TEST_RESULTS.md",
+      "bytes": 1238,
+      "sha256": "7e443d3a9aeff2caac2ebfe8d0605bb6853d4476c06ba1056bc9041820a88aba"
+    },
+    {
+      "path": "common.js",
+      "bytes": 2037,
+      "sha256": "5d455b8b7dddd4b60b2cad7ee0bebb063410b2da62b7f071d252f116e41fbe58"
+    },
+    {
+      "path": "examples/regression_requirements_fictional.csv",
+      "bytes": 694,
+      "sha256": "aa5bfaab4ce64d66c2033a5b8f2527f92d40aa14eeaafc1b72af9eb9303b82bf"
+    },
+    {
+      "path": "requirements-test.txt",
+      "bytes": 167,
+      "sha256": "46ce4bcea45945aa9cb24f828e52a95cd4bb7c3a844f5cf2a1f088c46ae965f6"
+    },
+    {
+      "path": "styles.css",
+      "bytes": 3314,
+      "sha256": "b22ae2fb77436d425e1616224f1f153aa45f7be5be759b5020177b96e44bb6e8"
+    },
+    {
+      "path": "tests/browser_run_status.json",
+      "bytes": 570,
+      "sha256": "964b35553d5e883a7c1db44e2644291adc8e2575d511bb22eaaa0119abd6500c"
+    },
+    {
+      "path": "tests/regression_browser_checks.py",
+      "bytes": 11061,
+      "sha256": "2137f15fcd055adf72c3146b4eef5ec48de7611dffe3cf2f9329e9d7b1b881fe"
+    }
+  ]
+}

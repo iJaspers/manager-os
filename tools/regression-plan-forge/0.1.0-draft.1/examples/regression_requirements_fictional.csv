@@ -1,0 +1,4 @@
+req_id,behavior,valid_input,expected_valid,invalid_input,expected_invalid,boundary_rule,risk,source_ref,privacy,rollback
+CSV-01,Importer accepts a quoted comma,"""blue,green""",The quoted comma stays within one field,broken quote,Import rejected with an actionable error,NONE,MEDIUM,SPEC-DEMO-01,NO,NO
+CSV-02,Importer rejects a duplicated key,A-001,Unique key is processed once,A-001 repeated,Duplicate is reported and no write is made,one record vs two records,HIGH,SPEC-DEMO-02,NO,YES
+CSV-03,Exporter avoids personal data,placeholder-tag,Report uses synthetic public-safe labels,synthetic-identifier,Sensitive field excluded from exported report,empty optional field,HIGH,SPEC-DEMO-03,YES,NO

@@ -1,0 +1,85 @@
+{
+  "algorithm": "SHA-256",
+  "files": [
+    {
+      "path": "09_Two_Source_CSV_Reconciler.html",
+      "bytes": 17036,
+      "sha256": "313fbbbd049503225cd035e8547accc93160c34cc3d9a60dec3a72d0a9dd6565"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 821,
+      "sha256": "9562b12cbc876161d3cada2514191971bda5e23dc7a5e9d4f842abf991e22d28"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 1596,
+      "sha256": "089675847b1abbd53e63938fd74f20778958e54c5d96a0158e1f2d90ace38651"
+    },
+    {
+      "path": "HANDOFF_TEMPLATE.md",
+      "bytes": 599,
+      "sha256": "0daf60e34728c21b43108065c0fb29db16d7d10749b46cecc73f1710f225da34"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1065,
+      "sha256": "7f91c512ba41e11fc68fb65c5023e632e3c13708e9dc2376df8fa8001111a876"
+    },
+    {
+      "path": "LICENSE_SCOPE.md",
+      "bytes": 1179,
+      "sha256": "89d3bc38e74363a864bc1eb7d962ccf349607e0ba90b9f05f4305ddcfbceacaa"
+    },
+    {
+      "path": "PROVENANCE.json",
+      "bytes": 3342,
+      "sha256": "e9d1aa6d78f9f4622c3c5a8e1da25feb9676ff9983b33a57a932ee43a0acd444"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5042,
+      "sha256": "e14755de86fb2e465f8a278702268b51cd052571077ed46f995bcb559b408e2f"
+    },
+    {
+      "path": "TEST_RESULTS.md",
+      "bytes": 1238,
+      "sha256": "38538040a3c6f3bf038f523213bcf0d48f6ec60f624b8a2210e7d0e4798359ce"
+    },
+    {
+      "path": "common.js",
+      "bytes": 2037,
+      "sha256": "5d455b8b7dddd4b60b2cad7ee0bebb063410b2da62b7f071d252f116e41fbe58"
+    },
+    {
+      "path": "examples/reconcile_destination_fictional.csv",
+      "bytes": 98,
+      "sha256": "54ae97157d52a191fe92dbf62e7dce62182e5741ddb2b9c5f9b7a4d097fc6d58"
+    },
+    {
+      "path": "examples/reconcile_source_fictional.csv",
+      "bytes": 117,
+      "sha256": "1bb4527e6b01843492d008e8939269e21ce0e546395c4cdcf3068203c807d896"
+    },
+    {
+      "path": "requirements-test.txt",
+      "bytes": 167,
+      "sha256": "46ce4bcea45945aa9cb24f828e52a95cd4bb7c3a844f5cf2a1f088c46ae965f6"
+    },
+    {
+      "path": "styles.css",
+      "bytes": 3314,
+      "sha256": "b22ae2fb77436d425e1616224f1f153aa45f7be5be759b5020177b96e44bb6e8"
+    },
+    {
+      "path": "tests/browser_run_status.json",
+      "bytes": 570,
+      "sha256": "964b35553d5e883a7c1db44e2644291adc8e2575d511bb22eaaa0119abd6500c"
+    },
+    {
+      "path": "tests/recon_browser_checks.py",
+      "bytes": 9816,
+      "sha256": "8f7d72a1134c2e7c0ce35963d26cc8b329fe78baf133709212a884139b237714"
+    }
+  ]
+}

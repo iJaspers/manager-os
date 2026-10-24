@@ -1,0 +1,66 @@
+{
+  "schema": "wit.source-handoff-provenance.v1",
+  "tool_id": "wit.regression-plan-forge",
+  "draft_version": "0.1.0-draft.1",
+  "source_package_version": "v2.0",
+  "source_package_date": "2026-10-24",
+  "source_claim": "Original first-party browser prototypes and fictional fixtures; source documentation only, not independently verified authorship.",
+  "reviewed_source_license": "No LICENSE or COPYING found; source documentation explicitly denies inferred open-source rights.",
+  "license_status": "OWNER_AUTHORIZED_SCOPED_MIT",
+  "source_members": [
+    {
+      "source_member": "10_Regression_Plan_Forge.html",
+      "source_sha256": "7486ee2d3c3d677470b21a1798ed61dddd1c6dc79cb8efb23673134dec4d402b",
+      "source_manifest_match": true
+    },
+    {
+      "source_member": "common.js",
+      "source_sha256": "5d455b8b7dddd4b60b2cad7ee0bebb063410b2da62b7f071d252f116e41fbe58",
+      "source_manifest_match": true
+    },
+    {
+      "source_member": "styles.css",
+      "source_sha256": "b22ae2fb77436d425e1616224f1f153aa45f7be5be759b5020177b96e44bb6e8",
+      "source_manifest_match": true
+    },
+    {
+      "source_member": "tests/regression_browser_checks.py",
+      "source_sha256": "63ad6826d2414db2fbe5883fb9fcd85f396bae26796d290388a1253273b6aa4f",
+      "source_manifest_match": true
+    },
+    {
+      "source_member": "examples/regression_requirements_fictional.csv",
+      "source_sha256": "aa5bfaab4ce64d66c2033a5b8f2527f92d40aa14eeaafc1b72af9eb9303b82bf",
+      "source_manifest_match": true
+    }
+  ],
+  "derivative_changes": [
+    "Removed all cross-tool trade/service navigation.",
+    "Changed prototype labels to a sanitized WIP source-handoff draft.",
+    "Removed one cross-tool Change Order reference where present.",
+    "Made the existing test browser path portable with CHROMIUM_PATH/system discovery.",
+    "Added standalone handoff documentation and local verification metadata."
+  ],
+  "runtime_dependencies": [],
+  "test_prerequisites": [
+    "Python 3",
+    "Playwright Python package",
+    "Chromium"
+  ],
+  "not_included": [
+    "Private package README and release notes",
+    "Private manifests and AI-contract documents",
+    "Unrelated trade/service applications",
+    "Historical test logs",
+    "Browser binaries and third-party dependencies"
+  ],
+  "contribution_policy_verified_on": "2026-10-24",
+  "contribution_policy_url": "https://github.com/iJaspers/manager-os/blob/main/CONTRIBUTING.md",
+  "contribution_intake": "SCOPED_MANUAL_INTAKE_FOR_THIS_TOOL_ID",
+  "license": "MIT",
+  "license_scope": "This sanitized tool/version directory only. Excludes private originals, unrelated tools and third-party materials.",
+  "license_authorized_on": "2026-10-24",
+  "rights_review": "Source package identifies original first-party code/fixtures. Selected source inspected: no external runtime dependencies, imported third-party code/assets or conflicting notices found. Not an independent legal audit.",
+  "contribution_policy_baseline_blob_sha": "6ceceb8eaafa254adeba14212dc624822739a311",
+  "publication_scope": "Sanitized unfinished source only; no production or outsider acceptance claim."
+}
