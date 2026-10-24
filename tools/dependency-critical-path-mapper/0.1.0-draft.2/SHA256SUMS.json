@@ -1,0 +1,85 @@
+{
+  "algorithm": "SHA-256",
+  "files": [
+    {
+      "path": "11_Project_Dependency_Map.html",
+      "bytes": 16926,
+      "sha256": "9e1f6f636d4b5cbbe4d265db6306bce37dc64a0ec991e8464281a51195a89ccd"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 996,
+      "sha256": "b7328ebc34000a4f4098d6d25d11b73ed5bff75c69e547ceae684f0ecabcb50f"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 1602,
+      "sha256": "cfe7c8db6ad4eb2019f143139b6d8979f7fe43041f94cabda1406f12cec11da7"
+    },
+    {
+      "path": "HANDOFF_TEMPLATE.md",
+      "bytes": 605,
+      "sha256": "fe4f8e6e7ac21effa61f9b5cbf1926911cb2b4f630bc30cbcc18b7766d700c1c"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1065,
+      "sha256": "7f91c512ba41e11fc68fb65c5023e632e3c13708e9dc2376df8fa8001111a876"
+    },
+    {
+      "path": "LICENSE_SCOPE.md",
+      "bytes": 1179,
+      "sha256": "89d3bc38e74363a864bc1eb7d962ccf349607e0ba90b9f05f4305ddcfbceacaa"
+    },
+    {
+      "path": "PROVENANCE.json",
+      "bytes": 3239,
+      "sha256": "7e0fda776b6a0c8603f7098d22c4a74e3b54559bcdbe1879bcf812d1e1ef880a"
+    },
+    {
+      "path": "PUBLICATION_CORRECTION.md",
+      "bytes": 1048,
+      "sha256": "68621255f29f93c3ec43641f2a7ba0861aef1da5c4b4f28ebf15c3c5e7d9cd8c"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5344,
+      "sha256": "a6b2f3eabfccc6b74c07e234bc4295a22f6bb514d68626326de44a48f6088fdc"
+    },
+    {
+      "path": "TEST_RESULTS.md",
+      "bytes": 1238,
+      "sha256": "cc296467ef2d8078fe4bc5d6cb11abbdcb094bc9e9aaa5dad788d1f2a614caab"
+    },
+    {
+      "path": "common.js",
+      "bytes": 2037,
+      "sha256": "5d455b8b7dddd4b60b2cad7ee0bebb063410b2da62b7f071d252f116e41fbe58"
+    },
+    {
+      "path": "examples/dependency_tasks_fictional.csv",
+      "bytes": 473,
+      "sha256": "c225e0b180408752191b054fb9df97742a015660002d985d3a9b47b04f8d0fd3"
+    },
+    {
+      "path": "requirements-test.txt",
+      "bytes": 167,
+      "sha256": "46ce4bcea45945aa9cb24f828e52a95cd4bb7c3a844f5cf2a1f088c46ae965f6"
+    },
+    {
+      "path": "styles.css",
+      "bytes": 3314,
+      "sha256": "b22ae2fb77436d425e1616224f1f153aa45f7be5be759b5020177b96e44bb6e8"
+    },
+    {
+      "path": "tests/browser_run_status.json",
+      "bytes": 570,
+      "sha256": "964b35553d5e883a7c1db44e2644291adc8e2575d511bb22eaaa0119abd6500c"
+    },
+    {
+      "path": "tests/dependency_browser_checks.py",
+      "bytes": 11785,
+      "sha256": "dc7aff19182e82e03168b33728b2cce55a30cd8ca0c93d80f54edc97882f357b"
+    }
+  ]
+}

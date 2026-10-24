@@ -3,7 +3,7 @@
 const fs=require('fs'),path=require('path'),vm=require('vm'),assert=require('assert');
 const ROOT=path.resolve(__dirname,'../..'), results=[];
 function check(name,fn){try{fn();results.push({name,pass:true});}catch(e){results.push({name,pass:false,detail:e.message});}}
-function boot(dir,file){const p=path.join(ROOT,dir,'0.1.0-draft.1'), html=fs.readFileSync(path.join(p,file),'utf8'), nodes=new Map();
+function boot(dir,file){const p=path.join(ROOT,dir,dir==='dependency-critical-path-mapper'?'0.1.0-draft.2':'0.1.0-draft.1'), html=fs.readFileSync(path.join(p,file),'utf8'), nodes=new Map();
  function el(tag='div'){return {tag,value:'',textContent:'',className:'',disabled:false,children:[],files:[],addEventListener(){},replaceChildren(){this.children=[]},append(...xs){this.children.push(...xs)},appendChild(x){this.children.push(x)},remove(){},click(){}};}
  const document={getElementById(id){if(!nodes.has(id))nodes.set(id,el());return nodes.get(id)},createElement:el,body:el('body')};
  const decode=s=>s.replaceAll('&gt;','>').replaceAll('&lt;','<').replaceAll('&amp;','&').replaceAll('&quot;','"');

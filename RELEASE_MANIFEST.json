@@ -100,7 +100,7 @@
         "wit.grocery-planning-preview": "0.1.0",
         "wit.two-source-csv-reconciler": "0.1.0-draft.1",
         "wit.regression-plan-forge": "0.1.0-draft.1",
-        "wit.dependency-critical-path-mapper": "0.1.0-draft.1"
+        "wit.dependency-critical-path-mapper": "0.1.0-draft.2"
       },
       "known_version_issues": [
         {
@@ -153,6 +153,14 @@
           ],
           "corrected_version": null,
           "summary": "Known CSV-BARE-QUOTE: shared parser accepts a quote in an unquoted field. Unfinished source; current browser and outsider acceptance not established."
+        },
+        {
+          "tool_id": "wit.dependency-critical-path-mapper",
+          "affected_versions": [
+            "0.1.0-draft.1"
+          ],
+          "corrected_version": "0.1.0-draft.2",
+          "summary": "Git source fixture line-ending normalization disagreed with the source manifest. Additive draft.2 packages and hashes consistent LF bytes. Functional CSV parser defect remains."
         }
       ],
       "scope_updated_at": "2026-10-24"
@@ -177,7 +185,8 @@
       "version": "0.1.0-draft.1",
       "published_source_ids_total": 9,
       "legacy_catalogue_snapshot_unchanged": true,
-      "source_publication_is_not_end_to_end_acceptance": true
+      "source_publication_is_not_end_to_end_acceptance": true,
+      "dependency_mapper_current_version": "0.1.0-draft.2"
     }
   }
 }

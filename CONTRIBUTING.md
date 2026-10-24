@@ -16,7 +16,7 @@
 
 The three Everyday WIP packages are 0.1.0, explicitly unverified and non-production. Source and handoff completeness are separate from functional acceptance. Current original preview versions: Invoice Reference Review 0.1.2; Pretax Role Comparison and Documented Compensation Comparison 0.1.2. Invoice 0.1.1 has known malformed-CSV and UTF-8 size-limit defects; use the corrected current version. The general framework contribution intake and private security-reporting lane remain CLOSED. The manifest’s legacy `contribution_intake: closed` still describes that general framework lane; the explicit `extensions.public_tool_contributions` record describes this narrower open lane. This dated policy supersedes older closed-intake text inside historical packages only for these nine IDs.
 
-The three additional 0.1.0-draft.1 handoffs retain a reproduced CSV bare-quote parser defect. They have bounded static and Node checks, not current rendered-browser or independent outsider acceptance. The full descriptive inventory is not an intake allowlist.
+The three additional draft handoffs (Reconciler and Regression 0.1.0-draft.1; Dependency Mapper 0.1.0-draft.2) retain a reproduced CSV bare-quote parser defect. They have bounded static and Node checks, not current rendered-browser or independent outsider acceptance. The full descriptive inventory is not an intake allowlist.
 
 ## Public route
 

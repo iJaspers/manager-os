@@ -39,6 +39,8 @@ These three scoped-MIT prototypes include editable HTML/JavaScript, fictional fi
 
 - [Two Source Csv Reconciler 0.1.0-draft.1](two-source-csv-reconciler/0.1.0-draft.1/README.md)
 - [Regression Plan Forge 0.1.0-draft.1](regression-plan-forge/0.1.0-draft.1/README.md)
-- [Dependency Critical Path Mapper 0.1.0-draft.1](dependency-critical-path-mapper/0.1.0-draft.1/README.md)
+- [Dependency Critical Path Mapper 0.1.0-draft.2](dependency-critical-path-mapper/0.1.0-draft.2/README.md)
 
 The legacy CATALOGUE.json projection still carries its prior six-source snapshot. The dated all-stage inventory is a separate descriptive feed, not a claim that every idea or private prototype has downloadable source. A metadata listing does not open upstream intake.
+
+Dependency Mapper draft.2 is an additive packaging correction: its prior Git-source fixture had a newline/hash mismatch. Historical draft.1 stays available; the known functional CSV parser issue remains.
