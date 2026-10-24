@@ -187,6 +187,17 @@
       "legacy_catalogue_snapshot_unchanged": true,
       "source_publication_is_not_end_to_end_acceptance": true,
       "dependency_mapper_current_version": "0.1.0-draft.2"
+    },
+    "all_stage_inventory_2026_10_24": {
+      "schema": "wit.public_catalogue.v1",
+      "path": "tools/inventory/2026-10-24/PUBLIC_CATALOGUE.json",
+      "metadata_record_count": 285,
+      "published_source_tool_ids": 9,
+      "metadata_only_records": 276,
+      "all_time_distinct_tool_total": null,
+      "counting_note": "Descriptive records are not additive unique tools; see COUNTING_NOTES.md.",
+      "automatic_execution": false,
+      "automatic_merge": false
     }
   }
 }

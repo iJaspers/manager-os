@@ -44,3 +44,5 @@ These three scoped-MIT prototypes include editable HTML/JavaScript, fictional fi
 The legacy CATALOGUE.json projection still carries its prior six-source snapshot. The dated all-stage inventory is a separate descriptive feed, not a claim that every idea or private prototype has downloadable source. A metadata listing does not open upstream intake.
 
 Dependency Mapper draft.2 is an additive packaging correction: its prior Git-source fixture had a newline/hash mismatch. Historical draft.1 stays available; the known functional CSV parser issue remains.
+
+[Browse all-stage descriptive metadata](inventory/2026-10-24/PUBLIC_CATALOGUE.json) and [read the count reconciliation](inventory/2026-10-24/COUNTING_NOTES.md). There are 285 records, not 285 distinct built tools. Nine source IDs are downloadable; 276 records remain descriptions with source-specific next steps.
