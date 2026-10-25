@@ -1,0 +1,72 @@
+{
+  "notice": "Mapping of exact relocated components under existing scoped MIT grants. No grant for remaining collection files is implied. Historical LICENSE_SCOPE wording refers to each original tool directory; this map identifies the corresponding current paths.",
+  "files": [
+    {
+      "path": "09_Two_Source_CSV_Reconciler.html",
+      "sha256": "a2299941a51772aa9478d3a285f9c581faae38696f4f04b8eade5a22f8012c8f",
+      "scope_sources": [
+        "two-source-csv-reconciler"
+      ]
+    },
+    {
+      "path": "common.js",
+      "sha256": "13c1bdd0d254587433bc6be7fe3065d65d572ad25e08dfb6ca9da2cd6860cb4c",
+      "scope_sources": [
+        "two-source-csv-reconciler",
+        "regression-plan-forge",
+        "dependency-critical-path-mapper"
+      ]
+    },
+    {
+      "path": "styles.css",
+      "sha256": "b22ae2fb77436d425e1616224f1f153aa45f7be5be759b5020177b96e44bb6e8",
+      "scope_sources": [
+        "two-source-csv-reconciler",
+        "regression-plan-forge",
+        "dependency-critical-path-mapper"
+      ]
+    },
+    {
+      "path": "examples/reconcile_source_fictional.csv",
+      "sha256": "1bb4527e6b01843492d008e8939269e21ce0e546395c4cdcf3068203c807d896",
+      "scope_sources": [
+        "two-source-csv-reconciler"
+      ]
+    },
+    {
+      "path": "examples/reconcile_destination_fictional.csv",
+      "sha256": "54ae97157d52a191fe92dbf62e7dce62182e5741ddb2b9c5f9b7a4d097fc6d58",
+      "scope_sources": [
+        "two-source-csv-reconciler"
+      ]
+    },
+    {
+      "path": "10_Regression_Plan_Forge.html",
+      "sha256": "7916461316693926d532a1133aeff981dd33dd388bf3ccfe49da7c1878063b27",
+      "scope_sources": [
+        "regression-plan-forge"
+      ]
+    },
+    {
+      "path": "examples/regression_requirements_fictional.csv",
+      "sha256": "aa5bfaab4ce64d66c2033a5b8f2527f92d40aa14eeaafc1b72af9eb9303b82bf",
+      "scope_sources": [
+        "regression-plan-forge"
+      ]
+    },
+    {
+      "path": "11_Project_Dependency_Map.html",
+      "sha256": "1561deb01f0289d2bc242962fcc52c8649d8029e3f155eb9fa251f8888faca44",
+      "scope_sources": [
+        "dependency-critical-path-mapper"
+      ]
+    },
+    {
+      "path": "examples/dependency_tasks_fictional.csv",
+      "sha256": "c225e0b180408752191b054fb9df97742a015660002d985d3a9b47b04f8d0fd3",
+      "scope_sources": [
+        "dependency-critical-path-mapper"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1217 @@
+{
+  "schema": "wit.experimental-collection.manifest.v1",
+  "version": "3.5-public-draft.1",
+  "distribution": "PUBLIC_EXPERIMENTAL_SOURCE",
+  "app_count": 37,
+  "unique_new_product_count": null,
+  "fictional_data_only": true,
+  "real_browser_acceptance_verified": false,
+  "source_files": [
+    {
+      "path": "01_Project_Quote_Builder.html",
+      "bytes": 8087,
+      "sha256": "0049f9fd87874762f6caadd6c8aae0b6cbbab2e26bdd0e6fda197d6ef5676d15"
+    },
+    {
+      "path": "02_Door_Register_Auditor.html",
+      "bytes": 10157,
+      "sha256": "912d27ba3ed43e6df18aad85738d997a0804e48c2835f0882732e87ad835ca3a"
+    },
+    {
+      "path": "03_Publication_Readiness_Gate.html",
+      "bytes": 6407,
+      "sha256": "1f660efc7af4bc14f936e2b9026a92e6af07ac76ac5adf8bae769e09da55fa45"
+    },
+    {
+      "path": "04_Customer_Problem_Intake_Triage.html",
+      "bytes": 20315,
+      "sha256": "86a469ea6ffde37d6c42a4f98a8488225b4fee175a02cfd19ca42ba4399c51f4"
+    },
+    {
+      "path": "05_Evidence_Chain_Exception_Auditor.html",
+      "bytes": 20377,
+      "sha256": "8333963a3747667705bd4e170faf5b3741c77de2a3a5c1c04ea95d7e57b37ac8"
+    },
+    {
+      "path": "06_Change_Order_Scope_Guard.html",
+      "bytes": 23090,
+      "sha256": "d76faa43a29e37b2a89adb35db5966f314bc34601d09c2ce3205725016cbf202"
+    },
+    {
+      "path": "07_Delivery_Acceptance_Handover.html",
+      "bytes": 18636,
+      "sha256": "e0f1b8dec552840080f79c7da52c00dc76111a8b2fdf3aa8dc6f388d8c0b127a"
+    },
+    {
+      "path": "08_Milestone_Billing_Control.html",
+      "bytes": 21772,
+      "sha256": "7b49d889699f8aa1683067e16a5c3ab4c13a4a68a9d293021f0ef0989577a136"
+    },
+    {
+      "path": "09_Two_Source_CSV_Reconciler.html",
+      "bytes": 17036,
+      "sha256": "a2299941a51772aa9478d3a285f9c581faae38696f4f04b8eade5a22f8012c8f"
+    },
+    {
+      "path": "10_Regression_Plan_Forge.html",
+      "bytes": 14839,
+      "sha256": "7916461316693926d532a1133aeff981dd33dd388bf3ccfe49da7c1878063b27"
+    },
+    {
+      "path": "11_Project_Dependency_Map.html",
+      "bytes": 16926,
+      "sha256": "1561deb01f0289d2bc242962fcc52c8649d8029e3f155eb9fa251f8888faca44"
+    },
+    {
+      "path": "12_Callback_Defect_Triage.html",
+      "bytes": 17449,
+      "sha256": "88617b19a939a223fdd29d290545a4af067680237b33f36655ed14474b55b91e"
+    },
+    {
+      "path": "13_Root_Cause_Hypothesis_Lab.html",
+      "bytes": 20235,
+      "sha256": "b487ea8ff0d520c830ab3ade97d8c8e4033b1a75e6eba0191cef5456df6f3452"
+    },
+    {
+      "path": "14_Field_Media_Timeline_Mapper.html",
+      "bytes": 19840,
+      "sha256": "e8de207ed213a813f4ded9e730436ce2cb9c22937bd9aade67e54a31d7f19340"
+    },
+    {
+      "path": "15_Estimate_Actual_Cost_Variance.html",
+      "bytes": 20413,
+      "sha256": "87b41c793517e5d67ac5c8e35cc5fed79f2e53db3e363791604ef3c9b52e88ae"
+    },
+    {
+      "path": "16_Project_Status_Escalation_Digest.html",
+      "bytes": 18457,
+      "sha256": "76c4faefdf9174ecebf03e8680c3826e5ee7e16f44717b2a5bcba07fc9ca64c4"
+    },
+    {
+      "path": "17_Client_Decision_Approval_Trail.html",
+      "bytes": 22877,
+      "sha256": "da2b54522176a46b9d68dcfc897e09b27474aef2b4b7ce98f07f566e8459d959"
+    },
+    {
+      "path": "18_Client_Data_Lifecycle_Planner.html",
+      "bytes": 18121,
+      "sha256": "7e6e4716a27e2194bf0fbdf2efce287dc7cd033d2b9b4ed71f43c454c6d8a63f"
+    },
+    {
+      "path": "19_Evidence_Bundle_Integrity_Check.html",
+      "bytes": 21374,
+      "sha256": "f7531e9de65ea70e076cac6a9e6397a1fd565dfac9a5bd20cf85fafca92bc59a"
+    },
+    {
+      "path": "20_Cash_Exposure_Scenario_Planner.html",
+      "bytes": 19850,
+      "sha256": "94f86f219ff8cf08d5feb1a5c2822310deac367dfc0cba8b9db3ed3bc931daa5"
+    },
+    {
+      "path": "21_Subcontractor_Bid_Scope_Comparator.html",
+      "bytes": 18205,
+      "sha256": "33905bb7deb6d9db105401a6a7c0eb9dc606f0380b8dba6f55529b377e9613c2"
+    },
+    {
+      "path": "22_Site_Visit_Dispatch_Preflight.html",
+      "bytes": 19439,
+      "sha256": "50c1458e1f999d52ee652b0ef187910966e43f99d9e7a8acf53e69e566671ec7"
+    },
+    {
+      "path": "23_Solution_Tradeoff_Review.html",
+      "bytes": 20676,
+      "sha256": "aee239d33d0633a4b623942cab439ac4041402c09f6d9941f38dacbdc784e9d6"
+    },
+    {
+      "path": "24_Stockout_Replenishment_Window.html",
+      "bytes": 19552,
+      "sha256": "797184736a412e1bd08578297800af67c3aa6827185b3a8c1cf99fd96daa52e8"
+    },
+    {
+      "path": "25_Supplier_Credit_Return_Recovery.html",
+      "bytes": 21578,
+      "sha256": "f4150bd39aa5690c2c97cec45599b1685912c161f9ab787bbb530a859ca07a1f"
+    },
+    {
+      "path": "26_Recurring_Service_Coverage_Auditor.html",
+      "bytes": 19700,
+      "sha256": "bb22568e18c496539fe0a7f1f5042e4b405d70e36f695b5b73d531aabb3d00ee"
+    },
+    {
+      "path": "27_Crew_Capacity_Commitment_Guard.html",
+      "bytes": 18820,
+      "sha256": "fbd5683f16d0d31ab6b34d3765b8f6e0530b089172afcab3e96993c7333f09d5"
+    },
+    {
+      "path": "28_Service_Time_Evidence_Reconciler.html",
+      "bytes": 18801,
+      "sha256": "3e2109de03468f7e5f58710b43d7f5020440c954dff9d5fd2abe041485bb7c70"
+    },
+    {
+      "path": "29_PO_Receipt_Invoice_Three_Way_Gate.html",
+      "bytes": 17900,
+      "sha256": "632d46c7035655bfa926f7674e9a9fe49b27b19268428a06c3471adef6bc3d2a"
+    },
+    {
+      "path": "30_CSV_Schema_Migration_Preflight.html",
+      "bytes": 17612,
+      "sha256": "9932544b1ad4d7d123ac9a47530b7e60115feef7530e9bd1716fbe24b05ad9a6"
+    },
+    {
+      "path": "31_Vendor_Credential_Expiry_Preflight.html",
+      "bytes": 18052,
+      "sha256": "19a923f97058fd79c103c8c2173b9bce745800f1b7853b7c2f06b06cf6bf8fe6"
+    },
+    {
+      "path": "32_Renewal_Notice_Window_Guard.html",
+      "bytes": 18013,
+      "sha256": "4f1220bad1fee0dfb085bc3aa4dae902bda14e7f48ffaf2cf2984eae566af821"
+    },
+    {
+      "path": "33_SLA_Response_Evidence_Auditor.html",
+      "bytes": 16226,
+      "sha256": "678612fce78cd50a2f91b29dbf6066a284b89330af475355f6468071e4e41360"
+    },
+    {
+      "path": "34_Software_Seat_Entitlement_Screen.html",
+      "bytes": 17711,
+      "sha256": "e721ec9a724b24ae1d6ad489b087d56b340bd2fcfca102f1cf943d2a0c532fb0"
+    },
+    {
+      "path": "35_Appointment_Travel_Window_Guard.html",
+      "bytes": 16152,
+      "sha256": "7c60f2f2442452895e36cefa0d6ccd05453783cc4d039cac5220421b1f774874"
+    },
+    {
+      "path": "36_Warranty_Claim_Readiness_Preflight.html",
+      "bytes": 15316,
+      "sha256": "f39b0426b2ac68f1db99bd49ffc73a76d04eab4bea0bca9ba5f1c57b9488847e"
+    },
+    {
+      "path": "37_Rental_Equipment_Return_Exposure_Guard.html",
+      "bytes": 18684,
+      "sha256": "a8212ba1bc637194d513fe8233618a30d10b104fea93c7061eaaa17c9f2d462d"
+    },
+    {
+      "path": "AI_HANDOFF_CONTRACT_PRIVATE.md",
+      "bytes": 2804,
+      "sha256": "1f7540b346116323d5260e9b0db676bb3321d5a37a8773056e8b7bbad8877f33"
+    },
+    {
+      "path": "BID_SCOPE_AI_CONTRACT_PRIVATE.md",
+      "bytes": 3016,
+      "sha256": "fa48d419941a7725d189ed64721f9412986411ad3ee3857ec5fa0b85c5a92294"
+    },
+    {
+      "path": "BILLING_AI_CONTRACT_PRIVATE.md",
+      "bytes": 2270,
+      "sha256": "af078d95d2ef1057b559e512a9133c0772f4a4e24aa9958dd272431f7bfb89c1"
+    },
+    {
+      "path": "BUNDLE_INTEGRITY_AI_CONTRACT_PRIVATE.md",
+      "bytes": 4377,
+      "sha256": "a73547c13d7e176abad76b2cb190d6c1a3fadd60e6efcead572008335807fd7b"
+    },
+    {
+      "path": "CALLBACK_AI_CONTRACT_PRIVATE.md",
+      "bytes": 2723,
+      "sha256": "fc767a15009a0869ada93704b22a8104d9f37002efc60b101ef0dc13008c6709"
+    },
+    {
+      "path": "CAPACITY_COMMITMENT_AI_CONTRACT_PRIVATE.md",
+      "bytes": 5358,
+      "sha256": "bddcd04104f755d34254f91612e79b19c8007970693e2717158ff2537b8ee7da"
+    },
+    {
+      "path": "CASH_EXPOSURE_AI_CONTRACT_PRIVATE.md",
+      "bytes": 3446,
+      "sha256": "4363b440cbb19dbc7c5208f8d9243e648ee6d631eaeff1adddeae4708110c1b5"
+    },
+    {
+      "path": "CHANGE_AI_CONTRACT_PRIVATE.md",
+      "bytes": 2081,
+      "sha256": "6d28ea83d22a03b679915d25e0496d6557cc010f99efa4d246175ad3b6fd7a9a"
+    },
+    {
+      "path": "COST_VARIANCE_AI_CONTRACT_PRIVATE.md",
+      "bytes": 2860,
+      "sha256": "5663f21682ccada063d38491f017ea6675d8f500f7c462203b789324ea85e8fe"
+    },
+    {
+      "path": "DATA_LIFECYCLE_AI_CONTRACT_PRIVATE.md",
+      "bytes": 4453,
+      "sha256": "a13c3f737d10ff3ac5a1dba1355ddf8848adbd9987356440f8f5dcce96dd053d"
+    },
+    {
+      "path": "DECISION_TRAIL_AI_CONTRACT_PRIVATE.md",
+      "bytes": 4359,
+      "sha256": "b689f363e181c1ed361cc137779e08e70db475f4f5c46406da15f0b1aae38cf5"
+    },
+    {
+      "path": "DEPENDENCY_AI_CONTRACT_PRIVATE.md",
+      "bytes": 2187,
+      "sha256": "8b3f3d296b96df314e481d3509a9d9e6a78ea82379cb0a2018a341b6860d4c8e"
+    },
+    {
+      "path": "DISPATCH_PREFLIGHT_AI_CONTRACT_PRIVATE.md",
+      "bytes": 3962,
+      "sha256": "d9c4a8eb7633f56471f0c8668ae0dc1050aa86e71c97445fe1fc2fbf5c11a0a2"
+    },
+    {
+      "path": "EVIDENCE_AI_CONTRACT_PRIVATE.md",
+      "bytes": 2207,
+      "sha256": "76de00e9de496ba6554edf4a2656e33e224f253767e7a680276a9ec2a1b7cae7"
+    },
+    {
+      "path": "HANDOVER_AI_CONTRACT_PRIVATE.md",
+      "bytes": 2060,
+      "sha256": "d30935b5881fa45bf512bfc4573f0c413f83f9ec6063785183b6cb43149c8cde"
+    },
+    {
+      "path": "LICENSE_NOTICE.md",
+      "bytes": 1793,
+      "sha256": "40bb1bc1bd8fc9b79ff70e9b82547727d7ad3063b20422dec0b7688d0b6dccdb"
+    },
+    {
+      "path": "MEDIA_TIMELINE_AI_CONTRACT_PRIVATE.md",
+      "bytes": 3675,
+      "sha256": "c81d50fe336dcf60f2f3d13f19bf5440622a475e12ecee464187939bcdeb1b52"
+    },
+    {
+      "path": "MIT_COVERED_FILES.json",
+      "bytes": 2376,
+      "sha256": "df3b799ee6719b252e061ce29b825f1c99f84135767fa5d3bd9ad8f4f44b6435"
+    },
+    {
+      "path": "PROVENANCE.json",
+      "bytes": 1253,
+      "sha256": "7386a039eb42f6ebef10d120e5c0bce09767be7dbf97571fd6e7f25b41a0061e"
+    },
+    {
+      "path": "README_START_HERE.md",
+      "bytes": 5925,
+      "sha256": "b4b2e8b579433afb708446702d2f90fbf442314e0aee326ced3339efe0297426"
+    },
+    {
+      "path": "RECONCILIATION_AI_CONTRACT_PRIVATE.md",
+      "bytes": 2024,
+      "sha256": "fd224362f2eef559d43a3781ecfd76d6c43b615b8c9b048137d94368e65c32a5"
+    },
+    {
+      "path": "RECURRING_COVERAGE_AI_CONTRACT_PRIVATE.md",
+      "bytes": 4109,
+      "sha256": "70ac8eca20033c0c74ea466ec60aaa715b1bfcb258209b1f337f8d16dd4059e7"
+    },
+    {
+      "path": "REGRESSION_AI_CONTRACT_PRIVATE.md",
+      "bytes": 2630,
+      "sha256": "07236fa9b0c12930d47c857abfc4243b06bc070787def2c361114c5875f99594"
+    },
+    {
+      "path": "RENEWAL_NOTICE_AI_CONTRACT_PRIVATE.md",
+      "bytes": 3175,
+      "sha256": "1eaae5555c1de9fdc01e90e47cdc8e965ea7e8e51221d5a943b3469d7d1e58ea"
+    },
+    {
+      "path": "RENTAL_RETURN_AI_CONTRACT_PRIVATE.md",
+      "bytes": 4931,
+      "sha256": "b73a708c455faf87b3f01d1338bb3756df9ce0458d2b7b1c31c99c9d0298e12a"
+    },
+    {
+      "path": "ROOTCAUSE_AI_CONTRACT_PRIVATE.md",
+      "bytes": 2507,
+      "sha256": "73fa28f5ad7ccf426b4e2881eb5e57203398f7d36dd7bb0e2f48ee4acaf03abd"
+    },
+    {
+      "path": "SCHEMA_MIGRATION_AI_CONTRACT_PRIVATE.md",
+      "bytes": 3935,
+      "sha256": "ca58cc784840a4feb6351fff9f8d9170048c8e4908bb7316f0c880bd4fcb19c2"
+    },
+    {
+      "path": "SEAT_ENTITLEMENT_AI_CONTRACT_PRIVATE.md",
+      "bytes": 3411,
+      "sha256": "18f57d36a04a633b89c8410557fffd63bfc82ffd9ad2071a9f5de163df770761"
+    },
+    {
+      "path": "SLA_RESPONSE_AI_CONTRACT_PRIVATE.md",
+      "bytes": 3130,
+      "sha256": "8d757b03caaa0df4fd88da064680153c76685cfb60084df1a4b895d0ad3a5e6d"
+    },
+    {
+      "path": "SOLUTION_TRADEOFF_AI_CONTRACT_PRIVATE.md",
+      "bytes": 3375,
+      "sha256": "af60b92a7982a3129c6511f52c394117254a1bd80d2eb67d1895c41ca798d052"
+    },
+    {
+      "path": "STATUS_AI_CONTRACT_PRIVATE.md",
+      "bytes": 2977,
+      "sha256": "5081b45ff9643db46650ba42161afd1a224db9348128a0543f773dc3d829be6d"
+    },
+    {
+      "path": "STOCKOUT_WINDOW_AI_CONTRACT_PRIVATE.md",
+      "bytes": 3950,
+      "sha256": "2df2829b774e9130279b8121afcfb98f632d16b6a5dfeb634ca3ea04774d70fd"
+    },
+    {
+      "path": "SUPPLIER_RECOVERY_AI_CONTRACT_PRIVATE.md",
+      "bytes": 4101,
+      "sha256": "86f0a723ec3bfbb17e3247785da47e2b22c125e4ca889d6ba14b7967944e52f3"
+    },
+    {
+      "path": "THREE_WAY_AI_CONTRACT_PRIVATE.md",
+      "bytes": 2589,
+      "sha256": "889bbffc52d38c90f770806f9e955707191e8c3aa962b2592eac911af122534e"
+    },
+    {
+      "path": "TIME_EVIDENCE_AI_CONTRACT_PRIVATE.md",
+      "bytes": 6449,
+      "sha256": "f06f182df10a026105de792c452a176ff4c3596fffac9d27ebb14c69228ed977"
+    },
+    {
+      "path": "TOOL_CROSSWALK.json",
+      "bytes": 28856,
+      "sha256": "625a23c1fa2ac7c957b016a9313a4071695ce1a1c2966e082fe7bb75c53cd9a0"
+    },
+    {
+      "path": "TRAVEL_WINDOW_AI_CONTRACT_PRIVATE.md",
+      "bytes": 4264,
+      "sha256": "8dad141e8c101c40d2c475e8b8b9637c21c010ee4649aaa2935804214eaacc02"
+    },
+    {
+      "path": "VALIDATION.md",
+      "bytes": 3616,
+      "sha256": "4a9d0fd7b9c3d5a62fa4c371c4f22ff9e3330ddff4e8ddecfae4a06e76d7a107"
+    },
+    {
+      "path": "VENDOR_CREDENTIAL_AI_CONTRACT_PRIVATE.md",
+      "bytes": 4295,
+      "sha256": "cfa2d593118b392052d59812831a23314c4c637575b6dc08f23dea31e21542b6"
+    },
+    {
+      "path": "WARRANTY_CLAIM_AI_CONTRACT_PRIVATE.md",
+      "bytes": 3993,
+      "sha256": "93aef6a7aafccf8ba214de3d6ebce8345b15a58d8c3fb7c59d171a1ebe235856"
+    },
+    {
+      "path": "common.js",
+      "bytes": 2124,
+      "sha256": "13c1bdd0d254587433bc6be7fe3065d65d572ad25e08dfb6ca9da2cd6860cb4c"
+    },
+    {
+      "path": "examples/bid_offers_complete_fictional.csv",
+      "bytes": 396,
+      "sha256": "2c36a15017a6578dcd47cb8654f404709d170cabf570bbfb6b21a612524da85a"
+    },
+    {
+      "path": "examples/bid_offers_gap_fictional.csv",
+      "bytes": 408,
+      "sha256": "682f1bc068aa38913c48a296c014fc7d35187dde78c2e8986e72d16279fe9325"
+    },
+    {
+      "path": "examples/bid_requirements_fictional.csv",
+      "bytes": 161,
+      "sha256": "db9eeb7845e1a81d73b8f55a835aab77af6721e0e9acdabb2f8f156f8298f5ad"
+    },
+    {
+      "path": "examples/billing_problem_fictional.csv",
+      "bytes": 254,
+      "sha256": "c6ba85481838e12350aef91c91b2a82f6a81d4490bbb0d3212bf1cd9cc5d7f26"
+    },
+    {
+      "path": "examples/billing_reconciled_fictional.csv",
+      "bytes": 293,
+      "sha256": "fb23e94bc7ab11c2280ad1d8530e850d7156916a9c09f808129b3d404baf05be"
+    },
+    {
+      "path": "examples/bundle_extra_gamma_fictional.md",
+      "bytes": 16,
+      "sha256": "2669b6704769393a72f6041334b89f53b5672e196123fad1465af7495fe3e2dc"
+    },
+    {
+      "path": "examples/bundle_manifest_matching_fictional.csv",
+      "bytes": 224,
+      "sha256": "e3bea38b6628f74b73e72915bd1511a0e50c23bdb2e7f4e1fca335f341b83256"
+    },
+    {
+      "path": "examples/bundle_manifest_tampered_fictional.csv",
+      "bytes": 321,
+      "sha256": "a77e37feb7e3a41c10cc74db71fc55c29a589d5d8940a9e9c5e76480d3839f99"
+    },
+    {
+      "path": "examples/callback_clean_fictional.csv",
+      "bytes": 258,
+      "sha256": "71f2689ecadbc55630f49b3ea368f9be333bf1348114f1a697042ae045bc3aef"
+    },
+    {
+      "path": "examples/callback_mixed_fictional.csv",
+      "bytes": 750,
+      "sha256": "cd15e1028a9e932d9de72bf145e2ad9ca16d693ac41efb090151fdc9c48e68e7"
+    },
+    {
+      "path": "examples/capacity_guard_capacity_clean_fictional.csv",
+      "bytes": 164,
+      "sha256": "9e19453b5ec924e38cc62f592aa32cf8053682aca7fc5b295a6a89e455d7f1cd"
+    },
+    {
+      "path": "examples/capacity_guard_capacity_risk_fictional.csv",
+      "bytes": 300,
+      "sha256": "4ffb8b216444114e2721ee60c2328eeaa801fac66b59acbe1712480ee61f04f2"
+    },
+    {
+      "path": "examples/capacity_guard_commitments_clean_fictional.csv",
+      "bytes": 233,
+      "sha256": "af2831dad944401ba428cb4fefe307eec036bffbca02838ff9fc70446e283983"
+    },
+    {
+      "path": "examples/capacity_guard_commitments_risk_fictional.csv",
+      "bytes": 739,
+      "sha256": "53591fc9407373d6ead16da34810260ab921a0d6393fbcc09698d31436ff7939"
+    },
+    {
+      "path": "examples/cash_exposure_funded_fictional.csv",
+      "bytes": 258,
+      "sha256": "6340d67ea0003ae6c9e5e74300c0cf89347258d8f1b07284bf5c4873cffd8b37"
+    },
+    {
+      "path": "examples/cash_exposure_risk_fictional.csv",
+      "bytes": 277,
+      "sha256": "0a0c403f1a3d5357bfe03ec255b4ca36fcc712c9c1a98f7ac22f78009f654a09"
+    },
+    {
+      "path": "examples/change_baseline_fictional.csv",
+      "bytes": 267,
+      "sha256": "4d0c7c8db501d51aaf2caa7b1399673561e00d92f1331e2b43d877f6fdf3caf3"
+    },
+    {
+      "path": "examples/change_requests_fictional.csv",
+      "bytes": 347,
+      "sha256": "2a7ffbcc687a6956b025ddc285be4d625503f3f40d622ca63e49aeeb7a935bff"
+    },
+    {
+      "path": "examples/cost_variance_at_risk_fictional.csv",
+      "bytes": 511,
+      "sha256": "ae1cf941bd0c281ca49f374e44826d8b5f88cac7c25d9375dee118ac54b4870e"
+    },
+    {
+      "path": "examples/cost_variance_clean_fictional.csv",
+      "bytes": 377,
+      "sha256": "69dffc43688e217ef3a8a33afe5db3d28b42c11000260910ca883c2b6c6c9dfc"
+    },
+    {
+      "path": "examples/counts_beta.csv",
+      "bytes": 17,
+      "sha256": "fffb479e2796e4d57eeca05173fd041c706941696fd927a3ad73ef70273b0497"
+    },
+    {
+      "path": "examples/data_lifecycle_at_risk_fictional.csv",
+      "bytes": 520,
+      "sha256": "945d8d19ac269046ee3ca36fc4142485e8cecb2c152dddc184e0af10a043deec"
+    },
+    {
+      "path": "examples/data_lifecycle_minimal_fictional.csv",
+      "bytes": 331,
+      "sha256": "c151d02efa0f97d5e74b48beef39bc8489f51691e585585351b9d0a1d0598f64"
+    },
+    {
+      "path": "examples/decision_events_coherent_fictional.csv",
+      "bytes": 179,
+      "sha256": "a052b9651ab6e2f2fabbc803b34ad885fa565ef11c730482843e59fca8a5e8a4"
+    },
+    {
+      "path": "examples/decision_events_conflicts_fictional.csv",
+      "bytes": 450,
+      "sha256": "076a980367aec14db540f4d11bab02cf8f1f0871f4363d5ab9e6aa0a58f79c5b"
+    },
+    {
+      "path": "examples/decision_requests_coherent_fictional.csv",
+      "bytes": 334,
+      "sha256": "cecf40b88c877d7e6352b845267d03f6c831a9b31f370643da8562d9d22ee75f"
+    },
+    {
+      "path": "examples/decision_requests_conflicts_fictional.csv",
+      "bytes": 433,
+      "sha256": "63e3528f3d7f6d3c119b9f36d532dbaa10624bbcdb0995dcbfc7cfde367c2040"
+    },
+    {
+      "path": "examples/dependency_tasks_fictional.csv",
+      "bytes": 473,
+      "sha256": "c225e0b180408752191b054fb9df97742a015660002d985d3a9b47b04f8d0fd3"
+    },
+    {
+      "path": "examples/dispatch_clean_fictional.csv",
+      "bytes": 533,
+      "sha256": "a9694907935b50f9c5e4880bf294bf6b99194b2c8f2a274157aa0066307e6007"
+    },
+    {
+      "path": "examples/dispatch_risk_fictional.csv",
+      "bytes": 617,
+      "sha256": "27412f50a9c42a28f5db80c3a3d5e8b42544de252378b6fe461f7d2b9cfdbf02"
+    },
+    {
+      "path": "examples/door_register_fictional.csv",
+      "bytes": 456,
+      "sha256": "62308af498eb431f9a1689d172535ec0925d8b23a5a92ba3ae0599d006cc44f2"
+    },
+    {
+      "path": "examples/evidence_index_fictional.csv",
+      "bytes": 362,
+      "sha256": "9a7b06a673085af7ef91a68bcf4ef48a178a5fe6357b5d0863d63aeaf59b1cf2"
+    },
+    {
+      "path": "examples/evidence_requirements_fictional.csv",
+      "bytes": 426,
+      "sha256": "68da955bd171cb239f130a15a5d964beb2bc8496ec30d294e11ef5f0faa36f0c"
+    },
+    {
+      "path": "examples/field_markers_fictional.csv",
+      "bytes": 263,
+      "sha256": "cbed9842f8eec61af1d327db820ca1d0636323b8791ed1091409df2db59a138f"
+    },
+    {
+      "path": "examples/field_photos_fictional.csv",
+      "bytes": 284,
+      "sha256": "32d4b7258a4ba6f060f6b00f04ea92104d3cb3453e6ea273b4a65f2b2b5430db"
+    },
+    {
+      "path": "examples/field_recordings_fictional.csv",
+      "bytes": 159,
+      "sha256": "355a0bda132a6789465ea466175d88388012466a95b1b521edbc2d4296399932"
+    },
+    {
+      "path": "examples/handover_clean_fictional.csv",
+      "bytes": 398,
+      "sha256": "f0c16ea00a86e0162d1a76ba7f4d7810e26772b2cdebdd0777c60e422e6ea727"
+    },
+    {
+      "path": "examples/handover_problem_fictional.csv",
+      "bytes": 566,
+      "sha256": "6f7d8f437aed8eaac87371ef96db0a7cff9115d5d36e0ad3241bb1f9a9d4f731"
+    },
+    {
+      "path": "examples/inventory_risk_fictional.csv",
+      "bytes": 655,
+      "sha256": "f00d17d2ceb91ab3baf0c881f80bc73665077ad587a24d8cca21280f56066d26"
+    },
+    {
+      "path": "examples/inventory_steady_fictional.csv",
+      "bytes": 366,
+      "sha256": "7e96db16f0ae6cb579d00393785690930517fc2a3f5e24ef8e648284ac97e975"
+    },
+    {
+      "path": "examples/proof_alpha.txt",
+      "bytes": 47,
+      "sha256": "58c67cc9468650c4f4273eac062d0aa4c94f33785e02cb8f0747a9a5aa37fb2e"
+    },
+    {
+      "path": "examples/reconcile_destination_fictional.csv",
+      "bytes": 98,
+      "sha256": "54ae97157d52a191fe92dbf62e7dce62182e5741ddb2b9c5f9b7a4d097fc6d58"
+    },
+    {
+      "path": "examples/reconcile_source_fictional.csv",
+      "bytes": 117,
+      "sha256": "1bb4527e6b01843492d008e8939269e21ce0e546395c4cdcf3068203c807d896"
+    },
+    {
+      "path": "examples/recurring_obligations_clean_fictional.csv",
+      "bytes": 277,
+      "sha256": "976905d3da9a0d8f653f89cc0c5620a9cade283719aa5f103ee997b5f5bd00e4"
+    },
+    {
+      "path": "examples/recurring_obligations_risk_fictional.csv",
+      "bytes": 426,
+      "sha256": "24c4e133495afcd22f54ee93d697fda3c216281784b189135a1163bdda7dc174"
+    },
+    {
+      "path": "examples/recurring_visits_clean_fictional.csv",
+      "bytes": 140,
+      "sha256": "d3e60f713426903b9b2e0d830171452187236ab95cb08c6e119d60127bb0e1b0"
+    },
+    {
+      "path": "examples/recurring_visits_risk_fictional.csv",
+      "bytes": 350,
+      "sha256": "4c0b145e9ab71d370c6db295506340278564c3b2a14652655ec47e9eee56ecc2"
+    },
+    {
+      "path": "examples/regression_requirements_fictional.csv",
+      "bytes": 694,
+      "sha256": "aa5bfaab4ce64d66c2033a5b8f2527f92d40aa14eeaafc1b72af9eb9303b82bf"
+    },
+    {
+      "path": "examples/renewal_guard_clean_contracts_fictional.csv",
+      "bytes": 315,
+      "sha256": "507da90237619617dce04dac9d28f7ebdb4d74612f03bad84a1a630160af654d"
+    },
+    {
+      "path": "examples/renewal_guard_clean_notices_fictional.csv",
+      "bytes": 94,
+      "sha256": "f8c85954a99e5d7630710522a5d65b721e8697b3238ba4be11bba03ac1a7bb56"
+    },
+    {
+      "path": "examples/renewal_guard_risk_contracts_fictional.csv",
+      "bytes": 463,
+      "sha256": "e148dc5382fcd9c3680231e02d03f94c6ddd966188d132e0095e820ec7dda143"
+    },
+    {
+      "path": "examples/renewal_guard_risk_notices_fictional.csv",
+      "bytes": 225,
+      "sha256": "ad155e9b60c092ec6587072c7bc03775827fe1d17a1ad575bfd611f512ff854e"
+    },
+    {
+      "path": "examples/rental_return_clean_events_fictional.csv",
+      "bytes": 447,
+      "sha256": "60ea5b1e2f3335a2540fae46059c447e42890c2f708e09d0b9d28cbab416648b"
+    },
+    {
+      "path": "examples/rental_return_clean_rentals_fictional.csv",
+      "bytes": 249,
+      "sha256": "256fba83d679a96b6e1b6446bc1a93dd87b3426eb465e914449ba92ecdd7cce8"
+    },
+    {
+      "path": "examples/rental_return_risk_events_fictional.csv",
+      "bytes": 678,
+      "sha256": "2c3d735361d9d3350a67cc91d37b888e3cd987b98c83f756b171f887203968cb"
+    },
+    {
+      "path": "examples/rental_return_risk_rentals_fictional.csv",
+      "bytes": 324,
+      "sha256": "3e3b229dcfaf41547ca1223cfcab66306de481d1afbbc94e11e614e154502af3"
+    },
+    {
+      "path": "examples/rootcause_mixed_fictional.csv",
+      "bytes": 1051,
+      "sha256": "05ac2f31e5a73bf18e42be9c49a4832d8df8fb60464885a2fc95e401fed8a5d2"
+    },
+    {
+      "path": "examples/rootcause_testable_fictional.csv",
+      "bytes": 359,
+      "sha256": "b7a39fc363b4f802d080b9009463af9dc0b05ef54171bacafa42c02708878896"
+    },
+    {
+      "path": "examples/schema_migration_coherent_mapping_fictional.csv",
+      "bytes": 214,
+      "sha256": "032ccc4fda51fd2e8319642df602d3ff08fc7c532466f9e1d97ffbf54ad7e8d8"
+    },
+    {
+      "path": "examples/schema_migration_coherent_source_fictional.csv",
+      "bytes": 172,
+      "sha256": "1f1c3011162bdde116880b5cf2503b69c087468e9e8dd39c3bb020bcb119ac7f"
+    },
+    {
+      "path": "examples/schema_migration_coherent_target_fictional.csv",
+      "bytes": 175,
+      "sha256": "1b0526cf3e3053db56301bd5659844a3eb07b3c6b7a3f76026c29b7526a81035"
+    },
+    {
+      "path": "examples/schema_migration_risk_mapping_fictional.csv",
+      "bytes": 379,
+      "sha256": "fe99f6fa2610528dab5b1c39dcd9f784b904df7e7fe23bb2543d2c949c4ddb82"
+    },
+    {
+      "path": "examples/schema_migration_risk_source_fictional.csv",
+      "bytes": 226,
+      "sha256": "3fc00182cda6c8a9b72e974d71ed9c4c7c757fddf9da3ae2efb4a396999f2a82"
+    },
+    {
+      "path": "examples/schema_migration_risk_target_fictional.csv",
+      "bytes": 213,
+      "sha256": "859682bc50595bf61b07595df0d66c2a2fd93d007b28299c27fc416946ccd3ad"
+    },
+    {
+      "path": "examples/seat_assignments_clean_fictional.csv",
+      "bytes": 205,
+      "sha256": "33ae6b31858746f5e8967644cd1ec6cb61b7033ab820a4bb4dac6de6493b0ee1"
+    },
+    {
+      "path": "examples/seat_assignments_warning_fictional.csv",
+      "bytes": 343,
+      "sha256": "7bcc0ac1c8f8287091b27e9b5c1262b7a5ba5bdbd1d6bf750168eab7926bea45"
+    },
+    {
+      "path": "examples/seat_plans_clean_fictional.csv",
+      "bytes": 107,
+      "sha256": "53abc076c580101e69c7785504d6753b5360124807570df3f559879c7919dc6c"
+    },
+    {
+      "path": "examples/seat_plans_warning_fictional.csv",
+      "bytes": 141,
+      "sha256": "ea4a54e6454801a172dd05699c17e189635fb14c17e6eacaa9c2f5c9f9e23ee7"
+    },
+    {
+      "path": "examples/seat_usage_clean_fictional.csv",
+      "bytes": 139,
+      "sha256": "a59583f376fa0e8c8e47522f925f99d90babfd1c00f200d1c4c553425ab31629"
+    },
+    {
+      "path": "examples/seat_usage_warning_fictional.csv",
+      "bytes": 270,
+      "sha256": "ce968e8ea8db9a7262b9650f6c9623bf7e9cd781ca455591b51a5d6c577c2f89"
+    },
+    {
+      "path": "examples/sla_response_clean_responses_fictional.csv",
+      "bytes": 222,
+      "sha256": "dee2bc0c620ece70162ce3bcf68715e93deb90c403caf415351b8d6dd940606e"
+    },
+    {
+      "path": "examples/sla_response_clean_tickets_fictional.csv",
+      "bytes": 262,
+      "sha256": "657f71aa88296cfcf039416164e1fdbab2977c887ccf710a328ff15ca0fe255c"
+    },
+    {
+      "path": "examples/sla_response_risk_responses_fictional.csv",
+      "bytes": 440,
+      "sha256": "8dc676f600803d2c4816968d9bab5adfd41f88d47cbf4f75c7779eff8b97a81a"
+    },
+    {
+      "path": "examples/sla_response_risk_tickets_fictional.csv",
+      "bytes": 437,
+      "sha256": "7091afa02e1bf5921a235d465d53fc77373bf0179c524f1aa48ef79adfbc0d12"
+    },
+    {
+      "path": "examples/solution_assessments_complete_fictional.csv",
+      "bytes": 344,
+      "sha256": "9ca5cc7e39c450000d12dcf9f3dce22229b6155cb9c5f8ff6254fb50177ae7ea"
+    },
+    {
+      "path": "examples/solution_assessments_mixed_fictional.csv",
+      "bytes": 331,
+      "sha256": "9e2ae1023489ea91b9a01367122b7883fed7d8cb486a2bcee7cad001c9fb68a9"
+    },
+    {
+      "path": "examples/solution_criteria_fictional.csv",
+      "bytes": 202,
+      "sha256": "8023691feeef73131f86b725a54b00dcd0c793a3a779ef8edb751cc2d5db9c4d"
+    },
+    {
+      "path": "examples/solution_options_complete_fictional.csv",
+      "bytes": 246,
+      "sha256": "b09470d1b1f5fcbf21986045fe354120cd263f31da2fa9f7e5db04603cac675a"
+    },
+    {
+      "path": "examples/solution_options_mixed_fictional.csv",
+      "bytes": 218,
+      "sha256": "2ea0523cc83657fab6fbe990f4542f619739d5e35a56709ff1b56947a8f21f79"
+    },
+    {
+      "path": "examples/status_digest_mixed_fictional.csv",
+      "bytes": 539,
+      "sha256": "073843bd3caf0c9c9ae9036f04f9b466749ee4d0f845f1264d8f52b344be351f"
+    },
+    {
+      "path": "examples/status_digest_reviewed_fictional.csv",
+      "bytes": 447,
+      "sha256": "ea9d648d8c9c85ecefb93f7eda03c250c0fa80890d93e7e04232918fa31ee6ec"
+    },
+    {
+      "path": "examples/supplier_recovery_at_risk_fictional.csv",
+      "bytes": 815,
+      "sha256": "be06f2d48e3b5c926674c3544baab4c386e8aaa834ac817bfa3c02ed3f959bad"
+    },
+    {
+      "path": "examples/supplier_recovery_reconciled_fictional.csv",
+      "bytes": 471,
+      "sha256": "556fce771061f9f88758bdf68c4328c9d963bf2d82cd1524cf22706f6e7fad08"
+    },
+    {
+      "path": "examples/three_way_aligned_invoices_fictional.csv",
+      "bytes": 180,
+      "sha256": "4c2cf2cd240a5bc07f1bfc707aec1fddc0196ccedb885ec47d4ee5fd981e4b20"
+    },
+    {
+      "path": "examples/three_way_aligned_po_fictional.csv",
+      "bytes": 153,
+      "sha256": "2cbe2a5b37c525ee6840a6f1e04d19788a759db1ab4f3517f34b0a4521188917"
+    },
+    {
+      "path": "examples/three_way_aligned_receipts_fictional.csv",
+      "bytes": 149,
+      "sha256": "55a214f22380bb9bafedb95359a6a6c617f09d826d92b58b9b8fc809c011f1be"
+    },
+    {
+      "path": "examples/three_way_conflict_invoices_fictional.csv",
+      "bytes": 260,
+      "sha256": "a85351b0ab57da0caef07408b9d8eaf67d9abd7b1230d40c1416694ee0087e5b"
+    },
+    {
+      "path": "examples/three_way_conflict_po_fictional.csv",
+      "bytes": 184,
+      "sha256": "0ec7257588428b96d5ec888c9b17e5f9135cb193d9b91f1b454daed6be99ede0"
+    },
+    {
+      "path": "examples/three_way_conflict_receipts_fictional.csv",
+      "bytes": 277,
+      "sha256": "f485a91743b526132133028fa41f4296699df5e3e765b210a76539bf0e5e640d"
+    },
+    {
+      "path": "examples/time_evidence_aligned_claims_fictional.csv",
+      "bytes": 262,
+      "sha256": "a194936f472e1e3ff9ba9d6ff9bc0fb1856a23f81b131ea00aa83f840655985a"
+    },
+    {
+      "path": "examples/time_evidence_aligned_segments_fictional.csv",
+      "bytes": 361,
+      "sha256": "ebcd80335969afc0564f23dde0e1963178cddd0365df49ce89eadcb9e24d10b1"
+    },
+    {
+      "path": "examples/time_evidence_conflicts_claims_fictional.csv",
+      "bytes": 408,
+      "sha256": "63d14d38fc8f1b559b644280531f980e4a9347feb89cee5fba4e71af9a2aac94"
+    },
+    {
+      "path": "examples/time_evidence_conflicts_segments_fictional.csv",
+      "bytes": 559,
+      "sha256": "c08338b54aba4bd5c8fc5687b99fe8c2704b8f3f6b17be252e2cf7c773228482"
+    },
+    {
+      "path": "examples/travel_guard_legs_coherent_fictional.csv",
+      "bytes": 119,
+      "sha256": "79be39c6ff8fcb4119466e8c5a71e7c973f643d6330e83fb209d5e8d91dab025"
+    },
+    {
+      "path": "examples/travel_guard_legs_risk_fictional.csv",
+      "bytes": 231,
+      "sha256": "8b617e5267dfd402e1b19d475c387656ba97e7e24e877c199089ab59964001e1"
+    },
+    {
+      "path": "examples/travel_guard_visits_coherent_fictional.csv",
+      "bytes": 390,
+      "sha256": "34270a5b9d4f9a7e3ca1b00264ad0b840569272dd5b263c22ae2deb04df55a87"
+    },
+    {
+      "path": "examples/travel_guard_visits_risk_fictional.csv",
+      "bytes": 583,
+      "sha256": "127b63084f7ee9786e4afadb721e87c486162952ef31449bc132ee07032d3c17"
+    },
+    {
+      "path": "examples/vendor_credential_clean_assignments_fictional.csv",
+      "bytes": 132,
+      "sha256": "ef998fc913814fb12f8ce8676fea09c4910f7ce3e372ef3a6c5d1f625a9d52ba"
+    },
+    {
+      "path": "examples/vendor_credential_clean_declarations_fictional.csv",
+      "bytes": 143,
+      "sha256": "878dff636ab7d5c52c591cc943729bda4150d69e486b4b56f96315859c4edbfb"
+    },
+    {
+      "path": "examples/vendor_credential_clean_requirements_fictional.csv",
+      "bytes": 157,
+      "sha256": "60d43f2bc84368570b0a946d503bf1ff37f2a97b396070ab74bfe5a7e908da23"
+    },
+    {
+      "path": "examples/vendor_credential_risk_assignments_fictional.csv",
+      "bytes": 247,
+      "sha256": "ac627e60b5b5e4525f522c8c2044f54ca6eca2d876f6da6636d44f6ae562cb10"
+    },
+    {
+      "path": "examples/vendor_credential_risk_declarations_fictional.csv",
+      "bytes": 340,
+      "sha256": "1d95bb9d621175261d377937ce97700cba90810a5f9a18a5b1312ee852b304e7"
+    },
+    {
+      "path": "examples/vendor_credential_risk_requirements_fictional.csv",
+      "bytes": 156,
+      "sha256": "921a42804251c888d1912fa67f28b81ea46d89af849fc1cc8936f84627b9eddb"
+    },
+    {
+      "path": "examples/warranty_assets_clean_fictional.csv",
+      "bytes": 218,
+      "sha256": "44af1290a9cc9784e69ecaa3a6d8cb8e207f18480f6845fd7a33e707026be3f0"
+    },
+    {
+      "path": "examples/warranty_assets_risk_fictional.csv",
+      "bytes": 271,
+      "sha256": "46f61e310264e2a8ff7b4ce86613a6e83208333f9586b12b53e435fbc1a2615f"
+    },
+    {
+      "path": "examples/warranty_incidents_clean_fictional.csv",
+      "bytes": 253,
+      "sha256": "80bbb86a3eb40f64c32a5d0bace7e353372f2fc8f204c7c42fbfb54dcbe462b1"
+    },
+    {
+      "path": "examples/warranty_incidents_risk_fictional.csv",
+      "bytes": 574,
+      "sha256": "81feada3dec71d07ee776b099426833a28c0de885b8530a109d2ce40ce8988b8"
+    },
+    {
+      "path": "index.html",
+      "bytes": 4928,
+      "sha256": "96ff515c84c89cd46f4cc292754777b70ab55935ce9c42e49bce0927162a9e41"
+    },
+    {
+      "path": "licenses/dependency-critical-path-mapper/LICENSE",
+      "bytes": 1065,
+      "sha256": "7f91c512ba41e11fc68fb65c5023e632e3c13708e9dc2376df8fa8001111a876"
+    },
+    {
+      "path": "licenses/dependency-critical-path-mapper/LICENSE_SCOPE.md",
+      "bytes": 1179,
+      "sha256": "89d3bc38e74363a864bc1eb7d962ccf349607e0ba90b9f05f4305ddcfbceacaa"
+    },
+    {
+      "path": "licenses/dependency-critical-path-mapper/PROVENANCE.json",
+      "bytes": 4863,
+      "sha256": "f862da59a3003b6972e74b33096103a62fca992048922b7b8f95c7cb0468f1de"
+    },
+    {
+      "path": "licenses/regression-plan-forge/LICENSE",
+      "bytes": 1065,
+      "sha256": "7f91c512ba41e11fc68fb65c5023e632e3c13708e9dc2376df8fa8001111a876"
+    },
+    {
+      "path": "licenses/regression-plan-forge/LICENSE_SCOPE.md",
+      "bytes": 1179,
+      "sha256": "89d3bc38e74363a864bc1eb7d962ccf349607e0ba90b9f05f4305ddcfbceacaa"
+    },
+    {
+      "path": "licenses/regression-plan-forge/PROVENANCE.json",
+      "bytes": 4748,
+      "sha256": "62abea430f92ac8ccd10f5b87c0b44f30045f06bb056b8caa234502cfc800a97"
+    },
+    {
+      "path": "licenses/two-source-csv-reconciler/LICENSE",
+      "bytes": 1065,
+      "sha256": "7f91c512ba41e11fc68fb65c5023e632e3c13708e9dc2376df8fa8001111a876"
+    },
+    {
+      "path": "licenses/two-source-csv-reconciler/LICENSE_SCOPE.md",
+      "bytes": 1179,
+      "sha256": "89d3bc38e74363a864bc1eb7d962ccf349607e0ba90b9f05f4305ddcfbceacaa"
+    },
+    {
+      "path": "licenses/two-source-csv-reconciler/PROVENANCE.json",
+      "bytes": 4963,
+      "sha256": "f00eed68ffded76ed83a34eb77ea71ba59e23b6c68c439e9eb08099d9bd4b85a"
+    },
+    {
+      "path": "styles.css",
+      "bytes": 3314,
+      "sha256": "b22ae2fb77436d425e1616224f1f153aa45f7be5be759b5020177b96e44bb6e8"
+    },
+    {
+      "path": "tests/application_regressions.cjs",
+      "bytes": 8427,
+      "sha256": "a4a14595a2e2a3b303ae0d2e58956e1632c31bca8a93f01818a2cf050e3232ed"
+    },
+    {
+      "path": "tests/bid_scope_browser_checks.py",
+      "bytes": 13031,
+      "sha256": "b553732d0e552f579d8baeaeff6239a18f06e9fb5a152133c9735d7ac2cae16a"
+    },
+    {
+      "path": "tests/billing_browser_checks.py",
+      "bytes": 11524,
+      "sha256": "2bd76ae8fe4bad1d0bf217e6388d353d420baa88917f8fa16857566348603c91"
+    },
+    {
+      "path": "tests/browser_checks.py",
+      "bytes": 5664,
+      "sha256": "58b1e97888476ebfa4a25fd7bc71b6163c96a95433dac776cd7909fc7e5eec7e"
+    },
+    {
+      "path": "tests/bundle_integrity_browser_checks.py",
+      "bytes": 15393,
+      "sha256": "4e0ac0b896ece9ffc2f7ccbe4545ed59c18b10014a9d4f389f28ecd8fe6e3fa5"
+    },
+    {
+      "path": "tests/callback_browser_checks.py",
+      "bytes": 12719,
+      "sha256": "6079207e1e62ef558c5d2e778a3e9f92f28c55a17754196ec257c61c19acba7d"
+    },
+    {
+      "path": "tests/capacity_commitment_browser_checks.py",
+      "bytes": 14374,
+      "sha256": "90f0e971008bb7dbb3018ad06a76e66126f90f9e364ff2d7330649e5492c1601"
+    },
+    {
+      "path": "tests/cash_exposure_browser_checks.py",
+      "bytes": 12206,
+      "sha256": "358a5fc196d3f927be3d6041840ef8f8223310f7c8fdd15a1f3c4ada1dd471c5"
+    },
+    {
+      "path": "tests/change_browser_checks.py",
+      "bytes": 11861,
+      "sha256": "a9dad0681c78c190ef392bce721aa28c86aa0cd990a9361a9272d2c2c8143395"
+    },
+    {
+      "path": "tests/collection_smoke.cjs",
+      "bytes": 3852,
+      "sha256": "cba83e6eb178a3b92405d179240f8d544450e0eff836d96f565bb3d8771a158a"
+    },
+    {
+      "path": "tests/collection_smoke_results.json",
+      "bytes": 21949,
+      "sha256": "9e1b9572c7ff02f2fd830783c6201c82f0e254bed55b7fb1cb5a5e37f8fbcccd"
+    },
+    {
+      "path": "tests/cost_variance_browser_checks.py",
+      "bytes": 13869,
+      "sha256": "8cc524f7e1ccb57b44875fdaa3e7a4329e4fb36c54009dcbc16e0ed0e39dd285"
+    },
+    {
+      "path": "tests/csv_regressions.cjs",
+      "bytes": 5886,
+      "sha256": "2d459540bf897424af4e20add8d5b1d0aa132ca3d8f0697511556ebaa236b59b"
+    },
+    {
+      "path": "tests/data_lifecycle_browser_checks.py",
+      "bytes": 14548,
+      "sha256": "a806f32ddbb603202cebb9bd784ca5ab0173f60bedda95afb6879d678d9535ae"
+    },
+    {
+      "path": "tests/decision_trail_browser_checks.py",
+      "bytes": 18149,
+      "sha256": "db19b9247f602173351aeff47a2cd64ff6f0c33f5d1c41b6796545f53f7328f0"
+    },
+    {
+      "path": "tests/dependency_browser_checks.py",
+      "bytes": 11699,
+      "sha256": "7ce11a388c1fcceea36cef75ed8209e29629f74775a3bb03f72985b396e7d955"
+    },
+    {
+      "path": "tests/dispatch_preflight_browser_checks.py",
+      "bytes": 12597,
+      "sha256": "b7ed9ccfeb40d2de4153cd9ad946bdfbe29de17a9059cef81744868c25b0f06a"
+    },
+    {
+      "path": "tests/evidence_browser_checks.py",
+      "bytes": 9075,
+      "sha256": "fb8b0c5550ce51f9c55dfbdb059bbc2a210c915a39271d4860f8f26ffcbc86a8"
+    },
+    {
+      "path": "tests/fixture_syntax.cjs",
+      "bytes": 1205,
+      "sha256": "1b180ed517b9369a7fafd5d77279f2e62fdd32e58b12850139c8accc091f2262"
+    },
+    {
+      "path": "tests/fixture_syntax_results.json",
+      "bytes": 12048,
+      "sha256": "ac89ea50a7fefe3b531b980796ba16f962f245a0cf1aea10aff6ac18090bcd4e"
+    },
+    {
+      "path": "tests/handover_browser_checks.py",
+      "bytes": 11456,
+      "sha256": "a2029e757fe5977acee7280a09ef456e0501ff5432fc67a711a08fd945876c6d"
+    },
+    {
+      "path": "tests/media_timeline_browser_checks.py",
+      "bytes": 13340,
+      "sha256": "f0b9d3a001402e240068f42a0b1f185febb65b832f62540e67c5597f4f134f0a"
+    },
+    {
+      "path": "tests/python_syntax_results.json",
+      "bytes": 3382,
+      "sha256": "5c6f4265b5e209508d31e6f4a70ffcbac88deefc690a8d02732f7b5b5016431d"
+    },
+    {
+      "path": "tests/recon_browser_checks.py",
+      "bytes": 9721,
+      "sha256": "4f15b75445bf68b95a8e723aa2f90c98e59d7b92731044d4f8fce1f6f852a35f"
+    },
+    {
+      "path": "tests/recurring_coverage_browser_checks.py",
+      "bytes": 12540,
+      "sha256": "536256e294f4c3699f8a6e88e9ab95eb98b704305db4564df8d7d098aa884581"
+    },
+    {
+      "path": "tests/regression_browser_checks.py",
+      "bytes": 10975,
+      "sha256": "63ad6826d2414db2fbe5883fb9fcd85f396bae26796d290388a1253273b6aa4f"
+    },
+    {
+      "path": "tests/renewal_notice_browser_checks.py",
+      "bytes": 14535,
+      "sha256": "a237bd4398746dd4baf66aed3f28b51e3402db0c33cb153e23a9704a4e763e09"
+    },
+    {
+      "path": "tests/rental_return_browser_checks.py",
+      "bytes": 17154,
+      "sha256": "f3cd059d12e4abc9ac69fc25f636a99c5c9b64b5bdf39442b2c78a51f17b16c6"
+    },
+    {
+      "path": "tests/reviewer/application_results.json",
+      "bytes": 6357,
+      "sha256": "a17cf94f480807c1ebb30ce33dcda71f13aea7f098fcf0c0641827c26b81fa50"
+    },
+    {
+      "path": "tests/reviewer/parser_results.json",
+      "bytes": 5676,
+      "sha256": "a887bf2e4dbb696019f8fc4d8d8f9a7cb4c44a4d7515c62e8eef1a7981dba3fd"
+    },
+    {
+      "path": "tests/rootcause_browser_checks.py",
+      "bytes": 12665,
+      "sha256": "8d4a41bbef05d75070900e8f6f609400ac30cecd3e96b48715664487bcbf5da2"
+    },
+    {
+      "path": "tests/schema_migration_browser_checks.py",
+      "bytes": 15066,
+      "sha256": "98424223d35d36ea4c349a1419006a4d4ef0d9b450d2a926910e0630fca71d4f"
+    },
+    {
+      "path": "tests/seat_entitlement_browser_checks.py",
+      "bytes": 13363,
+      "sha256": "aa4e5bdf7927db992d04fb1ce9e1a6ca44338003a797b0f1a920934d0ac908a1"
+    },
+    {
+      "path": "tests/service_time_evidence_browser_checks.py",
+      "bytes": 10226,
+      "sha256": "b7d9092c18b925214e1f0f2dc984d46ada539a01c16ba6016ece4d7c38dee3fc"
+    },
+    {
+      "path": "tests/sla_response_browser_checks.py",
+      "bytes": 12862,
+      "sha256": "8f420ad9f303b19df95bbb9b583879d6cd408ec0a7798755bfa525dba31f2397"
+    },
+    {
+      "path": "tests/solution_tradeoff_browser_checks.py",
+      "bytes": 11453,
+      "sha256": "0d2bb96ef56b34d9c70754b8430b1cbf27fb5a84c78a064c879180c879ba7dbd"
+    },
+    {
+      "path": "tests/status_digest_browser_checks.py",
+      "bytes": 14007,
+      "sha256": "e1aa04a6946a778d3357f4e393028e957104f339549cb8d9d4fdf94847038b8f"
+    },
+    {
+      "path": "tests/stockout_window_browser_checks.py",
+      "bytes": 12910,
+      "sha256": "6141a4905d1d1f0087e7505f40872c6a925566289cc84e997fa7d72f5d1f6e89"
+    },
+    {
+      "path": "tests/structural_review.json",
+      "bytes": 811,
+      "sha256": "955a55d44054f6c7eb82b89518bb7a5a03e884c106b20dfd4596f7112076708b"
+    },
+    {
+      "path": "tests/supplier_recovery_browser_checks.py",
+      "bytes": 12088,
+      "sha256": "06b9cb9ae7c1468415752c8384a7cf47bff7f3529567d4f2d50c5ac95e19ed9f"
+    },
+    {
+      "path": "tests/three_way_browser_checks.py",
+      "bytes": 10769,
+      "sha256": "37177f895727bcbb2c8f10c397da1af219984f53671b46c5bc234629aa8c8c9e"
+    },
+    {
+      "path": "tests/travel_window_browser_checks.py",
+      "bytes": 13406,
+      "sha256": "53af371bf483133f9275075f6b0131aeb5056163d33d5f5cdc6b2b7781a62d8d"
+    },
+    {
+      "path": "tests/triage_browser_checks.py",
+      "bytes": 10257,
+      "sha256": "619b2a7e5272a7746b441c1e3b4e8a3b27d4598f92ee7155cda3a5e30fa4f946"
+    },
+    {
+      "path": "tests/vendor_credential_browser_checks.py",
+      "bytes": 14118,
+      "sha256": "5bd4e9fdf2ea057f4ed7ec5ee5bc35c1996762a43a041ada105c878141105847"
+    },
+    {
+      "path": "tests/warranty_claim_browser_checks.py",
+      "bytes": 13871,
+      "sha256": "5a85ca96cef2362e8685875f7392eb7fdd83a73b92e0cf5720bb1547ab46fa18"
+    }
+  ],
+  "manifest_self_excluded": true
+}
