@@ -1,0 +1,108 @@
+{
+  "algorithm": "SHA-256",
+  "tool_id": "wit.two-source-csv-reconciler",
+  "version": "0.1.1-draft.1",
+  "scope": "Every package file except SHA256SUMS.json itself; exact bytes, no newline normalization.",
+  "files": [
+    {
+      "path": "09_Two_Source_CSV_Reconciler.html",
+      "bytes": 17036,
+      "sha256": "a2299941a51772aa9478d3a285f9c581faae38696f4f04b8eade5a22f8012c8f"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 1126,
+      "sha256": "e65d5138f33a6ba4855d028fbd53177ca1bbc637c8714fb84da471d358e8e12a"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 1596,
+      "sha256": "4983f0b81bc9323388bbf6f1563cc6c03d7d71ad4c1159eacaf93c0dcd8b2a5f"
+    },
+    {
+      "path": "HANDOFF_TEMPLATE.md",
+      "bytes": 599,
+      "sha256": "a9e11cf559a49487cded7dc98797f2fa5c82dd49014814019e0be01b2fc86841"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1065,
+      "sha256": "7f91c512ba41e11fc68fb65c5023e632e3c13708e9dc2376df8fa8001111a876"
+    },
+    {
+      "path": "LICENSE_SCOPE.md",
+      "bytes": 1179,
+      "sha256": "89d3bc38e74363a864bc1eb7d962ccf349607e0ba90b9f05f4305ddcfbceacaa"
+    },
+    {
+      "path": "PROVENANCE.json",
+      "bytes": 4963,
+      "sha256": "f00eed68ffded76ed83a34eb77ea71ba59e23b6c68c439e9eb08099d9bd4b85a"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6269,
+      "sha256": "dec30c3245ae6447ea68c641406e03c84521a2756f119b1f81472f4c080d3d19"
+    },
+    {
+      "path": "TEST_RESULTS.md",
+      "bytes": 1160,
+      "sha256": "23f36f3c69f225622187a07252d0122e59c43df014fc046aa2db27559ab7a984"
+    },
+    {
+      "path": "common.js",
+      "bytes": 2124,
+      "sha256": "13c1bdd0d254587433bc6be7fe3065d65d572ad25e08dfb6ca9da2cd6860cb4c"
+    },
+    {
+      "path": "examples/reconcile_destination_fictional.csv",
+      "bytes": 98,
+      "sha256": "54ae97157d52a191fe92dbf62e7dce62182e5741ddb2b9c5f9b7a4d097fc6d58"
+    },
+    {
+      "path": "examples/reconcile_source_fictional.csv",
+      "bytes": 117,
+      "sha256": "1bb4527e6b01843492d008e8939269e21ce0e546395c4cdcf3068203c807d896"
+    },
+    {
+      "path": "requirements-test.txt",
+      "bytes": 167,
+      "sha256": "46ce4bcea45945aa9cb24f828e52a95cd4bb7c3a844f5cf2a1f088c46ae965f6"
+    },
+    {
+      "path": "styles.css",
+      "bytes": 3314,
+      "sha256": "b22ae2fb77436d425e1616224f1f153aa45f7be5be759b5020177b96e44bb6e8"
+    },
+    {
+      "path": "tests/FINAL_TEST_RECEIPT.json",
+      "bytes": 11284,
+      "sha256": "17676eba2d47d70051b7119308997d257549cd91653d473de6dd1fafb58c76f8"
+    },
+    {
+      "path": "tests/application_regressions.cjs",
+      "bytes": 8490,
+      "sha256": "1bd2715bedf1e798d8f923f7e9f4a48322471b7706a3b655ee6f6383a42dc521"
+    },
+    {
+      "path": "tests/browser_run_status.json",
+      "bytes": 570,
+      "sha256": "964b35553d5e883a7c1db44e2644291adc8e2575d511bb22eaaa0119abd6500c"
+    },
+    {
+      "path": "tests/csv_regressions.cjs",
+      "bytes": 5924,
+      "sha256": "8bca33066d52e7f54faa8ef52df6f461ae4d987260c6fc40c857ab89f50dedda"
+    },
+    {
+      "path": "tests/recon_browser_checks.py",
+      "bytes": 9816,
+      "sha256": "8f7d72a1134c2e7c0ce35963d26cc8b329fe78baf133709212a884139b237714"
+    },
+    {
+      "path": "tests/reviewer/README.txt",
+      "bytes": 111,
+      "sha256": "943865ed6b520d914bcb2f56b3af99e5a63b64de7e1792c1b01f17330d14f694"
+    }
+  ]
+}

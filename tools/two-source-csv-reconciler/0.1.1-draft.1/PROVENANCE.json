@@ -1,0 +1,99 @@
+{
+  "schema": "wit.source-handoff-provenance.v1",
+  "tool_id": "wit.two-source-csv-reconciler",
+  "draft_version": "0.1.1-draft.1",
+  "source_package_version": "v2.0",
+  "source_package_date": "2026-10-24",
+  "source_claim": "Original first-party browser prototypes and fictional fixtures; source documentation only, not independently verified authorship.",
+  "reviewed_source_license": "No LICENSE or COPYING found; source documentation explicitly denies inferred open-source rights.",
+  "license_status": "OWNER_AUTHORIZED_SCOPED_MIT",
+  "source_members": [
+    {
+      "source_member": "09_Two_Source_CSV_Reconciler.html",
+      "source_sha256": "4ffeadd2b8b1a25d79d21bb8da18a953817b25cd230dcca2d216fca2ab52eb87",
+      "source_manifest_match": true
+    },
+    {
+      "source_member": "common.js",
+      "source_sha256": "5d455b8b7dddd4b60b2cad7ee0bebb063410b2da62b7f071d252f116e41fbe58",
+      "source_manifest_match": true
+    },
+    {
+      "source_member": "styles.css",
+      "source_sha256": "b22ae2fb77436d425e1616224f1f153aa45f7be5be759b5020177b96e44bb6e8",
+      "source_manifest_match": true
+    },
+    {
+      "source_member": "tests/recon_browser_checks.py",
+      "source_sha256": "4f15b75445bf68b95a8e723aa2f90c98e59d7b92731044d4f8fce1f6f852a35f",
+      "source_manifest_match": true
+    },
+    {
+      "source_member": "examples/reconcile_source_fictional.csv",
+      "source_sha256": "1bb4527e6b01843492d008e8939269e21ce0e546395c4cdcf3068203c807d896",
+      "source_manifest_match": true
+    },
+    {
+      "source_member": "examples/reconcile_destination_fictional.csv",
+      "source_sha256": "54ae97157d52a191fe92dbf62e7dce62182e5741ddb2b9c5f9b7a4d097fc6d58",
+      "source_manifest_match": true
+    }
+  ],
+  "derivative_changes": [
+    "Removed all cross-tool trade/service navigation.",
+    "Changed prototype labels to a sanitized WIP source-handoff draft.",
+    "Removed one cross-tool Change Order reference where present.",
+    "Made the existing test browser path portable with CHROMIUM_PATH/system discovery.",
+    "Added standalone handoff documentation and local verification metadata.",
+    "Bounded bare-quote CSV parser correction, new visible version and exact new-release testing."
+  ],
+  "runtime_dependencies": [],
+  "test_prerequisites": [
+    "Python 3",
+    "Playwright Python package",
+    "Chromium"
+  ],
+  "not_included": [
+    "Private package README and release notes",
+    "Private manifests and AI-contract documents",
+    "Unrelated trade/service applications",
+    "Historical test logs",
+    "Browser binaries and third-party dependencies"
+  ],
+  "contribution_policy_verified_on": "2026-10-24",
+  "contribution_policy_url": "https://github.com/iJaspers/manager-os/blob/main/CONTRIBUTING.md",
+  "contribution_intake": "SCOPED_MANUAL_INTAKE_FOR_THIS_TOOL_ID",
+  "license": "MIT",
+  "license_scope": "This sanitized tool/version directory only. Excludes private originals, unrelated tools and third-party materials.",
+  "license_authorized_on": "2026-10-24",
+  "rights_review": "Source package identifies original first-party code/fixtures. Selected source inspected: no external runtime dependencies, imported third-party code/assets or conflicting notices found. Not an independent legal audit.",
+  "contribution_policy_baseline_blob_sha": "6ceceb8eaafa254adeba14212dc624822739a311",
+  "publication_scope": "Sanitized unfinished source only; no production or outsider acceptance claim.",
+  "base_public_commit": "6a1c83045bac0dc93946d8b4f850f535ac5e03ac",
+  "base_public_version": "0.1.0-draft.1",
+  "parser_correction_sha256": "13c1bdd0d254587433bc6be7fe3065d65d572ad25e08dfb6ca9da2cd6860cb4c",
+  "parser_review_scope": "Internal synthetic Node checks, not human outsider/browser acceptance",
+  "internal_credit": "No attribution requested; no outside contributor claim",
+  "release_decision": "CANDIDATE_ONLY_AT_FREEZE; publication requires a separate explicit approval and release receipt",
+  "source_members_scope": "Historical original-package input hashes before sanitation; NOT the current release inventory. Current package bytes are enumerated in SHA256SUMS.json.",
+  "canonical_source_path": "tools/two-source-csv-reconciler/0.1.1-draft.1",
+  "candidate_frozen_at_utc": "2026-10-25T00:44:30Z",
+  "release_decision_scope": "This immutable candidate records preparation, not publication authorization. A later approval receipt must identify these exact package hashes without modifying the frozen package.",
+  "current_runtime_members": [
+    {
+      "path": "09_Two_Source_CSV_Reconciler.html",
+      "bytes": 17036,
+      "sha256": "a2299941a51772aa9478d3a285f9c581faae38696f4f04b8eade5a22f8012c8f"
+    },
+    {
+      "path": "common.js",
+      "bytes": 2124,
+      "sha256": "13c1bdd0d254587433bc6be7fe3065d65d572ad25e08dfb6ca9da2cd6860cb4c"
+    },
+    {
+      "path": "styles.css",
+      "bytes": 3314,
+      "sha256": "b22ae2fb77436d425e1616224f1f153aa45f7be5be759b5020177b96e44bb6e8"
+    }
+  ]
+}

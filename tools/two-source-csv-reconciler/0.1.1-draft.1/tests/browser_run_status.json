@@ -1,0 +1,13 @@
+{
+  "status": "BLOCKED_BEFORE_BROWSER_TESTS",
+  "date": "2026-10-24",
+  "assertions_executed": 0,
+  "reason": "Chromium launch failed because the executor disallows its temporary process socket. The approved escalation path failed during environment setup before the test command ran.",
+  "claims_not_made": [
+    "Browser tests passed on this derivative",
+    "File-host acceptance",
+    "Mobile acceptance",
+    "Production readiness"
+  ],
+  "historical_results": "Separate source-package reports are summarized in TEST_RESULTS.md; they are not current executions."
+}

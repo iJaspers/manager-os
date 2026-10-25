@@ -1,0 +1,7 @@
+item_id,label,qty
+A-1,Widget A,5
+A-2,Widget B,4
+A-3,Widget C,8
+A-3,Widget C duplicate,9
+A-4,Missing Item,3
+,No key,6

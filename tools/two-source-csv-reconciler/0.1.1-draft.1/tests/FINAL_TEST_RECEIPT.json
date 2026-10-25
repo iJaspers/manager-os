@@ -1,0 +1,358 @@
+{
+  "schema": "wit.bounded-candidate-tests.v1",
+  "version": "0.1.1-draft.1",
+  "tool_id": "wit.two-source-csv-reconciler",
+  "executed_at_utc": "2026-10-25T00:44:30Z",
+  "scope": "Internal synthetic Node VM/DOM-stub checks; not rendered-browser, file-host, mobile, independent human or production acceptance.",
+  "runtime_inputs": [
+    {
+      "path": "09_Two_Source_CSV_Reconciler.html",
+      "bytes": 17036,
+      "sha256": "a2299941a51772aa9478d3a285f9c581faae38696f4f04b8eade5a22f8012c8f"
+    },
+    {
+      "path": "common.js",
+      "bytes": 2124,
+      "sha256": "13c1bdd0d254587433bc6be7fe3065d65d572ad25e08dfb6ca9da2cd6860cb4c"
+    },
+    {
+      "path": "styles.css",
+      "bytes": 3314,
+      "sha256": "b22ae2fb77436d425e1616224f1f153aa45f7be5be759b5020177b96e44bb6e8"
+    }
+  ],
+  "parser": {
+    "tests": 48,
+    "passed": 48,
+    "failed": 0,
+    "results": [
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "valid: plain rows",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "valid: quoted commas",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "valid: doubled quotes",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "valid: embedded LF",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "valid: embedded CRLF",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "valid: embedded CR",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "valid: quoted empty field",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "valid: empty middle field",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "valid: empty final field",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "valid: empty initial field",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "valid: all quoted headers",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "valid: space after closing quote preserved compatibility",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "valid: space before delimiter after quoted field",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "valid: unquoted spaces preserved",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "valid: Unicode",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "valid: single quote content",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "valid: one literal double quote",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "valid: two literal double quotes",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "valid: blank lines ignored compatibility",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "valid: quoted blank row ignored compatibility",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "valid: empty input",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "valid: header only",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "valid: comma and newline inside quoted field",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "valid: formula-shaped input remains inert text",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "reject: bare quote middle",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "reject: bare quote at end",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "reject: bare quote first row",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "reject: bare quote followed by comma",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "reject: bare quote followed by newline",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "reject: two bare quotes",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "reject: quote after unquoted space",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "reject: quote after unquoted tab",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "reject: unclosed quoted field",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "reject: unclosed escape sequence",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "reject: character immediately after quote",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "reject: character after closing quote whitespace",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "reject: quote after closing quote whitespace",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "reject: bare quote after previous quoted row",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "reject: bare quote after earlier empty field",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "formula safe export: \"=1+1\"",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "formula safe export: \"+1\"",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "formula safe export: \"-1\"",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "formula safe export: \"@SUM(A1)\"",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "formula safe export: \"\\t=1\"",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "formula safe export: \"\\r=1\"",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "formula safe export: \"  =1\"",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "serializer roundtrip",
+        "pass": true
+      },
+      {
+        "tool": "tools/two-source-csv-reconciler/0.1.1-draft.1/common.js",
+        "name": "host I/O globals unavailable",
+        "pass": true
+      }
+    ]
+  },
+  "application_state": {
+    "tests": 13,
+    "passed": 13,
+    "failed": 0,
+    "results": [
+      {
+        "tool": "two-source-csv-reconciler",
+        "name": "boot with original application demo",
+        "pass": true
+      },
+      {
+        "tool": "two-source-csv-reconciler",
+        "name": "UTF-8 byte bound is not character-count bound",
+        "pass": true
+      },
+      {
+        "tool": "two-source-csv-reconciler",
+        "name": "ASCII byte bound",
+        "pass": true
+      },
+      {
+        "tool": "two-source-csv-reconciler",
+        "name": "malformed bare quote rejected at application admission",
+        "pass": true
+      },
+      {
+        "tool": "two-source-csv-reconciler",
+        "name": "valid comma multiline doubled-quote fixture accepted",
+        "pass": true
+      },
+      {
+        "tool": "two-source-csv-reconciler",
+        "name": "BOM-stripped application input accepted",
+        "pass": true
+      },
+      {
+        "tool": "two-source-csv-reconciler",
+        "name": "failed input clears old result and locks every export",
+        "pass": true
+      },
+      {
+        "tool": "two-source-csv-reconciler",
+        "name": "fresh valid demo recovers after failure",
+        "pass": true
+      },
+      {
+        "tool": "two-source-csv-reconciler",
+        "name": "network CSP retained",
+        "pass": true
+      },
+      {
+        "tool": "two-source-csv-reconciler",
+        "name": "input-controlled output does not use HTML sinks",
+        "pass": true
+      },
+      {
+        "tool": "two-source-csv-reconciler",
+        "name": "mismatch demo six exceptions two paired records",
+        "pass": true
+      },
+      {
+        "tool": "two-source-csv-reconciler",
+        "name": "clean demo matches selected fields",
+        "pass": true
+      },
+      {
+        "tool": "two-source-csv-reconciler",
+        "name": "aggregate excludes raw record keys and denies writes",
+        "pass": true
+      }
+    ]
+  },
+  "three_tool_batch_context": {
+    "logic": "40/40",
+    "parser": "144/144",
+    "application_state": "38/38",
+    "counts_overlap": true
+  },
+  "not_run": [
+    "Rendered browser",
+    "File-picker and download acceptance",
+    "Mobile and accessibility",
+    "Real external contributor",
+    "Production acceptance"
+  ],
+  "browser_history": "The prior browser attempt was blocked before assertions; it was not rerun for this freeze.",
+  "reproduction": "From this package directory: node tests/csv_regressions.cjs . tests/reviewer/parser_results.json common.js"
+}
