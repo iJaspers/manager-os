@@ -12,7 +12,7 @@ Manager OS (MOS) is now **Witburrow**. The manager's default name is **Wit**. Th
 - Existing installations must review the change and explicitly approve it locally. Preserve all chosen custom names. If a saved preference is missing or ambiguous, keep the name and ask rather than assume it was a default.
 - Existing `/mos` links, commands, schema identifiers, version pins and historical release records stay valid. The three stable download files below retain their original names and checksums.
 - The existing `/mos/check` manifest includes this notice and an optional extension. Clients that only compare `release_id` may not offer it automatically; ask the installed manager to review `WIT-NAME-2026.10.22.1` or use the [setup/reference page](https://www.ijaspers.com/post/manager-os-public-bootstrap-v2026-09-20).
-- [Tool library and community boards](https://www.ijaspers.com/post/witburrow-tools): the catalogue separates the unchanged starter, three existing source previews, three UNVERIFIED work-in-progress source packages and private candidates. Unfinished source can be picked up under its scoped MIT license without a production-readiness claim. Reviewed pull-request intake covers these six exact tool IDs, including explicitly unfinished WIP source; general framework/security intake stays closed. All listings are unranked.
+- [Tool library and community boards](https://www.ijaspers.com/post/witburrow-tools): the catalogue distinguishes the unchanged starter, public source previews, explicitly unfinished source handoffs and metadata-only ideas. A listing is not proof of a finished or verified tool. Check each entry's version, known issues and next step before use. Reviewed pull-request intake covers only the exact public tool IDs listed in [CONTRIBUTING.md](CONTRIBUTING.md); general framework/security intake stays closed. All listings are unranked.
 
 Publication is not proof that any existing installation adopted the name. No new permissions, schedules, executable installer or private tools are supplied by this supplement.
 
@@ -98,7 +98,7 @@ See:
 
 ## Contribution status
 
-Public pull-request intake is **OPEN ONLY for the six specifically listed MIT-licensed public tools** listed in [CONTRIBUTING.md](CONTRIBUTING.md). See [current source previews and continuation guides](tools/README.md). General framework intake and the private security-reporting lane remain **CLOSED**. No automatic untrusted execution or merging is enabled. Normal usability feedback can go to the originating public discussion or https://www.ijaspers.com/contact. Do not post security-sensitive findings publicly.
+Public pull-request intake is **OPEN ONLY for the specifically listed MIT-licensed public tools** listed in [CONTRIBUTING.md](CONTRIBUTING.md). See [current source previews and continuation guides](tools/README.md). General framework intake and the private security-reporting lane remain **CLOSED**. No automatic untrusted execution or merging is enabled. Normal usability feedback can go to the originating public discussion or https://www.ijaspers.com/contact. Do not post security-sensitive findings publicly.
 
 ## Design principle
 
