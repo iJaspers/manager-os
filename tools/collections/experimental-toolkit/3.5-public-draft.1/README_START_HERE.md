@@ -2,6 +2,14 @@
 
 Version 3.5-public-draft.1 · 37 browser applications · fictional-data demonstrations only.
 
+## Known issue advisory — 2026-10-25
+
+**Do not rely on this draft for operational decisions.** A controlled asynchronous-read test on the exact published source confirmed a stale-file-read race in **Two-Source CSV Reconciler (9), Regression Plan Forge (10), and Dependency & Critical Path Mapper (11)**. When file selections overlap, or a manual edit occurs while a file read is pending, an older read can overwrite the newer input. In the Reconciler reproduction, this changed a report with an issue into a false-clean report; exports could remain enabled during a pending read. These results are from a synthetic Node promise-ordering harness, not rendered-browser acceptance.
+
+Use fictional examples only. Treat affected reports and exports as unreliable; a clean result does not establish correct or current input. A corrected candidate is being tested. **No replacement release is announced by this advisory.** The earlier malformed-CSV parser fix does not address this separate asynchronous-read defect.
+
+**Advisory revision, not a repackaged release:** this repository README has been updated after publication. The frozen ZIP, its internal README, and `MANIFEST_PUBLIC.json` are unchanged. The manifest's README hash refers to the original file inside that ZIP, not this amended external README. The original 561,964-byte ZIP remains SHA-256 `e54b2bfdfe25d37a07253ce666d488449010eb6f98c589d0f84e49b938f890aa`. The original release notes below are preserved as historical context and must be read with this warning.
+
 ## Start here
 Extract the complete ZIP, keep relative files together, and open index.html in a browser that permits local HTML/JavaScript. Every tool is a prototype. Use the supplied fictional examples. Do not enter real personal, employer, customer, financial, tax, security or confidential records. Some tools require FAKE-prefixed IDs by design; do not weaken that restriction to force real data through.
 
