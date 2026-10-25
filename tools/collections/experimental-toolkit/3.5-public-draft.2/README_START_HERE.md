@@ -2,6 +2,16 @@
 
 Version 3.5-public-draft.2 · 37 browser applications · fictional-data demonstrations only.
 
+## Known issue advisory — explicit empty CSV records — 2026-10-25
+
+**Do not rely on this draft's record counts or clean comparison reports for operational decisions.** Controlled tests on the exact published source confirmed that the shared CSV parser silently drops explicit empty-field records such as `,,`, `"","",""`, and comma-delimited whitespace-only fields such as ` , , `. These are structured CSV records, not merely blank lines.
+
+In Two-Source CSV Reconciler, appending these records to either input left the reported source/destination counts unchanged and produced zero issues with exports still enabled. This can yield an undercount and a false-clean report. The reproduction used a synthetic Node harness, not a rendered browser; broader application impact is still under review.
+
+The draft 2 asynchronous-import repair addresses a separate defect and its bounded test evidence remains valid. It does not fix this record-preservation issue. **A new parser candidate is under review; no replacement release is announced here.** Use fictional inputs only and treat affected counts, reports and exports as unreliable.
+
+**External advisory revision:** this repository README was amended after release. The frozen ZIP, its internal README and internal manifest remain unchanged. The manifest's README hash refers to the original file inside the archive, not this amended external copy. Draft 2 remains 583,315 bytes, SHA-256 `3c6e1efa5303e3674a450ec73aaf592a84e3740359d45b4eba12909ee44f43d1`. Original notes below are preserved and must be read with this warning.
+
 ## Start here
 Extract the complete ZIP, keep relative files together, and open index.html in a browser that permits local HTML/JavaScript. Every tool is a prototype. Use the supplied fictional examples. Do not enter real personal, employer, customer, financial, tax, security or confidential records. Some tools require FAKE-prefixed IDs by design; do not weaken that restriction to force real data through.
 
