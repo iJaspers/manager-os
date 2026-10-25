@@ -2,11 +2,19 @@
 
 Version 3.5-public-draft.1 · 37 browser applications · fictional-data demonstrations only.
 
+## Corrected experimental release — 2026-10-25
+
+[Draft 2 source notes and limitations](https://github.com/iJaspers/manager-os/tree/d125a1121d3be454e19869bc46eff07dee730656/tools/collections/experimental-toolkit/3.5-public-draft.2) · [Download the complete 37-app draft 2 ZIP](https://raw.githubusercontent.com/iJaspers/manager-os/d125a1121d3be454e19869bc46eff07dee730656/tools/collections/experimental-toolkit/3.5-public-draft.2/WIT_Experimental_Tool_Collection_3.5-public-draft.2.zip)
+
+Version **3.5-public-draft.2** adds guarded asynchronous imports in 25 applications, retaining the same 37 identities; parser-family apps 9–11 are now **0.1.2-draft.1**. Independent controlled-promise checks passed **786 assertions** across the 25 changed apps. These checks overlap other synthetic suites and are **not rendered-browser, mobile, complete business-rule or customer acceptance**. Use fictional data only; no operational reliance or blanket reuse licence is established.
+
+The replacement ZIP is **583,315 bytes**, SHA-256 `3c6e1efa5303e3674a450ec73aaf592a84e3740359d45b4eba12909ee44f43d1`. Extract it fully; its manifest, crosswalk, changelog and detailed evidence are inside the ZIP. This is a separate release, not an overwrite of draft 1. The draft 1 warning and frozen archive below remain historical evidence.
+
 ## Known issue advisory — 2026-10-25
 
 **Do not rely on this draft for operational decisions.** A controlled asynchronous-read test on the exact published source confirmed a stale-file-read race in **Two-Source CSV Reconciler (9), Regression Plan Forge (10), and Dependency & Critical Path Mapper (11)**. When file selections overlap, or a manual edit occurs while a file read is pending, an older read can overwrite the newer input. In the Reconciler reproduction, this changed a report with an issue into a false-clean report; exports could remain enabled during a pending read. These results are from a synthetic Node promise-ordering harness, not rendered-browser acceptance.
 
-Use fictional examples only. Treat affected reports and exports as unreliable; a clean result does not establish correct or current input. A corrected candidate is being tested. **No replacement release is announced by this advisory.** The earlier malformed-CSV parser fix does not address this separate asynchronous-read defect.
+Use fictional examples only. Treat affected reports and exports as unreliable; a clean result does not establish correct or current input. At the time of this original advisory, a corrected candidate was being tested and no replacement had been announced; see the later draft 2 release note above. The earlier malformed-CSV parser fix does not address this separate asynchronous-read defect.
 
 **Advisory revision, not a repackaged release:** this repository README has been updated after publication. The frozen ZIP, its internal README, and `MANIFEST_PUBLIC.json` are unchanged. The manifest's README hash refers to the original file inside that ZIP, not this amended external README. The original 561,964-byte ZIP remains SHA-256 `e54b2bfdfe25d37a07253ce666d488449010eb6f98c589d0f84e49b938f890aa`. The original release notes below are preserved as historical context and must be read with this warning.
 
