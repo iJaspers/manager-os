@@ -98,7 +98,7 @@
         "wit.bill-calendar-preview": "0.1.0",
         "wit.field-hours-review": "0.1.0",
         "wit.grocery-planning-preview": "0.1.0",
-        "wit.two-source-csv-reconciler": "0.1.1-draft.1",
+        "wit.two-source-csv-reconciler": "0.1.0-draft.1",
         "wit.regression-plan-forge": "0.1.0-draft.1",
         "wit.dependency-critical-path-mapper": "0.1.0-draft.2"
       },
@@ -135,8 +135,8 @@
           "affected_versions": [
             "0.1.0-draft.1"
           ],
-          "corrected_version": "0.1.1-draft.1",
-          "summary": "Historical CSV-BARE-QUOTE corrected in a controlled test release under bounded synthetic Node checks. Current browser and outsider acceptance remain unverified."
+          "corrected_version": null,
+          "summary": "Known CSV-BARE-QUOTE: shared parser accepts a quote in an unquoted field. Unfinished source; current browser and outsider acceptance not established."
         },
         {
           "tool_id": "wit.regression-plan-forge",
@@ -201,14 +201,18 @@
     },
     "reconciler_controlled_canary_2026_10_25": {
       "tool_id": "wit.two-source-csv-reconciler",
-      "version": "0.1.1-draft.1",
-      "status": "CONTROLLED_TEST_RELEASE",
-      "source_commit": "7fa21e0d7412b1ab27018d2d59ef72914be43958",
-      "prior_version": "0.1.0-draft.1",
-      "prior_source_commit": "8a3b8cf91b2630a744311dc4bd984a6f4e53dc73",
+      "test_version": "0.1.1-draft.1",
+      "status": "CATALOGUE_POINTER_RESTORED_TO_PRIOR_VERSION",
+      "current_version": "0.1.0-draft.1",
+      "prior_catalogue_commit": "6a1c83045bac0dc93946d8b4f850f535ac5e03ac",
+      "test_source_commit": "7fa21e0d7412b1ab27018d2d59ef72914be43958",
+      "test_catalogue_commit": "8df74f233da1c49f3dd4737cc6d6581af516ebf7",
+      "test_zip_sha256": "7dca87c84d8db59fcf5539c12ae59a17cb3846583b66d4882b45dc43ed9cd900",
+      "both_versions_retained": true,
       "automatic_execution": false,
       "automatic_merge": false,
-      "planned_pointer_rollback": true
+      "rollback_receipt_path": "tools/releases/reconciler-canary-2026-10-25/ROLLBACK_RECEIPT.json",
+      "limitation": "Controlled publication/download/pointer-rollback evidence only; not rendered-browser or outsider acceptance. The restored prior version still has its documented CSV-BARE-QUOTE issue."
     }
   }
 }

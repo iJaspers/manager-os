@@ -1,0 +1,35 @@
+{
+  "schema": "wit.controlled-rollback-receipt.v1",
+  "tool_id": "wit.two-source-csv-reconciler",
+  "status": "PRIOR_CATALOGUE_ROW_RESTORED_IN_THIS_COMMIT",
+  "rollback_method": "Forward-only metadata commit restores the original catalogue bytes; neither source version nor the canary history is deleted.",
+  "baseline_commit": "6a1c83045bac0dc93946d8b4f850f535ac5e03ac",
+  "canary_source_commit": "7fa21e0d7412b1ab27018d2d59ef72914be43958",
+  "canary_catalogue_commit": "8df74f233da1c49f3dd4737cc6d6581af516ebf7",
+  "restored_version": "0.1.0-draft.1",
+  "restored_source_url": "https://github.com/iJaspers/manager-os/tree/8a3b8cf91b2630a744311dc4bd984a6f4e53dc73/tools/two-source-csv-reconciler/0.1.0-draft.1",
+  "restored_download_url": "https://raw.githubusercontent.com/iJaspers/manager-os/8a3b8cf91b2630a744311dc4bd984a6f4e53dc73/tools/two-source-csv-reconciler/two-source-csv-reconciler-0.1.0-draft.1.zip",
+  "restored_zip_sha256": "a4e0e128da3fe3d6ac0b474569aabbf41991bdcf24c9a3af418f314c5daa6b99",
+  "retained_test_version": "0.1.1-draft.1",
+  "retained_test_source_url": "https://github.com/iJaspers/manager-os/tree/7fa21e0d7412b1ab27018d2d59ef72914be43958/tools/two-source-csv-reconciler/0.1.1-draft.1",
+  "retained_test_zip_sha256": "7dca87c84d8db59fcf5539c12ae59a17cb3846583b66d4882b45dc43ed9cd900",
+  "public_canary_readback": {
+    "zip_bytes": 34486,
+    "zip_sha256": "7dca87c84d8db59fcf5539c12ae59a17cb3846583b66d4882b45dc43ed9cd900",
+    "manifest_sha256": "bf85f54b99ef0857d1e66e77c7242ff40d351e598d3ae0b0cdd4ce0db01adc93",
+    "manifest_members_verified": 20,
+    "zip_members": 21
+  },
+  "website_state": "Verified separately after the live pinned-feed update; this repository receipt alone does not establish the website state.",
+  "contribution_credit": "Internal preparation/review only. No external contributor participation or attribution claimed.",
+  "known_limitation": "The restored prior version retains its documented CSV-BARE-QUOTE issue. The corrected test version remains available in immutable history.",
+  "automation_note": "No workflow files, repository settings or credentials changed. Existing GitHub Dependabot dependency-graph processing ran on the publication; it is not functional tool acceptance.",
+  "authorization_scope": "One controlled release and pointer rollback, not standing automatic publication or acceptance authority.",
+  "public_canary_independent_review": {
+    "package_manifest": "PASS",
+    "source_zip_bytes": "PASS",
+    "clean_extracted_zip_parser": "48/48",
+    "catalogue_scope": "Only Reconciler row changed; other 284 records preserved",
+    "live_website": "Separate browser readback verified controlled-test label/version on normal desktop/mobile views and downloaded the exact34,486-byte approved ZIP before rollback."
+  }
+}
