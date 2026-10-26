@@ -10,13 +10,25 @@ Invoice version 0.1.2 corrects malformed quoted CSV handling and the UTF-8 byte 
 
 Pretax Role Comparison 0.1.2 now holds non-finite differences with a clear warning. Documented Compensation Comparison 0.1.2 admits at most 8 MiB UTF-8 JSON, 10,000 offers and 64 nesting levels, with 1,024-character name/source limits and duplicate-key rejection. These are bounds, not promises of device capacity. Earlier versions remain historical.
 
+## Start with a workflow, not a tool
+
+Witburrow is a free instruction and workflow system for keeping work, evidence, permissions and the next action consistent across AI sessions. Tools are optional. Optional support does not unlock access or change permissions.
+
+Read the [starter reference](https://www.ijaspers.com/post/witburrow-starter-reference), give the starter to your chosen AI host, and try this: "Help me plan one fictional personal project. Ask for the desired result, record the agreed scope, and end with what is done, what is blocked and one next action. Do not send messages, create accounts, install anything or schedule work. Tell me where the record will be saved; if you cannot save it, give me a copyable handoff."
+
+Stop after this core handoff unless an optional tool genuinely helps the task. No tool is required.
+
+Success means you can find the saved or copied record, tell which work actually happened, and resume from its next action. An unavailable host capability is a limitation to record, not a reason to buy or install a tool.
+
+For ordinary usability feedback, use the originating public discussion if comments are open, or [existing contact page](https://www.ijaspers.com/contact): goal, step that confused you, expected result, actual result, and a fictional example. Do not send private records or security-sensitive findings. The private security-reporting lane remains closed. A contact-page acknowledgement is not proof of inbox delivery or a response-time promise.
+
 ## 1. Start small and check the host
 
 Start at the [official starter page](https://www.ijaspers.com/post/manager-os), read the setup instructions, and give the starter to the AI host you actually use. Ask for one small everyday task. Confirm where your working record will be saved and what the host can actually read, browse or run. If it cannot browse, open the catalogue yourself; if it cannot execute code, do not claim it ran a tool. Use the local browser or Python requirements below only if available and approved.
 
 The manager's default name is Wit. Keep any chosen custom name. Existing installations review and approve the optional naming supplement locally; fetching this guide does not install it.
 
-## 2. Match the task to a real public tool
+## 2. Optional tool path: match the task to a real public tool
 
 Open the [current public catalogue](https://www.ijaspers.com/post/witburrow-tools) and choose **Public downloads & source**. A private candidate is not an available download. These three tools are public source previews, not a ranking or proof of production readiness:
 
@@ -26,7 +38,7 @@ Open the [current public catalogue](https://www.ijaspers.com/post/witburrow-tool
 
 If the inputs or runtime do not fit, clarify or keep the task manual. Never invent missing amounts, evidence, permissions or installed capabilities to make a tool appear suitable.
 
-## 3. Inspect, consent, and try synthetic data first
+## 3. Optional tool path: inspect, consent, and try synthetic data first
 
 Read the selected version's README, limits, provenance, license and test results. Download its ZIP only when you choose to. Compare the ZIP checksum on the catalogue and the member hashes in SHA256SUMS.json. Hash equality proves byte consistency, not safety or author identity.
 
@@ -34,7 +46,7 @@ Before an assistant downloads, opens or runs anything, agree on the exact tool/v
 
 HTML tools: unzip and open `tool.html` locally in a modern browser. Python tool: unzip, inspect `example.json`, then run `python3 tool.py --input example.json`. No credentials or dependency installation are needed. Browser/device acceptance is not yet verified; published Node/Python engine tests are narrower evidence.
 
-## 4. Invoice example: minimum inputs and no-payment evidence
+## 4. Optional tool path: invoice example and minimum inputs
 
 References alone are **not enough** for this version. A CSV lacking `amount` is held with `Missing column: amount`. Ask for the actual known amounts or perform a clearly labelled manual reference-only review; do not fill in guessed values or zeroes.
 
@@ -55,10 +67,11 @@ Do not leave the payment field empty: empty text is held with `No CSV rows`. The
 
 Keep originals unchanged, review every exception against source evidence, and never treat a reference/amount candidate as an authenticated posting. Export only if needed and approved; diagnostic files can contain the inputs you supplied. Never attach real customer, financial, employer or personal records to a public report.
 
-## 5. Save the result and hand it back
+## 5. Optional tool path: save the result and hand it back
 
 Record the exact public ID/version and source commit, input provenance (synthetic or your own permitted local records), actual action and output, test evidence, unresolved questions and one next step. Separate "prepared", "ran", "verified against evidence" and "not checked". If the host could not run it, report that instead of inventing a result.
 
 To improve one of these three tools, follow [CONTRIBUTING.md](https://github.com/iJaspers/manager-os/blob/main/CONTRIBUTING.md), fork the repository and open a [pull request](https://github.com/iJaspers/manager-os/compare) with the template. Include exact base ID/version/commit, bounded changes, tests and actual results, known failures, unfinished work, license/provenance and preferred public attribution. Share source and synthetic fixtures only. Privacy/license/unsafe-behavior review happens before isolated manual tests; merge, new version, catalogue update and credit require review. There is no automatic execution, auto-merge or response-time promise.
 
 The packaging path has a local simulated pickup/change/retest/return-patch check and a controlled internal documentation PR. Neither is outsider adoption or an independent security audit. Broader framework/security-sensitive intake and voting remain closed.
+
