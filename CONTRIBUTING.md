@@ -24,6 +24,14 @@ Fork this public repository, prepare a bounded source change and open a pull req
 
 Accepted scope: source, documentation, synthetic fixtures and tests for the nine IDs above. Preserve exact tool identity and base version. Do not submit binary packages, archives, executables, unrelated tools, private ledgers or changes to workflows, permissions, credentials, the stable framework or its checksummed artifacts through this lane. An out-of-scope proposal is not authority to expand it.
 
+## Choose the right route
+
+Ordinary usability feedback about the starter or workflow can go to the originating public discussion if comments are open, or https://www.ijaspers.com/contact, as described in README.md. A fictional example and the confusing step are enough; a code contribution is not required. Do not send private records or security-sensitive findings through these routes.
+
+For an improvement to an allowed tool, use the existing fork → bounded source change → pull request to `main` route above. Keep the exact ID and base version in the handoff. Proposed new tools, general framework patches and security-sensitive reports are outside this intake; a catalogue description does not make them eligible. Do not relabel a new tool as an allowed ID to get it accepted. A safe general idea can be described as ordinary feedback, without attaching out-of-scope code or private material; that is not acceptance into this PR lane.
+
+Maintainers record a reviewed decision and the next action in the existing PR. A submission is not a release. Other users receive an improvement only after the approved version, source/download links and agreed credit are published and checked in the existing catalogue. Users then choose whether to adopt that exact version locally; nothing is pushed into their installation.
+
 ## Required handoff
 
 Include tool ID, base version and commit, purpose, changed files, source/dependency/license provenance, setup, exact test commands and observed results, known failures, unfinished work, next useful step and rollback. Distinguish tested behavior from claims. Use the repository pull-request template. State the public name/handle to credit, or request no attribution. No invented contributor counts, ratings, endorsements, exclusive claims or response deadlines.
@@ -45,5 +53,6 @@ No automatic execution of untrusted pull requests and no auto-merge are enabled 
 Before merge, record what was reviewed, the exact test scope, known limitations, approval and rollback. Release a new tool version, preserve prior source/ZIP history and hashes, then update the public catalogue, download links and agreed contributor credit. Verify saved source and published bytes/links. A maintainer may request changes, decline, or park a contribution; publication does not mean someone must maintain it forever.
 
 A small internal documentation-only canary exercises this route. It is not an outsider contribution, independent security review, production integration or community adoption.
+
 
 
