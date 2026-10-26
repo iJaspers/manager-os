@@ -40,6 +40,16 @@ A check-counter failure must not block safe update verification. Fall back to th
 
 The resulting metric is **update-check requests**, not unique installations. See `docs/OBSERVABILITY.md`.
 
+## Getting a reviewed tool improvement
+
+The framework release ID and each public tool version are separate. A new tool version need not change the stable framework release ID. Check the [existing catalogue](https://www.ijaspers.com/post/witburrow-tools) and the exact tool source/version; a pull request or metadata-only idea is not an approved download. The public contribution policy remains limited to the IDs in [CONTRIBUTING.md](../CONTRIBUTING.md).
+
+Before choosing an update, compare the current and proposed tool versions, reviewed source commit, changed behavior, known failures, runtime/input compatibility and release evidence. Keep your prior package and working record. The release handoff must state whether inputs or saved outputs require migration; unknown migration behavior means HOLD, not assumed compatibility. Never overwrite original user records as a test.
+
+After explicit local approval, try the approved version with synthetic fixtures in the permitted host, verify the result and save the exact version with the work. If the check fails, stop using the candidate, keep the evidence, and restore the retained prior version and record only when that rollback is safe. A prior version with a known unsafe defect is not a safe fallback; disable the affected capability and request review instead. Rollback does not undo external actions or recover overwritten data automatically.
+
+Publication and catalogue visibility are not notification delivery, installation, adoption or user acceptance. No new subscription, telemetry, schedule, permission or automatic installation is introduced. Existing configured update checks stay unchanged.
+
 ## Authority boundary
 
 Finding a release does not authorize changing the local installation.
@@ -63,3 +73,4 @@ Authoritative public release channel:
 https://www.ijaspers.com/post/manager-os-release-channel
 
 If official sources materially disagree, stop and request review rather than selecting one silently.
+
