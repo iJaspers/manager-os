@@ -1,0 +1,20 @@
+{
+  "scope": "0.1.2 release files plus all reachable prior blobs/archives for this tool directory; unrelated repository components not re-cleared",
+  "date": "2026-11-01",
+  "scanned_text_members": 89,
+  "archives_inspected": 2,
+  "detector_rules": [
+    "corporate_identifier",
+    "taxpayer_name",
+    "private_library_id",
+    "private_source_url",
+    "credential",
+    "private_workspace_path",
+    "private_bank_account"
+  ],
+  "findings": [],
+  "manual_review": "Runtime has only Node built-ins, explicit local reads/writes, no process spawning, network, telemetry, dynamic code evaluation or credential access. Parser test uses Node VM on reviewed source only. Fixtures/output examples are fictional. No images or embedded document metadata bundled.",
+  "license_review": "Existing scoped MIT lineage and notice retained; no third-party bundled code.",
+  "status": "PASS",
+  "limitations": "Pattern scan and source review, not proof of universal absence of secrets; no external independent audit."
+}

@@ -1,0 +1,29 @@
+{
+  "schema": "WIT-RECON-CLI-1",
+  "version": "0.1.2",
+  "sourceRecords": 6,
+  "destinationRecords": 4,
+  "pairedRecords": 2,
+  "comparedCells": 4,
+  "exceptionCounts": {
+    "BLANK_KEY": 1,
+    "DUPLICATE_KEY": 2,
+    "VALUE_MISMATCH": 1,
+    "MISSING_DESTINATION": 1,
+    "EXTRA_DESTINATION": 1
+  },
+  "exceptionsTotal": 6,
+  "sourceAuthorityVerified": false,
+  "realWorldCorrectnessVerified": false,
+  "dataWriteAuthorized": false,
+  "fileReady": false,
+  "containsRawRecords": false,
+  "containsRecordKeys": false,
+  "instructionAuthority": false,
+  "inputHashes": {
+    "source": "1bb4527e6b01843492d008e8939269e21ce0e546395c4cdcf3068203c807d896",
+    "destination": "54ae97157d52a191fe92dbf62e7dce62182e5741ddb2b9c5f9b7a4d097fc6d58",
+    "configuration": "37a323ddc343c4d43861f9be69c54729de391e35275e374a3452d562c86afcd5"
+  },
+  "mode": "trim"
+}

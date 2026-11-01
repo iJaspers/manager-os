@@ -1,0 +1,8 @@
+{
+  "source": "reconcile_source_fictional.csv",
+  "destination": "reconcile_destination_fictional.csv",
+  "sourceKey": "item_id",
+  "destinationKey": "product_code",
+  "mapping": "label => product_name\nqty => units",
+  "mode": "trim"
+}

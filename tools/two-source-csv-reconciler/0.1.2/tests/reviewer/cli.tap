@@ -1,0 +1,46 @@
+✔ equal snapshots pair without certifying accuracy (2.121274ms)
+✔ changed financial text is an exception (0.317728ms)
+✔ refund and reversal values remain exact text (0.242705ms)
+✔ does not silently round (0.207723ms)
+✔ duplicate source remains unpaired (0.253221ms)
+✔ duplicate destination remains unpaired (0.217818ms)
+✔ blank key held (0.231388ms)
+✔ missing target detected (0.191338ms)
+✔ extra target detected (0.918693ms)
+✔ exact mode preserves surrounding whitespace (0.340212ms)
+✔ trim mode is explicit (0.289866ms)
+✔ case folding is explicit (0.105419ms)
+✔ invalid comparison mode fails (0.233352ms)
+✔ invalid headers fail (0.299721ms)
+✔ missing headers fail (0.11957ms)
+✔ missing source key fails (0.09922ms)
+✔ row width mismatch fails (0.081412ms)
+✔ bare quote rejected (0.087732ms)
+✔ embedded commas and newlines accepted (0.096776ms)
+✔ BOM accepted (0.11995ms)
+✔ 1001 rows rejected (0.991493ms)
+✔ UTF8 byte limit enforced (0.555476ms)
+✔ cell length bounded (0.190056ms)
+✔ mapping duplication rejected (0.184798ms)
+✔ key cannot be mapped as value (0.107622ms)
+✔ malicious instructions treated as text (0.170497ms)
+✔ prototype property names do not mutate objects (0.096034ms)
+✔ spreadsheet formula export escaped (0.227383ms)
+✔ clean CLI run emits useful files and no authority (1.996445ms)
+✔ duplicate execution reuses identical output (1.762153ms)
+✔ changed inputs cannot overwrite prior result (2.122686ms)
+✔ damaged output cannot masquerade as resumed success (1.369241ms)
+✔ interrupted processing leaves no accepted partial result (0.720014ms)
+✔ unknown config commands rejected (0.695998ms)
+✔ invalid UTF8 fails before output (0.661236ms)
+✔ separate runs do not leak previous records (1.643925ms)
+✔ input originals are unchanged (0.765042ms)
+✔ input missing fails without output (0.392812ms)
+ℹ tests 38
+ℹ suites 0
+ℹ pass 38
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 114.599439

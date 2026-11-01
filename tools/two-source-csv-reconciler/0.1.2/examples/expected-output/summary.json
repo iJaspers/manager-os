@@ -1,0 +1,23 @@
+{
+  "schema": "WIT-RECON-CLI-1",
+  "version": "0.1.2",
+  "sourceRecords": 6,
+  "destinationRecords": 4,
+  "pairedRecords": 2,
+  "comparedCells": 4,
+  "exceptionCounts": {
+    "BLANK_KEY": 1,
+    "DUPLICATE_KEY": 2,
+    "VALUE_MISMATCH": 1,
+    "MISSING_DESTINATION": 1,
+    "EXTRA_DESTINATION": 1
+  },
+  "exceptionsTotal": 6,
+  "sourceAuthorityVerified": false,
+  "realWorldCorrectnessVerified": false,
+  "dataWriteAuthorized": false,
+  "fileReady": false,
+  "containsRawRecords": false,
+  "containsRecordKeys": false,
+  "instructionAuthority": false
+}
