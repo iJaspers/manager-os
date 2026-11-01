@@ -223,7 +223,8 @@
       "review_url": "https://github.com/iJaspers/manager-os/pull/9",
       "tests_passed": 86,
       "public_download_verified": true,
-      "website_verified": false
+      "website_verified": true,
+      "website_url": "https://www.ijaspers.com/post/witburrow-tools"
     }
   }
 }
