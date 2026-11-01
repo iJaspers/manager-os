@@ -1,7 +1,7 @@
 {
   "schema": "wit.public_catalogue.v1",
-  "as_of": "2026-10-24",
-  "revision": "2026-10-24.1",
+  "as_of": "2026-11-01",
+  "revision": "2026-11-01.reconciler-0.1.2",
   "counting": {
     "metadata_records": 285,
     "global_distinct_tool_total": null,
@@ -14522,59 +14522,50 @@
       "supersedes": [],
       "related_family_ids": [],
       "overlap_review": "Cross-collection implementation/semantic overlap is unresolved. Do not add this record to a deduplicated tool total.",
-      "version": "0.1.0-draft.1",
+      "version": "0.1.2",
       "license": "MIT, this sanitized version directory only",
-      "source_url": "https://github.com/iJaspers/manager-os/tree/8a3b8cf91b2630a744311dc4bd984a6f4e53dc73/tools/two-source-csv-reconciler/0.1.0-draft.1",
-      "download_url": "https://raw.githubusercontent.com/iJaspers/manager-os/8a3b8cf91b2630a744311dc4bd984a6f4e53dc73/tools/two-source-csv-reconciler/two-source-csv-reconciler-0.1.0-draft.1.zip",
+      "source_url": "https://github.com/iJaspers/manager-os/tree/11886d6b470d20756ba8e33d82ac30049d7c6c6b/tools/two-source-csv-reconciler/0.1.2",
+      "download_url": "https://raw.githubusercontent.com/iJaspers/manager-os/11886d6b470d20756ba8e33d82ac30049d7c6c6b/tools/two-source-csv-reconciler/two-source-csv-reconciler-0.1.2.zip",
       "source_review_status": "sanitized_source_and_provenance_reviewed",
       "intake_status": "open-scoped-manual-source-only",
       "contribution_route": "https://github.com/iJaspers/manager-os/compare",
       "contribution_policy_url": "https://github.com/iJaspers/manager-os/blob/8a3b8cf91b2630a744311dc4bd984a6f4e53dc73/CONTRIBUTING.md",
-      "runtime": "Offline HTML / JavaScript",
-      "requirements": "Modern browser; keep HTML/common.js/styles.css together. Optional tests: Python3 + Playwright + Chromium; repository batch logic checks: Node.js. Review code before running.",
+      "runtime": "Local Node.js CLI",
+      "requirements": "Node.js 22 or newer. No npm packages; run node cli.cjs examples/config.json output-directory.",
       "tests_not_run": [
-        "Current derivative rendered-browser tests (launch blocked before assertions)",
-        "Mobile/accessibility and ordinary hosted download acceptance",
-        "Independent outsider pickup-to-contribution-to-release cycle"
+        "Historical browser edition acceptance (excluded from CLI package)",
+        "Independent outsider adoption/security audit"
       ],
       "known_limits": [
-        "No database migration, write-back or proof that matching data is correct.",
-        "The shared parser accepts quotes within unquoted fields instead of rejecting malformed CSV."
+        "Exact selected-column comparison only; no tax calculation, source authentication or posting",
+        "CSV only; 300 KiB/input, 1000 records/side; operator must separate years and entities"
       ],
       "source_hold_reason": null,
       "potential_basis": "Editorial categorization only, not measured popularity, quality or adoption.",
       "progress_labels": [
-        "prototype"
+        "usable"
       ],
       "testing_labels": [
-        "partly-tested",
-        "known-issues"
+        "tested"
       ],
       "contribution_labels": [
-        "needs-finishing"
+        "open-scoped"
       ],
       "potential_labels": [
         "experimental"
       ],
-      "next_task": "Reject a bare quote inside an unquoted CSV field and add regression cases preserving valid escaped/multiline fields.",
+      "next_task": "Use the standalone CLI with a fictional example; report reproducible issues under existing scoped contribution policy.",
       "rights_privacy_employment_concern": "Generic low-context source; included examples are fictional. User-entered CSV/exports can contain private data, so do not bundle real records.",
       "collection": "Revenue Lab",
       "collection_tool_number": 9,
       "source_collection_version": "v2.0",
-      "availability": "Downloadable unfinished source; known CSV parser issue",
-      "testing_evidence": "Historical owner/source-package report: 58 in-memory checks. Headless Chromium in-memory source-package tests; not current derivative acceptance. Current derivative runtime acceptance not established. Current sanitized-copy static checks and 40 batch Node VM assertions passed, including positive reproduction of CSV-BARE-QUOTE. Browser launch blocked before assertions. No browser/outsider acceptance claim.",
-      "source_commit": "8a3b8cf91b2630a744311dc4bd984a6f4e53dc73",
-      "source_path": "tools/two-source-csv-reconciler/0.1.0-draft.1",
-      "zip_sha256": "a4e0e128da3fe3d6ac0b474569aabbf41991bdcf24c9a3af418f314c5daa6b99",
-      "zip_size_bytes": 24773,
-      "known_failures": [
-        {
-          "id": "CSV-BARE-QUOTE",
-          "evidence": "Reproduced in the three staged apps; this member invokes the same byte-identical common.js parser.",
-          "description": "The shared parser accepts quotes within unquoted fields instead of rejecting malformed CSV.",
-          "tool_flow_independently_tested_now": true
-        }
-      ]
+      "availability": "Downloadable tested local CLI",
+      "testing_evidence": "86/86 checks passed on source and independently downloaded public ZIP; exact example outputs matched. Internal scope only; no tax/native/browser acceptance.",
+      "source_commit": "11886d6b470d20756ba8e33d82ac30049d7c6c6b",
+      "source_path": "tools/two-source-csv-reconciler/0.1.2",
+      "zip_sha256": "64b4dd9547799f8a88d9b6b2690ccf7ffb3a3c8d4d9b90b0afd22dd5211d3500",
+      "zip_size_bytes": 23153,
+      "known_failures": []
     },
     {
       "id": "wit.regression-plan-forge",

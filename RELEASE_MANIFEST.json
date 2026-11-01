@@ -98,7 +98,7 @@
         "wit.bill-calendar-preview": "0.1.0",
         "wit.field-hours-review": "0.1.0",
         "wit.grocery-planning-preview": "0.1.0",
-        "wit.two-source-csv-reconciler": "0.1.0-draft.1",
+        "wit.two-source-csv-reconciler": "0.1.2",
         "wit.regression-plan-forge": "0.1.0-draft.1",
         "wit.dependency-critical-path-mapper": "0.1.0-draft.2"
       },
@@ -213,6 +213,17 @@
       "automatic_merge": false,
       "rollback_receipt_path": "tools/releases/reconciler-canary-2026-10-25/ROLLBACK_RECEIPT.json",
       "limitation": "Controlled publication/download/pointer-rollback evidence only; not rendered-browser or outsider acceptance. The restored prior version still has its documented CSV-BARE-QUOTE issue."
+    },
+    "reconciler_cli_0_1_2": {
+      "tool_id": "wit.two-source-csv-reconciler",
+      "version": "0.1.2",
+      "source_commit": "11886d6b470d20756ba8e33d82ac30049d7c6c6b",
+      "download_url": "https://raw.githubusercontent.com/iJaspers/manager-os/11886d6b470d20756ba8e33d82ac30049d7c6c6b/tools/two-source-csv-reconciler/two-source-csv-reconciler-0.1.2.zip",
+      "sha256": "64b4dd9547799f8a88d9b6b2690ccf7ffb3a3c8d4d9b90b0afd22dd5211d3500",
+      "review_url": "https://github.com/iJaspers/manager-os/pull/9",
+      "tests_passed": 86,
+      "public_download_verified": true,
+      "website_verified": false
     }
   }
 }
