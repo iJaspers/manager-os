@@ -1,0 +1,36 @@
+{
+  "schema": "wit.source-handoff-provenance.v1",
+  "tool_id": "wit.two-source-csv-reconciler",
+  "version": "0.1.2",
+  "base_public_version": "0.1.1-draft.1",
+  "base_public_commit": "7fa21e0d7412b1ab27018d2d59ef72914be43958",
+  "canonical_source_path": "tools/two-source-csv-reconciler/0.1.2",
+  "license": "MIT",
+  "license_scope": "Exact release directory only",
+  "license_authorized_on": "2026-10-24",
+  "release_authorization": "Owner explicitly authorized sanitized tested useful toolkit releases on 2026-11-01, subject to existing controls.",
+  "review": {
+    "privacy": "approved",
+    "license": "approved",
+    "authority": "approved",
+    "scope": "Internal source review and synthetic automated tests for local CLI only; no external independent review or tax acceptance"
+  },
+  "reused": [
+    "Existing strict common.js CSV parser",
+    "Existing unique-key comparison and mapping functions"
+  ],
+  "new": [
+    "CLI argument/config handling, atomic output and hash receipt",
+    "Synthetic CLI tests and documentation"
+  ],
+  "runtime_dependencies": [
+    "Node.js built-ins only"
+  ],
+  "excluded": [
+    "Private workbench and all taxpayer evidence",
+    "Browser edition",
+    "Tax calculations and filing"
+  ],
+  "release_decision": "ACCEPTED_FOR_SCOPED_CLI_RELEASE_AFTER_TEST_AND_PRIVACY_REVIEW",
+  "source_attribution": "First-party WIT source under existing scoped MIT grant; copyright retained"
+}

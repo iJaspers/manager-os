@@ -1,0 +1,7 @@
+"code","side","source_row","destination_row","record_key_PRIVATE","compared_field","source_value_PRIVATE","destination_value_PRIVATE","human_review_action"
+"BLANK_KEY","SOURCE","7","","","item_id","","","Resolve blank key before pairing."
+"DUPLICATE_KEY","SOURCE","4","","A-3","item_id","","","Resolve repeated key; ambiguous records were not matched."
+"DUPLICATE_KEY","SOURCE","5","","A-3","item_id","","","Resolve repeated key; ambiguous records were not matched."
+"VALUE_MISMATCH","BOTH","3","3","A-2","qty => units","4","7","Verify correct value against an authoritative source."
+"MISSING_DESTINATION","SOURCE","6","","A-4","product_code","","","Locate missing destination row and confirm transfer scope."
+"EXTRA_DESTINATION","DESTINATION","","5","A-5","product_code","","","Confirm whether additional destination record is authorized."

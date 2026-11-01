@@ -1,0 +1,260 @@
+{
+  "schema": "private-contribution-review.v1",
+  "scope": "Independent reviewer parser regressions; synthetic-only Node VM, not rendered browser or external contributor acceptance",
+  "started_at_utc": "2026-11-01T22:42:02.917Z",
+  "finished_at_utc": "2026-11-01T22:42:02.927Z",
+  "node": "v24.22.1",
+  "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node ./tests/csv_regressions.cjs . tests/reviewer/parser_results.json common.js",
+  "target": ".",
+  "input_files": [
+    {
+      "path": "common.js",
+      "sha256": "2de5ebb7f75f7d1a76941c775fc1f0b825b4fbc5974eac5f8c4782a8829cefd7"
+    }
+  ],
+  "tests": 48,
+  "passed": 48,
+  "failed": 0,
+  "results": [
+    {
+      "tool": "common.js",
+      "name": "valid: plain rows",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "valid: quoted commas",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "valid: doubled quotes",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "valid: embedded LF",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "valid: embedded CRLF",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "valid: embedded CR",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "valid: quoted empty field",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "valid: empty middle field",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "valid: empty final field",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "valid: empty initial field",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "valid: all quoted headers",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "valid: space after closing quote preserved compatibility",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "valid: space before delimiter after quoted field",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "valid: unquoted spaces preserved",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "valid: Unicode",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "valid: single quote content",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "valid: one literal double quote",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "valid: two literal double quotes",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "valid: blank lines ignored compatibility",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "valid: quoted blank row ignored compatibility",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "valid: empty input",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "valid: header only",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "valid: comma and newline inside quoted field",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "valid: formula-shaped input remains inert text",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "reject: bare quote middle",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "reject: bare quote at end",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "reject: bare quote first row",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "reject: bare quote followed by comma",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "reject: bare quote followed by newline",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "reject: two bare quotes",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "reject: quote after unquoted space",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "reject: quote after unquoted tab",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "reject: unclosed quoted field",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "reject: unclosed escape sequence",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "reject: character immediately after quote",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "reject: character after closing quote whitespace",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "reject: quote after closing quote whitespace",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "reject: bare quote after previous quoted row",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "reject: bare quote after earlier empty field",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "formula safe export: \"=1+1\"",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "formula safe export: \"+1\"",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "formula safe export: \"-1\"",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "formula safe export: \"@SUM(A1)\"",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "formula safe export: \"\\t=1\"",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "formula safe export: \"\\r=1\"",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "formula safe export: \"  =1\"",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "serializer roundtrip",
+      "pass": true
+    },
+    {
+      "tool": "common.js",
+      "name": "host I/O globals unavailable",
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "CHANGELOG.md": {
+    "sha256": "f2af605efdf5411ce139f0cb22c88479f156ddb301c1252090504a9afbba548b",
+    "bytes": 582
+  },
+  "CONTRIBUTING.md": {
+    "sha256": "4983f0b81bc9323388bbf6f1563cc6c03d7d71ad4c1159eacaf93c0dcd8b2a5f",
+    "bytes": 1596
+  },
+  "LICENSE": {
+    "sha256": "7f91c512ba41e11fc68fb65c5023e632e3c13708e9dc2376df8fa8001111a876",
+    "bytes": 1065
+  },
+  "LICENSE_SCOPE.md": {
+    "sha256": "e9859cdfe0d466757f253cd588dad220e2b5f5e589da3313fb73a041049b1525",
+    "bytes": 626
+  },
+  "PRIVACY_REVIEW.json": {
+    "sha256": "6519cf5dbd64f77f55e7773b960a834725812b6190e2dbd757c2493c9c964edc",
+    "bytes": 1008
+  },
+  "PROVENANCE.json": {
+    "sha256": "48f84825247e626f92602289891e2303b9614858a342571314a62b4d8a9db84a",
+    "bytes": 1422
+  },
+  "README.md": {
+    "sha256": "eb4d56bacedadbf242c95a20b2900668547660af09841eff0f171d9c2d0bec55",
+    "bytes": 3988
+  },
+  "TEST_RESULTS.md": {
+    "sha256": "7c110e38e88d1557450388d49f5020389b05cef19f430976191745242e16cc13",
+    "bytes": 1035
+  },
+  "cli.cjs": {
+    "sha256": "2cd2db457acba92edbddae4350fa07c2c1a7fd349ba4606113ba95e950861e47",
+    "bytes": 3759
+  },
+  "common.js": {
+    "sha256": "2de5ebb7f75f7d1a76941c775fc1f0b825b4fbc5974eac5f8c4782a8829cefd7",
+    "bytes": 2196
+  },
+  "examples/config.json": {
+    "sha256": "37a323ddc343c4d43861f9be69c54729de391e35275e374a3452d562c86afcd5",
+    "bytes": 237
+  },
+  "examples/expected-output/PRIVATE_exceptions.csv": {
+    "sha256": "7111b7dd2999c933b8ed2586b96119bcc9ab36da8074c1be86e30340f778a048",
+    "bytes": 848
+  },
+  "examples/expected-output/PRIVATE_receipt.json": {
+    "sha256": "f98faa4a8c8e22eef2957bd8d71547c95857c91a25a444eacf94a439781cc48c",
+    "bytes": 852
+  },
+  "examples/expected-output/summary.json": {
+    "sha256": "2c79ca6dd2f38ccbe6ec11607a88395377f0f2b4429164b42d844197135b2d60",
+    "bytes": 553
+  },
+  "examples/reconcile_destination_fictional.csv": {
+    "sha256": "54ae97157d52a191fe92dbf62e7dce62182e5741ddb2b9c5f9b7a4d097fc6d58",
+    "bytes": 98
+  },
+  "examples/reconcile_source_fictional.csv": {
+    "sha256": "1bb4527e6b01843492d008e8939269e21ce0e546395c4cdcf3068203c807d896",
+    "bytes": 117
+  },
+  "reconcile.cjs": {
+    "sha256": "ddfff3eed368e9c083dac484565eec67ee24de03d837cd8cc09e52aaf88963e4",
+    "bytes": 4974
+  },
+  "tests/cli.test.cjs": {
+    "sha256": "061db437b573c0dbc53c18709795f93509e2b66981f103cb0a91544e2887636f",
+    "bytes": 6787
+  },
+  "tests/csv_regressions.cjs": {
+    "sha256": "8bca33066d52e7f54faa8ef52df6f461ae4d987260c6fc40c857ab89f50dedda",
+    "bytes": 5924
+  },
+  "tests/reviewer/README.txt": {
+    "sha256": "d1dbdfcd4d44f73a9e5d615468988512b852d730a57e6f6e8f5f8132d51bf48b",
+    "bytes": 142
+  },
+  "tests/reviewer/cli.tap": {
+    "sha256": "f1f0ec50401adce10644fc70181c266aca2719af641e60ed450ef4c2bab30c00",
+    "bytes": 2001
+  },
+  "tests/reviewer/parser_results.json": {
+    "sha256": "db0ce442ac01709c89ba87e69ae6151c4d5830b0135d84de2a158457bbe1a499",
+    "bytes": 5853
+  }
+}
