@@ -1,5 +1,5 @@
 {
-  "url": "https://raw.githubusercontent.com/iJaspers/manager-os/11886d6b470d20756ba8e33d82ac30049d7c6c6b/tools/two-source-csv-reconciler/two-source-csv-reconciler-0.1.2.zip",
+  "url": "https://raw.githubusercontent.com/iJaspers/manager-os/00f51bb34bcfb040190d931b29400f8e5dfc5198/tools/two-source-csv-reconciler/two-source-csv-reconciler-0.1.2.zip",
   "zip_sha256": "64b4dd9547799f8a88d9b6b2690ccf7ffb3a3c8d4d9b90b0afd22dd5211d3500",
   "bytes": 23153,
   "manifest_verified": 22,
@@ -30,7 +30,7 @@
   "example_exit": 2,
   "tool_id": "wit.two-source-csv-reconciler",
   "version": "0.1.2",
-  "source_commit": "11886d6b470d20756ba8e33d82ac30049d7c6c6b",
+  "source_commit": "00f51bb34bcfb040190d931b29400f8e5dfc5198",
   "review_url": "https://github.com/iJaspers/manager-os/pull/9",
   "website_status": "VERIFIED_PUBLIC",
   "rollback": "Restore prior metadata pointer; retain immutable source and ZIP history.",
@@ -39,7 +39,7 @@
     "visible_version": "0.1.2",
     "runtime": "Local Node.js CLI",
     "visible_tests": "86/86",
-    "visible_source_and_download_commit": "11886d6b470d20756ba8e33d82ac30049d7c6c6b",
+    "visible_source_and_download_commit": "00f51bb34bcfb040190d931b29400f8e5dfc5198",
     "visible_zip_sha256": "64b4dd9547799f8a88d9b6b2690ccf7ffb3a3c8d4d9b90b0afd22dd5211d3500",
     "catalogue_other_records_unchanged": 284,
     "site_change": "One existing feed URL updated under embed revision guard 19 to20; no permission/settings change"
@@ -52,5 +52,10 @@
     "ACCEPTED": true,
     "RELEASED": true
   },
-  "acceptance_scope": "Local CSV CLI only; internal review, no external security/tax acceptance"
+  "acceptance_scope": "Local CSV CLI only; internal review, no external security/tax acceptance",
+  "source_transport_correction": {
+    "description": "Final Git source-to-ZIP comparison caught LF normalization of the expected CSV fixture during text upload. Restored its approved CRLF bytes using a binary-preserving blob. Runtime and ZIP unchanged; SHA256SUMS now matches every pinned source member.",
+    "prior_source_pin": "11886d6b470d20756ba8e33d82ac30049d7c6c6b",
+    "corrected_source_pin": "00f51bb34bcfb040190d931b29400f8e5dfc5198"
+  }
 }

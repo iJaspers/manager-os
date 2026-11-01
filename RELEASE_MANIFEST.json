@@ -217,8 +217,8 @@
     "reconciler_cli_0_1_2": {
       "tool_id": "wit.two-source-csv-reconciler",
       "version": "0.1.2",
-      "source_commit": "11886d6b470d20756ba8e33d82ac30049d7c6c6b",
-      "download_url": "https://raw.githubusercontent.com/iJaspers/manager-os/11886d6b470d20756ba8e33d82ac30049d7c6c6b/tools/two-source-csv-reconciler/two-source-csv-reconciler-0.1.2.zip",
+      "source_commit": "00f51bb34bcfb040190d931b29400f8e5dfc5198",
+      "download_url": "https://raw.githubusercontent.com/iJaspers/manager-os/00f51bb34bcfb040190d931b29400f8e5dfc5198/tools/two-source-csv-reconciler/two-source-csv-reconciler-0.1.2.zip",
       "sha256": "64b4dd9547799f8a88d9b6b2690ccf7ffb3a3c8d4d9b90b0afd22dd5211d3500",
       "review_url": "https://github.com/iJaspers/manager-os/pull/9",
       "tests_passed": 86,
