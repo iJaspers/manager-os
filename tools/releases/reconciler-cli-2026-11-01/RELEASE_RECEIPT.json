@@ -42,7 +42,7 @@
     "visible_source_and_download_commit": "00f51bb34bcfb040190d931b29400f8e5dfc5198",
     "visible_zip_sha256": "64b4dd9547799f8a88d9b6b2690ccf7ffb3a3c8d4d9b90b0afd22dd5211d3500",
     "catalogue_other_records_unchanged": 284,
-    "site_change": "One existing feed URL updated under embed revision guard 19 to20; no permission/settings change"
+    "site_change": "One existing feed URL updated under revision guards 19 to20 to21; final feed pins catalogue 8ee7a4db56000698027e7e3c2f631c2ba0b04e92. Public page reopened and corrected source/download links verified; no permission/settings change"
   },
   "stages": {
     "DISCOVERED": true,
