@@ -1,0 +1,18 @@
+{
+  "product": "WIT Starter Companion",
+  "version": "2026.11.01-rc1",
+  "files": [
+    {
+      "path": "downloads/WIT_Starter_Companion_2026.11.01-rc1.zip",
+      "bytes": 9811,
+      "sha256": "c9c977799766fc4ae5b0bf6276880795df76ae0de64c030aa8f995864d9bdf33"
+    },
+    {
+      "path": "downloads/BOB_ON_DEMAND_2026.11.01-rc1.txt",
+      "bytes": 8759,
+      "sha256": "4fdd30e21c1251623e8bd48d2e001b3b945b533949bfc8fb8dc7ab4441280b1f"
+    }
+  ],
+  "integrity_scope": "Byte consistency only; not evidence of publication, host compatibility or installation.",
+  "distribution_scope": "Original text companion; MIT notice included in each distribution. Linked tools retain their own notices."
+}
