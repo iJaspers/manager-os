@@ -1,0 +1,35 @@
+{
+  "host": "example-ai",
+  "session": "synthetic-session",
+  "account": "fictional-account",
+  "connector": "fixture",
+  "tool": "read_fixture",
+  "action": "read",
+  "target": "fixture.txt",
+  "payload": "",
+  "as_of": "2026-11-03T12:00:00Z",
+  "connections": [
+    {
+      "host": "example-ai",
+      "id": "fixture",
+      "session": "synthetic-session",
+      "account": "fictional-account",
+      "source": "host_tool_response",
+      "observed_at": "2026-11-03T12:00:00Z",
+      "installed": true,
+      "authenticated": true,
+      "observed": true,
+      "tools": [
+        "read_fixture"
+      ],
+      "capabilities": [
+        "read"
+      ],
+      "tool_capabilities": {
+        "read_fixture": [
+          "read"
+        ]
+      }
+    }
+  ]
+}

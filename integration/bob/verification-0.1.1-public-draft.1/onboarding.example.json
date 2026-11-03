@@ -1,0 +1,43 @@
+{
+  "schema": "wit.onboarding-events.v1",
+  "host_kind": "synthetic",
+  "evidence_kind": "synthetic",
+  "events": [
+    {
+      "kind": "entry_opened",
+      "elapsed_ms": 0,
+      "artifact_sha256": null,
+      "reviewed": false
+    },
+    {
+      "kind": "capabilities_checked",
+      "elapsed_ms": 100,
+      "artifact_sha256": null,
+      "reviewed": true
+    },
+    {
+      "kind": "result_produced",
+      "elapsed_ms": 300,
+      "artifact_sha256": "40fd5bb30f97f3dc228cd025807a0eae161db14a2f9d1a4a72de6f10b607d4d7",
+      "reviewed": true
+    },
+    {
+      "kind": "result_confirmed",
+      "elapsed_ms": 500,
+      "artifact_sha256": "40fd5bb30f97f3dc228cd025807a0eae161db14a2f9d1a4a72de6f10b607d4d7",
+      "reviewed": true
+    },
+    {
+      "kind": "save_verified",
+      "elapsed_ms": 600,
+      "artifact_sha256": "40fd5bb30f97f3dc228cd025807a0eae161db14a2f9d1a4a72de6f10b607d4d7",
+      "reviewed": true
+    },
+    {
+      "kind": "resume_verified",
+      "elapsed_ms": 900,
+      "artifact_sha256": "40fd5bb30f97f3dc228cd025807a0eae161db14a2f9d1a4a72de6f10b607d4d7",
+      "reviewed": true
+    }
+  ]
+}

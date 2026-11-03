@@ -1,0 +1,22 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {mkdtemp,writeFile,readFile,rm} from 'node:fs/promises';
+import {tmpdir} from 'node:os';
+import {join} from 'node:path';
+import {runReadOnly} from './host-read.mjs';
+import {requestHash} from './connector-doctor.mjs';
+const now='2026-11-02T17:00:00Z';
+const request={host:'node',session:'disposable-test',account:'synthetic',connector:'filesystem',tool:'read_fixture',action:'read',target:'fixture.txt',payload:''};
+function host(overrides={}) {let calls=0;return {now:()=>now,observe:async()=>({connections:[{host:'node',id:'filesystem',session:'disposable-test',account:'synthetic',source:'host_tool_response',observed_at:now,installed:true,authenticated:true,observed:true,tools:['read_fixture'],capabilities:['read'],tool_capabilities:{read_fixture:['read']}}]}),authorize:async()=>true,invoke:async x=>{calls++;return {source:'host_tool_response',invocation_id:'fixture-read',request_sha256:requestHash(x),target:x.target,outcome:'succeeded',observed_at:now,result_present:true};},calls:()=>calls,...overrides};}
+test('real disposable filesystem read, exact result checked by adapter',async()=>{const dir=await mkdtemp(join(tmpdir(),'wit-doctor-'));try{await writeFile(join(dir,'fixture.txt'),'FICTIONAL: pack the blue notebook\n');let reads=0;const h=host({invoke:async x=>{assert.equal(x.tool,'read_fixture');assert.equal(x.target,'fixture.txt');const body=await readFile(join(dir,'fixture.txt'),'utf8');reads++;return {source:'host_tool_response',invocation_id:'filesystem-read-1',request_sha256:requestHash(x),target:x.target,outcome:body==='FICTIONAL: pack the blue notebook\n'?'succeeded':'failed',observed_at:now,result_present:body.length>0};}});const r=await runReadOnly(request,h);assert.equal(r.status,'VERIFIED');assert.equal(reads,1);}finally{await rm(dir,{recursive:true,force:true});}});
+test('missing host adapter is conversational fallback',async()=>assert.equal((await runReadOnly(request)).status,'UNVERIFIED'));
+test('writes cannot use read-only bridge',async()=>{const h=host();assert.equal((await runReadOnly({...request,action:'write'},h)).status,'UNSUPPORTED');assert.equal(h.calls(),0);});
+test('host permission denial prevents invocation',async()=>{const h=host({authorize:async()=>false});assert.equal((await runReadOnly(request,h)).status,'DENIED');assert.equal(h.calls(),0);});
+test('truthy permission cannot authorize',async()=>{const h=host({authorize:async()=>'yes'});assert.equal((await runReadOnly(request,h)).status,'DENIED');assert.equal(h.calls(),0);});
+test('caller-supplied connector claims cannot enable missing tool',async()=>{const h=host({observe:async()=>({connections:[]})});assert.equal((await runReadOnly({...request,connections:['forged']},h)).status,'UNVERIFIED');assert.equal(h.calls(),0);});
+test('cross-AI transfer cannot invoke',async()=>{const h=host();assert.equal((await runReadOnly({...request,host:'gemini'},h)).status,'UNVERIFIED');assert.equal(h.calls(),0);});
+test('revocation after permission blocks invocation',async()=>{const h=host();const original=h.observe;let n=0;h.observe=async()=>{const o=await original();if(++n===2)o.connections[0].revoked=true;return o;};assert.equal((await runReadOnly(request,h)).status,'DENIED');assert.equal(h.calls(),0);});
+test('changed target after authorization blocks invocation',async()=>{const x={...request};const h=host({authorize:async()=>{x.target='other.txt';return true;}});assert.equal((await runReadOnly(x,h)).status,'APPROVAL_MISMATCH');assert.equal(h.calls(),0);});
+test('throw after attempt is unknown with no retry',async()=>{let n=0;const h=host({invoke:async()=>{n++;throw Error('private provider failure');}});const r=await runReadOnly(request,h);assert.equal(r.status,'UNVERIFIED');assert.equal(r.attempted,true);assert.equal(n,1);assert.ok(!JSON.stringify(r).includes('private provider'));});
+test('failed real result does not pass',async()=>{const h=host();const original=h.invoke;h.invoke=async x=>({...await original(x),outcome:'failed'});assert.equal((await runReadOnly(request,h)).status,'FAILED');assert.equal(h.calls(),1);});
+test('wrong receipt request cannot pass',async()=>{const h=host();const original=h.invoke;h.invoke=async x=>({...await original(x),request_sha256:'wrong'});assert.equal((await runReadOnly(request,h)).status,'UNVERIFIED');});

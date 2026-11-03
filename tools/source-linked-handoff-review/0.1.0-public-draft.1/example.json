@@ -1,0 +1,13 @@
+{
+  "owner": "Fictional Workshop",
+  "source_task": "https://example.invalid/tasks/cleanup",
+  "source_observed_at": "2026-11-03T12:00:00Z",
+  "source_state": "REVIEW",
+  "proposal": "Review the drafted cleanup checklist; meeting point remains unknown.",
+  "evidence_refs": [
+    "fixture:cleanup-draft-v1"
+  ],
+  "claim_resolved": false,
+  "performed_write": false,
+  "automated_send": false
+}

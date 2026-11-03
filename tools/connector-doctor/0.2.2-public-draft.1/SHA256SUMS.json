@@ -1,0 +1,22 @@
+{
+  "LICENSE": "7f91c512ba41e11fc68fb65c5023e632e3c13708e9dc2376df8fa8001111a876",
+  "PROVENANCE.json": "0b5ef584dce05d6a213981783c228b1ad5219f47b54ba6a8ae20c56ffb176274",
+  "README.md": "ca03725caa79777139678c4148460d09c6bd51d8abda4931b721929be63e49d3",
+  "TEST_RESULTS.md": "5cbcac300d187f6d09b25cc021ba1fe980f21d67a220245bc262abe3c978e428",
+  "approval-boundary.test.mjs": "d477f81b21bf193ecd2ef6cb8aeeafdd7fdf374120d3b60d6cbfb24bfe00a3d5",
+  "cli.test.mjs": "97418cad45c99114f19e34b878dbde45d4ecf2600f0a256a76b7290512205061",
+  "connector-doctor.mjs": "671ec4518ae13b5415d79bc65d25776a2af996b383e1e06ced339c155d270b45",
+  "connector-doctor.test.mjs": "c85523176bf29848e419e2f3f31d600cdfeede3d00a30ea22f878c35abf1f531",
+  "demo.mjs": "732f6db0f0502d3f9f58e7a6c286c95b62738da86568c4102c4306c83533924a",
+  "doctor-cli.mjs": "ca3b774959f77ae5275c2f5f01b9a7ab12e16b98933d3b49ecf1555ddd0be0f1",
+  "example.json": "7b41bdd8c95507efed1d68cc6b139d02d2ea9dd6b030af3fa45c937bf9611d2d",
+  "handoff.example.json": "0f61fe11a1a1dda54fdb509b967efeba1ce20fb60f22f84b5aeefbd678abba8e",
+  "host-read.mjs": "fee0f19197cf2f36b5efed8c5f325cb74f1e2d83e7d104c013f9de0bd2f6a751",
+  "host-read.test.mjs": "a3feea733357d153b963ecc91509fb07d12d7e677d072fbf19537a68ff48aef1",
+  "package.json": "a557bd0fb2d53abeb8a0db9bb4e213651c45200e374bd541e59fe8d5eed95fd8",
+  "portability.mjs": "9c4a798d3b7836cb831aad5bc76c5d6b1092f2b03202f04fe578e88a0da0dc87",
+  "portability.test.mjs": "f371f20a1ee00d993ec0a33de5dbdcb4d6a0685aa3e352695fe60a297121da32",
+  "portable-cli.mjs": "5c7bc47432866c2fc976841a3581e2dcd4f7a34778350789c908c187fd2560c5",
+  "preferences.example.json": "7c77863ebacd22c5631284b52a13b7f756a7e87110d76884aaf65e073685d9f1",
+  "profile-store.mjs": "a50d4a4b4af0a1c83d3d6dbeac1e8b58ceae97d81ec1392b89ed82a9abac7bf4"
+}

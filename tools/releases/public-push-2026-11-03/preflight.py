@@ -12,6 +12,7 @@ import re
 import shutil
 import stat
 import zipfile
+from release_snapshot import capture_members
 
 MAX_FILE = 2 * 1024 * 1024
 MAX_TOTAL = 16 * 1024 * 1024
@@ -143,37 +144,19 @@ class Scan:
         except (OSError, ValueError, RuntimeError, zipfile.BadZipFile, NotImplementedError):
             self.fail(name, 'INVALID_ARCHIVE')
 
-def scan_paths(root, paths, expected=None):
-    root = Path(root).resolve()
+def scan_snapshot(root, paths, expected=None):
     scan = Scan()
-    seen = set()
-    for name in paths:
-        if not safe_name(name) or name.casefold() in seen:
-            scan.fail('<manifest>', 'UNSAFE_OR_DUPLICATE_PATH')
-            continue
-        seen.add(name.casefold())
-        path = root / name
-        try:
-            current = root
-            for part in PurePosixPath(name).parts:
-                current /= part
-                if current.is_symlink():
-                    raise ValueError()
-            st = path.stat()
-            if not stat.S_ISREG(st.st_mode) or st.st_nlink != 1 or st.st_size > MAX_FILE:
-                raise ValueError()
-            with path.open('rb') as f:
-                data = f.read(MAX_FILE + 1)
-            if expected is not None and expected.get(name) != digest(data):
-                scan.fail(name, 'REVIEWED_HASH_CHANGED')
-            scan.content(name, data)
-        except (OSError, ValueError):
-            scan.fail(name, 'UNSAFE_OR_MISSING_FILE')
-    return {'schema': 'wit.release-preflight.v1', 'passed': not scan.findings,
+    snapshot = capture_members(root, paths, scan, safe_name, MAX_FILE, expected)
+    report = {'schema': 'wit.release-preflight.v1', 'passed': not scan.findings,
             'findings': scan.findings, 'source_review': scan.review, 'files': scan.files,
             'external_scanners': {n: 'AVAILABLE_NOT_RUN' if shutil.which(n) else 'NOT_INSTALLED_NOT_RUN'
                                   for n in ('gitleaks', 'osv-scanner', 'codeql')},
             'limits': 'Pattern checks and exact-file hashes only. Human privacy, licensing and source review remain required; no security certification or dependency vulnerability result.'}
+    return report, snapshot
+
+def scan_paths(root, paths, expected=None):
+    return scan_snapshot(root, paths, expected)[0]
+
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)

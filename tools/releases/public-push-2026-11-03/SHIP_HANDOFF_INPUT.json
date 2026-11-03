@@ -1,0 +1,14 @@
+{
+  "owner": "WIT Product (existing owner)",
+  "source_task": "https://github.com/iJaspers/manager-os/pull/10",
+  "source_observed_at": "2026-11-03T17:14:02.635Z",
+  "source_state": "REVIEW",
+  "proposal": "Review the Doctor authorization repair, immutable release snapshot and BOB-089 public derivative on the existing PR. Preserve main RC1; merge and independent acceptance remain pending.",
+  "evidence_refs": [
+    "https://github.com/iJaspers/manager-os/commit/41108ab3da9788b72f9e19f16a0fa9c5502aa17c",
+    "tools/releases/public-push-2026-11-03/SHIP_TEST_RESULTS.json"
+  ],
+  "claim_resolved": false,
+  "performed_write": false,
+  "automated_send": false
+}

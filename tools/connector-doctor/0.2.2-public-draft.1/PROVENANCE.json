@@ -1,0 +1,29 @@
+{
+  "tool_id": "wit.connector-doctor",
+  "version": "0.2.2-public-draft.1",
+  "upstream_version": "0.2.0",
+  "upstream_archive_sha256": "62f09214f5dea929c5b0ebe8f38ad1d242e99318d47fb029789504eeab7908d6",
+  "parent_component": "BOB_ON_DEMAND_2026.11.01-rc1",
+  "base_commit": "6fc0c50a5c93a6eefc66b60418d78541e98171bc",
+  "authorship": "Existing WIT MIT source plus original AI-assisted WIT implementation. Public source patterns reviewed; no third-party code, prompts, assets or dependency added.",
+  "license": "Inherited MIT, copyright 2026 iJaspers. This candidate directory and the separately licensed optional Bob supplement only. No repository-wide license.",
+  "dependencies": [],
+  "changes": [
+    "Sanitized public WIP packaging; private receipts, history and owner records excluded.",
+    "Bound CLI input before decoding; reject malformed UTF-8; add seven CLI tests.",
+    "Original bounded preferences plan/apply/readback/rollback in a user-selected local workspace.",
+    "Original metadata-only handoff, current-host resume checks and capability drift comparison.",
+    "47 new synthetic portability and end-to-end tests; prior 82 tests retained.",
+    "Repair reproduced authorization mutation: bind immutable intent before callbacks, pin callbacks and recheck caller intent and current capability.",
+    "Enforce a five-minute local read authorization window and reject clock rollback; retain host-owned permission enforcement.",
+    "18 additional approval-boundary tests; 147 local Doctor tests pass."
+  ],
+  "review": {
+    "privacy": "Selected complete source, tests, example and documentation reviewed; synthetic-only fixtures.",
+    "license": "Existing MIT notice retained; no vendor source or assets bundled.",
+    "authority": "Maintainer instruction: Operation Public GitHub Push Part 2; safe generic licensing-compliant publication. Public WIP only; no auto-merge, product acceptance or full launch."
+  },
+  "acceptance": "Pending independent product/security and November 6 cross-AI trials.",
+  "prior_public_version": "0.2.1-public-draft.1",
+  "prior_public_commit": "b8a837de6fd040a795799f70694e38e1af43ae46"
+}
