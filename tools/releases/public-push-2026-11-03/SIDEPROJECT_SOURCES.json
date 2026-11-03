@@ -1,0 +1,143 @@
+{
+  "date": "2026-11-03",
+  "source_review": "Pinned source inspection, not an exhaustive security audit. Lockfile license labels are metadata, not permission or proof.",
+  "candidates": [
+    {
+      "repository": "https://github.com/caliber-ai-org/ai-setup.git",
+      "commit": "f5dbc002022a8a10acad25c1cce23ddefdc19d0d",
+      "root_license_sha256": "4f4aaf4e8dfc021c73b2cad431387ae96d3af475ba77c87c17fdf88021d8bcfb",
+      "lockfile_license_metadata": {
+        "package-lock.json": {
+          "packages": 380,
+          "with_declared_license": 380,
+          "license_labels": [
+            "0BSD",
+            "Apache-2.0",
+            "BSD-2-Clause",
+            "BSD-3-Clause",
+            "BlueOak-1.0.0",
+            "ISC",
+            "MIT",
+            "MPL-2.0"
+          ]
+        }
+      },
+      "executed": false,
+      "dependency_license_clearance": "NOT_GRANTED; no candidate code or dependencies redistributed"
+    },
+    {
+      "repository": "https://github.com/Netxeo/skill-file-security.git",
+      "commit": "f6dd9e2d53c936c79af307766b0d8497e972062c",
+      "root_license_sha256": null,
+      "lockfile_license_metadata": {
+        "package-lock.json": {
+          "packages": 192,
+          "with_declared_license": 192,
+          "license_labels": [
+            "(MIT OR CC0-1.0)",
+            "Apache-2.0",
+            "BSD-3-Clause",
+            "BlueOak-1.0.0",
+            "ISC",
+            "MIT"
+          ]
+        }
+      },
+      "executed": false,
+      "dependency_license_clearance": "NOT_GRANTED; no candidate code or dependencies redistributed"
+    },
+    {
+      "repository": "https://github.com/TahaSh/wayflow.git",
+      "commit": "e03062ba113cacc3dcf7f9ca7d4842665e8d9b47",
+      "root_license_sha256": "b95a7025c80329eadbb19d20e909a61c47b0855f0ed799a0b186d544600899ca",
+      "lockfile_license_metadata": {},
+      "executed": false,
+      "dependency_license_clearance": "NOT_GRANTED; no candidate code or dependencies redistributed"
+    },
+    {
+      "repository": "https://github.com/Heishigan/Cursiva.git",
+      "commit": "e17ecb4e0874a9625537d33587b0603a22bac369",
+      "root_license_sha256": "18e6ccef7e1f2e0a850c5cb019ca26e6687df79bb2a85235a93d57f6105e3c52",
+      "lockfile_license_metadata": {
+        "frontend/package-lock.json": {
+          "packages": 424,
+          "with_declared_license": 423,
+          "license_labels": [
+            "0BSD",
+            "Apache-2.0",
+            "Apache-2.0 AND LGPL-3.0-or-later",
+            "Apache-2.0 AND LGPL-3.0-or-later AND MIT",
+            "BSD-2-Clause",
+            "BSD-3-Clause",
+            "BlueOak-1.0.0",
+            "CC-BY-4.0",
+            "CC0-1.0",
+            "ISC",
+            "LGPL-3.0-or-later",
+            "MIT",
+            "MPL-2.0",
+            "Python-2.0",
+            "Unlicense"
+          ]
+        }
+      },
+      "executed": false,
+      "dependency_license_clearance": "NOT_GRANTED; no candidate code or dependencies redistributed"
+    },
+    {
+      "repository": "https://github.com/danielsyauqi/Seeder.git",
+      "commit": "30758646a438a51950173be81abf77803a6dc4dd",
+      "root_license_sha256": "6b6c480be31a77c235d59c01d73aee4ea083a1edac0a4d76c2148764293e2c3b",
+      "lockfile_license_metadata": {
+        "package-lock.json": {
+          "packages": 1057,
+          "with_declared_license": 1056,
+          "license_labels": [
+            "0BSD",
+            "Apache-2.0",
+            "Apache-2.0 AND LGPL-3.0-or-later",
+            "Apache-2.0 AND LGPL-3.0-or-later AND MIT",
+            "BSD-2-Clause",
+            "BSD-3-Clause",
+            "BlueOak-1.0.0",
+            "CC-BY-4.0",
+            "CC0-1.0",
+            "ISC",
+            "LGPL-3.0-or-later",
+            "MIT",
+            "MIT AND ISC",
+            "MIT OR Apache-2.0",
+            "MPL-2.0",
+            "Python-2.0"
+          ]
+        }
+      },
+      "executed": false,
+      "dependency_license_clearance": "NOT_GRANTED; no candidate code or dependencies redistributed"
+    },
+    {
+      "repository": "https://github.com/sidhanthapoddar99/agent-knowledge-system.git",
+      "commit": "0ffa20caebc5cd97ad76b89a377cfc516033747b",
+      "root_license_sha256": "184cf97e31db01b631dc152f80bd7a1b29196be26b0a3d5f412bfa5563bfb7b0",
+      "lockfile_license_metadata": {},
+      "executed": false,
+      "dependency_license_clearance": "NOT_GRANTED; no candidate code or dependencies redistributed"
+    },
+    {
+      "repository": "https://github.com/siropkin/side-project-census.git",
+      "commit": "2829ad918c3cf6b581d52d0e209c7389b40ed0bf",
+      "root_license_sha256": null,
+      "lockfile_license_metadata": {},
+      "executed": false,
+      "dependency_license_clearance": "NOT_GRANTED; no candidate code or dependencies redistributed"
+    },
+    {
+      "repository": "https://github.com/victor36max/shire.git",
+      "commit": "bda8a13cd58003c5607fd38863f2962aa8d98e41",
+      "root_license_sha256": "f9b2b9a3d651fc31c8839e8d40e9d3062ac2939d43cd3a45fc7376d8331d77e1",
+      "lockfile_license_metadata": {},
+      "executed": false,
+      "dependency_license_clearance": "NOT_GRANTED; no candidate code or dependencies redistributed"
+    }
+  ]
+}

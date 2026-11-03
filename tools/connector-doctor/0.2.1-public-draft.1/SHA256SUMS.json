@@ -1,0 +1,21 @@
+{
+  "LICENSE": "7f91c512ba41e11fc68fb65c5023e632e3c13708e9dc2376df8fa8001111a876",
+  "PROVENANCE.json": "cd443d244735559f6dedf78bc9b45bd98430a654b0a31f3573b1e5a0b8d56ef6",
+  "README.md": "5b89a533d3f961f70c9b3674e72e1a210f3dcd247d358ca766df18e21649fcbb",
+  "TEST_RESULTS.md": "4bcbff3235fe632f342fc477f6b9d4ede2bdb7ba6e7598dc69675201485312c5",
+  "cli.test.mjs": "97418cad45c99114f19e34b878dbde45d4ecf2600f0a256a76b7290512205061",
+  "connector-doctor.mjs": "6d03b2c262b3c491a7269558154ee68fd0c2192528b1fafdc1f5f99e0e02388f",
+  "connector-doctor.test.mjs": "c85523176bf29848e419e2f3f31d600cdfeede3d00a30ea22f878c35abf1f531",
+  "demo.mjs": "4e9f4a04f058ce3cc8dde99dc257cbdb337d942c2d0e314cb25d2ac19a53c343",
+  "doctor-cli.mjs": "ca3b774959f77ae5275c2f5f01b9a7ab12e16b98933d3b49ecf1555ddd0be0f1",
+  "example.json": "7b41bdd8c95507efed1d68cc6b139d02d2ea9dd6b030af3fa45c937bf9611d2d",
+  "handoff.example.json": "5753bdb7ae8564d3322cbd8fbe161a0363522ddb60aa0b903600bc0e57529e55",
+  "host-read.mjs": "ce01a6d4ea871849269d80a2146aa283a626bb2824ad5e8d9e8dfdce2350f6fc",
+  "host-read.test.mjs": "a3feea733357d153b963ecc91509fb07d12d7e677d072fbf19537a68ff48aef1",
+  "package.json": "bc34b3bff1f1ff604120cc9eeb9b5a6fdab284177c1b7f114945be2ebdd80fe4",
+  "portability.mjs": "9c4a798d3b7836cb831aad5bc76c5d6b1092f2b03202f04fe578e88a0da0dc87",
+  "portability.test.mjs": "f371f20a1ee00d993ec0a33de5dbdcb4d6a0685aa3e352695fe60a297121da32",
+  "portable-cli.mjs": "5c7bc47432866c2fc976841a3581e2dcd4f7a34778350789c908c187fd2560c5",
+  "preferences.example.json": "7c77863ebacd22c5631284b52a13b7f756a7e87110d76884aaf65e073685d9f1",
+  "profile-store.mjs": "a50d4a4b4af0a1c83d3d6dbeac1e8b58ceae97d81ec1392b89ed82a9abac7bf4"
+}

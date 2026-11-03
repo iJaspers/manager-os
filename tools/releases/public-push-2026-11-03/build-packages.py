@@ -1,9 +1,18 @@
 """Rebuild only the three versioned WIP ZIPs; no network or dependency install."""
 from pathlib import Path
 import hashlib,json,zipfile
+from preflight import scan_paths
 ROOT=Path(__file__).resolve().parents[3]
-VERSIONS={'connector-doctor':'0.2.0-public-draft.1','regression-plan-forge':'0.1.1-public-draft.1','dependency-critical-path-mapper':'0.1.1-public-draft.1'}
+VERSIONS={'connector-doctor':'0.2.1-public-draft.1','regression-plan-forge':'0.1.1-public-draft.1','dependency-critical-path-mapper':'0.1.1-public-draft.1'}
 def build():
+    # Fail before producing any package. Scans are bounded; human review remains required.
+    paths=[]
+    for name,version in VERSIONS.items():
+        source=ROOT/'tools'/name/version
+        if not (source/'LICENSE').is_file():raise ValueError('Missing scoped license')
+        paths.extend(p.relative_to(ROOT).as_posix() for p in sorted(source.rglob('*')) if (p.is_file() or p.is_symlink()) and '__pycache__' not in p.parts and p.suffix!='.pyc' and p.name!='SHA256SUMS.json')
+    report=scan_paths(ROOT,paths)
+    if not report['passed']:raise ValueError(json.dumps(report['findings']))
     receipts=[]
     for name,version in VERSIONS.items():
         source=ROOT/'tools'/name/version
