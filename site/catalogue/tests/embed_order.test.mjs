@@ -7,5 +7,5 @@ for(const order of [[0,1,2],[0,2,1],[1,0,2],[1,2,0],[2,0,1],[2,1,0]])test('froze
  sandbox.window=sandbox;sandbox.addEventListener=(type,f)=>(listeners[type]??=[]).push(f);sandbox.dispatchEvent=e=>(listeners[e.type]||[]).forEach(f=>f(e));vm.createContext(sandbox);
  for(const i of order)for(const [,script]of html[i].matchAll(/<script[^>]*>([\s\S]*?)<\/script>/g))vm.runInContext(script,sandbox);
  assert.equal(sandbox.__witburrowLibraryParts.filter(x=>typeof x==='string').length,3);
- const d=await sandbox.__witManaged.load();assert.equal(d.tools.length,14);assert.equal(d.tools.filter(t=>t.publicly_available).length,6);assert.equal(d.holds.length,3);
+ const d=await sandbox.__witManaged.load();assert.equal(d.tools.length,15);assert.equal(d.tools.filter(t=>t.publicly_available).length,6);assert.equal(d.holds.length,4);
 });

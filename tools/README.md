@@ -49,7 +49,7 @@ Dependency Mapper draft.2 is an additive packaging correction: its prior Git-sou
 
 ## Maintainer WIP publication — 2026-11-03
 
-- [Connector Doctor 0.2.1-public-draft.1](connector-doctor/0.2.1-public-draft.1/README.md): current-host diagnostics, read-only adapter, portable preferences with drift/rollback, and metadata-only resume; 129 local tests. Includes an optional [Bob/RC1 supplement](../integration/bob/connector-doctor-0.2.0-public-draft.1/README.md), not a second Bob identity.
+- [Connector Doctor 0.2.2-public-draft.1](connector-doctor/0.2.2-public-draft.1/README.md): current-host diagnostics, repaired immutable read authorization, portable preferences with drift/rollback, and metadata-only resume; 147 local tests. Older adapters retain the repaired authorization-binding defect. Includes an optional [Bob/RC1 supplement](../integration/bob/connector-doctor-0.2.0-public-draft.1/README.md), not a second Bob identity.
 - [Regression Plan Forge 0.1.1-public-draft.1](regression-plan-forge/0.1.1-public-draft.1/README.md): malformed-CSV repair; 57 local parser/application tests.
 - [Dependency & Critical Path Mapper 0.1.1-public-draft.1](dependency-critical-path-mapper/0.1.1-public-draft.1/README.md): same shared-parser repair; 57 local parser/application tests.
 
@@ -58,3 +58,11 @@ These versioned packages supersede earlier parser-defective drafts for new trial
 Release maintainers: the existing [package builder now checks bounded source and archive safety](releases/public-push-2026-11-03/SIDEPROJECT_REVIEW.md). SideProject decisions and November 6 cases are recorded there; no third-party engine was installed.
 
 Optional [Bob verification supplement 0.1.0-public-draft.1](https://github.com/iJaspers/manager-os/tree/6cc610198a83b391f2d8708681797a7b59538fd6/integration/bob/verification-0.1.0-public-draft.1) adds tested Promptfoo contracts, a real MCP Inspector fixture adapter, SkillSpector report review, Playwright RC1 HTTP checks and local first-result timing. It reuses Connector Doctor 0.2.1 and creates no new canonical tool identity. The optional CLIs were tested separately; no third-party runtime is bundled. Native ChatGPT/Gemini acceptance, rendered website checks and the actual SkillSpector scan remain unverified. [Exact files, results and publication readback](releases/public-push-2026-11-03/REDDIT_RELEASE_RECEIPT.json).
+
+
+## Ship It & Dogfood continuation — 2026-11-03
+
+- [Source-linked Handoff Review 0.1.0-public-draft.1](source-linked-handoff-review/0.1.0-public-draft.1/README.md): sanitized derivative of existing BOB-089; 25 tests, no dependency install. Checks owner/source/evidence and holds unsupported completion claims. Extract its catalogue ZIP and run `python handoff.py example.json`; ordinary-chat review remains available without execution support.
+- [Bob verification supplement 0.1.1-public-draft.1](../integration/bob/verification-0.1.1-public-draft.1/README.md): imports Doctor 0.2.2; replaces 0.1.0 for new trials. The existing release builder now packages exactly the scanned bytes and refuses changed frozen outputs.
+
+The actual public Wix entry-to-Bob link was followed in cloud Chrome; a real GitHub PR handoff was produced, saved and hash-checked. Fresh native ChatGPT/Gemini trials, independent security acceptance and merge remain separate. These are public review-branch WIP releases, not a website deployment or full launch. [Exact changes, test evidence, rights and rollback](releases/public-push-2026-11-03/SHIP_REVIEW.md) · [Verified downloads and publication receipt](releases/public-push-2026-11-03/SHIP_RELEASE_RECEIPT.json).
