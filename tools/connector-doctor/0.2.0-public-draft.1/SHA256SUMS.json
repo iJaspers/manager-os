@@ -1,0 +1,14 @@
+{
+  "LICENSE": "7f91c512ba41e11fc68fb65c5023e632e3c13708e9dc2376df8fa8001111a876",
+  "PROVENANCE.json": "f5be86ef02e3afa8dabc7e3407970cf3f48f5ef360b210492831d67ccaf3d1e7",
+  "README.md": "95e8a633f5c90d8ee8a0d9f5a8cf0925c242e189b5b5cca1df46dd1b4174fdf5",
+  "TEST_RESULTS.md": "eb09e674cb0dfe9c4348a2876e04a5f175eeba5ba66da3b05c17597d01143ce5",
+  "cli.test.mjs": "97418cad45c99114f19e34b878dbde45d4ecf2600f0a256a76b7290512205061",
+  "connector-doctor.mjs": "6d03b2c262b3c491a7269558154ee68fd0c2192528b1fafdc1f5f99e0e02388f",
+  "connector-doctor.test.mjs": "c85523176bf29848e419e2f3f31d600cdfeede3d00a30ea22f878c35abf1f531",
+  "doctor-cli.mjs": "ca3b774959f77ae5275c2f5f01b9a7ab12e16b98933d3b49ecf1555ddd0be0f1",
+  "example.json": "7b41bdd8c95507efed1d68cc6b139d02d2ea9dd6b030af3fa45c937bf9611d2d",
+  "host-read.mjs": "ce01a6d4ea871849269d80a2146aa283a626bb2824ad5e8d9e8dfdce2350f6fc",
+  "host-read.test.mjs": "a3feea733357d153b963ecc91509fb07d12d7e677d072fbf19537a68ff48aef1",
+  "package.json": "c4ef9a1c0749403703eff979d92be7e986ae67136fa2e4b8b5e63feb156c538c"
+}

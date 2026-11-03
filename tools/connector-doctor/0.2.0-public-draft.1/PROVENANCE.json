@@ -1,0 +1,21 @@
+{
+  "tool_id": "wit.connector-doctor",
+  "version": "0.2.0-public-draft.1",
+  "upstream_version": "0.2.0",
+  "upstream_archive_sha256": "62f09214f5dea929c5b0ebe8f38ad1d242e99318d47fb029789504eeab7908d6",
+  "parent_component": "BOB_ON_DEMAND_2026.11.01-rc1",
+  "base_commit": "6fc0c50a5c93a6eefc66b60418d78541e98171bc",
+  "authorship": "Original WIT candidate and AI-assisted revision; no Greta implementation source copied.",
+  "license": "Inherited MIT, copyright 2026 iJaspers. This candidate directory and the separately licensed optional Bob supplement only. No repository-wide license.",
+  "dependencies": [],
+  "changes": [
+    "Sanitized public WIP packaging; private receipts, history and owner records excluded.",
+    "Bound CLI input before decoding; reject malformed UTF-8; add seven CLI tests."
+  ],
+  "review": {
+    "privacy": "Selected complete source, tests, example and documentation reviewed; synthetic-only fixtures.",
+    "license": "Existing MIT notice retained; no vendor source or assets bundled.",
+    "authority": "Maintainer instruction: Operation Public GitHub Push Part 2; safe generic licensing-compliant publication. Public WIP only; no auto-merge, product acceptance or full launch."
+  },
+  "acceptance": "Pending independent product/security and November 6 cross-AI trials."
+}

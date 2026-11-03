@@ -1,0 +1,6 @@
+task_id,title,duration_days,depends_on,status,owner_ref,source_ref,rights
+REQ-01,Agree synthetic requirements,2,NONE,REPORTED_DONE,TEAM-01,SPEC-01,CLEARED
+BUILD-01,Create harmless importer,5,REQ-01,PLANNED,TEAM-02,SPEC-02,CLEARED
+QA-01,Run synthetic importer checks,3,BUILD-01,PLANNED,TEAM-01,SPEC-03,CLEARED
+DOC-01,Write sample user instructions,2,REQ-01,PLANNED,TEAM-03,SPEC-04,CLEARED
+REVIEW-01,Prepare human release review,1,QA-01;DOC-01,PLANNED,TEAM-01,SPEC-05,REVIEW

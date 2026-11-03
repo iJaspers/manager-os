@@ -1,0 +1,16 @@
+{
+  "10_Regression_Plan_Forge.html": "f05053b23205e1f98a8ecb2f146e19c9b50be348979fefb0e4b7356a7738e94f",
+  "CHANGELOG.md": "795270c98cd5659f7818e000a712d42c2ac2072185f95feab62247fd393725ac",
+  "LICENSE": "7f91c512ba41e11fc68fb65c5023e632e3c13708e9dc2376df8fa8001111a876",
+  "LICENSE_SCOPE.md": "89d3bc38e74363a864bc1eb7d962ccf349607e0ba90b9f05f4305ddcfbceacaa",
+  "PROVENANCE.json": "0bb4d5565b713283ff384a9cc7731d842013b358b940cb16227f07ad4a78955d",
+  "README.md": "06d6230e4e0711fbe03b433f536755fea456c0b7110a0dae6a1e9046d1acde54",
+  "TEST_RESULTS.md": "fe4ac5330dc301ff13c72ebc2dd7013406ad4c6dc9336203ac1d9d4b998a2635",
+  "common.js": "2de5ebb7f75f7d1a76941c775fc1f0b825b4fbc5974eac5f8c4782a8829cefd7",
+  "examples/regression_requirements_fictional.csv": "aa5bfaab4ce64d66c2033a5b8f2527f92d40aa14eeaafc1b72af9eb9303b82bf",
+  "requirements-test.txt": "46ce4bcea45945aa9cb24f828e52a95cd4bb7c3a844f5cf2a1f088c46ae965f6",
+  "styles.css": "b22ae2fb77436d425e1616224f1f153aa45f7be5be759b5020177b96e44bb6e8",
+  "tests/application.test.cjs": "21a5c15729d5f6fa6809da03deb3edec8f3bfaffa249d7794f54e047804af4ae",
+  "tests/csv.test.cjs": "bac228bae5bafe7bd099de912684e01224d1bf4483517a794f26ad84ce2d0387",
+  "tests/regression_browser_checks.py": "2137f15fcd055adf72c3146b4eef5ec48de7611dffe3cf2f9329e9d7b1b881fe"
+}

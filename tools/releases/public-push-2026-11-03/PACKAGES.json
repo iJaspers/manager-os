@@ -1,0 +1,26 @@
+[
+  {
+    "id": "wit.connector-doctor",
+    "version": "0.2.0-public-draft.1",
+    "path": "tools/connector-doctor/connector-doctor-0.2.0-public-draft.1.zip",
+    "sha256": "522affe5f66349d249be60e0d08b1e03f841b01555e7c69e68fadc198d53dd82",
+    "size_bytes": 16081,
+    "members": 13
+  },
+  {
+    "id": "wit.regression-plan-forge",
+    "version": "0.1.1-public-draft.1",
+    "path": "tools/regression-plan-forge/regression-plan-forge-0.1.1-public-draft.1.zip",
+    "sha256": "b7e85088e052ae21e22ea2d2a5cbdad7bd4487a56ec8f2e4aa8735202c813956",
+    "size_bytes": 23320,
+    "members": 15
+  },
+  {
+    "id": "wit.dependency-critical-path-mapper",
+    "version": "0.1.1-public-draft.1",
+    "path": "tools/dependency-critical-path-mapper/dependency-critical-path-mapper-0.1.1-public-draft.1.zip",
+    "sha256": "a99cb125df8b8a242c2f46caecb97f87b5b1e0cf3163498f0c8503662a7d0de4",
+    "size_bytes": 24381,
+    "members": 15
+  }
+]

@@ -1,6 +1,6 @@
 # Witburrow public tool source previews
 
-Nine distinct published source tool IDs, each versioned, unranked and separately MIT-licensed inside its own version directory. Six are explicitly unfinished or unverified work-in-progress source packages. That license does not apply to the rest of this repository or any private originals.
+Versioned, unranked source previews and WIP packages, each separately MIT-licensed inside its own version directory. That license does not apply to the rest of this repository or any private originals.
 
 - [Invoice Reference Review](invoice-reference-review/0.1.2/README.md)
 - [Pretax Role Comparison](pretax-role-comparison/0.1.2/README.md)
@@ -46,3 +46,11 @@ The legacy CATALOGUE.json projection still carries its prior six-source snapshot
 Dependency Mapper draft.2 is an additive packaging correction: its prior Git-source fixture had a newline/hash mismatch. Historical draft.1 stays available; the known functional CSV parser issue remains.
 
 [Browse all-stage descriptive metadata](inventory/2026-10-24/PUBLIC_CATALOGUE.json) and [read the count reconciliation](inventory/2026-10-24/COUNTING_NOTES.md). There are 285 records, not 285 distinct built tools. Nine source IDs are downloadable; 276 records remain descriptions with source-specific next steps.
+
+## Maintainer WIP publication — 2026-11-03
+
+- [Connector Doctor 0.2.0-public-draft.1](connector-doctor/0.2.0-public-draft.1/README.md): current-host capability diagnostics and a permission-aware read-only adapter; 82 local tests. Includes an optional [Bob/RC1 supplement](../integration/bob/connector-doctor-0.2.0-public-draft.1/README.md), not a second Bob identity.
+- [Regression Plan Forge 0.1.1-public-draft.1](regression-plan-forge/0.1.1-public-draft.1/README.md): malformed-CSV repair; 57 local parser/application tests.
+- [Dependency & Critical Path Mapper 0.1.1-public-draft.1](dependency-critical-path-mapper/0.1.1-public-draft.1/README.md): same shared-parser repair; 57 local parser/application tests.
+
+These versioned packages supersede earlier parser-defective drafts for new trials. Old releases and frozen RC1 remain intact. Browser/device and independent product acceptance remain separate. This maintainer publication does not expand community contribution intake; CONTRIBUTING.md still governs that lane. [Exact scope, tests and rollback](releases/public-push-2026-11-03/PUBLICATION_REVIEW.md).
