@@ -1,9 +1,9 @@
 {
   "schema": "witburrow.website_projection.v1",
-  "as_of": "2026-10-23",
+  "as_of": "2026-11-03",
   "brand": "Witburrow",
   "manager_name": "Wit",
-  "release_state": "Three existing source previews plus three unverified unfinished WIP source packages; five private candidates remain without downloads",
+  "release_state": "Public source previews and locally tested WIP; five metadata-only private candidates; publication is separate from acceptance.",
   "source_catalog_version": "frozen R1 / Tool Shelf v1.10",
   "tools": [
     {
@@ -379,6 +379,123 @@
       "contribution_policy_url": "https://github.com/iJaspers/manager-os/blob/main/CONTRIBUTING.md",
       "publicly_available": true,
       "lifecycle_status": "published_preview"
+    },
+    {
+      "id": "wit.connector-doctor",
+      "name": "Connector Doctor",
+      "version": "0.2.0-public-draft.1",
+      "category": "Power",
+      "runtime": "Node.js / optional AI instructions",
+      "description": "Diagnose current-host tool support and verify read-only adapter results; optional Bob supplement.",
+      "keywords": [
+        "connector",
+        "doctor"
+      ],
+      "availability": "Published WIP source \u00b7 MIT",
+      "public_ready": false,
+      "publicly_available": true,
+      "public_tool": true,
+      "lifecycle_status": "published_wip",
+      "readiness_status": "locally_tested_nonproduction",
+      "source_url": "https://github.com/iJaspers/manager-os/tree/edbb5e79a1c18dec8f31d2afce81acb8ae48ef71/tools/connector-doctor/0.2.0-public-draft.1",
+      "release_url": "https://github.com/iJaspers/manager-os/tree/edbb5e79a1c18dec8f31d2afce81acb8ae48ef71/tools/connector-doctor/0.2.0-public-draft.1",
+      "source_commit": "edbb5e79a1c18dec8f31d2afce81acb8ae48ef71",
+      "source_path": "tools/connector-doctor/0.2.0-public-draft.1",
+      "download_url": "https://raw.githubusercontent.com/iJaspers/manager-os/edbb5e79a1c18dec8f31d2afce81acb8ae48ef71/tools/connector-doctor/connector-doctor-0.2.0-public-draft.1.zip",
+      "filename": "connector-doctor-0.2.0-public-draft.1.zip",
+      "zip_sha256": "522affe5f66349d249be60e0d08b1e03f841b01555e7c69e68fadc198d53dd82",
+      "zip_size_bytes": 16081,
+      "license": "MIT, this version directory only",
+      "requirements": "Node 18+; no npm install. Optional Bob text works in ordinary chat.",
+      "limits": "Supplied observations and receipt consistency only; host owns identity, permission and exact tool mapping. No provider SDK, write executor or automatic retries.",
+      "verification": "82 local Node tests and 6 Bob packaging tests passed; fresh-unzip tests passed.",
+      "known_failures": [],
+      "known_failures_scope": "No failures in named local checks; limitations and unrun acceptance remain explicit.",
+      "tests_not_run": [
+        "Independent security/product acceptance",
+        "Fresh ChatGPT/Gemini trials"
+      ],
+      "next_step": "Review public PR and run the separate November 6 host trials.",
+      "contribution_status": "Existing CONTRIBUTING.md applies; no intake expansion."
+    },
+    {
+      "id": "wit.regression-plan-forge",
+      "name": "Regression Plan Forge",
+      "version": "0.1.1-public-draft.1",
+      "category": "Power",
+      "runtime": "Offline HTML",
+      "description": "Prepare fictional regression test plans with strict CSV admission; generated cases remain unexecuted.",
+      "keywords": [
+        "regression",
+        "plan",
+        "forge"
+      ],
+      "availability": "Published WIP source \u00b7 MIT",
+      "public_ready": false,
+      "publicly_available": true,
+      "public_tool": true,
+      "lifecycle_status": "published_wip",
+      "readiness_status": "locally_tested_nonproduction",
+      "source_url": "https://github.com/iJaspers/manager-os/tree/edbb5e79a1c18dec8f31d2afce81acb8ae48ef71/tools/regression-plan-forge/0.1.1-public-draft.1",
+      "release_url": "https://github.com/iJaspers/manager-os/tree/edbb5e79a1c18dec8f31d2afce81acb8ae48ef71/tools/regression-plan-forge/0.1.1-public-draft.1",
+      "source_commit": "edbb5e79a1c18dec8f31d2afce81acb8ae48ef71",
+      "source_path": "tools/regression-plan-forge/0.1.1-public-draft.1",
+      "download_url": "https://raw.githubusercontent.com/iJaspers/manager-os/edbb5e79a1c18dec8f31d2afce81acb8ae48ef71/tools/regression-plan-forge/regression-plan-forge-0.1.1-public-draft.1.zip",
+      "filename": "regression-plan-forge-0.1.1-public-draft.1.zip",
+      "zip_sha256": "b7e85088e052ae21e22ea2d2a5cbdad7bd4487a56ec8f2e4aa8735202c813956",
+      "zip_size_bytes": 23320,
+      "license": "MIT, this version directory only",
+      "requirements": "Modern browser; extract full ZIP and open the HTML. Node 18+ optional for tests.",
+      "limits": "40 requirements, 100 KiB UTF-8 and 240 cases. Exact human outcomes still required; no test execution or rendered-browser acceptance.",
+      "verification": "57 local Node parser/application checks passed; fresh-unzip tests passed. DOM fixture, not rendered-browser acceptance.",
+      "known_failures": [],
+      "known_failures_scope": "No failures in named local checks; limitations and unrun acceptance remain explicit.",
+      "tests_not_run": [
+        "Independent security/product acceptance",
+        "Rendered Chromium, mobile and accessibility acceptance"
+      ],
+      "next_step": "Run the inherited browser suite in an equipped environment.",
+      "contribution_status": "Existing CONTRIBUTING.md applies; no intake expansion."
+    },
+    {
+      "id": "wit.dependency-critical-path-mapper",
+      "name": "Dependency & Critical Path Mapper",
+      "version": "0.1.1-public-draft.1",
+      "category": "Power",
+      "runtime": "Offline HTML",
+      "description": "Calculate a fictional precedence network with cycle detection and strict CSV admission; no work authorization.",
+      "keywords": [
+        "dependency",
+        "critical",
+        "path",
+        "mapper"
+      ],
+      "availability": "Published WIP source \u00b7 MIT",
+      "public_ready": false,
+      "publicly_available": true,
+      "public_tool": true,
+      "lifecycle_status": "published_wip",
+      "readiness_status": "locally_tested_nonproduction",
+      "source_url": "https://github.com/iJaspers/manager-os/tree/edbb5e79a1c18dec8f31d2afce81acb8ae48ef71/tools/dependency-critical-path-mapper/0.1.1-public-draft.1",
+      "release_url": "https://github.com/iJaspers/manager-os/tree/edbb5e79a1c18dec8f31d2afce81acb8ae48ef71/tools/dependency-critical-path-mapper/0.1.1-public-draft.1",
+      "source_commit": "edbb5e79a1c18dec8f31d2afce81acb8ae48ef71",
+      "source_path": "tools/dependency-critical-path-mapper/0.1.1-public-draft.1",
+      "download_url": "https://raw.githubusercontent.com/iJaspers/manager-os/edbb5e79a1c18dec8f31d2afce81acb8ae48ef71/tools/dependency-critical-path-mapper/dependency-critical-path-mapper-0.1.1-public-draft.1.zip",
+      "filename": "dependency-critical-path-mapper-0.1.1-public-draft.1.zip",
+      "zip_sha256": "a99cb125df8b8a242c2f46caecb97f87b5b1e0cf3163498f0c8503662a7d0de4",
+      "zip_size_bytes": 24381,
+      "license": "MIT, this version directory only",
+      "requirements": "Modern browser; extract full ZIP and open the HTML. Node 18+ optional for tests.",
+      "limits": "80 tasks, 100 KiB UTF-8; precedence-only estimates, no dates, resource constraints or independently verified completion.",
+      "verification": "57 local Node parser/application checks passed; fresh-unzip tests passed. DOM fixture, not rendered-browser acceptance.",
+      "known_failures": [],
+      "known_failures_scope": "No failures in named local checks; limitations and unrun acceptance remain explicit.",
+      "tests_not_run": [
+        "Independent security/product acceptance",
+        "Rendered Chromium, mobile and accessibility acceptance"
+      ],
+      "next_step": "Run the inherited browser suite in an equipped environment.",
+      "contribution_status": "Existing CONTRIBUTING.md applies; no intake expansion."
     }
   ],
   "approved_tool_leaderboard": [
@@ -417,13 +534,31 @@
       "version": "0.1.2",
       "status": "PUBLIC_UNRANKED",
       "source_url": "https://github.com/iJaspers/manager-os/tree/feff5942080c9da535359f085fb867d3a76f38a2/tools/pretax-role-comparison/0.1.2"
+    },
+    {
+      "id": "wit.connector-doctor",
+      "version": "0.2.0-public-draft.1",
+      "status": "WIP_SOURCE_UNRANKED",
+      "source_url": "https://github.com/iJaspers/manager-os/tree/edbb5e79a1c18dec8f31d2afce81acb8ae48ef71/tools/connector-doctor/0.2.0-public-draft.1"
+    },
+    {
+      "id": "wit.regression-plan-forge",
+      "version": "0.1.1-public-draft.1",
+      "status": "WIP_SOURCE_UNRANKED",
+      "source_url": "https://github.com/iJaspers/manager-os/tree/edbb5e79a1c18dec8f31d2afce81acb8ae48ef71/tools/regression-plan-forge/0.1.1-public-draft.1"
+    },
+    {
+      "id": "wit.dependency-critical-path-mapper",
+      "version": "0.1.1-public-draft.1",
+      "status": "WIP_SOURCE_UNRANKED",
+      "source_url": "https://github.com/iJaspers/manager-os/tree/edbb5e79a1c18dec8f31d2afce81acb8ae48ef71/tools/dependency-critical-path-mapper/0.1.1-public-draft.1"
     }
   ],
   "problem_leaderboard": [],
   "public_intake_open": true,
   "live_votes_enabled": false,
   "ranking_basis": "Alphabetical continuation board only. Published source availability is not quality, popularity, safety or adoption ranking.",
-  "publication_revision": "2026-10-23-wip-batch-1",
+  "publication_revision": "2026-11-03-github-wip-releases",
   "public_intake_scope": [
     "wit.documented-compensation-comparison",
     "wit.invoice-reference-review",
@@ -433,14 +568,14 @@
     "wit.grocery-planning-preview"
   ],
   "general_framework_intake_open": false,
-  "expected_total_entries": 12,
+  "expected_total_entries": 15,
   "schema_version": 1,
-  "expected_tool_count": 11,
-  "catalogue_revision": "2026-10-23-six-tool-reviewed-intake",
+  "expected_tool_count": 14,
+  "catalogue_revision": "2026-11-03-github-wip-releases",
   "public_ready_semantics": "Deprecated legacy availability flag. Use publicly_available for availability and readiness_status/lifecycle_status for readiness; WIP publication does not imply ready to use.",
   "management": {
     "schema": "witburrow.management.v1",
-    "source_commit": "0762957a43309b4d1c2a945018f68ce7c019e56f",
+    "source_commit": "edbb5e79a1c18dec8f31d2afce81acb8ae48ef71",
     "review_records": [
       {
         "id": "wit.bill-calendar-preview",
@@ -543,6 +678,57 @@
         "no_known_failures_declared": true,
         "known_failures_scope": "No failing checks reported in the pinned current-version TEST_RESULTS.md. Historical defects and unsupported cases remain in README/CHANGELOG/limits. This is not a no-bugs claim.",
         "test_evidence_url": "https://github.com/iJaspers/manager-os/blob/feff5942080c9da535359f085fb867d3a76f38a2/tools/pretax-role-comparison/0.1.2/TEST_RESULTS.md"
+      },
+      {
+        "id": "wit.connector-doctor",
+        "version": "0.2.0-public-draft.1",
+        "source_commit": "edbb5e79a1c18dec8f31d2afce81acb8ae48ef71",
+        "provenance_url": "https://github.com/iJaspers/manager-os/blob/edbb5e79a1c18dec8f31d2afce81acb8ae48ef71/tools/connector-doctor/0.2.0-public-draft.1/PROVENANCE.json",
+        "review": {
+          "privacy": "approved",
+          "license": "approved",
+          "authority": "approved",
+          "reference": "https://github.com/iJaspers/manager-os/commit/edbb5e79a1c18dec8f31d2afce81acb8ae48ef71",
+          "scope": "Maintainer-authorized safe generic WIP publication; complete selected contents reviewed, inherited directory MIT, synthetic local tests. No product acceptance or automatic merge."
+        },
+        "known_failures": [],
+        "no_known_failures_declared": true,
+        "known_failures_scope": "No failures in named local checks; limitations and unrun acceptance remain explicit.",
+        "test_evidence_url": "https://github.com/iJaspers/manager-os/blob/edbb5e79a1c18dec8f31d2afce81acb8ae48ef71/tools/connector-doctor/0.2.0-public-draft.1/TEST_RESULTS.md"
+      },
+      {
+        "id": "wit.regression-plan-forge",
+        "version": "0.1.1-public-draft.1",
+        "source_commit": "edbb5e79a1c18dec8f31d2afce81acb8ae48ef71",
+        "provenance_url": "https://github.com/iJaspers/manager-os/blob/edbb5e79a1c18dec8f31d2afce81acb8ae48ef71/tools/regression-plan-forge/0.1.1-public-draft.1/PROVENANCE.json",
+        "review": {
+          "privacy": "approved",
+          "license": "approved",
+          "authority": "approved",
+          "reference": "https://github.com/iJaspers/manager-os/commit/edbb5e79a1c18dec8f31d2afce81acb8ae48ef71",
+          "scope": "Maintainer-authorized safe generic WIP publication; complete selected contents reviewed, inherited directory MIT, synthetic local tests. No product acceptance or automatic merge."
+        },
+        "known_failures": [],
+        "no_known_failures_declared": true,
+        "known_failures_scope": "No failures in named local checks; limitations and unrun acceptance remain explicit.",
+        "test_evidence_url": "https://github.com/iJaspers/manager-os/blob/edbb5e79a1c18dec8f31d2afce81acb8ae48ef71/tools/regression-plan-forge/0.1.1-public-draft.1/TEST_RESULTS.md"
+      },
+      {
+        "id": "wit.dependency-critical-path-mapper",
+        "version": "0.1.1-public-draft.1",
+        "source_commit": "edbb5e79a1c18dec8f31d2afce81acb8ae48ef71",
+        "provenance_url": "https://github.com/iJaspers/manager-os/blob/edbb5e79a1c18dec8f31d2afce81acb8ae48ef71/tools/dependency-critical-path-mapper/0.1.1-public-draft.1/PROVENANCE.json",
+        "review": {
+          "privacy": "approved",
+          "license": "approved",
+          "authority": "approved",
+          "reference": "https://github.com/iJaspers/manager-os/commit/edbb5e79a1c18dec8f31d2afce81acb8ae48ef71",
+          "scope": "Maintainer-authorized safe generic WIP publication; complete selected contents reviewed, inherited directory MIT, synthetic local tests. No product acceptance or automatic merge."
+        },
+        "known_failures": [],
+        "no_known_failures_declared": true,
+        "known_failures_scope": "No failures in named local checks; limitations and unrun acceptance remain explicit.",
+        "test_evidence_url": "https://github.com/iJaspers/manager-os/blob/edbb5e79a1c18dec8f31d2afce81acb8ae48ef71/tools/dependency-critical-path-mapper/0.1.1-public-draft.1/TEST_RESULTS.md"
       }
     ],
     "contribution_events": [],

@@ -8,7 +8,13 @@ function url(v,hosts) {if(typeof v!=='string')return false;try {const u=new URL(
 const github = v => url(v,['github.com']) && !new URL(v).search && !new URL(v).hash && new URL(v).pathname.startsWith('/iJaspers/manager-os/');
 const reviewUrl = v => github(v) && /^\/iJaspers\/manager-os\/(?:pull\/[1-9][0-9]*|commit\/[a-f0-9]{40})$/.test(new URL(v).pathname);
 const pinned = (v,commit,version,kind) => github(v) && new URL(v).pathname.startsWith('/iJaspers/manager-os/'+kind+'/'+commit+'/tools/') && (kind==='tree' ? new URL(v).pathname.endsWith('/'+version) : new URL(v).pathname.includes('/'+version+'/')); 
-const artifact = v => url(v,['0673fc92-1e06-494f-9e10-27641a3a4576.usrfiles.com']);
+function artifact(t) {
+  if(url(t.download_url,['0673fc92-1e06-494f-9e10-27641a3a4576.usrfiles.com']))return true;
+  // Only immutable ZIPs beside the exact reviewed tool/version in this repository.
+  if(!url(t.download_url,['raw.githubusercontent.com']))return false;
+  const source=typeof t.source_url==='string' && t.source_url.match(/^https:\/\/github\.com\/iJaspers\/manager-os\/tree\/([a-f0-9]{40})\/tools\/([a-z0-9-]+)\/([A-Za-z0-9.-]+)$/);
+  return !!source && source[1]===t.source_commit && source[3]===t.version && t.download_url===`https://raw.githubusercontent.com/iJaspers/manager-os/${source[1]}/tools/${source[2]}/${source[2]}-${source[3]}.zip`;
+}
 const list = v => Array.isArray(v) && v.length<=100 && v.every(x=>text(x));
 export function project(doc) {
   if (!doc || doc.schema!=='witburrow.reviewed_catalogue.v1' || !text(doc.revision,100) || !sha(doc.source_commit) || !Array.isArray(doc.tools) || doc.tools.length>1000 || doc.expected_tool_count!==doc.tools.length || !Array.isArray(doc.events) || doc.events.length>10000) throw Error('Catalogue integrity hold');
@@ -22,7 +28,7 @@ export function project(doc) {
     if(!list(t.known_failures)||(t.known_failures.length===0&&t.no_known_failures_declared!==true)||!text(t.verification)||!text(t.next_step)||!text(t.limits))issues.push('missing limitations/evidence');
     if(!t.review || t.review.privacy!=='approved'||t.review.license!=='approved'||t.review.authority!=='approved'||!(reviewUrl(t.review.reference)||t.review.reference===t.provenance_url||t.review.reference===t.source_url.replace('/tree/','/blob/')+'/TEST_RESULTS.md'))issues.push('review incomplete');
     if(!text(t.license,200)||!sha(t.source_commit)||!pinned(t.source_url,t.source_commit,t.version,'tree')||!pinned(t.provenance_url,t.source_commit,t.version,'blob')||!['PROVENANCE.md','PROVENANCE.json'].some(f=>t.provenance_url===t.source_url.replace('/tree/','/blob/')+'/'+f))issues.push('provenance not pinned');
-    if(['public_preview','wip'].includes(t.status) && (!artifact(t.download_url)||!digest(t.zip_sha256)||!Number.isSafeInteger(t.zip_size_bytes)||t.zip_size_bytes<=0))issues.push('artifact unverified');
+    if(['public_preview','wip'].includes(t.status) && (!artifact(t)||!digest(t.zip_sha256)||!Number.isSafeInteger(t.zip_size_bytes)||t.zip_size_bytes<=0))issues.push('artifact unverified');
     if(issues.length) {holds.push({id:t.id,reasons:issues});continue;}
     // Explicit field allowlist: never project arbitrary private metadata.
     const out={};for(const k of ['id','name','version','status','license','source_commit','source_url','provenance_url','known_failures','known_failures_scope','verification','next_step','limits'])out[k]=t[k];
