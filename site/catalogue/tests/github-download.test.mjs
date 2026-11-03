@@ -14,7 +14,7 @@ for(const [name,change] of [
  ['other repository',s=>s.replace('/manager-os/','/unreviewed/')],
  ['other owner',s=>s.replace('/iJaspers/','/someone/')],
  ['other tool',s=>s.replaceAll('connector-doctor','different-tool')],
- ['other version',s=>s.replace('0.2.0-public-draft.1','0.9.0')],
+ ['other version',s=>s.replace(/-\d+\.\d+\.\d+-public-draft\.\d+\.zip$/,'-0.9.0.zip')],
  ['other commit',s=>s.replace(/[a-f0-9]{40}/,'a'.repeat(40))],
  ['query',s=>s+'?download=1'],
  ['fragment',s=>s+'#trusted'],

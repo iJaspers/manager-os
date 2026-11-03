@@ -383,10 +383,10 @@
     {
       "id": "wit.connector-doctor",
       "name": "Connector Doctor",
-      "version": "0.2.0-public-draft.1",
+      "version": "0.2.1-public-draft.1",
       "category": "Power",
       "runtime": "Node.js / optional AI instructions",
-      "description": "Diagnose current-host tool support and verify read-only adapter results; optional Bob supplement.",
+      "description": "Current-host checks, read-only adapter, portable preferences with drift/rollback, and metadata-only resume.",
       "keywords": [
         "connector",
         "doctor"
@@ -397,23 +397,26 @@
       "public_tool": true,
       "lifecycle_status": "published_wip",
       "readiness_status": "locally_tested_nonproduction",
-      "source_url": "https://github.com/iJaspers/manager-os/tree/edbb5e79a1c18dec8f31d2afce81acb8ae48ef71/tools/connector-doctor/0.2.0-public-draft.1",
-      "release_url": "https://github.com/iJaspers/manager-os/tree/edbb5e79a1c18dec8f31d2afce81acb8ae48ef71/tools/connector-doctor/0.2.0-public-draft.1",
-      "source_commit": "edbb5e79a1c18dec8f31d2afce81acb8ae48ef71",
-      "source_path": "tools/connector-doctor/0.2.0-public-draft.1",
-      "download_url": "https://raw.githubusercontent.com/iJaspers/manager-os/edbb5e79a1c18dec8f31d2afce81acb8ae48ef71/tools/connector-doctor/connector-doctor-0.2.0-public-draft.1.zip",
-      "filename": "connector-doctor-0.2.0-public-draft.1.zip",
-      "zip_sha256": "522affe5f66349d249be60e0d08b1e03f841b01555e7c69e68fadc198d53dd82",
-      "zip_size_bytes": 16081,
+      "source_url": "https://github.com/iJaspers/manager-os/tree/b8a837de6fd040a795799f70694e38e1af43ae46/tools/connector-doctor/0.2.1-public-draft.1",
+      "release_url": "https://github.com/iJaspers/manager-os/tree/b8a837de6fd040a795799f70694e38e1af43ae46/tools/connector-doctor/0.2.1-public-draft.1",
+      "source_commit": "b8a837de6fd040a795799f70694e38e1af43ae46",
+      "source_path": "tools/connector-doctor/0.2.1-public-draft.1",
+      "download_url": "https://raw.githubusercontent.com/iJaspers/manager-os/b8a837de6fd040a795799f70694e38e1af43ae46/tools/connector-doctor/connector-doctor-0.2.1-public-draft.1.zip",
+      "filename": "connector-doctor-0.2.1-public-draft.1.zip",
+      "zip_sha256": "0aaceb45a05da9cbf741817a1979ec6141e0febb58f8a81f88c283a38e9c0360",
+      "zip_size_bytes": 27149,
       "license": "MIT, this version directory only",
       "requirements": "Node 18+; no npm install. Optional Bob text works in ordinary chat.",
-      "limits": "Supplied observations and receipt consistency only; host owns identity, permission and exact tool mapping. No provider SDK, write executor or automatic retries.",
-      "verification": "82 local Node tests and 6 Bob packaging tests passed; fresh-unzip tests passed.",
+      "limits": "Supplied observations and receipt consistency only; host owns permission. Local preference store is tested on Linux in a trusted private workspace, not a tenant isolation boundary. No global configuration sync, provider SDK or write executor.",
+      "verification": "129 Node tests passed locally, from clean ZIP and actual public download; 6 unchanged Bob/RC1 regressions passed.",
       "known_failures": [],
       "known_failures_scope": "No failures in named local checks; limitations and unrun acceptance remain explicit.",
       "tests_not_run": [
         "Independent security/product acceptance",
-        "Fresh ChatGPT/Gemini trials"
+        "Fresh ChatGPT/Gemini trials",
+        "Windows profile-store behavior",
+        "Gitleaks, OSV-Scanner and CodeQL unavailable",
+        "Wayflow sandbox execution unavailable"
       ],
       "next_step": "Review public PR and run the separate November 6 host trials.",
       "contribution_status": "Existing CONTRIBUTING.md applies; no intake expansion."
@@ -537,9 +540,9 @@
     },
     {
       "id": "wit.connector-doctor",
-      "version": "0.2.0-public-draft.1",
+      "version": "0.2.1-public-draft.1",
       "status": "WIP_SOURCE_UNRANKED",
-      "source_url": "https://github.com/iJaspers/manager-os/tree/edbb5e79a1c18dec8f31d2afce81acb8ae48ef71/tools/connector-doctor/0.2.0-public-draft.1"
+      "source_url": "https://github.com/iJaspers/manager-os/tree/b8a837de6fd040a795799f70694e38e1af43ae46/tools/connector-doctor/0.2.1-public-draft.1"
     },
     {
       "id": "wit.regression-plan-forge",
@@ -681,20 +684,20 @@
       },
       {
         "id": "wit.connector-doctor",
-        "version": "0.2.0-public-draft.1",
-        "source_commit": "edbb5e79a1c18dec8f31d2afce81acb8ae48ef71",
-        "provenance_url": "https://github.com/iJaspers/manager-os/blob/edbb5e79a1c18dec8f31d2afce81acb8ae48ef71/tools/connector-doctor/0.2.0-public-draft.1/PROVENANCE.json",
+        "version": "0.2.1-public-draft.1",
+        "source_commit": "b8a837de6fd040a795799f70694e38e1af43ae46",
+        "provenance_url": "https://github.com/iJaspers/manager-os/blob/b8a837de6fd040a795799f70694e38e1af43ae46/tools/connector-doctor/0.2.1-public-draft.1/PROVENANCE.json",
         "review": {
           "privacy": "approved",
           "license": "approved",
           "authority": "approved",
-          "reference": "https://github.com/iJaspers/manager-os/commit/edbb5e79a1c18dec8f31d2afce81acb8ae48ef71",
-          "scope": "Maintainer-authorized safe generic WIP publication; complete selected contents reviewed, inherited directory MIT, synthetic local tests. No product acceptance or automatic merge."
+          "reference": "https://github.com/iJaspers/manager-os/commit/b8a837de6fd040a795799f70694e38e1af43ae46",
+          "scope": "Maintainer-authorized safe generic WIP publication; original portability helpers and synthetic tests; directory MIT retained. No independent product/security acceptance or automatic merge."
         },
         "known_failures": [],
         "no_known_failures_declared": true,
         "known_failures_scope": "No failures in named local checks; limitations and unrun acceptance remain explicit.",
-        "test_evidence_url": "https://github.com/iJaspers/manager-os/blob/edbb5e79a1c18dec8f31d2afce81acb8ae48ef71/tools/connector-doctor/0.2.0-public-draft.1/TEST_RESULTS.md"
+        "test_evidence_url": "https://github.com/iJaspers/manager-os/blob/b8a837de6fd040a795799f70694e38e1af43ae46/tools/connector-doctor/0.2.1-public-draft.1/TEST_RESULTS.md"
       },
       {
         "id": "wit.regression-plan-forge",

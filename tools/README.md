@@ -49,8 +49,10 @@ Dependency Mapper draft.2 is an additive packaging correction: its prior Git-sou
 
 ## Maintainer WIP publication — 2026-11-03
 
-- [Connector Doctor 0.2.0-public-draft.1](connector-doctor/0.2.0-public-draft.1/README.md): current-host capability diagnostics and a permission-aware read-only adapter; 82 local tests. Includes an optional [Bob/RC1 supplement](../integration/bob/connector-doctor-0.2.0-public-draft.1/README.md), not a second Bob identity.
+- [Connector Doctor 0.2.1-public-draft.1](connector-doctor/0.2.1-public-draft.1/README.md): current-host diagnostics, read-only adapter, portable preferences with drift/rollback, and metadata-only resume; 129 local tests. Includes an optional [Bob/RC1 supplement](../integration/bob/connector-doctor-0.2.0-public-draft.1/README.md), not a second Bob identity.
 - [Regression Plan Forge 0.1.1-public-draft.1](regression-plan-forge/0.1.1-public-draft.1/README.md): malformed-CSV repair; 57 local parser/application tests.
 - [Dependency & Critical Path Mapper 0.1.1-public-draft.1](dependency-critical-path-mapper/0.1.1-public-draft.1/README.md): same shared-parser repair; 57 local parser/application tests.
 
 These versioned packages supersede earlier parser-defective drafts for new trials. Old releases and frozen RC1 remain intact. Browser/device and independent product acceptance remain separate. This maintainer publication does not expand community contribution intake; CONTRIBUTING.md still governs that lane. [Exact scope, tests and rollback](releases/public-push-2026-11-03/PUBLICATION_REVIEW.md).
+
+Release maintainers: the existing [package builder now checks bounded source and archive safety](releases/public-push-2026-11-03/SIDEPROJECT_REVIEW.md). SideProject decisions and November 6 cases are recorded there; no third-party engine was installed.
