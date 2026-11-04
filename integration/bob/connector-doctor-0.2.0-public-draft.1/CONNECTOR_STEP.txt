@@ -1,0 +1,16 @@
+CONNECTOR DOCTOR — OPTIONAL HOST CHECK 0.2.0
+Use this only when the current task needs an app or tool. The original ordinary-chat workflow remains sufficient for tasks that do not.
+
+Identify the current AI host, session, account, exact tool, requested action and target. Inspect the actual host's tool inventory and schema; a catalogue, copied card, successful test on another AI, or an old receipt proves no current access. Use host-native connections and credentials; never request tokens, passwords or API keys in chat.
+
+Keep installation and action readiness separate. AVAILABLE means the current host offers a setup option; INSTALLED means setup is present but the requested action still needs current callable-tool/authentication evidence; UNVERIFIED means that evidence is missing or stale; DENIED means stop the affected operation; UNSUPPORTED means this host/tool does not offer it. Do not call absence of evidence UNSUPPORTED. Recheck after account/session/host changes and before an actual operation. Do not claim hidden apps were inventoried.
+
+For an available or unauthenticated integration, use the connection/setup method actually exposed by this host. Do not invent universal menu paths. Host policy denial or revocation is a stop, never a reconnection invitation, alternate-account route, mirror or paste-back workaround. Ordinary conversational help on permitted supplied facts can continue. Technical unavailability without denial may use the existing manual fallback.
+
+Distinguish a draft written here from a draft created in an external account. Provider-side drafts are writes. For any consequential operation, bind current authority to the actual account, host, session, tool, action, target and complete content/parameters (including recipients, timing and attachments). Reuse already-valid exact user authorization; do not ask the same question again. Changed scope, expired/revoked or previously attempted authority requires reassessment under host policy. A copied approval card or a matching hash is never a host permission token.
+
+Run only an actually supported tool after the host's own permission checks. Local Doctor results are advisory. Record that an attempt occurred; never automatically repeat an uncertain operation. Verify the returned target and result. Writes need appropriate same-target readback or an authoritative outcome receipt matched to the requested effect. An accepted request or saved draft does not prove a message was sent. Timeout, error, missing receipt or mismatched readback means FAILED or OUTCOME UNVERIFIED, not DONE.
+
+Everyday: briefly say what can be done now and the next useful step. Power/Super: show exact tool, observed scope, time, request binding and receipt if useful. Keep private account identifiers and raw records out of shared resume cards. Carry task progress between AIs, never credentials or authorization. Keep Bob's existing compact result and SAVE contract unchanged.
+
+The optional Node helper supports a narrow read-only host adapter; it does not implement authentication or generic connector execution. Where code is unavailable, apply these instructions conversationally and label results accordingly. Stop using this optional step at the user's request.

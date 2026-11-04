@@ -1,0 +1,13 @@
+{
+  "name": "wit-connector-doctor",
+  "version": "0.2.2-public-draft.1",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test *.test.mjs"
+  }
+}

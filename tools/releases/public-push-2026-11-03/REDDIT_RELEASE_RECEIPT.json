@@ -1,0 +1,139 @@
+{
+  "schema": "wit.reddit-publication-receipt.v1",
+  "date": "2026-11-03",
+  "repository": "https://github.com/iJaspers/manager-os",
+  "branch": "release/wit-public-2026-11-03",
+  "pr": "https://github.com/iJaspers/manager-os/pull/10",
+  "source_commit": "6cc610198a83b391f2d8708681797a7b59538fd6",
+  "parent_commit": "5c6c293bd52fe4775a3e1e1841a482e70d0b3932",
+  "frozen_main_commit": "6fc0c50a5c93a6eefc66b60418d78541e98171bc",
+  "version": "0.1.0-public-draft.1",
+  "existing_doctor_version": "0.2.1-public-draft.1",
+  "source_path": "integration/bob/verification-0.1.0-public-draft.1",
+  "source_url": "https://github.com/iJaspers/manager-os/tree/6cc610198a83b391f2d8708681797a7b59538fd6/integration/bob/verification-0.1.0-public-draft.1",
+  "states": {
+    "BUILT": true,
+    "TESTED": "Named local, CLI and HTTP checks only",
+    "INTEGRATED": "Optional supplement imports existing Doctor; frozen RC1 unchanged",
+    "STAGED": true,
+    "APPROVED": "Current maintainer authority for safe generic licensed public WIP",
+    "PUBLISHED": true,
+    "VERIFIED": "Exact GitHub files and raw downloads; clean fetched checkout tests",
+    "MERGED": false,
+    "PRODUCT_ACCEPTED": false
+  },
+  "new_canonical_tool_identities": 0,
+  "new_optional_supplements": 1,
+  "core_tool_versions_changed": 0,
+  "source_files_read_back": {
+    "integration/bob/verification-0.1.0-public-draft.1/LICENSE": "7f91c512ba41e11fc68fb65c5023e632e3c13708e9dc2376df8fa8001111a876",
+    "integration/bob/verification-0.1.0-public-draft.1/README.md": "fd1aa379d6868a5d2e72d714cd59a777c627c1a74c24e6eb3cfcd8304d37ec11",
+    "integration/bob/verification-0.1.0-public-draft.1/contracts.mjs": "c3c58da742bc553ce0176602cae9e631921d042ab4da07720d6afb05a994d641",
+    "integration/bob/verification-0.1.0-public-draft.1/evidence-files.mjs": "91be3efc2f06199083773b1ec3ebc563dc55ef195dbf4c79ab5e4e856978dcf0",
+    "integration/bob/verification-0.1.0-public-draft.1/evidence-files.test.mjs": "5de0524e19f28ffeb9f665c0b4b8af0858a1713f0d69bb461be009af9307799a",
+    "integration/bob/verification-0.1.0-public-draft.1/first-result.example.txt": "40fd5bb30f97f3dc228cd025807a0eae161db14a2f9d1a4a72de6f10b607d4d7",
+    "integration/bob/verification-0.1.0-public-draft.1/inspector-adapter.mjs": "27f8f169dceabae81aea039e45f05e15240028e405834dc599f996438cc55bad",
+    "integration/bob/verification-0.1.0-public-draft.1/mcp-fixture.mjs": "8748041874806b1953ad495ca59b48381a9bcb86c7e1f705c34e93e4f32a088d",
+    "integration/bob/verification-0.1.0-public-draft.1/mcp-fixture.test.mjs": "e51e77b85d24d6549bb435135df0243858bdf79b8b18447e195267da0c952a06",
+    "integration/bob/verification-0.1.0-public-draft.1/measure-onboarding.mjs": "2face1c280b4249f560284da89268ac8b0689a65dfb17bdddb33c7eeb0ce43b4",
+    "integration/bob/verification-0.1.0-public-draft.1/onboarding.example.json": "d7d996dbb6fdfd10193ee85262140d955febdd1da8a50be3ef62b1d75bc592e8",
+    "integration/bob/verification-0.1.0-public-draft.1/onboarding.mjs": "0157e5e1a506dfdef79a6d0cd17e329398632e92ff97b690e7545e58d19fcb3f",
+    "integration/bob/verification-0.1.0-public-draft.1/promptfoo-provider.mjs": "dd01f8237fa290a71caf2e2b20368bf67f0b0f25f59b26d3176361b0c9a88ccc",
+    "integration/bob/verification-0.1.0-public-draft.1/promptfooconfig.json": "2b2d76bc046bec1e71841227c5c3167c7888b51dbd83423b4103428a8bc3e41f",
+    "integration/bob/verification-0.1.0-public-draft.1/review-skill.mjs": "a99f38a2c3599f46eee765af1e715a98feaf598f6c29de4aa3469d63119bd987",
+    "integration/bob/verification-0.1.0-public-draft.1/run-inspector.mjs": "405047a0fd5b8a0ce7775bd93779fb0a7c3c933ff888846382ac557a409bb4c8",
+    "integration/bob/verification-0.1.0-public-draft.1/run-promptfoo.mjs": "2cdbc3fa0db06928b0704dbd835751452f4f6a19173d884d627bd48d81b359ae",
+    "integration/bob/verification-0.1.0-public-draft.1/run-web-check.mjs": "6191150eb6839a4c142863f01567b2faffd790d50ac1971ac26933056e1b8052",
+    "integration/bob/verification-0.1.0-public-draft.1/skillspector-review.mjs": "66cd2fae625cf6e4f40249e5b4262ce27614711492dac04b9dc615d2fbdb6a46",
+    "integration/bob/verification-0.1.0-public-draft.1/verification.test.mjs": "9e444ec560e7591d6f9db4763f6d0224b0686e7b91c40bd799015293195a0ca4",
+    "integration/bob/verification-0.1.0-public-draft.1/web-contract.mjs": "a47ffbb34569a7188caf5054ce896360de4929aae476f7dffb5a99d2c89d5e35",
+    "tools/releases/public-push-2026-11-03/REDDIT_DEPENDENCY_REVIEW.json": "6878df3c3156061a42d43c1ad6d65ebb4365309020102b3b8ebd852ef6afd27c",
+    "tools/releases/public-push-2026-11-03/REDDIT_INTEGRATION_REVIEW.md": "5d1604a0ca4701856aaa05546b3f560fae3a1bb4c1125c4faa04ec11b2ab0b46",
+    "tools/releases/public-push-2026-11-03/REDDIT_TEST_RESULTS.json": "1dc13ecf8f1d5c6de61fb3f2eb7f92e886067de5be164cc338dbc97a745aa7db",
+    "tools/releases/public-push-2026-11-03/REDDIT_FILES.json": "b1e84b85ec21bd343973705722bc38a51ab4e389a61734f5756a276e2bf2682d",
+    "tools/releases/public-push-2026-11-03/REDDIT_PREFLIGHT.json": "d0d4b9d903216452cd72b5db27e80dad190df7d30edb85da8d5fc276968e7683"
+  },
+  "source_readback_mismatches": 0,
+  "raw_downloads": [
+    {
+      "path": "integration/bob/verification-0.1.0-public-draft.1/README.md",
+      "url": "https://raw.githubusercontent.com/iJaspers/manager-os/6cc610198a83b391f2d8708681797a7b59538fd6/integration/bob/verification-0.1.0-public-draft.1/README.md",
+      "http_status": 200,
+      "bytes": 8132,
+      "sha256": "fd1aa379d6868a5d2e72d714cd59a777c627c1a74c24e6eb3cfcd8304d37ec11",
+      "exact_match": true
+    },
+    {
+      "path": "integration/bob/verification-0.1.0-public-draft.1/promptfoo-provider.mjs",
+      "url": "https://raw.githubusercontent.com/iJaspers/manager-os/6cc610198a83b391f2d8708681797a7b59538fd6/integration/bob/verification-0.1.0-public-draft.1/promptfoo-provider.mjs",
+      "http_status": 200,
+      "bytes": 419,
+      "sha256": "dd01f8237fa290a71caf2e2b20368bf67f0b0f25f59b26d3176361b0c9a88ccc",
+      "exact_match": true
+    },
+    {
+      "path": "integration/bob/verification-0.1.0-public-draft.1/review-skill.mjs",
+      "url": "https://raw.githubusercontent.com/iJaspers/manager-os/6cc610198a83b391f2d8708681797a7b59538fd6/integration/bob/verification-0.1.0-public-draft.1/review-skill.mjs",
+      "http_status": 200,
+      "bytes": 699,
+      "sha256": "a99f38a2c3599f46eee765af1e715a98feaf598f6c29de4aa3469d63119bd987",
+      "exact_match": true
+    }
+  ],
+  "tests": {
+    "supplement": {
+      "passed": 64,
+      "failed": 0
+    },
+    "existing_doctor": {
+      "passed": 129,
+      "failed": 0
+    },
+    "bob_rc1": {
+      "passed": 6,
+      "failed": 0
+    },
+    "clean_fetched_commit": {
+      "node_passed": 193,
+      "python_passed": 6,
+      "failed": 0,
+      "not_extra_unique_tests": true
+    },
+    "promptfoo": {
+      "positive_passed": 20,
+      "positive_failed": 0,
+      "intentional_negative_control_detected": true,
+      "native_host_tested": false
+    },
+    "inspector": {
+      "passed": 5,
+      "failed": 0,
+      "transport": "real stdio to fixed synthetic fixture",
+      "external_provider_tested": false
+    },
+    "playwright": {
+      "live_http_checks_passed": 2,
+      "rendered": "NOT_RUN",
+      "native_ai_task": "NOT_RUN"
+    },
+    "preflight": {
+      "blocking_findings": 0,
+      "source_review_items": 7,
+      "manual_review": "Fixed scoped subprocesses and reviewed local evidence reads; see REDDIT_INTEGRATION_REVIEW.md"
+    },
+    "github_actions": "No PR-triggered workflow run returned; no CI pass claim"
+  },
+  "source_manifest": "REDDIT_FILES.json",
+  "detailed_tests": "REDDIT_TEST_RESULTS.json",
+  "candidate_review": "REDDIT_INTEGRATION_REVIEW.md",
+  "dependency_review": "REDDIT_DEPENDENCY_REVIEW.json",
+  "held": [
+    "SkillSpector execution: externally isolated no-network sandbox unavailable; adapter tested only with synthetic reports",
+    "Rendered browser: official Chromium download failed and no usable sandboxed runtime was available",
+    "Native ChatGPT/Gemini and independent November 6 acceptance pending",
+    "Optional runtime redistribution: one transitive filesystem package omitted its declared notice; package not invoked or bundled",
+    "Gitleaks/OSV/CodeQL not executed; no vulnerability or clean-history certification"
+  ],
+  "next_action": "Run and independently review the existing November 6 fresh ChatGPT/Gemini acceptance journey, retaining real host output and observed timing.",
+  "rollback": "Stop using the optional supplement; revert its reviewed commits if needed without rewriting history. Preserve prior releases, owner records, Doctor 0.2.1 and frozen RC1. No account or global config changes to undo."
+}

@@ -1,0 +1,11 @@
+{
+  "bob_id": "BOB-089",
+  "issues": [],
+  "limitations": [
+    "Syntactic/evidence-link gate; does not verify linked source contents",
+    "Handoff is not source-owner approval or resolution"
+  ],
+  "owner": "WIT Product (existing owner)",
+  "source_task": "https://github.com/iJaspers/manager-os/pull/10",
+  "status": "REVIEWABLE_HANDOFF_PROPOSAL"
+}

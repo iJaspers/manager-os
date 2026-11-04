@@ -1,0 +1,186 @@
+{
+  "schema": "wit.ship-preflight.v1",
+  "base_commit": "6fc0c50a5c93a6eefc66b60418d78541e98171bc",
+  "existing_pr_head": "41108ab3da9788b72f9e19f16a0fa9c5502aa17c",
+  "paths_scanned": 188,
+  "file_and_archive_members": 285,
+  "findings": [],
+  "source_review": [
+    {
+      "path": "integration/bob/verification-0.1.0-public-draft.1/evidence-files.test.mjs",
+      "line": 22,
+      "rule": "SOURCE_REVIEW_REQUIRED"
+    },
+    {
+      "path": "integration/bob/verification-0.1.0-public-draft.1/evidence-files.test.mjs",
+      "line": 28,
+      "rule": "SOURCE_REVIEW_REQUIRED"
+    },
+    {
+      "path": "integration/bob/verification-0.1.0-public-draft.1/inspector-adapter.mjs",
+      "line": 12,
+      "rule": "SOURCE_REVIEW_REQUIRED"
+    },
+    {
+      "path": "integration/bob/verification-0.1.0-public-draft.1/inspector-adapter.mjs",
+      "line": 17,
+      "rule": "SOURCE_REVIEW_REQUIRED"
+    },
+    {
+      "path": "integration/bob/verification-0.1.0-public-draft.1/mcp-fixture.test.mjs",
+      "line": 6,
+      "rule": "SOURCE_REVIEW_REQUIRED"
+    },
+    {
+      "path": "integration/bob/verification-0.1.0-public-draft.1/run-promptfoo.mjs",
+      "line": 12,
+      "rule": "SOURCE_REVIEW_REQUIRED"
+    },
+    {
+      "path": "integration/bob/verification-0.1.0-public-draft.1/run-promptfoo.mjs",
+      "line": 18,
+      "rule": "SOURCE_REVIEW_REQUIRED"
+    },
+    {
+      "path": "integration/bob/verification-0.1.1-public-draft.1/evidence-files.test.mjs",
+      "line": 22,
+      "rule": "SOURCE_REVIEW_REQUIRED"
+    },
+    {
+      "path": "integration/bob/verification-0.1.1-public-draft.1/evidence-files.test.mjs",
+      "line": 28,
+      "rule": "SOURCE_REVIEW_REQUIRED"
+    },
+    {
+      "path": "integration/bob/verification-0.1.1-public-draft.1/inspector-adapter.mjs",
+      "line": 12,
+      "rule": "SOURCE_REVIEW_REQUIRED"
+    },
+    {
+      "path": "integration/bob/verification-0.1.1-public-draft.1/inspector-adapter.mjs",
+      "line": 17,
+      "rule": "SOURCE_REVIEW_REQUIRED"
+    },
+    {
+      "path": "integration/bob/verification-0.1.1-public-draft.1/mcp-fixture.test.mjs",
+      "line": 6,
+      "rule": "SOURCE_REVIEW_REQUIRED"
+    },
+    {
+      "path": "integration/bob/verification-0.1.1-public-draft.1/run-promptfoo.mjs",
+      "line": 12,
+      "rule": "SOURCE_REVIEW_REQUIRED"
+    },
+    {
+      "path": "integration/bob/verification-0.1.1-public-draft.1/run-promptfoo.mjs",
+      "line": 18,
+      "rule": "SOURCE_REVIEW_REQUIRED"
+    },
+    {
+      "path": "tools/connector-doctor/0.2.0-public-draft.1/cli.test.mjs",
+      "line": 6,
+      "rule": "SOURCE_REVIEW_REQUIRED"
+    },
+    {
+      "path": "tools/connector-doctor/0.2.1-public-draft.1/cli.test.mjs",
+      "line": 6,
+      "rule": "SOURCE_REVIEW_REQUIRED"
+    },
+    {
+      "path": "tools/connector-doctor/0.2.1-public-draft.1/portability.test.mjs",
+      "line": 46,
+      "rule": "SOURCE_REVIEW_REQUIRED"
+    },
+    {
+      "path": "tools/connector-doctor/0.2.1-public-draft.1/portability.test.mjs",
+      "line": 53,
+      "rule": "SOURCE_REVIEW_REQUIRED"
+    },
+    {
+      "path": "tools/connector-doctor/0.2.1-public-draft.1/portability.test.mjs",
+      "line": 54,
+      "rule": "SOURCE_REVIEW_REQUIRED"
+    },
+    {
+      "path": "tools/connector-doctor/0.2.2-public-draft.1/cli.test.mjs",
+      "line": 6,
+      "rule": "SOURCE_REVIEW_REQUIRED"
+    },
+    {
+      "path": "tools/connector-doctor/0.2.2-public-draft.1/portability.test.mjs",
+      "line": 46,
+      "rule": "SOURCE_REVIEW_REQUIRED"
+    },
+    {
+      "path": "tools/connector-doctor/0.2.2-public-draft.1/portability.test.mjs",
+      "line": 53,
+      "rule": "SOURCE_REVIEW_REQUIRED"
+    },
+    {
+      "path": "tools/connector-doctor/0.2.2-public-draft.1/portability.test.mjs",
+      "line": 54,
+      "rule": "SOURCE_REVIEW_REQUIRED"
+    },
+    {
+      "path": "tools/connector-doctor/connector-doctor-0.2.0-public-draft.1.zip!cli.test.mjs",
+      "line": 6,
+      "rule": "SOURCE_REVIEW_REQUIRED"
+    },
+    {
+      "path": "tools/connector-doctor/connector-doctor-0.2.1-public-draft.1.zip!cli.test.mjs",
+      "line": 6,
+      "rule": "SOURCE_REVIEW_REQUIRED"
+    },
+    {
+      "path": "tools/connector-doctor/connector-doctor-0.2.1-public-draft.1.zip!portability.test.mjs",
+      "line": 46,
+      "rule": "SOURCE_REVIEW_REQUIRED"
+    },
+    {
+      "path": "tools/connector-doctor/connector-doctor-0.2.1-public-draft.1.zip!portability.test.mjs",
+      "line": 53,
+      "rule": "SOURCE_REVIEW_REQUIRED"
+    },
+    {
+      "path": "tools/connector-doctor/connector-doctor-0.2.1-public-draft.1.zip!portability.test.mjs",
+      "line": 54,
+      "rule": "SOURCE_REVIEW_REQUIRED"
+    },
+    {
+      "path": "tools/connector-doctor/connector-doctor-0.2.2-public-draft.1.zip!cli.test.mjs",
+      "line": 6,
+      "rule": "SOURCE_REVIEW_REQUIRED"
+    },
+    {
+      "path": "tools/connector-doctor/connector-doctor-0.2.2-public-draft.1.zip!portability.test.mjs",
+      "line": 46,
+      "rule": "SOURCE_REVIEW_REQUIRED"
+    },
+    {
+      "path": "tools/connector-doctor/connector-doctor-0.2.2-public-draft.1.zip!portability.test.mjs",
+      "line": 53,
+      "rule": "SOURCE_REVIEW_REQUIRED"
+    },
+    {
+      "path": "tools/connector-doctor/connector-doctor-0.2.2-public-draft.1.zip!portability.test.mjs",
+      "line": 54,
+      "rule": "SOURCE_REVIEW_REQUIRED"
+    },
+    {
+      "path": "tools/releases/public-push-2026-11-03/test_preflight.py",
+      "line": 125,
+      "rule": "SOURCE_REVIEW_REQUIRED"
+    },
+    {
+      "path": "tools/source-linked-handoff-review/0.1.0-public-draft.1/test_handoff.py",
+      "line": 35,
+      "rule": "SOURCE_REVIEW_REQUIRED"
+    },
+    {
+      "path": "tools/source-linked-handoff-review/source-linked-handoff-review-0.1.0-public-draft.1.zip!test_handoff.py",
+      "line": 35,
+      "rule": "SOURCE_REVIEW_REQUIRED"
+    }
+  ],
+  "scope": "Complete bytes and archive members at the current candidate tree, bounded batches of 20 paths. Pattern/dependency flags are not independent security acceptance."
+}

@@ -1,0 +1,76 @@
+{
+  "schema": "wit.sideproject-release.v1",
+  "date": "2026-11-03",
+  "source_commit": "b8a837de6fd040a795799f70694e38e1af43ae46",
+  "source_url": "https://github.com/iJaspers/manager-os/commit/b8a837de6fd040a795799f70694e38e1af43ae46",
+  "pull_request": "https://github.com/iJaspers/manager-os/pull/10",
+  "version": "0.2.1-public-draft.1",
+  "tool_id": "wit.connector-doctor",
+  "new_tool_identities": 0,
+  "updated_existing_tools": 1,
+  "release_workflow_improvements": 1,
+  "download": {
+    "commit": "b8a837de6fd040a795799f70694e38e1af43ae46",
+    "url": "https://raw.githubusercontent.com/iJaspers/manager-os/b8a837de6fd040a795799f70694e38e1af43ae46/tools/connector-doctor/connector-doctor-0.2.1-public-draft.1.zip",
+    "http_status": 200,
+    "bytes": 27149,
+    "sha256": "0aaceb45a05da9cbf741817a1979ec6141e0febb58f8a81f88c283a38e9c0360",
+    "member_hashes_verified": 19,
+    "source_files_verified": 30
+  },
+  "tests": {
+    "connector_doctor": {
+      "passed": 129,
+      "failed": 0,
+      "new": 47
+    },
+    "release_preflight": {
+      "passed": 39,
+      "failed": 0,
+      "new": 39
+    },
+    "bob_rc1_regression": {
+      "passed": 6,
+      "failed": 0
+    },
+    "catalogue": {
+      "passed": 65,
+      "failed": 0
+    },
+    "distinct_this_sprint": 239,
+    "new_tests": 86,
+    "clean_zip_and_public_download_reruns_not_added_to_total": true
+  },
+  "interim_findings": [
+    "One preflight unit test failed on nested member basename handling; repaired and 39 final tests pass.",
+    "Preflight initially flagged a fictional key fixture and CJS files; reviewed exact sentinel exception and CJS support added.",
+    "Self-scan caught the scanner exception literal; represented it without an accidental secret-assignment match. No broad exemptions."
+  ],
+  "tests_not_run": [
+    "External provider OAuth/writes",
+    "Fresh ChatGPT/Gemini and independent product/security acceptance",
+    "Windows, browser, Android and power-loss durability",
+    "Gitleaks, OSV-Scanner, CodeQL: not installed",
+    "Wayflow execution: isolated network namespace setup not permitted"
+  ],
+  "states": {
+    "BUILT": true,
+    "TESTED": "239 distinct local checks pass; public downloaded Doctor package also passes 129",
+    "STAGED": true,
+    "APPROVED": "Maintainer authorized safe generic licensed WIP publication in the existing PR",
+    "PUBLISHED": "Public review branch source; catalogue references verified immutable package",
+    "VERIFIED": "30 source paths match fetched GitHub commit; public ZIP HTTP 200, 19 member hashes and downloaded-package tests pass",
+    "INTEGRATED": "Existing package builder and catalogue path; not merged to main",
+    "ACCEPTED": false,
+    "MERGED": false,
+    "WIX_DEPLOYED": false
+  },
+  "reuse": "Existing WIT MIT gate/read adapter and RC1 supplement preserved. No third-party code, prompts, assets, runtimes or dependencies added.",
+  "original_implementation": [
+    "portable preferences and drift-aware metadata handoff",
+    "bounded release preflight and synthetic tests"
+  ],
+  "scope": "No global config changes, new services, subscriptions, permission expansion, automated workflows or announcements. All fixtures synthetic.",
+  "rollback": "Use preserved 0.2.0 and RC1; rollback local preferences with exact recorded revision and consent. Revert sprint commits through review after checking dependents. Retain old releases and private originals.",
+  "next_action": "Independent review of PR #10 followed by the existing November 6 fresh ChatGPT/Gemini acceptance cases."
+}

@@ -1,0 +1,289 @@
+{
+  "schema": "wit.reddit-integration-tests.v1",
+  "date": "2026-11-03",
+  "supplement_version": "0.1.0-public-draft.1",
+  "runtime": {
+    "node": "24.22.1",
+    "python": "3.12.14",
+    "platform": "Linux"
+  },
+  "unit_and_regression": {
+    "supplement": {
+      "command": "node --test integration/bob/verification-0.1.0-public-draft.1/*.test.mjs",
+      "tests": 64,
+      "passed": 64,
+      "failed": 0,
+      "exit_code": 0,
+      "local_output_sha256": "28e72211ab9d07af58240ce1512d0b8b00adfe7393bb9fc28f66b8ada19dbdb8"
+    },
+    "existing_doctor": {
+      "command": "node --test tools/connector-doctor/0.2.1-public-draft.1/*.test.mjs",
+      "tests": 129,
+      "passed": 129,
+      "failed": 0,
+      "exit_code": 0,
+      "local_output_sha256": "722d5f42e86418f85031391bf2c0fbd9b8ffad16258ebc8a84090b1b19cd51a6"
+    },
+    "unchanged_bob_rc1": {
+      "command": "python -m unittest discover -s integration/bob/connector-doctor-0.2.0-public-draft.1 -p 'test_*.py'",
+      "tests": 6,
+      "passed": 6,
+      "failed": 0,
+      "exit_code": 0
+    }
+  },
+  "promptfoo_positive": {
+    "schema": "wit.promptfoo-run.v1",
+    "version": "0.125.1",
+    "evidence_kind": "SYNTHETIC_CONTRACT",
+    "native_host_tested": false,
+    "mode": "positive",
+    "stats": {
+      "successes": 20,
+      "failures": 0,
+      "errors": 0
+    },
+    "expected": {
+      "successes": 20,
+      "failures": 0,
+      "errors": 0
+    },
+    "passed": true,
+    "exit_code": 0
+  },
+  "promptfoo_negative_control": {
+    "schema": "wit.promptfoo-run.v1",
+    "version": "0.125.1",
+    "evidence_kind": "SYNTHETIC_CONTRACT",
+    "native_host_tested": false,
+    "mode": "intentional-negative-control",
+    "stats": {
+      "successes": 19,
+      "failures": 1,
+      "errors": 0
+    },
+    "expected": {
+      "successes": 19,
+      "failures": 1,
+      "errors": 0
+    },
+    "passed": true,
+    "exit_code": 100
+  },
+  "inspector": {
+    "schema": "wit.inspector-run.v1",
+    "version": "2.13.0",
+    "passed": 5,
+    "failed": 0,
+    "results": [
+      {
+        "id": "read",
+        "expected": "VERIFIED",
+        "pass": true,
+        "schema": "wit.inspector-proof.v1",
+        "synthetic": true,
+        "external_provider_tested": false,
+        "result": {
+          "status": "VERIFIED",
+          "reason": "Observed result fields match the request; this is not independent authentication.",
+          "verified": true,
+          "evidence_level": "SUPPLIED_RECEIPT_CONSISTENCY_ONLY",
+          "retry": "Inspect actual target before retry; no automatic retry.",
+          "attempted": true,
+          "request_sha256": "c25161951277a111b38c15285b2b46b488bf67cb63e80ee0b208484abaf383ca",
+          "invocation_id": "synthetic-inspector-read"
+        },
+        "trace": [
+          {
+            "method": "tools/list",
+            "exit_code": 0
+          },
+          {
+            "method": "tools/list",
+            "exit_code": 0
+          },
+          {
+            "method": "tools/call",
+            "exit_code": 0
+          }
+        ]
+      },
+      {
+        "id": "no-consent",
+        "expected": "DENIED",
+        "pass": true,
+        "schema": "wit.inspector-proof.v1",
+        "synthetic": true,
+        "external_provider_tested": false,
+        "result": {
+          "status": "DENIED",
+          "reason": "Current host did not authorize the exact read.",
+          "attempted": false,
+          "verified": false
+        },
+        "trace": [
+          {
+            "method": "tools/list",
+            "exit_code": 0
+          }
+        ]
+      },
+      {
+        "id": "remote-denial",
+        "expected": "DENIED",
+        "pass": true,
+        "schema": "wit.inspector-proof.v1",
+        "synthetic": true,
+        "external_provider_tested": false,
+        "result": {
+          "status": "DENIED",
+          "reason": "Actual host denied the operation; stop.",
+          "verified": false,
+          "evidence_level": "SUPPLIED_RECEIPT_CONSISTENCY_ONLY",
+          "retry": "Inspect actual target before retry; no automatic retry.",
+          "attempted": true,
+          "request_sha256": "02e3f41c518b57e175a35080accaf1c063fcae3ce59c8b7b98e744f20bb45cf6",
+          "invocation_id": "synthetic-inspector-read"
+        },
+        "trace": [
+          {
+            "method": "tools/list",
+            "exit_code": 0
+          },
+          {
+            "method": "tools/list",
+            "exit_code": 0
+          },
+          {
+            "method": "tools/call",
+            "exit_code": 5
+          }
+        ]
+      },
+      {
+        "id": "failed",
+        "expected": "FAILED",
+        "pass": true,
+        "schema": "wit.inspector-proof.v1",
+        "synthetic": true,
+        "external_provider_tested": false,
+        "result": {
+          "status": "FAILED",
+          "reason": "Execution reported failure; effects may need inspection.",
+          "verified": false,
+          "evidence_level": "SUPPLIED_RECEIPT_CONSISTENCY_ONLY",
+          "retry": "Inspect actual target before retry; no automatic retry.",
+          "attempted": true,
+          "request_sha256": "7d1f3d13a3f00be314edf8b6a3bcd824782bb584191bca42cd6ebb100860ae85",
+          "invocation_id": "synthetic-inspector-read"
+        },
+        "trace": [
+          {
+            "method": "tools/list",
+            "exit_code": 0
+          },
+          {
+            "method": "tools/list",
+            "exit_code": 0
+          },
+          {
+            "method": "tools/call",
+            "exit_code": 5
+          }
+        ]
+      },
+      {
+        "id": "unsupported-target",
+        "expected": "DENIED",
+        "pass": true,
+        "schema": "wit.inspector-proof.v1",
+        "synthetic": true,
+        "external_provider_tested": false,
+        "result": {
+          "status": "DENIED",
+          "reason": "Current host did not authorize the exact read.",
+          "attempted": false,
+          "verified": false
+        },
+        "trace": [
+          {
+            "method": "tools/list",
+            "exit_code": 0
+          }
+        ]
+      }
+    ]
+  },
+  "playwright_http": {
+    "schema": "wit.web-to-bob-check.v1",
+    "playwright_version": "1.62.1",
+    "entry_url": "https://www.ijaspers.com/post/witburrow-starter-reference",
+    "bob_url": "https://raw.githubusercontent.com/iJaspers/manager-os/main/downloads/BOB_ON_DEMAND_2026.11.01-rc1.txt",
+    "http_page": {
+      "passed": true,
+      "reason": "RC1_BOB_LINK_IN_HTTP_RESPONSE",
+      "rendered_browser_verified": false
+    },
+    "http_asset": {
+      "passed": true,
+      "bytes": 8759,
+      "sha256": "4fdd30e21c1251623e8bd48d2e001b3b945b533949bfc8fb8dc7ab4441280b1f",
+      "expected_sha256": "4fdd30e21c1251623e8bd48d2e001b3b945b533949bfc8fb8dc7ab4441280b1f"
+    },
+    "rendered": {
+      "status": "NOT_RUN",
+      "reason": "Browser mode was not selected."
+    },
+    "native_ai_task": "NOT_RUN",
+    "first_useful_result": "NOT_MEASURED",
+    "product_accepted": false
+  },
+  "earlier_render_attempt": {
+    "schema": "wit.web-to-bob-check.v1",
+    "playwright_version": "1.62.1",
+    "entry_url": "https://www.ijaspers.com/post/witburrow-starter-reference",
+    "bob_url": "https://raw.githubusercontent.com/iJaspers/manager-os/main/downloads/BOB_ON_DEMAND_2026.11.01-rc1.txt",
+    "http_page": {
+      "passed": true,
+      "reason": "RC1_BOB_LINK_IN_HTTP_RESPONSE",
+      "rendered_browser_verified": false
+    },
+    "http_asset": {
+      "passed": true,
+      "bytes": 8759,
+      "sha256": "4fdd30e21c1251623e8bd48d2e001b3b945b533949bfc8fb8dc7ab4441280b1f",
+      "expected_sha256": "4fdd30e21c1251623e8bd48d2e001b3b945b533949bfc8fb8dc7ab4441280b1f"
+    },
+    "rendered": {
+      "status": "NOT_RUN",
+      "reason": "A usable sandboxed Chromium runtime was unavailable."
+    },
+    "native_ai_task": "NOT_RUN",
+    "first_useful_result": "NOT_MEASURED",
+    "product_accepted": false
+  },
+  "onboarding_synthetic": {
+    "status": "SYNTHETIC_ONLY",
+    "host_kind": "synthetic",
+    "first_useful_result_ms": 500,
+    "artifact_sha256": "40fd5bb30f97f3dc228cd025807a0eae161db14a2f9d1a4a72de6f10b607d4d7",
+    "save_verified": true,
+    "resume_verified": true,
+    "product_accepted": false,
+    "limits": "Timing and artifact consistency only; caller-supplied event records are not authenticated. Usefulness needs human confirmation; no provider compatibility or tenant-isolation proof."
+  },
+  "not_run": [
+    "Actual SkillSpector scanner: external no-network sandbox unavailable",
+    "Rendered browser: official Chromium acquisition failed; no usable sandboxed runtime",
+    "Dynamic website to native ChatGPT/Gemini task execution",
+    "Fresh native-host cross-AI acceptance and independent review",
+    "Real-user first useful result timing",
+    "New Gitleaks, OSV-Scanner or CodeQL scan",
+    "Windows and device compatibility"
+  ],
+  "unexpected_failures_remaining": [],
+  "counting": "64 supplement + 129 existing Doctor + 6 Bob/RC1 = 199 unit/regression checks. Optional Promptfoo/Inspector/HTTP checks are reported separately; cases overlap and are not claimed as distinct new features. Expected negative control fails one assertion deliberately. Browser acquisition/check is an unresolved environmental failure, not a pass.",
+  "product_accepted": false,
+  "published": false,
+  "publication_note": "Publication and readback recorded separately after the source commit."
+}

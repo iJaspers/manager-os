@@ -1,0 +1,130 @@
+{
+  "schema": "wit.ship-release-receipt.v1",
+  "date": "2026-11-03",
+  "pr": "https://github.com/iJaspers/manager-os/pull/10",
+  "branch": "release/wit-public-2026-11-03",
+  "starting_head": "41108ab3da9788b72f9e19f16a0fa9c5502aa17c",
+  "source_commit": "849d8af05ed4c6c142502ac97e75e3d666e069de",
+  "source_commit_url": "https://github.com/iJaspers/manager-os/commit/849d8af05ed4c6c142502ac97e75e3d666e069de",
+  "base_main": "6fc0c50a5c93a6eefc66b60418d78541e98171bc",
+  "states": {
+    "BUILT": true,
+    "TESTED": "Named local and actual downloaded-package suites",
+    "INTEGRATED": "Existing Bob/Doctor/release pipeline and catalogue",
+    "APPROVED": "Current maintainer authorization for safe generic scoped-license WIP on existing public review branch",
+    "PUBLISHED": "Source commit public on review branch",
+    "VERIFIED": "67 exact GitHub files and two HTTP downloads with whole/member hashes",
+    "MERGED": false,
+    "WEBSITE_DEPLOYED_THIS_BATCH": false,
+    "USER_ADOPTED": "UNVERIFIED",
+    "PRODUCT_ACCEPTED": false,
+    "INDEPENDENT_SECURITY_ACCEPTED": false
+  },
+  "distinct_new_public_tools": 1,
+  "updated_existing_tools": 1,
+  "new_canonical_bob_build_credits": 0,
+  "versions": {
+    "wit.connector-doctor": "0.2.2-public-draft.1",
+    "wit.source-linked-handoff-review": "0.1.0-public-draft.1",
+    "bob_verification_supplement": "0.1.1-public-draft.1"
+  },
+  "downloads": [
+    {
+      "id": "wit.connector-doctor",
+      "version": "0.2.2-public-draft.1",
+      "path": "tools/connector-doctor/connector-doctor-0.2.2-public-draft.1.zip",
+      "sha256": "8a311d3d49632b99962fa0cecce52e4e928fb03cbebc840a8f3c8ab5fac782cc",
+      "size_bytes": 29891,
+      "members": 21,
+      "url": "https://raw.githubusercontent.com/iJaspers/manager-os/849d8af05ed4c6c142502ac97e75e3d666e069de/tools/connector-doctor/connector-doctor-0.2.2-public-draft.1.zip",
+      "http_status": 200,
+      "member_hashes_verified": true
+    },
+    {
+      "id": "wit.source-linked-handoff-review",
+      "version": "0.1.0-public-draft.1",
+      "path": "tools/source-linked-handoff-review/source-linked-handoff-review-0.1.0-public-draft.1.zip",
+      "sha256": "bf30722ea10de91ca8015d0737f555a8e05ba2c2985ce544070c10a2f7df62e9",
+      "size_bytes": 8896,
+      "members": 9,
+      "url": "https://raw.githubusercontent.com/iJaspers/manager-os/849d8af05ed4c6c142502ac97e75e3d666e069de/tools/source-linked-handoff-review/source-linked-handoff-review-0.1.0-public-draft.1.zip",
+      "http_status": 200,
+      "member_hashes_verified": true
+    }
+  ],
+  "verified_source_file_count": 67,
+  "source_manifest": "SHIP_FILES.json",
+  "tests": {
+    "local_unit_passed": 294,
+    "local_unit_failed": 0,
+    "catalogue_passed": 65,
+    "catalogue_failed_final": 0,
+    "local_unit_plus_catalogue": 359,
+    "downloaded_package_recheck": {
+      "doctor": 147,
+      "handoff": 25,
+      "failed": 0,
+      "counted_as_new_unique_tests": false
+    },
+    "promptfoo_synthetic": {
+      "passed": 20,
+      "failed": 0,
+      "native_host": false
+    },
+    "inspector_real_stdio_fixture": {
+      "passed": 5,
+      "failed": 0
+    },
+    "catalogue_first_run": "57 passed / 8 count assertions failed after adding one real listing; expected card/hold/review counts updated without weakening gates; final 65 pass.",
+    "unchanged_historical_tests": "Retained prior receipts; not rerun or added to this count.",
+    "github_actions": "No PR-triggered runs at source commit; existing manual canary preserved, not run."
+  },
+  "dogfood": {
+    "receipt": "SHIP_DOGFOOD.json",
+    "browser": "Observed current public Wix page -> actual Bob RC1 raw link in cloud Chrome",
+    "actual_task": "Real GitHub PR read -> Doctor consistency -> BOB-089 proposal -> saved handoff",
+    "actual_source_tool": "mcp__codex_apps__github_get_pr_info",
+    "durable_saved_artifact": "https://github.com/iJaspers/manager-os/blob/849d8af05ed4c6c142502ac97e75e3d666e069de/tools/releases/public-push-2026-11-03/SHIP_HANDOFF_RESULT.json",
+    "readback_sha256": "a02058f8ef6247b5bc7299e28c8007ddea7428dacd1e972d05fbf349edb31ca1",
+    "durable_save_readback_verified": true,
+    "fresh_local_process_resume": "Hash matched; current capabilities rechecked; cannot execute until fresh target authorization",
+    "fresh_native_chatgpt_gemini": "NOT_RUN",
+    "observed_first_useful_result_ms": null
+  },
+  "catalogue": {
+    "tool_count": 15,
+    "total_with_starter": 16,
+    "public_downloadable_count": 10,
+    "private_metadata_only_count": 5,
+    "new_tool_public_ready": false,
+    "website_effect": "Branch metadata only. Frozen website embed still holds GitHub ZIP links; no website deployment or intake expansion."
+  },
+  "holds": [
+    {
+      "item": "PR merge",
+      "reason": "Existing independent review/security gate and exact scoped merge approval remain outstanding; no submitted reviews at starting head."
+    },
+    {
+      "item": "November 6 acceptance",
+      "reason": "Fresh ChatGPT/Gemini user-isolation, actual permission and durable-resume trials remain separate."
+    },
+    {
+      "item": "SkillSpector / Wayflow execution",
+      "reason": "Required external no-network sandbox not available."
+    },
+    {
+      "item": "Optional third-party runtime redistribution",
+      "reason": "Incomplete transitive rights evidence; not bundled. npm advisory audit blocked by certificate validation; no vulnerability clearance."
+    },
+    {
+      "item": "BOB-090 variant and broader private components",
+      "reason": "Variant proof/source lineage does not establish equivalence; private business/accounting source remains excluded."
+    },
+    {
+      "item": "Local Playwright rendered runner / devices",
+      "reason": "Chromium acquisition failed earlier; manual cloud Chrome navigation does not establish standalone or mobile acceptance."
+    }
+  ],
+  "rollback": "Stop successor commands; preserve receipts; revert this batch normally if required. Do not overwrite old releases or force-push. Use conversation-only fallback instead of a known-defective older authorization adapter. Main RC1 and website unchanged.",
+  "next_action": "Independently review the exact final PR head and obtain scoped merge approval; keep website/full-launch and November 6 acceptance separate."
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "wit.ship-dogfood.v1",
+  "date": "2026-11-03",
+  "bob": "BOB_ON_DEMAND_2026.11.01-rc1",
+  "website_entry": "https://www.ijaspers.com/post/witburrow-starter-reference",
+  "browser_navigation": {
+    "status": "PASS",
+    "mode": "manual cloud Chrome",
+    "destination": "https://raw.githubusercontent.com/iJaspers/manager-os/main/downloads/BOB_ON_DEMAND_2026.11.01-rc1.txt",
+    "local_playwright_rendered": "NOT_RUN"
+  },
+  "actual_bounded_task": "Prepare and validate the existing PR review handoff from a real GitHub read.",
+  "actual_host_tool": "mcp__codex_apps__github_get_pr_info",
+  "doctor_preflight": "READY_TO_REQUEST",
+  "doctor_receipt_consistency": "VERIFIED",
+  "observation_limits": "Current session tool observed and successfully invoked. Local context labels are correlation labels, not authenticated provider/account identity; Doctor validates supplied consistency only.",
+  "source_read": {
+    "url": "https://github.com/iJaspers/manager-os/pull/10",
+    "head_sha": "41108ab3da9788b72f9e19f16a0fa9c5502aa17c",
+    "base_sha": "6fc0c50a5c93a6eefc66b60418d78541e98171bc",
+    "state": "open",
+    "merged": false,
+    "observed_at": "2026-11-03T17:14:02.635Z"
+  },
+  "useful_output": "SHIP_HANDOFF_RESULT.json",
+  "output_sha256": "a02058f8ef6247b5bc7299e28c8007ddea7428dacd1e972d05fbf349edb31ca1",
+  "handoff_gate": "REVIEWABLE_HANDOFF_PROPOSAL",
+  "negative_cases": {
+    "unsupported_resolution": "HOLD",
+    "missing_evidence": "HOLD"
+  },
+  "local_save_readback": true,
+  "fresh_local_process_hash_readback": true,
+  "resume_check": {
+    "status": "RECHECK_TARGET_AND_AUTHORIZE",
+    "checks": [
+      {
+        "connector": "github",
+        "tool": "mcp__codex_apps__github_get_pr_info",
+        "action": "read",
+        "status": "READY_TO_REQUEST",
+        "next_action": "Use only the actual host tool under current permission; verify its returned result."
+      }
+    ],
+    "can_execute": false,
+    "executed": false,
+    "checkpoint_verified": false,
+    "next_action": "Recover the artifact through the existing owner record, compare its hash, then recheck the exact target and current host authorization. The handoff is not evidence of completion or permission."
+  },
+  "durable_public_readback": "PENDING_PUBLICATION",
+  "fresh_chatgpt_gemini_trial": "NOT_RUN",
+  "first_useful_result_ms": null,
+  "timing_limit": "The browser journey was not instrumented end-to-end. No reconstructed or synthetic time is presented as observed user performance.",
+  "product_accepted": false
+}

@@ -1,0 +1,38 @@
+{
+  "source_commit": "edbb5e79a1c18dec8f31d2afce81acb8ae48ef71",
+  "scope": "Reviewed metadata and exact GitHub download validation; no deployment or policy-file changes.",
+  "files": [
+    {
+      "path": "site/catalogue/README.md",
+      "sha256": "b3ffb0a025d304fed925ed6e31da83003cf09481ff2e11af53c1166a33d1c9e2"
+    },
+    {
+      "path": "site/catalogue/projection.mjs",
+      "sha256": "e9ee7d9aca6126e3822c52231dab3263afa09b6668e41f6a2713ecc495b70235"
+    },
+    {
+      "path": "site/catalogue/tests/projection.test.mjs",
+      "sha256": "881211c4d4e573bcd8417acf5ecf99bf62f242d039f73c619fcc947dc083657d"
+    },
+    {
+      "path": "site/catalogue/tests/embed_order.test.mjs",
+      "sha256": "fc0fe9ab03387892a212645aff52d8abc4f2fbd92ae27ed9ec81cfe8151046ae"
+    },
+    {
+      "path": "site/catalogue/tests/intake.test.mjs",
+      "sha256": "b3289d08395a2c553cbfffa36c698e1a087e2f7df4a315ef70e07029814c43cb"
+    },
+    {
+      "path": "site/catalogue/tests/github-download.test.mjs",
+      "sha256": "edcd7e0a78882a4174823c6bc3a50e2a9f6c8acea7dacfcbbba1f169429da217"
+    },
+    {
+      "path": "tools/CATALOGUE.json",
+      "sha256": "9cd3a75af9c85d5dd8381978b3a1577709d99abe5d462ce5fac62b490e793732"
+    },
+    {
+      "path": "tools/releases/public-push-2026-11-03/RELEASE_RECEIPT.json",
+      "sha256": "a5b1ec934bb5a297af5cc216d0d5e332984b0b8f84f85a3ded844102c437780b"
+    }
+  ]
+}

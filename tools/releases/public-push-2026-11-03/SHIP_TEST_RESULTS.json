@@ -1,0 +1,241 @@
+{
+  "schema": "wit.ship-tests.v1",
+  "date": "2026-11-03",
+  "runtime": {
+    "node": "24.22.1",
+    "python": "3.12.14",
+    "os": "Linux"
+  },
+  "unit_suites": [
+    {
+      "component": "Connector Doctor 0.2.2-public-draft.1",
+      "command": "node --test tools/connector-doctor/0.2.2-public-draft.1/*.test.mjs",
+      "passed": 147,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "component": "Bob verification 0.1.1-public-draft.1",
+      "command": "node --test integration/bob/verification-0.1.1-public-draft.1/*.test.mjs",
+      "passed": 64,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "component": "Release snapshot and preflight",
+      "command": "python -B -m unittest discover -s tools/releases/public-push-2026-11-03 -p 'test_*.py'",
+      "passed": 58,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "component": "BOB-089 public handoff derivative",
+      "command": "python -B -m unittest discover -s tools/source-linked-handoff-review/0.1.0-public-draft.1 -p 'test_*.py'",
+      "passed": 25,
+      "failed": 0,
+      "skipped": 0
+    }
+  ],
+  "unit_total": 294,
+  "optional_execution": {
+    "promptfoo": {
+      "schema": "wit.promptfoo-run.v1",
+      "version": "0.125.1",
+      "evidence_kind": "SYNTHETIC_CONTRACT",
+      "native_host_tested": false,
+      "mode": "positive",
+      "stats": {
+        "successes": 20,
+        "failures": 0,
+        "errors": 0
+      },
+      "expected": {
+        "successes": 20,
+        "failures": 0,
+        "errors": 0
+      },
+      "passed": true,
+      "exit_code": 0
+    },
+    "inspector": {
+      "schema": "wit.inspector-run.v1",
+      "version": "2.13.0",
+      "passed": 5,
+      "failed": 0,
+      "results": [
+        {
+          "id": "read",
+          "expected": "VERIFIED",
+          "pass": true,
+          "schema": "wit.inspector-proof.v1",
+          "synthetic": true,
+          "external_provider_tested": false,
+          "result": {
+            "status": "VERIFIED",
+            "reason": "Observed result fields match the request; this is not independent authentication.",
+            "verified": true,
+            "evidence_level": "SUPPLIED_RECEIPT_CONSISTENCY_ONLY",
+            "retry": "Inspect actual target before retry; no automatic retry.",
+            "attempted": true,
+            "request_sha256": "c25161951277a111b38c15285b2b46b488bf67cb63e80ee0b208484abaf383ca",
+            "invocation_id": "synthetic-inspector-read"
+          },
+          "trace": [
+            {
+              "method": "tools/list",
+              "exit_code": 0
+            },
+            {
+              "method": "tools/list",
+              "exit_code": 0
+            },
+            {
+              "method": "tools/call",
+              "exit_code": 0
+            }
+          ]
+        },
+        {
+          "id": "no-consent",
+          "expected": "DENIED",
+          "pass": true,
+          "schema": "wit.inspector-proof.v1",
+          "synthetic": true,
+          "external_provider_tested": false,
+          "result": {
+            "status": "DENIED",
+            "reason": "Current host did not authorize the exact read.",
+            "attempted": false,
+            "verified": false
+          },
+          "trace": [
+            {
+              "method": "tools/list",
+              "exit_code": 0
+            }
+          ]
+        },
+        {
+          "id": "remote-denial",
+          "expected": "DENIED",
+          "pass": true,
+          "schema": "wit.inspector-proof.v1",
+          "synthetic": true,
+          "external_provider_tested": false,
+          "result": {
+            "status": "DENIED",
+            "reason": "Actual host denied the operation; stop.",
+            "verified": false,
+            "evidence_level": "SUPPLIED_RECEIPT_CONSISTENCY_ONLY",
+            "retry": "Inspect actual target before retry; no automatic retry.",
+            "attempted": true,
+            "request_sha256": "02e3f41c518b57e175a35080accaf1c063fcae3ce59c8b7b98e744f20bb45cf6",
+            "invocation_id": "synthetic-inspector-read"
+          },
+          "trace": [
+            {
+              "method": "tools/list",
+              "exit_code": 0
+            },
+            {
+              "method": "tools/list",
+              "exit_code": 0
+            },
+            {
+              "method": "tools/call",
+              "exit_code": 5
+            }
+          ]
+        },
+        {
+          "id": "failed",
+          "expected": "FAILED",
+          "pass": true,
+          "schema": "wit.inspector-proof.v1",
+          "synthetic": true,
+          "external_provider_tested": false,
+          "result": {
+            "status": "FAILED",
+            "reason": "Execution reported failure; effects may need inspection.",
+            "verified": false,
+            "evidence_level": "SUPPLIED_RECEIPT_CONSISTENCY_ONLY",
+            "retry": "Inspect actual target before retry; no automatic retry.",
+            "attempted": true,
+            "request_sha256": "7d1f3d13a3f00be314edf8b6a3bcd824782bb584191bca42cd6ebb100860ae85",
+            "invocation_id": "synthetic-inspector-read"
+          },
+          "trace": [
+            {
+              "method": "tools/list",
+              "exit_code": 0
+            },
+            {
+              "method": "tools/list",
+              "exit_code": 0
+            },
+            {
+              "method": "tools/call",
+              "exit_code": 5
+            }
+          ]
+        },
+        {
+          "id": "unsupported-target",
+          "expected": "DENIED",
+          "pass": true,
+          "schema": "wit.inspector-proof.v1",
+          "synthetic": true,
+          "external_provider_tested": false,
+          "result": {
+            "status": "DENIED",
+            "reason": "Current host did not authorize the exact read.",
+            "attempted": false,
+            "verified": false
+          },
+          "trace": [
+            {
+              "method": "tools/list",
+              "exit_code": 0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "local_demo": {
+    "schema": "wit.local-demo.v1",
+    "synthetic": true,
+    "external_provider_tested": false,
+    "profile_apply": "VERIFIED",
+    "resume_check": "RECHECK_TARGET_AND_AUTHORIZE",
+    "read": "VERIFIED",
+    "expected_output_sha256": "368f5a04db24a5060105464b6cd66a0ef257b6e5bd36678fd1e5267be7e5fbda",
+    "observed_output_sha256": "368f5a04db24a5060105464b6cd66a0ef257b6e5bd36678fd1e5267be7e5fbda",
+    "rollback": "ROLLED_BACK",
+    "profile_restored": true
+  },
+  "security": {
+    "gitleaks_version": "8.30.1",
+    "prior_pr_commits_scanned": 6,
+    "prior_pr_history_findings": 0,
+    "current_worktree_findings": 0,
+    "archive_depth": 2,
+    "negative_control": "PASS: zero findings",
+    "positive_control": "PASS: one github-pat finding after correcting malformed fixture length",
+    "npm_audit": "BLOCKED: certificate validation failure",
+    "osv_scanner": "NOT_RUN",
+    "codeql": "NOT_RUN"
+  },
+  "observed_failures_before_repair": [
+    "Prior builder included changed and added files after successful scan.",
+    "Prior read adapter invoked a changed target when authorization mutated both request copies."
+  ],
+  "not_run": [
+    "Fresh native ChatGPT/Gemini acceptance",
+    "Independent product/security acceptance of final candidate",
+    "Windows/mobile acceptance",
+    "Local Playwright rendered runner",
+    "SkillSpector and Wayflow sandbox execution"
+  ],
+  "historical_results_not_added": "Earlier initial, SideProject and Reddit suites overlap. Their unchanged passing results are retained in existing dated receipts, not added to this count."
+}

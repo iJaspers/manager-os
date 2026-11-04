@@ -1,0 +1,258 @@
+{
+  "description": "WIT deterministic contract matrix; synthetic hosts, no model APIs",
+  "prompts": [
+    "{{case_id}}"
+  ],
+  "providers": [
+    "file://./promptfoo-provider.mjs"
+  ],
+  "writeLatestResults": false,
+  "evaluateOptions": {
+    "maxConcurrency": 1,
+    "cache": false,
+    "timeoutMs": 5000,
+    "maxEvalTimeMs": 60000
+  },
+  "tests": [
+    {
+      "description": "synthetic-a:read",
+      "vars": {
+        "case_id": "synthetic-a:read"
+      },
+      "assert": [
+        {
+          "type": "equals",
+          "value": "{\"status\":\"READY_TO_REQUEST\",\"can_execute\":false,\"executed\":false}"
+        }
+      ]
+    },
+    {
+      "description": "synthetic-a:missing",
+      "vars": {
+        "case_id": "synthetic-a:missing"
+      },
+      "assert": [
+        {
+          "type": "equals",
+          "value": "{\"status\":\"UNVERIFIED\",\"can_execute\":false,\"executed\":false}"
+        }
+      ]
+    },
+    {
+      "description": "synthetic-a:denied",
+      "vars": {
+        "case_id": "synthetic-a:denied"
+      },
+      "assert": [
+        {
+          "type": "equals",
+          "value": "{\"status\":\"DENIED\",\"can_execute\":false,\"executed\":false}"
+        }
+      ]
+    },
+    {
+      "description": "synthetic-a:unsupported",
+      "vars": {
+        "case_id": "synthetic-a:unsupported"
+      },
+      "assert": [
+        {
+          "type": "equals",
+          "value": "{\"status\":\"UNSUPPORTED\",\"can_execute\":false,\"executed\":false}"
+        }
+      ]
+    },
+    {
+      "description": "synthetic-a:copied-session",
+      "vars": {
+        "case_id": "synthetic-a:copied-session"
+      },
+      "assert": [
+        {
+          "type": "equals",
+          "value": "{\"status\":\"UNVERIFIED\",\"can_execute\":false,\"executed\":false}"
+        }
+      ]
+    },
+    {
+      "description": "synthetic-a:copied-account",
+      "vars": {
+        "case_id": "synthetic-a:copied-account"
+      },
+      "assert": [
+        {
+          "type": "equals",
+          "value": "{\"status\":\"UNVERIFIED\",\"can_execute\":false,\"executed\":false}"
+        }
+      ]
+    },
+    {
+      "description": "synthetic-a:stale",
+      "vars": {
+        "case_id": "synthetic-a:stale"
+      },
+      "assert": [
+        {
+          "type": "equals",
+          "value": "{\"status\":\"UNVERIFIED\",\"can_execute\":false,\"executed\":false}"
+        }
+      ]
+    },
+    {
+      "description": "synthetic-a:prompt-injection-is-data",
+      "vars": {
+        "case_id": "synthetic-a:prompt-injection-is-data"
+      },
+      "assert": [
+        {
+          "type": "equals",
+          "value": "{\"status\":\"READY_TO_REQUEST\",\"can_execute\":false,\"executed\":false}"
+        }
+      ]
+    },
+    {
+      "description": "synthetic-a:write-not-supported",
+      "vars": {
+        "case_id": "synthetic-a:write-not-supported"
+      },
+      "assert": [
+        {
+          "type": "equals",
+          "value": "{\"status\":\"UNSUPPORTED\",\"can_execute\":false,\"executed\":false}"
+        }
+      ]
+    },
+    {
+      "description": "synthetic-a:no-callable-tool",
+      "vars": {
+        "case_id": "synthetic-a:no-callable-tool"
+      },
+      "assert": [
+        {
+          "type": "equals",
+          "value": "{\"status\":\"UNVERIFIED\",\"can_execute\":false,\"executed\":false}"
+        }
+      ]
+    },
+    {
+      "description": "synthetic-b:read",
+      "vars": {
+        "case_id": "synthetic-b:read"
+      },
+      "assert": [
+        {
+          "type": "equals",
+          "value": "{\"status\":\"READY_TO_REQUEST\",\"can_execute\":false,\"executed\":false}"
+        }
+      ]
+    },
+    {
+      "description": "synthetic-b:missing",
+      "vars": {
+        "case_id": "synthetic-b:missing"
+      },
+      "assert": [
+        {
+          "type": "equals",
+          "value": "{\"status\":\"UNVERIFIED\",\"can_execute\":false,\"executed\":false}"
+        }
+      ]
+    },
+    {
+      "description": "synthetic-b:denied",
+      "vars": {
+        "case_id": "synthetic-b:denied"
+      },
+      "assert": [
+        {
+          "type": "equals",
+          "value": "{\"status\":\"DENIED\",\"can_execute\":false,\"executed\":false}"
+        }
+      ]
+    },
+    {
+      "description": "synthetic-b:unsupported",
+      "vars": {
+        "case_id": "synthetic-b:unsupported"
+      },
+      "assert": [
+        {
+          "type": "equals",
+          "value": "{\"status\":\"UNSUPPORTED\",\"can_execute\":false,\"executed\":false}"
+        }
+      ]
+    },
+    {
+      "description": "synthetic-b:copied-session",
+      "vars": {
+        "case_id": "synthetic-b:copied-session"
+      },
+      "assert": [
+        {
+          "type": "equals",
+          "value": "{\"status\":\"UNVERIFIED\",\"can_execute\":false,\"executed\":false}"
+        }
+      ]
+    },
+    {
+      "description": "synthetic-b:copied-account",
+      "vars": {
+        "case_id": "synthetic-b:copied-account"
+      },
+      "assert": [
+        {
+          "type": "equals",
+          "value": "{\"status\":\"UNVERIFIED\",\"can_execute\":false,\"executed\":false}"
+        }
+      ]
+    },
+    {
+      "description": "synthetic-b:stale",
+      "vars": {
+        "case_id": "synthetic-b:stale"
+      },
+      "assert": [
+        {
+          "type": "equals",
+          "value": "{\"status\":\"UNVERIFIED\",\"can_execute\":false,\"executed\":false}"
+        }
+      ]
+    },
+    {
+      "description": "synthetic-b:prompt-injection-is-data",
+      "vars": {
+        "case_id": "synthetic-b:prompt-injection-is-data"
+      },
+      "assert": [
+        {
+          "type": "equals",
+          "value": "{\"status\":\"READY_TO_REQUEST\",\"can_execute\":false,\"executed\":false}"
+        }
+      ]
+    },
+    {
+      "description": "synthetic-b:write-not-supported",
+      "vars": {
+        "case_id": "synthetic-b:write-not-supported"
+      },
+      "assert": [
+        {
+          "type": "equals",
+          "value": "{\"status\":\"UNSUPPORTED\",\"can_execute\":false,\"executed\":false}"
+        }
+      ]
+    },
+    {
+      "description": "synthetic-b:no-callable-tool",
+      "vars": {
+        "case_id": "synthetic-b:no-callable-tool"
+      },
+      "assert": [
+        {
+          "type": "equals",
+          "value": "{\"status\":\"UNVERIFIED\",\"can_execute\":false,\"executed\":false}"
+        }
+      ]
+    }
+  ]
+}

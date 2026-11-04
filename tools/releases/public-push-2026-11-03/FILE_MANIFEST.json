@@ -1,0 +1,359 @@
+{
+  "schema": "wit.publication-files.v1",
+  "files": [
+    {
+      "path": "integration/bob/connector-doctor-0.2.0-public-draft.1/BOB_WITH_CONNECTOR_DOCTOR_0.2.0-public-draft.1.txt",
+      "sha256": "4464d4465c1226932811a5de1978e2973d6f14f05bfbe6bb18482ae4a3fd59ad",
+      "bytes": 12135,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "integration/bob/connector-doctor-0.2.0-public-draft.1/Bob_Connector_Doctor_0.2.0-public-draft.1.zip",
+      "sha256": "8dbc3d72105b828789aaf23f3d315eb9e4631124839fb5e3cb791c01d13a7ec0",
+      "bytes": 8001,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "integration/bob/connector-doctor-0.2.0-public-draft.1/CONNECTOR_STEP.txt",
+      "sha256": "dda937d89e89a3688104a28f5f9f726efe6cb9f4c8f052d67ee85c07c21a71f0",
+      "bytes": 3242,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "integration/bob/connector-doctor-0.2.0-public-draft.1/GRETA_REVIEW.md",
+      "sha256": "33589b1654ef2351e078b11cc050477e5910ac1fdbca07cebff45f6f9981d976",
+      "bytes": 2319,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "integration/bob/connector-doctor-0.2.0-public-draft.1/LICENSE",
+      "sha256": "7f91c512ba41e11fc68fb65c5023e632e3c13708e9dc2376df8fa8001111a876",
+      "bytes": 1065,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "integration/bob/connector-doctor-0.2.0-public-draft.1/NOVEMBER_6_ACCEPTANCE.md",
+      "sha256": "e7946f506503102abbb0126f35a31a58c0c5214fd63de720e57d309a087ffd3d",
+      "bytes": 3150,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "integration/bob/connector-doctor-0.2.0-public-draft.1/README.md",
+      "sha256": "e3e97cbd0014f8990c554b7f4d4006b8d792abce227da180846985515802e59f",
+      "bytes": 1129,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "integration/bob/connector-doctor-0.2.0-public-draft.1/build-candidate.py",
+      "sha256": "51c51f45d9b06696e5b3b8e466e5e1864d881b5b264206d4d2e015028d24437e",
+      "bytes": 2267,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "integration/bob/connector-doctor-0.2.0-public-draft.1/test_integration.py",
+      "sha256": "a9d270aff890926eb140a36ee90542301082c9821d0844fc253c57de993d476f",
+      "bytes": 2681,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/README.md",
+      "sha256": "0be7209632c09ed26d9259f97c9c552e714a59aaee9b49771914abe60ad06b56",
+      "bytes": 6557,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/connector-doctor/0.2.0-public-draft.1/LICENSE",
+      "sha256": "7f91c512ba41e11fc68fb65c5023e632e3c13708e9dc2376df8fa8001111a876",
+      "bytes": 1065,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/connector-doctor/0.2.0-public-draft.1/PROVENANCE.json",
+      "sha256": "f5be86ef02e3afa8dabc7e3407970cf3f48f5ef360b210492831d67ccaf3d1e7",
+      "bytes": 1309,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/connector-doctor/0.2.0-public-draft.1/README.md",
+      "sha256": "95e8a633f5c90d8ee8a0d9f5a8cf0925c242e189b5b5cca1df46dd1b4174fdf5",
+      "bytes": 4167,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/connector-doctor/0.2.0-public-draft.1/SHA256SUMS.json",
+      "sha256": "6171aa7613d35529ce6995ddb8dffe03bac7acb4bed0a17cf26551f734541bed",
+      "bytes": 1063,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/connector-doctor/0.2.0-public-draft.1/TEST_RESULTS.md",
+      "sha256": "eb09e674cb0dfe9c4348a2876e04a5f175eeba5ba66da3b05c17597d01143ce5",
+      "bytes": 1176,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/connector-doctor/0.2.0-public-draft.1/cli.test.mjs",
+      "sha256": "97418cad45c99114f19e34b878dbde45d4ecf2600f0a256a76b7290512205061",
+      "bytes": 1301,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/connector-doctor/0.2.0-public-draft.1/connector-doctor.mjs",
+      "sha256": "6d03b2c262b3c491a7269558154ee68fd0c2192528b1fafdc1f5f99e0e02388f",
+      "bytes": 9258,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/connector-doctor/0.2.0-public-draft.1/connector-doctor.test.mjs",
+      "sha256": "c85523176bf29848e419e2f3f31d600cdfeede3d00a30ea22f878c35abf1f531",
+      "bytes": 8254,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/connector-doctor/0.2.0-public-draft.1/doctor-cli.mjs",
+      "sha256": "ca3b774959f77ae5275c2f5f01b9a7ab12e16b98933d3b49ecf1555ddd0be0f1",
+      "bytes": 886,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/connector-doctor/0.2.0-public-draft.1/example.json",
+      "sha256": "7b41bdd8c95507efed1d68cc6b139d02d2ea9dd6b030af3fa45c937bf9611d2d",
+      "bytes": 757,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/connector-doctor/0.2.0-public-draft.1/host-read.mjs",
+      "sha256": "ce01a6d4ea871849269d80a2146aa283a626bb2824ad5e8d9e8dfdce2350f6fc",
+      "bytes": 2081,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/connector-doctor/0.2.0-public-draft.1/host-read.test.mjs",
+      "sha256": "a3feea733357d153b963ecc91509fb07d12d7e677d072fbf19537a68ff48aef1",
+      "bytes": 4360,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/connector-doctor/0.2.0-public-draft.1/package.json",
+      "sha256": "c4ef9a1c0749403703eff979d92be7e986ae67136fa2e4b8b5e63feb156c538c",
+      "bytes": 229,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/connector-doctor/connector-doctor-0.2.0-public-draft.1.zip",
+      "sha256": "522affe5f66349d249be60e0d08b1e03f841b01555e7c69e68fadc198d53dd82",
+      "bytes": 16081,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/dependency-critical-path-mapper/0.1.1-public-draft.1/11_Project_Dependency_Map.html",
+      "sha256": "09d29fe6831448809dcc0093031f06a8444717a109538c15b7ce9df5acd61b95",
+      "bytes": 16933,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/dependency-critical-path-mapper/0.1.1-public-draft.1/CHANGELOG.md",
+      "sha256": "ac1985d9229d73376cbe77d65cb712df494b10bd7f6f772854ed52284d1dab8c",
+      "bytes": 228,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/dependency-critical-path-mapper/0.1.1-public-draft.1/LICENSE",
+      "sha256": "7f91c512ba41e11fc68fb65c5023e632e3c13708e9dc2376df8fa8001111a876",
+      "bytes": 1065,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/dependency-critical-path-mapper/0.1.1-public-draft.1/LICENSE_SCOPE.md",
+      "sha256": "89d3bc38e74363a864bc1eb7d962ccf349607e0ba90b9f05f4305ddcfbceacaa",
+      "bytes": 1179,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/dependency-critical-path-mapper/0.1.1-public-draft.1/PROVENANCE.json",
+      "sha256": "7760f4d95865206a3c40615fd2998c5ca0ff91940d13928caea3a8354173daf5",
+      "bytes": 2749,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/dependency-critical-path-mapper/0.1.1-public-draft.1/README.md",
+      "sha256": "d0315811290ed35943390ee0e381036a62939f9924f824eb74fa0ab36d35e839",
+      "bytes": 2483,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/dependency-critical-path-mapper/0.1.1-public-draft.1/SHA256SUMS.json",
+      "sha256": "a9ea90b702f8fa2bc0474a8a90b1c298a51544b24830c61458a0d2b09d9d16ad",
+      "bytes": 1300,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/dependency-critical-path-mapper/0.1.1-public-draft.1/TEST_RESULTS.md",
+      "sha256": "b7041ea7ee56bf7ebcd42a7d0bc34ebc88be53c73d16fccadb2dd356888bdbfe",
+      "bytes": 1085,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/dependency-critical-path-mapper/0.1.1-public-draft.1/common.js",
+      "sha256": "2de5ebb7f75f7d1a76941c775fc1f0b825b4fbc5974eac5f8c4782a8829cefd7",
+      "bytes": 2196,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/dependency-critical-path-mapper/0.1.1-public-draft.1/examples/dependency_tasks_fictional.csv",
+      "sha256": "c225e0b180408752191b054fb9df97742a015660002d985d3a9b47b04f8d0fd3",
+      "bytes": 473,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/dependency-critical-path-mapper/0.1.1-public-draft.1/requirements-test.txt",
+      "sha256": "46ce4bcea45945aa9cb24f828e52a95cd4bb7c3a844f5cf2a1f088c46ae965f6",
+      "bytes": 167,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/dependency-critical-path-mapper/0.1.1-public-draft.1/styles.css",
+      "sha256": "b22ae2fb77436d425e1616224f1f153aa45f7be5be759b5020177b96e44bb6e8",
+      "bytes": 3314,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/dependency-critical-path-mapper/0.1.1-public-draft.1/tests/application.test.cjs",
+      "sha256": "21a5c15729d5f6fa6809da03deb3edec8f3bfaffa249d7794f54e047804af4ae",
+      "bytes": 4609,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/dependency-critical-path-mapper/0.1.1-public-draft.1/tests/csv.test.cjs",
+      "sha256": "bac228bae5bafe7bd099de912684e01224d1bf4483517a794f26ad84ce2d0387",
+      "bytes": 3389,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/dependency-critical-path-mapper/0.1.1-public-draft.1/tests/dependency_browser_checks.py",
+      "sha256": "dc7aff19182e82e03168b33728b2cce55a30cd8ca0c93d80f54edc97882f357b",
+      "bytes": 11785,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/dependency-critical-path-mapper/dependency-critical-path-mapper-0.1.1-public-draft.1.zip",
+      "sha256": "a99cb125df8b8a242c2f46caecb97f87b5b1e0cf3163498f0c8503662a7d0de4",
+      "bytes": 24381,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/regression-plan-forge/0.1.1-public-draft.1/10_Regression_Plan_Forge.html",
+      "sha256": "f05053b23205e1f98a8ecb2f146e19c9b50be348979fefb0e4b7356a7738e94f",
+      "bytes": 14846,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/regression-plan-forge/0.1.1-public-draft.1/CHANGELOG.md",
+      "sha256": "795270c98cd5659f7818e000a712d42c2ac2072185f95feab62247fd393725ac",
+      "bytes": 228,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/regression-plan-forge/0.1.1-public-draft.1/LICENSE",
+      "sha256": "7f91c512ba41e11fc68fb65c5023e632e3c13708e9dc2376df8fa8001111a876",
+      "bytes": 1065,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/regression-plan-forge/0.1.1-public-draft.1/LICENSE_SCOPE.md",
+      "sha256": "89d3bc38e74363a864bc1eb7d962ccf349607e0ba90b9f05f4305ddcfbceacaa",
+      "bytes": 1179,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/regression-plan-forge/0.1.1-public-draft.1/PROVENANCE.json",
+      "sha256": "0bb4d5565b713283ff384a9cc7731d842013b358b940cb16227f07ad4a78955d",
+      "bytes": 2634,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/regression-plan-forge/0.1.1-public-draft.1/README.md",
+      "sha256": "06d6230e4e0711fbe03b433f536755fea456c0b7110a0dae6a1e9046d1acde54",
+      "bytes": 2416,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/regression-plan-forge/0.1.1-public-draft.1/SHA256SUMS.json",
+      "sha256": "57a506741f77d82f2274e25f1c8108e4efaafcce243aeb1379dd3e1ccb7df114",
+      "bytes": 1306,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/regression-plan-forge/0.1.1-public-draft.1/TEST_RESULTS.md",
+      "sha256": "fe4ac5330dc301ff13c72ebc2dd7013406ad4c6dc9336203ac1d9d4b998a2635",
+      "bytes": 1075,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/regression-plan-forge/0.1.1-public-draft.1/common.js",
+      "sha256": "2de5ebb7f75f7d1a76941c775fc1f0b825b4fbc5974eac5f8c4782a8829cefd7",
+      "bytes": 2196,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/regression-plan-forge/0.1.1-public-draft.1/examples/regression_requirements_fictional.csv",
+      "sha256": "aa5bfaab4ce64d66c2033a5b8f2527f92d40aa14eeaafc1b72af9eb9303b82bf",
+      "bytes": 694,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/regression-plan-forge/0.1.1-public-draft.1/requirements-test.txt",
+      "sha256": "46ce4bcea45945aa9cb24f828e52a95cd4bb7c3a844f5cf2a1f088c46ae965f6",
+      "bytes": 167,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/regression-plan-forge/0.1.1-public-draft.1/styles.css",
+      "sha256": "b22ae2fb77436d425e1616224f1f153aa45f7be5be759b5020177b96e44bb6e8",
+      "bytes": 3314,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/regression-plan-forge/0.1.1-public-draft.1/tests/application.test.cjs",
+      "sha256": "21a5c15729d5f6fa6809da03deb3edec8f3bfaffa249d7794f54e047804af4ae",
+      "bytes": 4609,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/regression-plan-forge/0.1.1-public-draft.1/tests/csv.test.cjs",
+      "sha256": "bac228bae5bafe7bd099de912684e01224d1bf4483517a794f26ad84ce2d0387",
+      "bytes": 3389,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/regression-plan-forge/0.1.1-public-draft.1/tests/regression_browser_checks.py",
+      "sha256": "2137f15fcd055adf72c3146b4eef5ec48de7611dffe3cf2f9329e9d7b1b881fe",
+      "bytes": 11061,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/regression-plan-forge/regression-plan-forge-0.1.1-public-draft.1.zip",
+      "sha256": "b7e85088e052ae21e22ea2d2a5cbdad7bd4487a56ec8f2e4aa8735202c813956",
+      "bytes": 23320,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/releases/public-push-2026-11-03/PACKAGES.json",
+      "sha256": "e70f1056e20bf2eb795fd3c2f7eb7a590346957d4e54edb8947fc32d7e7e0fdb",
+      "bytes": 924,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/releases/public-push-2026-11-03/PUBLICATION_REVIEW.md",
+      "sha256": "caea5d2b0360672f8e86f037766a4b0dd07d09a3cf3e8843592a1217e74bebef",
+      "bytes": 3981,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    },
+    {
+      "path": "tools/releases/public-push-2026-11-03/build-packages.py",
+      "sha256": "db52ffa3779e927d09f57c22a3c1fcb5055b0948328aba513b0608d9e4fe1390",
+      "bytes": 1468,
+      "license_scope": "Inherited MIT in exact tool/Bob version directory; release metadata and index do not grant new source rights."
+    }
+  ]
+}

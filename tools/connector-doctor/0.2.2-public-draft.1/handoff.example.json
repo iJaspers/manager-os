@@ -1,0 +1,6 @@
+{
+  "schema": "wit.handoff.v1",
+  "preferences": {"language":"en","detail":"brief","mode":"everyday"},
+  "checkpoint": {"tool_id":"wit.connector-doctor","version":"0.2.2-public-draft.1","step_id":"inspect-result","artifact_sha256":"0000000000000000000000000000000000000000000000000000000000000000"},
+  "requirements": [{"connector":"fixture","tool":"read_fixture","action":"read"}]
+}

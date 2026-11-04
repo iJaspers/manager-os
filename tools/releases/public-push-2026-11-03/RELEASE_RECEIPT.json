@@ -1,0 +1,105 @@
+{
+  "schema": "wit.public-release-receipt.v1",
+  "date": "2026-11-03",
+  "source_commit": "edbb5e79a1c18dec8f31d2afce81acb8ae48ef71",
+  "source_url": "https://github.com/iJaspers/manager-os/commit/edbb5e79a1c18dec8f31d2afce81acb8ae48ef71",
+  "branch": "release/wit-public-2026-11-03",
+  "new_tool_identities": 1,
+  "updated_existing_tools": 2,
+  "optional_existing_bob_supplements": 1,
+  "rebuilt_from_restrictive_source": 0,
+  "repaired": [
+    "Connector Doctor CLI bounded input and UTF-8 handling",
+    "Bob ZIP now preserves RC1 NOTICE.md and LICENSE",
+    "Regression Plan Forge malformed CSV",
+    "Dependency & Critical Path Mapper malformed CSV",
+    "Catalogue support for exact same-repository commit-pinned ZIPs"
+  ],
+  "downloads": [
+    {
+      "id": "wit.connector-doctor",
+      "url": "https://raw.githubusercontent.com/iJaspers/manager-os/edbb5e79a1c18dec8f31d2afce81acb8ae48ef71/tools/connector-doctor/connector-doctor-0.2.0-public-draft.1.zip",
+      "http_status": 200,
+      "bytes": 16081,
+      "sha256": "522affe5f66349d249be60e0d08b1e03f841b01555e7c69e68fadc198d53dd82",
+      "member_hashes_verified": 12,
+      "public_download_tests": "PASS"
+    },
+    {
+      "id": "wit.regression-plan-forge",
+      "url": "https://raw.githubusercontent.com/iJaspers/manager-os/edbb5e79a1c18dec8f31d2afce81acb8ae48ef71/tools/regression-plan-forge/regression-plan-forge-0.1.1-public-draft.1.zip",
+      "http_status": 200,
+      "bytes": 23320,
+      "sha256": "b7e85088e052ae21e22ea2d2a5cbdad7bd4487a56ec8f2e4aa8735202c813956",
+      "member_hashes_verified": 14,
+      "public_download_tests": "PASS"
+    },
+    {
+      "id": "wit.dependency-critical-path-mapper",
+      "url": "https://raw.githubusercontent.com/iJaspers/manager-os/edbb5e79a1c18dec8f31d2afce81acb8ae48ef71/tools/dependency-critical-path-mapper/dependency-critical-path-mapper-0.1.1-public-draft.1.zip",
+      "http_status": 200,
+      "bytes": 24381,
+      "sha256": "a99cb125df8b8a242c2f46caecb97f87b5b1e0cf3163498f0c8503662a7d0de4",
+      "member_hashes_verified": 14,
+      "public_download_tests": "PASS"
+    },
+    {
+      "id": "bob-optional-supplement",
+      "url": "https://raw.githubusercontent.com/iJaspers/manager-os/edbb5e79a1c18dec8f31d2afce81acb8ae48ef71/integration/bob/connector-doctor-0.2.0-public-draft.1/Bob_Connector_Doctor_0.2.0-public-draft.1.zip",
+      "http_status": 200,
+      "bytes": 8001,
+      "sha256": "8dbc3d72105b828789aaf23f3d315eb9e4631124839fb5e3cb791c01d13a7ec0",
+      "member_hashes_verified": 4,
+      "public_download_tests": "member hashes and notices verified"
+    }
+  ],
+  "states": {
+    "BUILT": true,
+    "TESTED": true,
+    "STAGED": true,
+    "APPROVED": "Maintainer safe generic scoped WIP publication instruction; no automatic merge or production acceptance",
+    "PUBLISHED": "Source and ZIPs on public review branch",
+    "VERIFIED": "GitHub source byte comparison and four HTTP 200 downloads; archive hashes and three downloaded-package test suites passed",
+    "MERGED": false,
+    "PRODUCT_ACCEPTED": false,
+    "WIX_DEPLOYED": false
+  },
+  "tests": {
+    "connector_doctor": {
+      "passed": 82,
+      "failed": 0
+    },
+    "bob_integration": {
+      "passed": 6,
+      "failed": 0
+    },
+    "regression_plan": {
+      "passed": 57,
+      "failed": 0
+    },
+    "dependency_mapper": {
+      "passed": 57,
+      "failed": 0
+    },
+    "catalogue": {
+      "passed": 65,
+      "failed": 0
+    },
+    "reconciler_regression": {
+      "passed": 86,
+      "failed": 0
+    },
+    "distinct_total": 353,
+    "reruns_not_added_to_total": true,
+    "interim_catalogue_failures": "Eight stale count assertions after adding three reviewed rows; corrected counts and explicitly tested that frozen embeds retain six old downloads and hold three new GitHub downloads. No website embed deployment."
+  },
+  "tests_not_run": [
+    "Inherited rendered-browser suites: Playwright/Chromium unavailable",
+    "Android/mobile/accessibility acceptance",
+    "Fresh ChatGPT/Gemini host trials: existing November 6 milestone",
+    "Independent security/product acceptance",
+    "Live external provider OAuth or write actions"
+  ],
+  "release_claim": "Locally tested WIP source and working downloads; not stable main integration, full launch or automatic installation.",
+  "rollback": "Remove optional Bob instructions; retain RC1. Revert reviewed source/catalogue commits after examining later dependents; retain prior versions."
+}

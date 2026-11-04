@@ -1,0 +1,8 @@
+{
+  "site/catalogue/tests/embed_order.test.mjs": "94b9268732bb87e99f1b917fd642abb947f6d768f7d03ff0fa062ef16b6467d1",
+  "site/catalogue/tests/intake.test.mjs": "e077ced7243870d3b42e27a22bccdbb7e00b8a5f47f4d50c1d5585a4aa1b925a",
+  "site/catalogue/tests/projection.test.mjs": "f9ae609381427317cc16af3649157385bec9e0b9ca72471bfb8f05fef50262c9",
+  "tools/CATALOGUE.json": "b98e454f7f608f300d33ee5ec22164e785426b3299448c69a7ffbcf3b9bd24c5",
+  "tools/README.md": "6ec9a62bf61e516256bcd9edb64c912060959f7493c63fccd663b2806f3de6ee",
+  "tools/releases/public-push-2026-11-03/SHIP_RELEASE_RECEIPT.json": "3e384f5f1f953c81703d7824fb1cfa8aa0ce5c86b6ca4bf407bd474c67061ce4"
+}

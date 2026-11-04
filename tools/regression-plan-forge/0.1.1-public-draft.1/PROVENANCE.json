@@ -1,0 +1,38 @@
+{
+  "tool_id": "wit.regression-plan-forge",
+  "version": "0.1.1-public-draft.1",
+  "base_version": "0.1.0-draft.1",
+  "base_commit": "6fc0c50a5c93a6eefc66b60418d78541e98171bc",
+  "base_source_path": "tools/regression-plan-forge/0.1.0-draft.1",
+  "base_members": {
+    "10_Regression_Plan_Forge.html": "aaf6bc4ad4c129842f0c5641e97aba5ca740a9f571c31a4d8670cd3ec703054c",
+    "CHANGELOG.md": "9562b12cbc876161d3cada2514191971bda5e23dc7a5e9d4f842abf991e22d28",
+    "CONTRIBUTING.md": "7206964bd47bb314dd0288df6c18df084b098c4d1dbc626e1b30f7bbc146c84c",
+    "HANDOFF_TEMPLATE.md": "53d0b671821c0668cbb688aa7c784e4cf2923180ce9ab1aeb52ba4fb3b8b3db4",
+    "LICENSE": "7f91c512ba41e11fc68fb65c5023e632e3c13708e9dc2376df8fa8001111a876",
+    "LICENSE_SCOPE.md": "89d3bc38e74363a864bc1eb7d962ccf349607e0ba90b9f05f4305ddcfbceacaa",
+    "PROVENANCE.json": "926a7c13f7af41be63f5c8be2ff93145c1c00b01b7e2217b757f230d7f65033d",
+    "README.md": "ae2fb70ec497e2e5182e0edf7f565d543658ac0b86376bba8f9e98cdda890dc3",
+    "SHA256SUMS.json": "0fa112bde488398c141dc144ffb254cf88abaab75ea9ed6eb1ec6e8272b5a011",
+    "TEST_RESULTS.md": "7e443d3a9aeff2caac2ebfe8d0605bb6853d4476c06ba1056bc9041820a88aba",
+    "common.js": "5d455b8b7dddd4b60b2cad7ee0bebb063410b2da62b7f071d252f116e41fbe58",
+    "examples/regression_requirements_fictional.csv": "aa5bfaab4ce64d66c2033a5b8f2527f92d40aa14eeaafc1b72af9eb9303b82bf",
+    "requirements-test.txt": "46ce4bcea45945aa9cb24f828e52a95cd4bb7c3a844f5cf2a1f088c46ae965f6",
+    "styles.css": "b22ae2fb77436d425e1616224f1f153aa45f7be5be759b5020177b96e44bb6e8",
+    "tests/browser_run_status.json": "964b35553d5e883a7c1db44e2644291adc8e2575d511bb22eaaa0119abd6500c",
+    "tests/regression_browser_checks.py": "2137f15fcd055adf72c3146b4eef5ec48de7611dffe3cf2f9329e9d7b1b881fe"
+  },
+  "changes": [
+    "Reuse strict CSV parser from published MIT Reconciler 0.1.2; preserve formula-safe export and valid quoted fields.",
+    "Add standalone Node parser and application tests, updated handoff and reproducible checksums."
+  ],
+  "parser_source": "tools/two-source-csv-reconciler/0.1.2/common.js",
+  "parser_sha256": "2de5ebb7f75f7d1a76941c775fc1f0b825b4fbc5974eac5f8c4782a8829cefd7",
+  "license": "MIT; this version directory only, inherited notices retained",
+  "runtime_dependencies": [],
+  "test_dependencies": [
+    "Node.js built-ins; optional existing Python Playwright/Chromium for inherited browser suite"
+  ],
+  "privacy": "Selected application, styling, fictional fixtures and tests inspected in full; no private backlog data included.",
+  "acceptance": "WIP; local tests do not establish independent product acceptance."
+}

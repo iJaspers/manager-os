@@ -1,0 +1,21 @@
+{
+  "schema": "wit.handoff.v1",
+  "preferences": {
+    "language": "en",
+    "detail": "normal",
+    "mode": "power"
+  },
+  "checkpoint": {
+    "tool_id": "wit.source-linked-handoff-review",
+    "version": "0.1.0-public-draft.1",
+    "step_id": "independent-review",
+    "artifact_sha256": "a02058f8ef6247b5bc7299e28c8007ddea7428dacd1e972d05fbf349edb31ca1"
+  },
+  "requirements": [
+    {
+      "connector": "github",
+      "tool": "mcp__codex_apps__github_get_pr_info",
+      "action": "read"
+    }
+  ]
+}

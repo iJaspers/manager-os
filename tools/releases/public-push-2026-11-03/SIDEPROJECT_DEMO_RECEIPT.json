@@ -1,0 +1,12 @@
+{
+  "schema": "wit.local-demo.v1",
+  "synthetic": true,
+  "external_provider_tested": false,
+  "profile_apply": "VERIFIED",
+  "resume_check": "RECHECK_TARGET_AND_AUTHORIZE",
+  "read": "VERIFIED",
+  "expected_output_sha256": "368f5a04db24a5060105464b6cd66a0ef257b6e5bd36678fd1e5267be7e5fbda",
+  "observed_output_sha256": "368f5a04db24a5060105464b6cd66a0ef257b6e5bd36678fd1e5267be7e5fbda",
+  "rollback": "ROLLED_BACK",
+  "profile_restored": true
+}

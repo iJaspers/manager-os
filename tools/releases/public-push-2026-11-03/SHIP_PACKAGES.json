@@ -1,0 +1,34 @@
+[
+  {
+    "id": "wit.connector-doctor",
+    "version": "0.2.2-public-draft.1",
+    "path": "tools/connector-doctor/connector-doctor-0.2.2-public-draft.1.zip",
+    "sha256": "8a311d3d49632b99962fa0cecce52e4e928fb03cbebc840a8f3c8ab5fac782cc",
+    "size_bytes": 29891,
+    "members": 21
+  },
+  {
+    "id": "wit.regression-plan-forge",
+    "version": "0.1.1-public-draft.1",
+    "path": "tools/regression-plan-forge/regression-plan-forge-0.1.1-public-draft.1.zip",
+    "sha256": "b7e85088e052ae21e22ea2d2a5cbdad7bd4487a56ec8f2e4aa8735202c813956",
+    "size_bytes": 23320,
+    "members": 15
+  },
+  {
+    "id": "wit.dependency-critical-path-mapper",
+    "version": "0.1.1-public-draft.1",
+    "path": "tools/dependency-critical-path-mapper/dependency-critical-path-mapper-0.1.1-public-draft.1.zip",
+    "sha256": "a99cb125df8b8a242c2f46caecb97f87b5b1e0cf3163498f0c8503662a7d0de4",
+    "size_bytes": 24381,
+    "members": 15
+  },
+  {
+    "id": "wit.source-linked-handoff-review",
+    "version": "0.1.0-public-draft.1",
+    "path": "tools/source-linked-handoff-review/source-linked-handoff-review-0.1.0-public-draft.1.zip",
+    "sha256": "bf30722ea10de91ca8015d0737f555a8e05ba2c2985ce544070c10a2f7df62e9",
+    "size_bytes": 8896,
+    "members": 9
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "11_Project_Dependency_Map.html": "09d29fe6831448809dcc0093031f06a8444717a109538c15b7ce9df5acd61b95",
+  "CHANGELOG.md": "ac1985d9229d73376cbe77d65cb712df494b10bd7f6f772854ed52284d1dab8c",
+  "LICENSE": "7f91c512ba41e11fc68fb65c5023e632e3c13708e9dc2376df8fa8001111a876",
+  "LICENSE_SCOPE.md": "89d3bc38e74363a864bc1eb7d962ccf349607e0ba90b9f05f4305ddcfbceacaa",
+  "PROVENANCE.json": "7760f4d95865206a3c40615fd2998c5ca0ff91940d13928caea3a8354173daf5",
+  "README.md": "d0315811290ed35943390ee0e381036a62939f9924f824eb74fa0ab36d35e839",
+  "TEST_RESULTS.md": "b7041ea7ee56bf7ebcd42a7d0bc34ebc88be53c73d16fccadb2dd356888bdbfe",
+  "common.js": "2de5ebb7f75f7d1a76941c775fc1f0b825b4fbc5974eac5f8c4782a8829cefd7",
+  "examples/dependency_tasks_fictional.csv": "c225e0b180408752191b054fb9df97742a015660002d985d3a9b47b04f8d0fd3",
+  "requirements-test.txt": "46ce4bcea45945aa9cb24f828e52a95cd4bb7c3a844f5cf2a1f088c46ae965f6",
+  "styles.css": "b22ae2fb77436d425e1616224f1f153aa45f7be5be759b5020177b96e44bb6e8",
+  "tests/application.test.cjs": "21a5c15729d5f6fa6809da03deb3edec8f3bfaffa249d7794f54e047804af4ae",
+  "tests/csv.test.cjs": "bac228bae5bafe7bd099de912684e01224d1bf4483517a794f26ad84ce2d0387",
+  "tests/dependency_browser_checks.py": "dc7aff19182e82e03168b33728b2cce55a30cd8ca0c93d80f54edc97882f357b"
+}

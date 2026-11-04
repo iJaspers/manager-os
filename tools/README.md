@@ -1,6 +1,6 @@
 # Witburrow public tool source previews
 
-Nine distinct published source tool IDs, each versioned, unranked and separately MIT-licensed inside its own version directory. Six are explicitly unfinished or unverified work-in-progress source packages. That license does not apply to the rest of this repository or any private originals.
+Versioned, unranked source previews and WIP packages, each separately MIT-licensed inside its own version directory. That license does not apply to the rest of this repository or any private originals.
 
 - [Invoice Reference Review](invoice-reference-review/0.1.2/README.md)
 - [Pretax Role Comparison](pretax-role-comparison/0.1.2/README.md)
@@ -46,3 +46,23 @@ The legacy CATALOGUE.json projection still carries its prior six-source snapshot
 Dependency Mapper draft.2 is an additive packaging correction: its prior Git-source fixture had a newline/hash mismatch. Historical draft.1 stays available; the known functional CSV parser issue remains.
 
 [Browse all-stage descriptive metadata](inventory/2026-10-24/PUBLIC_CATALOGUE.json) and [read the count reconciliation](inventory/2026-10-24/COUNTING_NOTES.md). There are 285 records, not 285 distinct built tools. Nine source IDs are downloadable; 276 records remain descriptions with source-specific next steps.
+
+## Maintainer WIP publication — 2026-11-03
+
+- [Connector Doctor 0.2.2-public-draft.1](connector-doctor/0.2.2-public-draft.1/README.md): current-host diagnostics, repaired immutable read authorization, portable preferences with drift/rollback, and metadata-only resume; 147 local tests. Older adapters retain the repaired authorization-binding defect. Includes an optional [Bob/RC1 supplement](../integration/bob/connector-doctor-0.2.0-public-draft.1/README.md), not a second Bob identity.
+- [Regression Plan Forge 0.1.1-public-draft.1](regression-plan-forge/0.1.1-public-draft.1/README.md): malformed-CSV repair; 57 local parser/application tests.
+- [Dependency & Critical Path Mapper 0.1.1-public-draft.1](dependency-critical-path-mapper/0.1.1-public-draft.1/README.md): same shared-parser repair; 57 local parser/application tests.
+
+These versioned packages supersede earlier parser-defective drafts for new trials. Old releases and frozen RC1 remain intact. Browser/device and independent product acceptance remain separate. This maintainer publication does not expand community contribution intake; CONTRIBUTING.md still governs that lane. [Exact scope, tests and rollback](releases/public-push-2026-11-03/PUBLICATION_REVIEW.md).
+
+Release maintainers: the existing [package builder now checks bounded source and archive safety](releases/public-push-2026-11-03/SIDEPROJECT_REVIEW.md). SideProject decisions and November 6 cases are recorded there; no third-party engine was installed.
+
+Optional [Bob verification supplement 0.1.0-public-draft.1](https://github.com/iJaspers/manager-os/tree/6cc610198a83b391f2d8708681797a7b59538fd6/integration/bob/verification-0.1.0-public-draft.1) adds tested Promptfoo contracts, a real MCP Inspector fixture adapter, SkillSpector report review, Playwright RC1 HTTP checks and local first-result timing. It reuses Connector Doctor 0.2.1 and creates no new canonical tool identity. The optional CLIs were tested separately; no third-party runtime is bundled. Native ChatGPT/Gemini acceptance, rendered website checks and the actual SkillSpector scan remain unverified. [Exact files, results and publication readback](releases/public-push-2026-11-03/REDDIT_RELEASE_RECEIPT.json).
+
+
+## Ship It & Dogfood continuation — 2026-11-03
+
+- [Source-linked Handoff Review 0.1.0-public-draft.1](source-linked-handoff-review/0.1.0-public-draft.1/README.md): sanitized derivative of existing BOB-089; 25 tests, no dependency install. Checks owner/source/evidence and holds unsupported completion claims. Extract its catalogue ZIP and run `python handoff.py example.json`; ordinary-chat review remains available without execution support.
+- [Bob verification supplement 0.1.1-public-draft.1](../integration/bob/verification-0.1.1-public-draft.1/README.md): imports Doctor 0.2.2; replaces 0.1.0 for new trials. The existing release builder now packages exactly the scanned bytes and refuses changed frozen outputs.
+
+The actual public Wix entry-to-Bob link was followed in cloud Chrome; a real GitHub PR handoff was produced, saved and hash-checked. Fresh native ChatGPT/Gemini trials, independent security acceptance and merge remain separate. These are public review-branch WIP releases, not a website deployment or full launch. [Exact changes, test evidence, rights and rollback](releases/public-push-2026-11-03/SHIP_REVIEW.md) · [Verified downloads and publication receipt](releases/public-push-2026-11-03/SHIP_RELEASE_RECEIPT.json).
