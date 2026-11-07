@@ -49,3 +49,17 @@ People may choose their starting experience. The way WIT explains, summarizes an
 This optional preview must stay separate from frozen release candidates, the current published stable starter, the existing Wix Blog/mobile-preview HOLD, and all launch blockers. No automatic release, live website publication, email, Make automation, deployment or installer change is authorized by this directory. Promotion requires privacy/security review, a fresh-host test in at least two supported AIs, explicit save/export/reimport tests, negative isolation/permission tests, mobile acceptance and the existing owner release gate.
 
 The design extends existing HOT/WARM/COLD/ARCHIVE context practices. It does **not** create a new agent, memory store, schedule or tool permission.
+
+
+## Local card safety guard (tested, optional)
+
+A strict, fixed-vocabulary **JSON** card inspection helper now accompanies the conversational prompt. It is NOT an automatic import, an AI host integration or a new WIT product/tool identity.
+
+- [portable_profile.py](portable_profile.py) prints a fictional JSON card with `python portable_profile.py example`; to inspect a locally saved card, run `python portable_profile.py inspect card.json`. Both operations are read-only and send no data anywhere.
+- The guard accepts just the `format`, `level`, `scope` and `styles` fields; allowed style values are explicitly listed in its source. It rejects unknown fields, commands disguised as preferences, duplicate keys, excessive data, and unsafe project labels.
+- A structurally valid card is still **untrusted**. The receiving human must decide whether to apply each style to the correct user/project, and the host must independently establish permissions and any actual persistent storage. The script cannot verify consent, memory, identity, cross-account isolation or prompt-injection safety in the AI itself.
+- The companion's earlier human-readable cards remain free text and are NOT automatically validated by this helper. Never imply that a text-only card passed the JSON guard; require manual review and host-local consent. Future host integration must either export this strict schema or explicitly keep text-only imports separate.
+
+### Actual local result
+
+`python -m unittest -q` on Python 3.13.5: **23 tests executed, 23 passed**. Exact GitHub file content was checked against the tested local files by length and FNV-1a checksum. See [dated test receipt](LOCAL_TEST_RECEIPT_2026-11-06.json) and [tests](test_portable_profile.py). This proves only the helper's tested validation behavior, not real ChatGPT/Gemini personalization. The fresh-host and mobile acceptance gates remain open.
