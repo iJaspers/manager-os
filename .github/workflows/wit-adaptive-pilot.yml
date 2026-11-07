@@ -1,0 +1,31 @@
+name: WIT adaptive pilot checks
+
+on:
+  pull_request:
+    paths:
+      - "pilot/adaptive-experience/**"
+      - ".github/workflows/wit-adaptive-pilot.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  portable-profile-guard:
+    name: Portable profile guard (standard library)
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out exact PR source
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: Show runtime
+        run: python3 --version
+      - name: Execute all pilot unit tests
+        run: python3 -m unittest discover -s pilot/adaptive-experience -p 'test_*.py' -v
+      - name: Check synthetic card preview stays non-authoritative
+        shell: bash
+        run: |
+          python3 pilot/adaptive-experience/portable_profile.py example > "$RUNNER_TEMP/fictional-card.json"
+          python3 pilot/adaptive-experience/portable_profile.py inspect "$RUNNER_TEMP/fictional-card.json" > "$RUNNER_TEMP/preview.txt"
+          grep -Fq "STRUCTURE VALID (NOT AUTHENTICATED)" "$RUNNER_TEMP/preview.txt"
+          grep -Fq "nothing has been saved or applied" "$RUNNER_TEMP/preview.txt"
