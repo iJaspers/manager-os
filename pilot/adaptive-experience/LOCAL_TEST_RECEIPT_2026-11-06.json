@@ -1,0 +1,40 @@
+{
+  "case_id": "WIT-ADAPTIVE-LOCAL-QA-2026-11-06",
+  "status": "PASS_LOCAL_DETERMINISTIC_ONLY",
+  "source": "GitHub draft PR #11 feature branch",
+  "environment": "Python 3.13.5, local execution",
+  "command": "python -m unittest -q",
+  "tests_run": 23,
+  "tests_passed": 23,
+  "tests_failed": 0,
+  "tests_skipped": 0,
+  "source_sha256": {
+    "portable_profile.py": "f939287b241c33871c95aa004f59f6d39fe1290af369e8d690462e43b69e6553",
+    "test_portable_profile.py": "cee7304a26be39541f265def2f32eeca8968bac25aa45b0588461ee73e5c78dd"
+  },
+  "github_code_matches_local_via": {
+    "code_file_chars": 5541,
+    "code_file_fnv1a32": "04c805f7",
+    "test_file_chars": 4453,
+    "test_file_fnv1a32": "bdc2dfc1"
+  },
+  "additional_smoke": "python portable_profile.py example; python portable_profile.py inspect synthetic_card.json; observed STRUCTURE VALID, NOT AUTHENTICATED and no application",
+  "purpose": "Validate an optional fixed-vocabulary JSON style card as UNTRUSTED INPUT; reject extra keys, tool/permission claims, unsafe style strings, malformed/oversized data and ambiguous scopes.",
+  "untested": [
+    "fresh ChatGPT response behavior",
+    "fresh Gemini response behavior",
+    "actual cross-AI host memory persistence",
+    "real two-account isolation",
+    "Android acceptance",
+    "Wix published site",
+    "site/host integration",
+    "end-to-end user adoption"
+  ],
+  "does_not_prove": [
+    "LLM prompt injection resistance",
+    "host's memory consent actually honored",
+    "card origin or user identity",
+    "that any card is saved or applied"
+  ],
+  "release_decision": "HOLD; experimental draft only"
+}
