@@ -39,3 +39,12 @@ Use the unchanged starter and the optional companion in an entirely fresh host s
 - [ ] Separate existing Wix mobile Blog template HOLD is resolved before any public site launch approval.
 
 **Verdict as of creation:** Unverified experimental companion. No evidence here establishes durable cross-AI memory, runtime security, user isolation, adaptive website layout, or a production release. Do not check any of the above boxes merely because these fixtures exist.
+
+
+## Verified narrow local check (6 November 2026)
+
+Executed 23/23 passing Python 3.13.5 standard-library tests for the optional JSON portable-profile guard. This is **not** a pass for any AE-01 through AE-16 fresh-host conversational scenarios above. See [local test receipt](LOCAL_TEST_RECEIPT_2026-11-06.json). A fixture-only pass cannot be promoted into an AI-model, device, persistence, isolation or user-acceptance pass.
+
+To try the guard without any real user data: run `python portable_profile.py example > fictional.json` then `python portable_profile.py inspect fictional.json`. It must say STRUCTURE VALID (NOT AUTHENTICATED), and that nothing is saved or applied.
+
+Outstanding: actual separate ChatGPT/Gemini sessions, real two-account isolation, host memory readback, user-consented reimport, and Android/device test. The site remains unpublished for this feature and the existing launch HOLD remains.
