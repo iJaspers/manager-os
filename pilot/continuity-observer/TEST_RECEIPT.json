@@ -1,50 +1,73 @@
 {
   "date": "2026-11-12",
-  "status": "PILOT_ONLY_NOT_RELEASED",
+  "status": "DRAFT_PR_NOT_MERGED",
+  "scope": "local deterministic scorer and comparison tests only",
   "python_version": "3.13.5",
-  "tests": 25,
-  "passed": 25,
+  "tests": 45,
+  "passed": 45,
   "failed": 0,
   "synthetic_scoring_pass": "10/10 FIELD_MATCH (fabricated input)",
-  "synthetic_scoring_fail": "8/10 FIELD_MATCH, 2 FIELD_MISMATCH (deliberately corrupted input)",
+  "synthetic_scoring_fail": "8/10 FIELD_MATCH, 2 FIELD_MISMATCH (fabricated corrupted input)",
+  "synthetic_compare_good_to_bad": {
+    "IMPROVEMENT": 0,
+    "REGRESSION": 2,
+    "UNCHANGED_MATCH": 8,
+    "UNCHANGED_MISMATCH": 0,
+    "INCOMPLETE": 0
+  },
+  "synthetic_compare_bad_to_good": {
+    "IMPROVEMENT": 2,
+    "REGRESSION": 0,
+    "UNCHANGED_MATCH": 8,
+    "UNCHANGED_MISMATCH": 0,
+    "INCOMPLETE": 0
+  },
   "evidence_level": "LOCAL_MECHANICAL_TESTS_NOT_LIVE_MODEL_BEHAVIOR",
   "files": {
-    "observer.py": {
-      "sha256": "63f7cc23451ca885e140cf47049295f937e5dfa64b522f96b8bebc6dc79d72bd",
-      "bytes": 8596
+    "LICENSE": {
+      "sha256": "4eb089623f52b6378a9dc49d1f220925f21c23b26568af6087ed9ed522b9cf92",
+      "bytes": 1204
+    },
+    "PROVENANCE.md": {
+      "sha256": "cb5d637364d34855bbf3dac628aa81116a4b0d2bd4a2c670ae6027a889471edd",
+      "bytes": 4185
+    },
+    "README.md": {
+      "sha256": "b0bb698c0c91955e1a4f4e80eea7573e5b10c6ed7df7fb4ee84692f27d908b8f",
+      "bytes": 5867
+    },
+    "SECURITY_REVIEW.md": {
+      "sha256": "c5288c1b19a2b0ac7cab7ad1ec719e0b22b5f80bf142621a5d9b8f054ad70a82",
+      "bytes": 2663
     },
     "cases.json": {
       "sha256": "a09ccdf0c20175bd287f778d943f45a25355f6d4f0d48291e7b09496e459c489",
       "bytes": 9569
     },
-    "test_observer.py": {
-      "sha256": "b42487a1a2c5e16a6bae28ef5bea37d25339852cc68a5c704190fe9aab9e02ad",
-      "bytes": 8175
-    },
-    "synthetic_pass.json": {
-      "sha256": "4f66bd7dda92e6d19605b4aefec89e13d1098aac91f383735b716602c43450dc",
-      "bytes": 2796
+    "observer.py": {
+      "sha256": "e03d9a06f06f2b0f6f751d505983a8924273aa75ab56b69772fc0e85f79f6486",
+      "bytes": 12117
     },
     "synthetic_fail.json": {
       "sha256": "3f865feac87971e716a0d7ec9284c24bf615285c325b370348d70d9cbafd2451",
       "bytes": 2826
     },
-    "README.md": {
-      "sha256": "26ba70184338cba75d1b09f7ca6a339b1c198d48ce8001788b0512dac71d766b",
-      "bytes": 4663
+    "synthetic_pass.json": {
+      "sha256": "4f66bd7dda92e6d19605b4aefec89e13d1098aac91f383735b716602c43450dc",
+      "bytes": 2796
     },
-    "PROVENANCE.md": {
-      "sha256": "b043a022abb9c0f078d2ac5d020cb78a722e08e97d9286614e0f7222069c5f0f",
-      "bytes": 3565
+    "test_compare.py": {
+      "sha256": "bc099f63322b5939bdf13b53ebea027197aedd736f27193f4c42aa37d1d7dc21",
+      "bytes": 8819
     },
-    "LICENSE": {
-      "sha256": "4eb089623f52b6378a9dc49d1f220925f21c23b26568af6087ed9ed522b9cf92",
-      "bytes": 1204
+    "test_observer.py": {
+      "sha256": "b42487a1a2c5e16a6bae28ef5bea37d25339852cc68a5c704190fe9aab9e02ad",
+      "bytes": 8175
     }
   },
   "further_needed": [
-    "run fresh-host observations without exposing oracle",
-    "independent review of actual host action traces and readback",
-    "privacy/security review and explicit release approval"
+    "fresh independent host responses without access to oracle",
+    "independent inspection of host action logs and target readback",
+    "owner approval and product release gates before merge/release"
   ]
 }
