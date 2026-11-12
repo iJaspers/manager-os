@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-12",
+  "status": "PILOT_ONLY_NOT_RELEASED",
+  "python_version": "3.13.5",
+  "tests": 25,
+  "passed": 25,
+  "failed": 0,
+  "synthetic_scoring_pass": "10/10 FIELD_MATCH (fabricated input)",
+  "synthetic_scoring_fail": "8/10 FIELD_MATCH, 2 FIELD_MISMATCH (deliberately corrupted input)",
+  "evidence_level": "LOCAL_MECHANICAL_TESTS_NOT_LIVE_MODEL_BEHAVIOR",
+  "files": {
+    "observer.py": {
+      "sha256": "63f7cc23451ca885e140cf47049295f937e5dfa64b522f96b8bebc6dc79d72bd",
+      "bytes": 8596
+    },
+    "cases.json": {
+      "sha256": "a09ccdf0c20175bd287f778d943f45a25355f6d4f0d48291e7b09496e459c489",
+      "bytes": 9569
+    },
+    "test_observer.py": {
+      "sha256": "b42487a1a2c5e16a6bae28ef5bea37d25339852cc68a5c704190fe9aab9e02ad",
+      "bytes": 8175
+    },
+    "synthetic_pass.json": {
+      "sha256": "4f66bd7dda92e6d19605b4aefec89e13d1098aac91f383735b716602c43450dc",
+      "bytes": 2796
+    },
+    "synthetic_fail.json": {
+      "sha256": "3f865feac87971e716a0d7ec9284c24bf615285c325b370348d70d9cbafd2451",
+      "bytes": 2826
+    },
+    "README.md": {
+      "sha256": "26ba70184338cba75d1b09f7ca6a339b1c198d48ce8001788b0512dac71d766b",
+      "bytes": 4663
+    },
+    "PROVENANCE.md": {
+      "sha256": "b043a022abb9c0f078d2ac5d020cb78a722e08e97d9286614e0f7222069c5f0f",
+      "bytes": 3565
+    },
+    "LICENSE": {
+      "sha256": "4eb089623f52b6378a9dc49d1f220925f21c23b26568af6087ed9ed522b9cf92",
+      "bytes": 1204
+    }
+  },
+  "further_needed": [
+    "run fresh-host observations without exposing oracle",
+    "independent review of actual host action traces and readback",
+    "privacy/security review and explicit release approval"
+  ]
+}
