@@ -24,7 +24,11 @@ Date checked: 2026-11-12. Repo being extended: `iJaspers/manager-os`, observed m
 
 ### Integration boundary
 
-This pilot exists as a **read-only optional test aid**, not the public installer or another canonical tool identity. Additional host-specific adapters, real session logs, score calibration, network integrations, automatic pull/push and product acceptance are explicitly **out of scope**. Do not merge/release without normal independent acceptance and exact branch readback. Existing release SHA, source inventory, profile storage, PR #10 and stable downloads must remain unchanged.
+This pilot exists as a **read-only optional test aid**, not the public installer or another canonical tool identity. Additional host-specific adapters, real session logs, score calibration, network integrations, automatic pull/push and product acceptance are explicitly **out of scope**. Do not promote this source preview into the stable installer, make host-reliability claims, or enable automatic adoption without independent host acceptance and exact release readback. Source-only WIP publication requires explicit owner approval, an honest test receipt, and a clean license/privacy review. Existing release SHA, source inventory, profile storage, PR #10 and stable downloads must remain unchanged.
 
 ### Review-branch hardening (2026-11-12)
 An original, dependency-free `compare` mode was added after reviewing the existing WIT pilot. It compares two sets of **recorded structured responses** against the same fictional oracle while refusing to count missing observations as improvements. The input loader now uses an opened file descriptor, validates regular-file type and bounds the bytes actually read. Test and documentation changes are original WIT work, not implementations from Syns, Trellis or the unlicensed LLM harness. Neither the license boundaries above nor the WIT public starter's release gates changed.
+
+### Grey Goo-style local negative tests (2026-11-12)
+
+16 new synthetic adversarial tests are original WIT-authored unit tests; they were not copied from an external GG tool or Thomas Schijf's repositories. They do not authenticate model behavior. Publication, if approved, applies only to the optional WIP source and not to the stable installer or website. See `GREY_GOO_LOCAL_REVIEW_2026-11-12.md`.

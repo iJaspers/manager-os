@@ -1,12 +1,18 @@
 # Witburrow Continuity Observer 0.1 (optional pilot)
 
-**Status: LOCAL MECHANICAL SMOKE TEST / NOT RELEASED.** Original, dependency-free Python tooling for comparing *recorded structured answers* against fictional decision/authority scenarios. It is not a new WIT agent, memory engine, source synchronizer, host extension, scheduler, or stable-tool installation.
+**Status: EXPERIMENTAL PUBLIC SOURCE PREVIEW / NOT A STABLE WIT RELEASE.** Original, dependency-free Python tooling for comparing *recorded structured answers* against fictional decision/authority scenarios. It is not a new WIT agent, memory engine, source synchronizer, host extension, scheduler, or stable-tool installation.
 
 ## What it adds beyond the existing WIT test-plan forge
 
 WIT's current plan-forge generates proposed regression scenarios. This separate, optional observer **scores structured response records** against a hidden golden set and reports specific mismatched fields. It closes a narrow testing gap without duplicating the plan generator, touching a canonical record, copying proprietary software, or executing instructions from third-party content.
 
 The 10 **fictional** cases cover: current-versus-archived decisions, no duplicate completed work, prompt-injection authority boundaries, zero-spend decisions, missing primary evidence, unsupported cross-AI sync, project isolation, release gates, draft-versus-sent honesty, and uncertain write readback. Every case uses invented records and identifiers.
+
+## Adversarial review and limits
+
+A separate local Grey Goo-style attack suite (`test_grey_goo.py`) now adds 16 negative tests for forged authority, fake source citations, unauthorized action claims, answer-key leakage, input parsing, and incomplete comparisons. These are deterministic checks of the scorer, **not a native Grey Goo Shadow Analyst review** or independent, fresh-host model acceptance. See `GREY_GOO_LOCAL_REVIEW_2026-11-12.md` for exact results and hold conditions.
+
+The code is publicly inspectable as a **work-in-progress source preview**. It is not automatically installed or adopted by existing WIT users, and nobody should rely on its output as proof of safety, memory, confidentiality, source retrieval or tool execution.
 
 ## Run entirely offline (Python 3, standard library only)
 
@@ -44,4 +50,4 @@ See `BRAND_RISK_NOTE.md` for preliminary naming guardrails and `PROVENANCE.md` f
 
 ## Review evidence as of 2026-11-12
 
-The follow-up testing pass added 20 comparison/input-boundary tests to the original 25, for **45/45 local unit tests passing**. It also hardened input reading against files that grow between a preflight size check and the actual read. See `SECURITY_REVIEW.md` and `TEST_RECEIPT.json` for exact limitations and current hashes. **No fresh AI session, connector, or WIT deployment was exercised.**
+The follow-up testing pass added 20 comparison/input-boundary tests and 16 further adversarial tests to the original 25, for **61/61 local unit tests passing**. It also hardened input reading against files that grow between a preflight size check and the actual read. See `SECURITY_REVIEW.md` and `TEST_RECEIPT.json` for exact limitations and current hashes. **No fresh AI session, connector, or WIT deployment was exercised.**

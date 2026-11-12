@@ -1,10 +1,10 @@
 {
   "date": "2026-11-12",
-  "status": "DRAFT_PR_NOT_MERGED",
-  "scope": "local deterministic scorer and comparison tests only",
+  "status": "EXPERIMENTAL_SOURCE_PREVIEW_ONLY_NOT_HOST_ACCEPTED",
+  "scope": "61 deterministic local scorer and Grey Goo-style adversarial unit tests; no native GG or live-host test",
   "python_version": "3.13.5",
-  "tests": 45,
-  "passed": 45,
+  "tests": 61,
+  "passed": 61,
   "failed": 0,
   "synthetic_scoring_pass": "10/10 FIELD_MATCH (fabricated input)",
   "synthetic_scoring_fail": "8/10 FIELD_MATCH, 2 FIELD_MISMATCH (fabricated corrupted input)",
@@ -22,19 +22,27 @@
     "UNCHANGED_MISMATCH": 0,
     "INCOMPLETE": 0
   },
-  "evidence_level": "LOCAL_MECHANICAL_TESTS_NOT_LIVE_MODEL_BEHAVIOR",
+  "evidence_level": "LOCAL_SYNTHETIC_MECHANICAL_TESTS_NOT_INDEPENDENT_HOST_ACCEPTANCE",
   "files": {
+    "BRAND_RISK_NOTE.md": {
+      "sha256": "9a5312748f8f67e9fd67e797bf30ea99ff2c74c2febe79b91a2a2fbb1dbbd1c8",
+      "bytes": 2862
+    },
+    "GREY_GOO_LOCAL_REVIEW_2026-11-12.md": {
+      "sha256": "903ef754bdfb6629b3ac946ac818fb1b1fa0caafa666236096b49c5590c573af",
+      "bytes": 3681
+    },
     "LICENSE": {
       "sha256": "4eb089623f52b6378a9dc49d1f220925f21c23b26568af6087ed9ed522b9cf92",
       "bytes": 1204
     },
     "PROVENANCE.md": {
-      "sha256": "cb5d637364d34855bbf3dac628aa81116a4b0d2bd4a2c670ae6027a889471edd",
-      "bytes": 4185
+      "sha256": "e9783ed9dfbe5ae6038367f04c43a9b1651d6eb2b42be9bd01023a2716bf30ac",
+      "bytes": 4807
     },
     "README.md": {
-      "sha256": "b0bb698c0c91955e1a4f4e80eea7573e5b10c6ed7df7fb4ee84692f27d908b8f",
-      "bytes": 5867
+      "sha256": "132f72a1d2cb1b60046b242c2cadf217d19d9bc4af3e224e518090284ee29d75",
+      "bytes": 6730
     },
     "SECURITY_REVIEW.md": {
       "sha256": "c5288c1b19a2b0ac7cab7ad1ec719e0b22b5f80bf142621a5d9b8f054ad70a82",
@@ -60,14 +68,23 @@
       "sha256": "bc099f63322b5939bdf13b53ebea027197aedd736f27193f4c42aa37d1d7dc21",
       "bytes": 8819
     },
+    "test_grey_goo.py": {
+      "sha256": "b461052e2464d5e76bc4501eb33f305d22a127b0ccd265d1c67c17ba8f9b7839",
+      "bytes": 7535
+    },
     "test_observer.py": {
       "sha256": "b42487a1a2c5e16a6bae28ef5bea37d25339852cc68a5c704190fe9aab9e02ad",
       "bytes": 8175
     }
   },
   "further_needed": [
-    "fresh independent host responses without access to oracle",
-    "independent inspection of host action logs and target readback",
-    "owner approval and product release gates before merge/release"
-  ]
+    "explicit user-provided sanitized packet if separate native GG evaluation is requested",
+    "fresh independent AI host responses without oracle",
+    "attributable tool logs and target readback",
+    "second host before cross-AI claims",
+    "owner-directed stable product acceptance and release gates"
+  ],
+  "grey_goo_local_cases": 16,
+  "native_grey_goo_shadow_analyst": "NOT_INVOKED_NO_USER_PASTED_PACKET",
+  "publication_scope": "experimental public source only; stable installer/Wix unchanged"
 }
