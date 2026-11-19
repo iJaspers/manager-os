@@ -19,7 +19,7 @@ def adapt_issue(issue, now=None):
         'removed':issue.get('state') != 'open' or bool(issue.get('pull_request')),
         'freshness_checked':True, 'freshness_days':round(age_days,2),
         'stale':age_days>30 or age_days<0, 'help_intent_checked':False,
-        'rules_checked':False, 'status_checked':True,
+        'rules_checked':False, 'status_checked':False,
         'verified_fit':False, 'evidence_urls':[],
         'relevance':0,'help_request':0,'fit':0,'community':0,
     }
