@@ -46,7 +46,7 @@ Scores relevance 35/35, request 25/25, verified fit 25/25, community 0/15; total
 
 ## Findings
 - All 10 sources were distinct by Reddit post ID; no duplicates in this small sample.
-- 4 provisional priority, 5 review later, 1 archive. All 10 blocked from promotional outreach pending rules/status verification.
+- 5 provisional priority, 4 review later, 1 archive. All 10 blocked from promotional outreach pending rules/status verification.
 - Source evidence supports pain-point match, not actual adoption, permission to post, or WIT's runtime compatibility.
 - Critical failure mode: rubric can over-score stale, promotional, or research-oriented posts; add freshness and buyer-intent gates before any lead action.
 - Persistence/restart, accuracy, API access, and actual reply review remain UNTESTED.
