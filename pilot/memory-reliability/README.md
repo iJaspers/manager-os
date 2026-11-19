@@ -15,3 +15,11 @@ Local Python 3 unittest execution on 2026-11-19: 20 tests, 20 pass, 0 errors (or
 Combo-Breaker: Existing Continuity Observer and Adaptive Experience pilots already cover neighboring controls. Do not duplicate them or add SQLite/MCP/embeddings without measured need. Third-party community ideas are inspiration only; no third-party code copied.
 
 **Decision: REVIEW / HOLD.** Draft PR only. No stable release, site, canonical records or external automation changes. Next gate: trusted ingestion design, negative integration tests, concurrency/recovery traces and fresh-host dogfood.
+
+
+## 2026-11-19 trusted-ingestion adapter checkpoint
+Added `trusted_ingestion.py` and `test_trusted_ingestion.py` (ten additional negative/positive cases). Adapter requires a separate manifest explicitly marked authenticated, with exact scope, approved digest, classification and source revision. It rejects self-asserted `verified` fields and record payloads.
+
+**Security caveat:** `authenticated=True` is still just caller-supplied data. The adapter cannot independently verify identity, signatures, permissions, or trusted storage. It must not be used with an authority manifest obtained from the same untrusted source as the record. This is a contract test, not a complete trusted ingestion implementation.
+
+**Test status:** New ten-case suite committed, but not executed in this session: local GitHub clone failed due to DNS. Earlier 20-case local result is a prior snapshot, not a current branch-wide test result. Do not merge or promote. Next gate: materialize the exact branch in an executable environment, run both suites, test forged authenticated manifests and concurrent/restart scenarios, then inspect independent host traces.
