@@ -22,6 +22,7 @@ def evaluate(item, seen):
     reason=[]
     if ident in seen: reason.append('duplicate')
     if item.get('removed'): reason.append('removed')
+    if item.get('stale'): reason.append('stale discussion')
     if item.get('promotional_only'): reason.append('promotion-only')
     if not item.get('verified_fit'): reason.append('no verified product fit')
     if not item.get('rules_checked'): reason.append('community rules unverified')
