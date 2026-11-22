@@ -18,7 +18,8 @@ def build_handoff(payload, goal, claims, documents, level="practical"):
     if level not in ("simple", "practical", "technical"):
         raise ValueError("invalid explanation level")
     doc_index = _documents_index(documents)
-    items = rank(ingest(payload), goal)[:MAX_FINDINGS]
+    ranked = rank(ingest(payload), goal)
+    items = ranked[:MAX_FINDINGS]
     findings = []
     for item in items:
         source = canonical_url(item.url)
@@ -27,7 +28,8 @@ def build_handoff(payload, goal, claims, documents, level="practical"):
             "title": item.title,
             "url": item.url,
             "evidence_state": "HOST_FETCHED_TEXT" if doc else "SEARCH_SNIPPET_ONLY",
-            "description": item.excerpt if level != "simple" else item.title,
+            "description": (doc.text[:320].strip() if doc else item.excerpt) if level != "simple" else item.title,
+            "description_origin": "HOST_FETCHED_TEXT" if doc else "PROVIDER_SNIPPET",
         }
         if level == "technical" and doc:
             found["sha256"] = doc.sha256
@@ -45,6 +47,7 @@ def build_handoff(payload, goal, claims, documents, level="practical"):
         "level": level,
         "verdict": review.verdict,
         "findings": findings,
+        "omitted_findings": max(0, len(ranked) - MAX_FINDINGS),
         "claim_review": review.as_dict(),
         "next_step": note,
     }
