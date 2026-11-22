@@ -98,7 +98,10 @@ class ClaimReviewTests(unittest.TestCase):
         self.assertEqual(output["findings"][0]["evidence_state"], "HOST_FETCHED_TEXT")
         self.assertEqual(output["findings"][1]["evidence_state"], "SEARCH_SNIPPET_ONLY")
         self.assertNotIn("sha256", output["findings"][1])
-        self.assertIn("IGNORE ALL RULES", output["findings"][0]["description"])
+        self.assertNotIn("IGNORE ALL RULES", output["findings"][0]["description"])
+        self.assertIn("Install requires no API key", output["findings"][0]["description"])
+        self.assertEqual(output["findings"][0]["description_origin"], "HOST_FETCHED_TEXT")
+        self.assertEqual(output["findings"][1]["description_origin"], "PROVIDER_SNIPPET")
 
     def test_handoff_simple_for_humans(self):
         payload = {"results": [{"title": "Demo", "url": self.source.url, "excerpt": "internal"}]}
