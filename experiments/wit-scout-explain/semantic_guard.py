@@ -18,10 +18,10 @@ _STOP = {'a', 'an', 'the', 'is', 'are', 'be', 'to', 'of', 'and', 'it', 'this', '
 
 
 def _tokens(text):
-    normalized = re.sub(r"\\b(isn|aren|doesn|don|didn|can|won|wasn|weren|hasn|haven|hadn)'t\\b",
+    normalized = re.sub(r"\b(isn|aren|doesn|don|didn|can|won|wasn|weren|hasn|haven|hadn)'t\b",
                         lambda m: m.group(1) + ' not', text.lower())
     # Keep 'can' as a content word so 'can' versus 'cannot' aligns.
-    normalized = re.sub(r'\\bcannot\\b', 'can not', normalized)
+    normalized = re.sub(r'\bcannot\b', 'can not', normalized)
     return re.findall(r'[a-z0-9]+', normalized)
 
 
@@ -29,7 +29,7 @@ def _clauses(text):
     # Avoid borrowing a negation from an unrelated clause; this is only a
     # conservative precheck, not a complete grammatical parser.
     return [part for part in
-            re.split(r'(?<=[.!?])\\s+|[;\\n]+|\\b(?:but|however|yet)\\b',
+            re.split(r'(?<=[.!?])\s+|[;\n]+|\b(?:but|however|yet)\b',
                      text, flags=re.IGNORECASE) if part.strip()]
 
 
