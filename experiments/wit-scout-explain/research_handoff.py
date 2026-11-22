@@ -28,7 +28,8 @@ def build_handoff(payload, goal, claims, documents, level="practical"):
             "title": item.title,
             "url": item.url,
             "evidence_state": "HOST_FETCHED_TEXT" if doc else "SEARCH_SNIPPET_ONLY",
-            "description": (doc.text[:320].strip() if doc else item.excerpt) if level != "simple" else item.title,
+            "description": (doc.text[:120 if level == "simple" else 320].strip() if doc
+                            else (item.title if level == "simple" else item.excerpt)),
             "description_origin": "HOST_FETCHED_TEXT" if doc else "PROVIDER_SNIPPET",
         }
         if level == "technical" and doc:
