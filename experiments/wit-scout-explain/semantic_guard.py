@@ -18,32 +18,47 @@ _STOP = {'a', 'an', 'the', 'is', 'are', 'be', 'to', 'of', 'and', 'it', 'this', '
 
 
 def _tokens(text):
-    normalized = re.sub(r"\b(isn|aren|doesn|don|didn|can|won|wasn|weren|hasn|haven|hadn)'t\b",
+    normalized = re.sub(r"\\b(isn|aren|doesn|don|didn|can|won|wasn|weren|hasn|haven|hadn)'t\\b",
                         lambda m: m.group(1) + ' not', text.lower())
+    # Keep 'can' as a content word so 'can' versus 'cannot' aligns.
+    normalized = re.sub(r'\\bcannot\\b', 'can not', normalized)
     return re.findall(r'[a-z0-9]+', normalized)
 
 
-def _opposite_negation(statement, quote):
-    left, right = _tokens(statement), _tokens(quote)
-    # Conservative sentence-level polarity check: mixed clauses may escape,
-    # but two differently worded negations must not produce a false HOLD.
-    left_neg = any(t in _NEGATIONS for t in left)
-    right_neg = any(t in _NEGATIONS for t in right)
-    if left_neg == right_neg:
-        return False
-    # Require at least a shared three-token predicate, not an isolated word.
-    # Three-token overlaps with no content words are ignored.
-    for size in (5, 4, 3):
-        for a in range(len(left)-size+1):
-            key = left[a:a+size]
-            if sum(tok not in _STOP for tok in key) < 2 or any(tok in _NEGATIONS for tok in key):
-                continue
-            for b in range(len(right)-size+1):
-                if right[b:b+size] != key:
-                    continue
-                return True
-    return False
+def _clauses(text):
+    # Avoid borrowing a negation from an unrelated clause; this is only a
+    # conservative precheck, not a complete grammatical parser.
+    return [part for part in
+            re.split(r'(?<=[.!?])\\s+|[;\\n]+|\\b(?:but|however|yet)\\b',
+                     text, flags=re.IGNORECASE) if part.strip()]
 
+
+def _opposite_negation(statement, quote):
+    # Infix negations such as "is not" must not hide the shared predicate;
+    # clause boundaries prevent unrelated "never"/"cannot" from vetoing it.
+    # Still fail to NEEDS_SEMANTIC_REVIEW when meaning is too complex.
+    for left_clause in _clauses(statement):
+        left = _tokens(left_clause)
+        left_neg = any(token in _NEGATIONS for token in left)
+        left_core = [token for token in left if token not in _NEGATIONS]
+        for right_clause in _clauses(quote):
+            right = _tokens(right_clause)
+            right_neg = any(token in _NEGATIONS for token in right)
+            if left_neg == right_neg:
+                continue
+            right_core = [token for token in right if token not in _NEGATIONS]
+            for size in (5, 4, 3):
+                if len(left_core) < size or len(right_core) < size:
+                    continue
+                candidate_grams = {
+                    tuple(left_core[i:i+size])
+                    for i in range(len(left_core)-size+1)
+                    if sum(token not in _STOP for token in left_core[i:i+size]) >= 2
+                }
+                if any(tuple(right_core[j:j+size]) in candidate_grams
+                       for j in range(len(right_core)-size+1)):
+                    return True
+    return False
 
 @dataclass(frozen=True)
 class InterpretationResult:
