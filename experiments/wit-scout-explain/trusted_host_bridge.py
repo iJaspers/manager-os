@@ -3,7 +3,7 @@
 This module makes NO network calls. The caller supplies a trusted, read-only
 fetch callback implementing actual host/plugin/web tools. Do not construct that
 callback from user or search-result input: the callback owns security checks,
-redirect verification, auth and provenance. \`host_verified\` is not a signature.
+redirect verification, auth and provenance. `host_verified` is not a signature.
 """
 from __future__ import annotations
 
@@ -82,7 +82,7 @@ def _checked_read(source: Evidence, read: HostRead):
     if observed.tzinfo is None or observed.utcoffset() is None:
         raise ValueError('observation time must contain timezone')
     # Only trusted host integration code may call this function with its own
-    # trusted response. Do not take \`host_verified\` from JSON or web content.
+    # trusted response. Do not take `host_verified` from JSON or web content.
     doc = verify_host_fetch(source, final_url=read.final_url, text=read.text,
                             retrieval_method=read.retrieval_method, host_verified=True)
     receipt = FetchReceipt(
