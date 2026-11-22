@@ -6,6 +6,7 @@ quote is a completed task or an independent factual endorsement.
 from __future__ import annotations
 
 from claim_review import _documents_index, verify_claims
+from semantic_guard import review_meaning
 from provider_adapter import ingest
 from scout import canonical_url, rank
 
@@ -37,6 +38,10 @@ def build_handoff(payload, goal, claims, documents, level="practical"):
             found["retrieval_method"] = doc.retrieval_method
         findings.append(found)
     review = verify_claims(claims, documents)
+    interpretation = review_meaning(claims, documents)
+    overall_verdict = ("HOLD" if review.verdict == "HOLD" or
+                       any(item.verdict == "HOLD" for item in interpretation)
+                       else "REVIEW_REQUIRED")
     note = {
         "simple": "These are leads. A matched quote still needs someone to check what it means.",
         "practical": "Check the original sources, then review meaning and authorizations before adoption.",
@@ -46,9 +51,13 @@ def build_handoff(payload, goal, claims, documents, level="practical"):
         "schema": "wit.research-handoff.v1",
         "goal": goal,
         "level": level,
-        "verdict": review.verdict,
+        "verdict": overall_verdict,
         "findings": findings,
         "omitted_findings": max(0, len(ranked) - MAX_FINDINGS),
         "claim_review": review.as_dict(),
+        "semantic_precheck": [
+            {"claim_id": item.claim_id, "verdict": item.verdict,
+             "issues": list(item.issues)} for item in interpretation],
+        "independent_semantic_review_completed": False,
         "next_step": note,
     }
