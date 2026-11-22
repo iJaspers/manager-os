@@ -106,7 +106,7 @@ class ClaimReviewTests(unittest.TestCase):
     def test_handoff_simple_for_humans(self):
         payload = {"results": [{"title": "Demo", "url": self.source.url, "excerpt": "internal"}]}
         output = build_handoff(payload, "demo", [self.valid], [self.doc], "simple")
-        self.assertEqual(output["findings"][0]["description"], "Demo")
+        self.assertIn("Install requires no API key", output["findings"][0]["description"])
         self.assertIn("matched quote", output["next_step"])
 
     def test_handoff_rejects_invalid_input(self):
