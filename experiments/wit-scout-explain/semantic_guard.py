@@ -13,7 +13,7 @@ from collections.abc import Mapping
 from claim_review import verify_claims, _documents_index
 from scout import canonical_url
 
-_NEGATIONS = {'not', 'no', 'never', 'without'}
+_NEGATIONS = {'not', 'no', 'none', 'neither', 'never', 'without', 'cannot'}
 _STOP = {'a', 'an', 'the', 'is', 'are', 'be', 'to', 'of', 'and', 'it', 'this', 'that'}
 
 
@@ -25,6 +25,12 @@ def _tokens(text):
 
 def _opposite_negation(statement, quote):
     left, right = _tokens(statement), _tokens(quote)
+    # Conservative sentence-level polarity check: mixed clauses may escape,
+    # but two differently worded negations must not produce a false HOLD.
+    left_neg = any(t in _NEGATIONS for t in left)
+    right_neg = any(t in _NEGATIONS for t in right)
+    if left_neg == right_neg:
+        return False
     # Require at least a shared three-token predicate, not an isolated word.
     # Three-token overlaps with no content words are ignored.
     for size in (5, 4, 3):
@@ -35,10 +41,7 @@ def _opposite_negation(statement, quote):
             for b in range(len(right)-size+1):
                 if right[b:b+size] != key:
                     continue
-                left_neg = any(t in _NEGATIONS for t in left[max(0,a-4):a])
-                right_neg = any(t in _NEGATIONS for t in right[max(0,b-4):b])
-                if left_neg != right_neg:
-                    return True
+                return True
     return False
 
 
