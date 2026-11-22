@@ -1,0 +1,31 @@
+name: WIT Scout experimental regressions
+
+on:
+  push:
+    branches:
+      - experiment/wit-reddit-evidence-review-20261122
+    paths:
+      - "experiments/wit-scout-explain/**"
+      - ".github/workflows/wit-scout-experiment.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  research-evidence-tests:
+    name: Scout Python and JavaScript (stdlib)
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout exact experimental source
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: Record environment
+        run: |
+          git rev-parse HEAD
+          python3 --version
+          node --version
+      - name: Run full Scout Python tests
+        run: python3 -B -m unittest discover -s experiments/wit-scout-explain -p 'test_*.py' -v
+      - name: Run full Scout JavaScript tests
+        run: node --test experiments/wit-scout-explain/test_*.mjs
