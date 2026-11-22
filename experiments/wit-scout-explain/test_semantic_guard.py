@@ -2,6 +2,7 @@ import unittest
 from evidence_gate import verify_host_fetch
 from scout import Evidence
 from semantic_guard import review_meaning, semantic_review_request
+from research_handoff import build_handoff
 
 class SemanticGateTests(unittest.TestCase):
     def setUp(self):
@@ -54,6 +55,14 @@ class SemanticGateTests(unittest.TestCase):
     def test_unfetched_source_hold(self):
         result=review_meaning([self.base],[])[0]
         self.assertEqual(result.verdict,'HOLD')
+
+    def test_handoff_holds_inverted_claim(self):
+        claim={**self.base,'statement':'Witburrow is a separate AI model'}
+        payload={'results':[{'title':'WIT', 'url':self.src.url, 'excerpt':'provider snippet'}]}
+        handoff=build_handoff(payload,'WIT',[claim],[self.doc])
+        self.assertEqual(handoff['claim_review']['verdict'],'REVIEW_REQUIRED')
+        self.assertEqual(handoff['verdict'],'HOLD')
+        self.assertFalse(handoff['independent_semantic_review_completed'])
 
     def test_same_predicate_no_negation_difference(self):
         self.assertEqual(self.run_gate('It is not a separate AI model').verdict,'NEEDS_SEMANTIC_REVIEW')
