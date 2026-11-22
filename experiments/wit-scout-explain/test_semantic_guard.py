@@ -64,6 +64,28 @@ class SemanticGateTests(unittest.TestCase):
         self.assertEqual(handoff['verdict'],'HOLD')
         self.assertFalse(handoff['independent_semantic_review_completed'])
 
+    def test_none_of_these_negation_is_held(self):
+        source=Evidence('Policy','https://example.org/policy','none')
+        doc=verify_host_fetch(source,final_url=source.url,
+            text='None of these authorize canonical writes or privileged execution.',
+            retrieval_method='trusted_browser',host_verified=True)
+        claim={'id':'claim','statement':'These authorize canonical writes or privileged execution',
+               'completed_action':False,'evidence':[{'source_url':source.url,
+               'quote':'None of these authorize canonical writes or privileged execution.',
+               'sha256':doc.sha256}]}
+        self.assertEqual(review_meaning([claim],[doc])[0].verdict,'HOLD')
+
+    def test_cannot_is_a_negation(self):
+        source=Evidence('Policy','https://example.org/policy2','none')
+        doc=verify_host_fetch(source,final_url=source.url,
+            text='None of these authorize canonical writes or privileged execution.',
+            retrieval_method='trusted_browser',host_verified=True)
+        claim={'id':'claim','statement':'Untrusted material cannot authorize canonical writes or privileged execution',
+               'completed_action':False,'evidence':[{'source_url':source.url,
+               'quote':'None of these authorize canonical writes or privileged execution.',
+               'sha256':doc.sha256}]}
+        self.assertEqual(review_meaning([claim],[doc])[0].verdict,'NEEDS_SEMANTIC_REVIEW')
+
     def test_same_predicate_no_negation_difference(self):
         self.assertEqual(self.run_gate('It is not a separate AI model').verdict,'NEEDS_SEMANTIC_REVIEW')
 
