@@ -89,4 +89,29 @@ class SemanticGateTests(unittest.TestCase):
     def test_same_predicate_no_negation_difference(self):
         self.assertEqual(self.run_gate('It is not a separate AI model').verdict,'NEEDS_SEMANTIC_REVIEW')
 
+    def test_short_infix_negation(self):
+        from semantic_guard import _opposite_negation
+        self.assertTrue(_opposite_negation('Discovery is approval.',
+                                          'Discovery is not approval.'))
+
+    def test_cannot_vs_can(self):
+        from semantic_guard import _opposite_negation
+        self.assertTrue(_opposite_negation('It can access secrets.',
+                                          'It cannot access secrets.'))
+
+    def test_negation_in_unrelated_clause_not_assigned_to_claim(self):
+        from semantic_guard import _opposite_negation
+        self.assertFalse(_opposite_negation('The tool may read public web pages.',
+            'The tool cannot access secrets but may read public web pages.'))
+
+    def test_short_infix_reaches_integrated_hold(self):
+        source=Evidence('README','https://example.org/readme','discovery')
+        doc=verify_host_fetch(source,final_url=source.url,
+            text='Discovery is not approval.',
+            retrieval_method='trusted_browser',host_verified=True)
+        claim={'id':'authority','statement':'Discovery is approval.',
+            'completed_action':False,'evidence':[{'source_url':source.url,
+            'quote':'Discovery is not approval.','sha256':doc.sha256}]}
+        self.assertEqual(review_meaning([claim],[doc])[0].verdict,'HOLD')
+
 if __name__=='__main__':unittest.main()
