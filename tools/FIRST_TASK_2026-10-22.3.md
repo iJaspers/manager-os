@@ -38,6 +38,14 @@ Open the [current public catalogue](https://www.ijaspers.com/post/witburrow-tool
 
 If the inputs or runtime do not fit, clarify or keep the task manual. Never invent missing amounts, evidence, permissions or installed capabilities to make a tool appear suitable.
 
+### Accounting evidence: start with one discrepancy
+
+Use the [Second Accountant review contract](../downloads/MOS_Public_Framework_2026-10-12.txt) (module 21) for one entity, period and evidence question. Start with fictional data. Keep the original records private and unchanged. This is a route to existing tools and a manual review, not an installation of the private Second Accountant software.
+
+1. **Compare records only when keys are comparable.** Use the local [Two-Source CSV Reconciler 0.1.2](two-source-csv-reconciler/0.1.2/README.md) for two CSV exports with unique matching keys and known column mappings. Its fictional demo reports missing, duplicate and changed records. A matching amount or a matching pair does not establish ownership, business purpose or tax treatment. If the records have no reliable shared key, keep the match unresolved and identify the linking evidence needed.
+2. **Hand off one unresolved item.** Record the owner, entity and period, exact question, what the evidence shows, what is missing, and one next action. Keep private source pointers in the approved private record. Where Python is available, the [Source-linked Handoff Review public draft](source-linked-handoff-review/0.1.0-public-draft.1/README.md) can check the proposal's structure using its fictional example. It does not verify that the cited records are authentic or support the proposal.
+3. **Keep the statuses separate.** A mechanical comparison does not settle accounting policy, tax treatment or filing readiness. Keep missing or conflicting evidence on hold. If a tool was not run, label the result manual. Do not upload source records, change the books or submit anything from this workflow.
+
 ## 3. Optional tool path: inspect, consent, and try synthetic data first
 
 Read the selected version's README, limits, provenance, license and test results. Download its ZIP only when you choose to. Compare the ZIP checksum on the catalogue and the member hashes in SHA256SUMS.json. Hash equality proves byte consistency, not safety or author identity.
