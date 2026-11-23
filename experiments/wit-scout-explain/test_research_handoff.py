@@ -42,12 +42,14 @@ class ResearchHandoffTests(unittest.TestCase):
         }
 
     def _build(self, *, claims=None, documents=None, payload=None,
-               goal="sample feature", level="practical", previous_binding=None):
+               goal="sample feature", level="practical", previous_binding=None,
+               same_audience_private_evidence=False):
         return build_handoff(
             self.payload if payload is None else payload,
             goal, [self.claim] if claims is None else claims,
             [self.doc] if documents is None else documents, level,
             previous_binding=previous_binding,
+            same_audience_private_evidence=same_audience_private_evidence,
         )
 
     def assert_changed_binding_holds(self, output):
@@ -102,6 +104,41 @@ class ResearchHandoffTests(unittest.TestCase):
         self.assertEqual((nav["start_line"], nav["end_line"]), (3, 4))
         self.assertEqual(text[nav["start_offset"]:nav["end_offset"]], quote)
 
+    def test_quick_view_keeps_both_pinned_quotes_with_qualifying_heading(self):
+        url = "https://github.com/example/project/blob/" + "a" * 40 + "/README.md"
+        source = Evidence("Synthetic file", url, "Provider description")
+        qualifier = "## Roadmap (not shipped)\nExample export support"
+        other = "The sample feature is planned."
+        doc = self._document(source, f"Features\n{other}\n\n{qualifier}\n",
+                             method="github_connector")
+        claim = self._claim(source, doc, other)
+        claim["evidence"] += self._claim(source, doc, qualifier)["evidence"]
+        default = self._build(claims=[claim], documents=[doc], level="simple")
+        output = self._build(claims=[claim], documents=[doc], level="simple",
+                             same_audience_private_evidence=True)
+        self.assertEqual(default["quick_view"]["claims"], [{
+            key: default["claim_details"][0][key]
+            for key in ("id", "statement", "verdict", "issues")
+        }])
+        self.assertNotIn(url, str(default["quick_view"]))
+        self.assertNotIn(qualifier, str(default["quick_view"]))
+        self.assertEqual({k: v for k, v in default.items() if k != "quick_view"},
+                         {k: v for k, v in output.items() if k != "quick_view"})
+        quick = output["quick_view"]["claims"][0]["evidence"]
+        detail = output["claim_details"][0]["evidence"]
+        self.assertEqual([item["quote"] for item in quick], [other, qualifier])
+        self.assertEqual([item["navigation"]["url"] for item in quick],
+                         [url + "?plain=1#L2", url + "?plain=1#L4-L5"])
+        self.assertEqual([item["navigation"] for item in quick],
+                         [item["navigation"] for item in detail])
+        self.assertEqual([item["evidence_state"] for item in quick],
+                         ["MATCHED_HOST_TEXT", "MATCHED_HOST_TEXT"])
+
+    def test_private_presentation_requires_a_literal_boolean(self):
+        for invalid in ("true", 1, None):
+            with self.subTest(value=invalid), self.assertRaises(ValueError):
+                self._build(same_audience_private_evidence=invalid)
+
     def test_mutable_github_ref_does_not_receive_pinned_line_claim(self):
         url = "https://github.com/example/project/blob/main/README.md"
         source = Evidence("Mutable source file", url, "A description")
@@ -114,7 +151,8 @@ class ResearchHandoffTests(unittest.TestCase):
 
     def test_repeated_quote_does_not_invent_a_unique_anchor(self):
         doc = self._document(self.source, self.text + self.quote + "\n")
-        output = self._build(claims=[self._claim(self.source, doc, self.quote)], documents=[doc])
+        output = self._build(claims=[self._claim(self.source, doc, self.quote)],
+                             documents=[doc], same_audience_private_evidence=True)
         evidence = output["claim_details"][0]["evidence"][0]
         self.assertEqual(evidence["evidence_state"], "MATCHED_HOST_TEXT")
         nav = evidence["navigation"]
@@ -122,6 +160,11 @@ class ResearchHandoffTests(unittest.TestCase):
         self.assertEqual(nav["url"], doc.canonical_url)
         for key in ("start_line", "end_line", "start_offset", "end_offset"):
             self.assertIsNone(nav[key])
+
+        quick = output["quick_view"]["claims"][0]["evidence"][0]
+        self.assertEqual(quick["evidence_state"], "MATCHED_HOST_TEXT")
+        self.assertEqual(quick["navigation"], nav)
+        self.assertEqual(quick["quote"], self.quote)
 
     def test_missing_mismatched_and_absent_quote_sources_have_no_verified_navigation(self):
         changed_doc = self._document(self.source, self.text + "New source version.\n")
@@ -134,7 +177,8 @@ class ResearchHandoffTests(unittest.TestCase):
         ]
         for expected, claim, docs, observed in cases:
             with self.subTest(state=expected):
-                output = self._build(claims=[claim], documents=docs)
+                output = self._build(claims=[claim], documents=docs,
+                                     same_audience_private_evidence=True)
                 detail = output["claim_details"][0]
                 evidence = detail["evidence"][0]
                 self.assertEqual(detail["verdict"], "HOLD")
@@ -142,6 +186,11 @@ class ResearchHandoffTests(unittest.TestCase):
                 self.assertEqual(evidence["observed_sha256"], observed)
                 nav = evidence["navigation"]
                 self.assertEqual(nav["kind"], "UNAVAILABLE")
+                self.assertEqual(output["quick_view"]["verdict"], "HOLD")
+                self.assertEqual(output["quick_view"]["claims"][0]["verdict"], "HOLD")
+                quick = output["quick_view"]["claims"][0]["evidence"][0]
+                self.assertEqual(quick, {"evidence_state": expected,
+                                         "navigation": nav, "quote": None})
                 for key in ("url", "start_line", "end_line", "start_offset", "end_offset"):
                     self.assertIsNone(nav[key])
 
@@ -224,7 +273,9 @@ class ResearchHandoffTests(unittest.TestCase):
         quick = output["quick_view"]["claims"][0]
         self.assertEqual(detail["verdict"], "HOLD")
         self.assertIn("INDEPENDENT_ACTION_RECEIPT_REQUIRED", detail["issues"])
-        self.assertEqual(quick, {key: detail[key] for key in ("id", "statement", "verdict", "issues")})
+        for key in ("id", "statement", "verdict", "issues"):
+            self.assertEqual(quick[key], detail[key])
+        self.assertNotIn("evidence", quick)
 
 
 if __name__ == "__main__":

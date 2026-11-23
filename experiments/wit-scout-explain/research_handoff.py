@@ -106,14 +106,21 @@ def _evidence_detail(entry, doc_index):
 
 
 def build_handoff(payload, goal, claims, documents, level="practical", *,
-                  previous_binding=None):
+                  previous_binding=None, same_audience_private_evidence=False):
     """Build bounded presentation data; never inherit a prior approval.
 
     A caller retaining earlier reviews should supply the previous handoff's
     review_binding.sha256. Any input change conservatively requires re-review;
     this comparison does not decide whether a wording change altered meaning.
-    All titles, statements and excerpts remain untrusted text for the renderer.
+    Default quick_view adds no source excerpts or navigation. Set
+    same_audience_private_evidence=True only for an authenticated recipient
+    authorized to view the same source material as the detailed handoff.
+    The caller must enforce that access and render untrusted excerpts as
+    escaped plain text, never HTML. This option does not authorize disclosure
+    or confer trust, authentication, or review approval.
     """
+    if type(same_audience_private_evidence) is not bool:
+        raise ValueError("invalid private evidence presentation option")
     if not isinstance(goal, str) or not goal.strip() or len(goal) > 500:
         raise ValueError("invalid goal")
     if level not in ("simple", "practical", "technical"):
@@ -163,6 +170,20 @@ def build_handoff(payload, goal, claims, documents, level="practical", *,
     }[level]
     if binding["state"] == "INPUTS_CHANGED":
         note = "The question, claim or evidence changed. Review this version before using an earlier decision."
+    quick_claims = [{key: item[key] for key in ("id", "statement", "verdict", "issues")}
+                    for item in details]
+    if same_audience_private_evidence:
+        for quick, item in zip(quick_claims, details):
+            # Reuse bounded, verified navigation without a citation fallback.
+            quick["evidence"] = [
+                {
+                    "evidence_state": entry["evidence_state"],
+                    "navigation": dict(entry["navigation"]),
+                    "quote": (entry["quote"] if entry["evidence_state"] ==
+                              "MATCHED_HOST_TEXT" else None),
+                }
+                for entry in item["evidence"]
+            ]
     return {
         "schema": "wit.research-handoff.v1",
         "goal": goal,
@@ -175,8 +196,7 @@ def build_handoff(payload, goal, claims, documents, level="practical", *,
         "claim_details": details,
         "quick_view": {
             "verdict": overall_verdict,
-            "claims": [{key: item[key] for key in ("id", "statement", "verdict", "issues")}
-                       for item in details],
+            "claims": quick_claims,
             "limitations": list(_LIMITATIONS),
             "next_step": note,
         },
