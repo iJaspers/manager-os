@@ -2,6 +2,8 @@
 
 Status: **experimental, not shipped**. This branch is isolated from stable releases.
 
+Current continuation: [source-linked handoff presentation, November 22](HANDOFF_PRESENTATION_2026-11-22.md). The committed module now exposes exact evidence navigation, shared short/detail verdicts and conservative review-input invalidation. That checkpoint records the current 87 Python / 9 Node local checks and the limits of the real-source replay; the November 19 prototype notes below remain historical.
+
 ## Goal
 Turn a vague user objective into targeted discovery, source-grounded findings, and explanations at simple/practical/technical depth. Keep search-provider choice optional and preserve WIT's existing memory, permissions and checkpoint owners.
 
