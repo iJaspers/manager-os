@@ -18,6 +18,8 @@ Publication is not proof that any existing installation adopted the name. No new
 
 ## Current public release
 
+**Start with any research question:** [WIT Discovery and Scout general inquiry guide](tools/releases/discovery-scout-2026-11-23/GENERAL_INQUIRIES.md). School Contact Scout is optional and not needed for general research.
+
 **New research previews — 23 November 2026:** [WIT, Discovery and Scout public bundle](tools/releases/discovery-scout-2026-11-23/) includes the latest selected Scout evidence/checkpoint improvements, a generic School Contact Scout with fictional examples, and a [phone start guide](tools/releases/discovery-scout-2026-11-23/START_HERE_PHONE.md). These are separate experimental source releases. The stable starter below retains its existing version and bytes.
 
 **MOS-2026.10.12.1**  
