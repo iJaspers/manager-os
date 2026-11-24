@@ -4,6 +4,8 @@ Witburrow is a portable set of operating rules and project records for keeping o
 
 It is not a separate AI model. Witburrow supplies the operating rules around the model: canonical state, authority boundaries, work states, recovery, update governance, regression checks, safe tool use, and compact context management.
 
+**First visit?** [Try one research question in your chat or run Scout from the downloaded ZIP](tools/DISCOVERY_QUICK_START.md).
+
 ## Name transition - October 22, 2026
 
 Manager OS (MOS) is now **Witburrow**. The manager's default name is **Wit**. This is a soft rename, not a new stable package or a forced remote change.
