@@ -9,6 +9,13 @@ def run(r=R,a=None,scope="wit",commit="abc"):
     return evaluate(r,authority() if a is None else a,expected_scope=scope,current_commit=commit)
 class IngestionTests(unittest.TestCase):
     def test_approved(self): self.assertEqual(run()["decision"],"use")
+    def test_invalid_record_ids_are_held(self):
+        for invalid_id in (None, False, 0, "", [], {}):
+            with self.subTest(invalid_id=invalid_id):
+                self.assertEqual(run({**R, "id": invalid_id}), {
+                    "decision": "hold", "reason": "invalid_record"
+                })
+
     def test_untrusted_manifest(self):
         a=authority();a["authenticated"]=False
         self.assertEqual(run(a=a)["reason"],"unauthenticated_authority")

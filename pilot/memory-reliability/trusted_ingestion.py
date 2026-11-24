@@ -13,9 +13,12 @@ def evaluate(record, authority, *, expected_scope, current_commit):
         return {"decision":"hold","reason":"unauthenticated_authority"}
     if authority["scope"] != expected_scope or not isinstance(authority["records"],dict):
         return {"decision":"hold","reason":"authority_scope_mismatch"}
-    if not isinstance(record,dict):
+    # Validate the complete record before dictionary lookup, including ID type.
+    try:
+        fingerprint(record)
+    except (ValueError, TypeError):
         return {"decision":"hold","reason":"invalid_record"}
-    record_id=record.get("id")
+    record_id=record["id"]
     approved=authority["records"].get(record_id)
     if not isinstance(approved,dict) or set(approved)!={"digest","classification","source_commit"}:
         return {"decision":"hold","reason":"record_not_approved"}
