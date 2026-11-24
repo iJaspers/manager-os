@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "fictional_example": true,
+  "description": "Offline demonstration only. All people, schools and addresses are fictional; example.org is a reserved example domain.",
+  "teachers": [
+    {
+      "record_id": "EX-001",
+      "school": "Fictional North School",
+      "name": "Alex Example",
+      "role": "Physical education teacher",
+      "email": "alex.teacher@example.org",
+      "teacher_flag": "Yes",
+      "source_url": "https://example.org/schools/north/staff",
+      "source_year": "Fictional example only",
+      "checked_date": "2000-01-01",
+      "outreach_status": "Opted out",
+      "do_not_contact": true,
+      "notes": "Demonstrates that source refresh preserves an existing opt-out."
+    },
+    {
+      "record_id": "EX-002",
+      "school": "Fictional South School",
+      "name": "Alex Example",
+      "role": "Visiting teacher",
+      "email": "alex.teacher@example.org",
+      "teacher_flag": "Yes",
+      "source_url": "https://example.org/schools/south/staff",
+      "source_year": "Fictional example only",
+      "notes": "Same address, separate school affiliation and stable record ID."
+    },
+    {
+      "record_id": "EX-003",
+      "school": "Fictional North School",
+      "name": "Casey Example",
+      "role": "Classroom teacher",
+      "email": "casey.teacher@example.org",
+      "teacher_flag": "Yes",
+      "source_url": "https://example.org/schools/north/staff",
+      "notes": "The offline fixture deliberately has a displayed/link conflict."
+    },
+    {
+      "record_id": "EX-004",
+      "school": "Fictional North School",
+      "name": "Morgan Sample",
+      "role": "Classroom teacher",
+      "email": "morgan.teacher@example.org",
+      "teacher_flag": "Yes",
+      "source_url": "https://example.org/schools/north/staff",
+      "notes": "Absent from the fixture; this does not establish a departure."
+    }
+  ],
+  "school_contacts": [
+    {
+      "record_id": "EX-005",
+      "school": "Fictional North School",
+      "name": "School office",
+      "role": "School office",
+      "email": "north.office@example.org",
+      "teacher_flag": "No",
+      "source_url": "https://example.org/schools/north/staff"
+    }
+  ],
+  "reviews": [
+    {
+      "displayed_email": "casey.teacher@example.org",
+      "linked_email": "casey.other@example.org",
+      "reason": "Fictional displayed/mailto mismatch retained for review."
+    }
+  ]
+}

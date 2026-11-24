@@ -1,0 +1,31 @@
+{
+  "release": "2026-11-23",
+  "hash_algorithm": "SHA-256",
+  "packages": [
+    {
+      "id": "wit.scout-explain",
+      "version": "0.1.0-public-draft.1",
+      "path": "tools/scout-explain/scout-explain-0.1.0-public-draft.1.zip",
+      "sha256": "ab2a4f44756298803b1b114ef45e104c82fea59bb7491d054da0459e659239ba",
+      "size_bytes": 62333,
+      "members": 31
+    },
+    {
+      "id": "wit.school-contact-scout",
+      "version": "0.1.0-preview.1",
+      "path": "tools/school-contact-scout/school-contact-scout-0.1.0-preview.1.zip",
+      "sha256": "a48a9d3803c7c8903d9527d8d55ca24acd3021f8d38d6dff1c092f8b3588f81f",
+      "size_bytes": 20835,
+      "members": 7
+    },
+    {
+      "id": "wit.discovery-scout-public-bundle",
+      "version": "2026-11-23",
+      "path": "tools/releases/discovery-scout-2026-11-23/WIT_Discovery_Scout_Public_2026-11-23.zip",
+      "sha256": "594b60a447b4f95d81c034ab352429e56bccb300c72e93b18c834f62a0d85a9e",
+      "size_bytes": 123794,
+      "members": 46
+    }
+  ],
+  "limits": "Byte identity only; no signed authenticity or readiness certification."
+}

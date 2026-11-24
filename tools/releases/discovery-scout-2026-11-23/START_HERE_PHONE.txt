@@ -1,0 +1,36 @@
+WIT, DISCOVERY AND SCOUT — PHONE START
+Public preview, 23 November 2026
+
+1. Download the public WIT starter text:
+https://raw.githubusercontent.com/iJaspers/manager-os/main/downloads/MOS_PUBLIC_PACK_v2026.10.12-R1.txt
+
+2. Open your chosen AI chat app. Attach that TXT if supported, or paste its contents.
+
+3. Send:
+Use this public WIT starter for this conversation. Help me complete one task at a time and keep a short record of decisions, evidence, next actions and unfinished work. Tell me which tools and storage you actually have. Ask only for missing information that blocks the task. Do not assume access to another person's account or a previous private installation.
+
+4. Give it one task. Example: Help me research school program opportunities from official sources. Keep source links and observation dates, and separate confirmed information from items needing review.
+
+5. Ask for a short return note at the end of the session. Save it and attach or paste it next time.
+
+PUBLIC HOME AND DOWNLOADS
+https://github.com/iJaspers/manager-os/tree/main/tools/releases/discovery-scout-2026-11-23
+
+SCOUT + EXPLAIN
+Version 0.1.0-public-draft.1. Ranks supplied JSON search results and supports evidence review and research checkpoints. Requires Python; optional trusted-host JavaScript adapters.
+https://github.com/iJaspers/manager-os/tree/main/tools/scout-explain/0.1.0-public-draft.1
+
+SCHOOL CONTACT SCOUT
+Version 0.1.0-preview.1. Rechecks recorded source pages for known contacts. Includes a fictional offline demo. Requires Python.
+https://github.com/iJaspers/manager-os/tree/main/tools/school-contact-scout/0.1.0-preview.1
+
+WHAT THIS INSTALLS
+The WIT starter is instructions for your existing host. It does not create memory, connectors, permissions or background jobs. Uploading Python files does not install them on a phone. This release has no demonstrated native mobile app, autonomous LinkedIn crawler, automatic outreach or scheduled lead-generation service.
+
+The stable starter remains MOS-2026.10.12.1 / v2026.10.12-R1. The optional Bob companion remains RC1. New research tools are experimental source previews. Read their exact-version tests, limits and rights notices.
+
+PRIVACY
+All bundled examples are fictional. Keep real contact baselines, source responses and checkpoints private. Still published does not prove employment, deliverability or permission to send promotional messages.
+
+ChatGPT file-upload help:
+https://help.openai.com/en/articles/8555545-uploading-files-and-audio-to-chatgpt
