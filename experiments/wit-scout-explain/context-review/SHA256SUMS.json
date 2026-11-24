@@ -2,10 +2,11 @@
   "schema": "wit.context-review-files.v1",
   "files": {
     ".gitignore": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793",
-    "README.md": "44c45368110bf7ff5c3ace78c23baaddcaeb1ec5beff163bda4688ab0f4a31bf",
-    "REVIEW_NOTES.md": "01f390d5b425d13622b5440267124c6e9ebffaed2145926e2f785d0790129b49",
+    "README.md": "b751ca72a4329680860277ebf9774a7e94cbb474ef338fc1556757849ce5307c",
+    "REVIEW_NOTES.md": "f5f36cbbccaf0bf1c326fae53ecfeaddbb7eed4a0fcc8c158a076afa8a0cacfb",
     "THIRD_PARTY_NOTICES.md": "a9a4d76c94c8f7ab52801c0431596a7bc5363c29046cc5e00fa0a56948d6f4ea",
     "_base.py": "e7634d2b2c87b3586586c6a875d453f45dbe647b2a70bc0b77f533b8f693950a",
+    "check_browser.py": "58703ff08826d7b33b31575804dee76f4a9e38945983006231500a32d4424754",
     "demo_session.py": "71f8dc376aebaafaaa4939904b51b4d329e593c5dbc35cff5cb85a6f49682cbb",
     "dogfood_incognide.py": "747ac6c6b8372dbd8b2c803e00d0b5069da5abd8d56cb269ef7d590963c4b411",
     "examples/DOGFOOD_RECEIPT.json": "10347fa7667505b274bed73447215c3b5ababa03200c2d9234205675c47d238f",

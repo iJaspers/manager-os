@@ -12,5 +12,5 @@ The additive [What WIT used experiment](context-review/README.md) reuses the
 versioned Scout research handoff and checkpoint interfaces to show source roles,
 coverage, missing evidence, usage limits and proposed memories. It is a read-only
 review candidate, not a new memory store or stable release. Its implementation,
-tests, actual-source replay, source attribution and remaining browser/device
-acceptance limit are recorded together in that directory.
+tests, actual-source replay, source attribution and rendered Chrome results and physical-device
+acceptance limits are recorded together in that directory.

@@ -89,7 +89,7 @@ Exact derived outputs: [HTML example](examples/incognide_review.html),
 
 ## Rendered acceptance history
 
-**Rendered-browser acceptance is BLOCKED, not passed.** Playwright's bundled
+**Historical November 23 attempt.** Playwright's bundled
 Chromium was absent. A targeted attempt with the installed Chromium failed at
 startup with `socket() failed: Operation not permitted`. No page rendered and
 no screenshot was obtained. Responsive layout and wrapping have static checks;
@@ -143,18 +143,12 @@ A useful result is: `Browser/version; widths; PASS or issue for checks 1–5;`
 `SHA256SUMS.json` with the result. Any fix to the renderer or generated HTML
 requires repeating the affected visual checks on the changed artifact.
 
-## Next action and promotion boundary
+## November 24 experimental acceptance
 
-**NEXT:** complete the checklist in a working browser and record the observation.
-If it passes and the remote branch remains clean, move PR #18 to ready for
-ordinary review. A desktop browser at a narrow viewport can satisfy this
-bounded step; it does not establish physical Android/iOS or Safari acceptance.
+Chrome 157.0.8103.78 exercised the two published examples in the [rendered review job](https://github.com/iJaspers/manager-os/actions/runs/45509596631/job/138853568671). Both passed at 1366, 390 and 320 CSS pixels. The six cases checked horizontal overflow, section navigation, visible keyboard focus, disclosure toggles, trust labels and the fictional failure state. The log prints each HTML digest alongside the result.
 
-After source review, the next implementation step is a bounded integration of
-this view into the existing Scout handoff, exercised on one authorized session
-and its existing recovery path. That pilot remains separate from stable release
-or host activation. No new memory store or owner-approval service is implied.
+A fresh source review verified all 17 original manifest entries, the upstream MIT notice at the pinned Incognide revision and the scope of the new read-only public-repository check. The check uses the runner's own Chrome and ChromeDriver with both examples on local disk. The 45 candidate, 135 Scout Python and 20 JavaScript tests passed again.
 
-**WAITING ON:** the first successful rendered review. No stable release or
-real-host activation is claimed. Existing WIT recovery/authority limitations
-still apply.
+Five fresh pinned public connector reads produced five proposals requiring review. A fresh process restored the same report. Owner confirmation remained unverified and a changed completion claim stayed on hold. The new transfer SHA-256 was `3fc017aa25fe0cc0501d9896ff550bf3ea8e4c43e326edcaab74e05d045adb38`; its new observation time produces a distinct report from the archived example.
+
+**Adoption scope.** Accepted as an optional, offline experiment using the existing Scout session and recovery contracts. Physical-device and Safari acceptance, full accessibility evaluation and deployment in a live host remain open. Remove the experiment directory, its parent README entry and its dedicated browser workflow to roll back.

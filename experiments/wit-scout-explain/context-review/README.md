@@ -1,6 +1,6 @@
 # What WIT used — context and proposed-memory review
 
-**Status: experimental review candidate, 0.1. No stable release or host activation.**
+**Status: optional offline Scout experiment, version 0.1.**
 This is an additive view for the existing `wit.scout-explain` component. It
 reuses the versioned Scout source at
 [`tools/scout-explain/0.1.0-public-draft.1`](../../../tools/scout-explain/0.1.0-public-draft.1/).
@@ -30,7 +30,7 @@ external navigation accepts only explicit HTTP(S) links.
 
 ## Try the fictional example
 
-Open the ready-made [fictional HOLD example](examples/hold_review.html) for a
+Download the [fictional HOLD example](examples/hold_review.html) using GitHub’s **Download raw file** control, then open the saved HTML in a browser for a
 failed-source and held-claim review. The [browser checklist](REVIEW_NOTES.md#browser-review-checklist)
 covers this example and the actual-source report below.
 
@@ -93,11 +93,11 @@ memory-reliability pilot is not merged, copied or promoted by this work.
 ## Verification, provenance and rollback
 
 See [REVIEW_NOTES.md](REVIEW_NOTES.md) for exact tests, dogfooding, the independent
-review correction, and the remaining browser/device limit. See
+review correction and rendered Chrome results at three viewport widths. See
 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for attributed inspiration and
 the source-quote notice.
 
-Remove this experiment and its routing paragraph to stop using it. Existing
+Remove this experiment, its routing paragraph and the dedicated Scout browser workflow to roll back. Existing
 Scout releases, checkpoints, downloads, stable starter files and public catalogue
 are unaffected. A generated report can be discarded; it is not a canonical store.
 There is no migration or hidden background process to undo.
