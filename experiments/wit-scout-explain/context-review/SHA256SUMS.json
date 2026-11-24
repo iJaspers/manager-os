@@ -1,0 +1,21 @@
+{
+  "schema": "wit.context-review-files.v1",
+  "files": {
+    ".gitignore": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793",
+    "README.md": "894d97a3fc76e44cd3870d984d4158794aacaf9c96a2fed4c225dd311be2ba7a",
+    "REVIEW_NOTES.md": "97ad67ab7db26857149fab59db4146d007128b21190799f341cb1e7afbef4d62",
+    "THIRD_PARTY_NOTICES.md": "a9a4d76c94c8f7ab52801c0431596a7bc5363c29046cc5e00fa0a56948d6f4ea",
+    "_base.py": "e7634d2b2c87b3586586c6a875d453f45dbe647b2a70bc0b77f533b8f693950a",
+    "demo_session.py": "71f8dc376aebaafaaa4939904b51b4d329e593c5dbc35cff5cb85a6f49682cbb",
+    "dogfood_incognide.py": "747ac6c6b8372dbd8b2c803e00d0b5069da5abd8d56cb269ef7d590963c4b411",
+    "examples/DOGFOOD_RECEIPT.json": "10347fa7667505b274bed73447215c3b5ababa03200c2d9234205675c47d238f",
+    "examples/incognide_review.html": "7b100a681ba48b2630cc2d0898c4540550e103651d9d397da914fb06cf908912",
+    "examples/incognide_review.json": "0d384370a4409701ae11ab0d42d6020efc5da8948e3085206480ca2c22ee7223",
+    "render_review.py": "c188a6f42d1316da258c10db2178635ec2f7d85948d2c76f7d94f916e45bd4b3",
+    "review.py": "8f091dab5ea66f0abd3e6988306a05c33d58925c3b0112062f9414ac272bea60",
+    "review_view.py": "714d00e708536e4ffae3fe5e7b4e640bdbe53d1bac26e03e066bf37c85c183ba",
+    "test_render_review.py": "632b46f6694f44c9d8cfc6977acc4e0c7d20f423383c6d9dfc53deac29e30d65",
+    "test_review_cli.py": "2f6d438d2feb423ff2dcf39cb6e4c9a7f6058a551881b1b3b7db58a198481dcc",
+    "test_review_view.py": "2b56edf40f11afeb85d781c97762aaddc79a532f205f4bb2caecee4913366552"
+  }
+}
