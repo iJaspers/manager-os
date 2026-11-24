@@ -30,6 +30,10 @@ external navigation accepts only explicit HTTP(S) links.
 
 ## Try the fictional example
 
+Open the ready-made [fictional HOLD example](examples/hold_review.html) for a
+failed-source and held-claim review. The [browser checklist](REVIEW_NOTES.md#browser-review-checklist)
+covers this example and the actual-source report below.
+
 Run from the repository root with Python 3. No dependency installation is needed:
 
 ```sh
