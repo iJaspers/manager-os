@@ -1,0 +1,19 @@
+{
+  "results": [
+    {
+      "title": "Fictional bicycle brake pad compatibility chart",
+      "url": "https://example.org/repair/brake-pad-chart",
+      "excerpt": "Invented repair reference: compare the brake model and pad shape before buying a replacement."
+    },
+    {
+      "title": "Fictional ferry bicycle reservation rules",
+      "url": "https://example.org/travel/ferry-bicycle-reservations",
+      "excerpt": "Invented travel reference: check whether this route requires a bicycle reservation and when boarding closes."
+    },
+    {
+      "title": "Fictional community program directory",
+      "url": "https://example.org/community/directory",
+      "excerpt": "Invented community reference: program descriptions are listed here; eligibility is unconfirmed."
+    }
+  ]
+}
