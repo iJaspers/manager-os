@@ -2,6 +2,16 @@
 
 All notable public Manager OS changes are recorded here. The authoritative machine-readable release state remains `RELEASE_MANIFEST.json`.
 
+## Public research previews — 2026-11-23
+
+- Published versioned Scout + Explain source with updated connector envelopes, preserved source quotations, complete research checkpoints and offline regression fixtures.
+- Added the generic School Contact Scout preview, with fictional examples, preserved baseline/opt-out records, public-address DNS validation and pinned connections.
+- Added a phone start guide and a combined public download containing the existing starter artifacts and the two source previews.
+- Reviewed selected source, rewritten documentation and archive contents for private records and links. Actual contact databases, campaign exports, private integration history and working checkpoints are excluded.
+- Added bounded, read-only CI for the reviewed publication paths. No external-contribution execution or intake expansion is enabled.
+
+Exact commands, observed results, rights scope and remaining limits are recorded in [the release review](tools/releases/discovery-scout-2026-11-23/PUBLICATION_REVIEW.md). The declared stable framework release, optional companion version and previous download bytes are unchanged.
+
 ## MOS-2026.10.12.1
 
 Released: 2026-10-12 (America/Vancouver)  

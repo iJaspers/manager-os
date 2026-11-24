@@ -1,9 +1,9 @@
 {
   "schema": "witburrow.website_projection.v1",
-  "as_of": "2026-11-03",
+  "as_of": "2026-11-23",
   "brand": "Witburrow",
   "manager_name": "Wit",
-  "release_state": "Public source previews and locally tested WIP; five metadata-only private candidates; publication is separate from acceptance.",
+  "release_state": "Public source previews and locally tested WIP, including Discovery and School Contact Scout; five metadata-only private candidates; publication is separate from acceptance.",
   "source_catalog_version": "frozen R1 / Tool Shelf v1.10",
   "tools": [
     {
@@ -541,6 +541,100 @@
       "next_step": "Review the source-linked proposal with its existing owner; run the separate November 6 host trials.",
       "contribution_status": "Existing CONTRIBUTING.md applies; no intake expansion.",
       "legacy_catalogue_id": "BOB-089"
+    },
+    {
+      "id": "wit.scout-explain",
+      "name": "Scout + Explain",
+      "version": "0.1.0-public-draft.1",
+      "category": "Power",
+      "runtime": "Offline Python; optional JavaScript host adapter",
+      "description": "Turn supplied discovery results into ranked, source-linked research handoffs with explicit review states and recoverable checkpoints.",
+      "keywords": [
+        "discovery",
+        "research",
+        "scout",
+        "evidence",
+        "checkpoint"
+      ],
+      "requirements": "Python 3.12+; optional Node.js for the JavaScript adapter. Observed Python 3.12.14 and Node 24.22.3 on Linux. No dependency install.",
+      "limits": "Supplied JSON and trusted-host callbacks only; no autonomous search, LinkedIn crawler, outreach or scheduler. Hash/quote matches do not establish semantic truth. Full checkpoints contain source text. POSIX recovery tests kill their own synthetic subprocesses.",
+      "verification": "135 Python and 20 JavaScript tests passed from source and the extracted release ZIP; fictional CLI example passed. Independent source/privacy/rights-scope review passed.",
+      "next_step": "Try the fictional JSON example, then a small permitted input. A live host integration needs explicit capabilities, retrieval controls and acceptance evidence.",
+      "availability": "Published WIP source \u00b7 source-visible notice",
+      "public_ready": false,
+      "publicly_available": true,
+      "public_tool": true,
+      "lifecycle_status": "published_wip",
+      "readiness_status": "locally_tested_nonproduction",
+      "source_url": "https://github.com/iJaspers/manager-os/tree/bddae0091d1487ff18fcaa6223ec2ce811d5182f/tools/scout-explain/0.1.0-public-draft.1",
+      "release_url": "https://github.com/iJaspers/manager-os/tree/bddae0091d1487ff18fcaa6223ec2ce811d5182f/tools/scout-explain/0.1.0-public-draft.1",
+      "source_commit": "bddae0091d1487ff18fcaa6223ec2ce811d5182f",
+      "source_path": "tools/scout-explain/0.1.0-public-draft.1",
+      "download_url": "https://raw.githubusercontent.com/iJaspers/manager-os/bddae0091d1487ff18fcaa6223ec2ce811d5182f/tools/scout-explain/scout-explain-0.1.0-public-draft.1.zip",
+      "filename": "scout-explain-0.1.0-public-draft.1.zip",
+      "zip_sha256": "ab2a4f44756298803b1b114ef45e104c82fea59bb7491d054da0459e659239ba",
+      "zip_size_bytes": 62333,
+      "license": "Source-visible preview; no new blanket licence grant. See this version's LICENSE_NOTICE.md.",
+      "license_review_status": "approved_for_scoped_source_publication",
+      "privacy_review_status": "reviewed_sanitized_public_source",
+      "known_failures": [],
+      "known_failures_scope": "No failures observed in the named local suites. Documented limits and unrun acceptance remain; this is not a no-bugs claim.",
+      "tests_not_run": [
+        "Live deployed host and end-to-end acquisition acceptance",
+        "Independent semantic/security certification",
+        "Windows and physical-phone execution",
+        "Production capacity"
+      ],
+      "contribution_status": "Maintainer publication; existing nine-tool CONTRIBUTING.md intake is unchanged.",
+      "contribution_policy_url": "https://github.com/iJaspers/manager-os/blob/bddae0091d1487ff18fcaa6223ec2ce811d5182f/CONTRIBUTING.md",
+      "publication_review": "https://github.com/iJaspers/manager-os/blob/bddae0091d1487ff18fcaa6223ec2ce811d5182f/tools/releases/discovery-scout-2026-11-23/PUBLICATION_REVIEW.md"
+    },
+    {
+      "id": "wit.school-contact-scout",
+      "name": "School Contact Scout",
+      "version": "0.1.0-preview.1",
+      "category": "Power",
+      "runtime": "Python CLI",
+      "description": "Recheck approved source pages for recorded school contacts while preserving baseline records, school affiliations and opt-outs.",
+      "keywords": [
+        "school",
+        "contacts",
+        "refresh",
+        "public-source",
+        "scout"
+      ],
+      "requirements": "Python standard library; Python 3.9+ intended, observed Python 3.12.14/Linux. User supplies an accepted private baseline for live checks.",
+      "limits": "A recorded-source refresh, not a complete teacher finder. Still published does not prove employment, delivery or permission to contact. New networking checks have offline validation only; no strict total deadline or hosted-service sandbox.",
+      "verification": "21 offline self-tests passed from source and the extracted release ZIP. Eight independent network-boundary checks passed. Fictional demo preserves record identities, affiliations and opt-outs. No live source requests in this release verification.",
+      "next_step": "Run the offline demo. For a live trial, use a small reviewed baseline and inspect every observation; keep the baseline and reports private.",
+      "availability": "Published WIP source \u00b7 source-visible notice",
+      "public_ready": false,
+      "publicly_available": true,
+      "public_tool": true,
+      "lifecycle_status": "published_wip",
+      "readiness_status": "locally_tested_nonproduction",
+      "source_url": "https://github.com/iJaspers/manager-os/tree/bddae0091d1487ff18fcaa6223ec2ce811d5182f/tools/school-contact-scout/0.1.0-preview.1",
+      "release_url": "https://github.com/iJaspers/manager-os/tree/bddae0091d1487ff18fcaa6223ec2ce811d5182f/tools/school-contact-scout/0.1.0-preview.1",
+      "source_commit": "bddae0091d1487ff18fcaa6223ec2ce811d5182f",
+      "source_path": "tools/school-contact-scout/0.1.0-preview.1",
+      "download_url": "https://raw.githubusercontent.com/iJaspers/manager-os/bddae0091d1487ff18fcaa6223ec2ce811d5182f/tools/school-contact-scout/school-contact-scout-0.1.0-preview.1.zip",
+      "filename": "school-contact-scout-0.1.0-preview.1.zip",
+      "zip_sha256": "a48a9d3803c7c8903d9527d8d55ca24acd3021f8d38d6dff1c092f8b3588f81f",
+      "zip_size_bytes": 20835,
+      "license": "Source-visible preview; no new blanket licence grant. See this version's LICENSE_NOTICE.md.",
+      "license_review_status": "approved_for_scoped_source_publication",
+      "privacy_review_status": "reviewed_sanitized_public_source",
+      "known_failures": [],
+      "known_failures_scope": "No failures observed in the named local suites. Documented limits and unrun acceptance remain; this is not a no-bugs claim.",
+      "tests_not_run": [
+        "Live deployed host and end-to-end acquisition acceptance",
+        "Independent semantic/security certification",
+        "Windows and physical-phone execution",
+        "Production capacity"
+      ],
+      "contribution_status": "Maintainer publication; existing nine-tool CONTRIBUTING.md intake is unchanged.",
+      "contribution_policy_url": "https://github.com/iJaspers/manager-os/blob/bddae0091d1487ff18fcaa6223ec2ce811d5182f/CONTRIBUTING.md",
+      "publication_review": "https://github.com/iJaspers/manager-os/blob/bddae0091d1487ff18fcaa6223ec2ce811d5182f/tools/releases/discovery-scout-2026-11-23/PUBLICATION_REVIEW.md"
     }
   ],
   "approved_tool_leaderboard": [
@@ -603,13 +697,25 @@
       "version": "0.1.0-public-draft.1",
       "status": "WIP_SOURCE_UNRANKED",
       "source_url": "https://github.com/iJaspers/manager-os/tree/849d8af05ed4c6c142502ac97e75e3d666e069de/tools/source-linked-handoff-review/0.1.0-public-draft.1"
+    },
+    {
+      "id": "wit.scout-explain",
+      "version": "0.1.0-public-draft.1",
+      "status": "WIP_SOURCE_UNRANKED",
+      "source_url": "https://github.com/iJaspers/manager-os/tree/bddae0091d1487ff18fcaa6223ec2ce811d5182f/tools/scout-explain/0.1.0-public-draft.1"
+    },
+    {
+      "id": "wit.school-contact-scout",
+      "version": "0.1.0-preview.1",
+      "status": "WIP_SOURCE_UNRANKED",
+      "source_url": "https://github.com/iJaspers/manager-os/tree/bddae0091d1487ff18fcaa6223ec2ce811d5182f/tools/school-contact-scout/0.1.0-preview.1"
     }
   ],
   "problem_leaderboard": [],
   "public_intake_open": true,
   "live_votes_enabled": false,
   "ranking_basis": "Alphabetical continuation board only. Published source availability is not quality, popularity, safety or adoption ranking.",
-  "publication_revision": "2026-11-03-ship-dogfood",
+  "publication_revision": "2026-11-23-discovery-scout",
   "public_intake_scope": [
     "wit.documented-compensation-comparison",
     "wit.invoice-reference-review",
@@ -619,14 +725,14 @@
     "wit.grocery-planning-preview"
   ],
   "general_framework_intake_open": false,
-  "expected_total_entries": 16,
+  "expected_total_entries": 18,
   "schema_version": 1,
-  "expected_tool_count": 15,
-  "catalogue_revision": "2026-11-03-ship-dogfood",
+  "expected_tool_count": 17,
+  "catalogue_revision": "2026-11-23-discovery-scout",
   "public_ready_semantics": "Deprecated legacy availability flag. Use publicly_available for availability and readiness_status/lifecycle_status for readiness; WIP publication does not imply ready to use.",
   "management": {
     "schema": "witburrow.management.v1",
-    "source_commit": "849d8af05ed4c6c142502ac97e75e3d666e069de",
+    "source_commit": "bddae0091d1487ff18fcaa6223ec2ce811d5182f",
     "review_records": [
       {
         "id": "wit.bill-calendar-preview",
@@ -797,6 +903,40 @@
         "no_known_failures_declared": true,
         "known_failures_scope": "No failures in named local checks; limitations and unrun acceptance remain explicit.",
         "test_evidence_url": "https://github.com/iJaspers/manager-os/blob/849d8af05ed4c6c142502ac97e75e3d666e069de/tools/source-linked-handoff-review/0.1.0-public-draft.1/TEST_RESULTS.md"
+      },
+      {
+        "id": "wit.scout-explain",
+        "version": "0.1.0-public-draft.1",
+        "source_commit": "bddae0091d1487ff18fcaa6223ec2ce811d5182f",
+        "provenance_url": "https://github.com/iJaspers/manager-os/blob/bddae0091d1487ff18fcaa6223ec2ce811d5182f/tools/scout-explain/0.1.0-public-draft.1/PROVENANCE.md",
+        "review": {
+          "privacy": "approved",
+          "license": "approved",
+          "authority": "approved",
+          "reference": "https://github.com/iJaspers/manager-os/blob/bddae0091d1487ff18fcaa6223ec2ce811d5182f/tools/scout-explain/0.1.0-public-draft.1/PROVENANCE.md",
+          "scope": "Owner-authorized sanitized source-visible preview. Exact source and archives reviewed with fictional examples and no blanket licence expansion; no production or mobile acceptance."
+        },
+        "known_failures": [],
+        "no_known_failures_declared": true,
+        "known_failures_scope": "No failures observed in the named local suites. Documented limits and unrun acceptance remain; this is not a no-bugs claim.",
+        "test_evidence_url": "https://github.com/iJaspers/manager-os/blob/bddae0091d1487ff18fcaa6223ec2ce811d5182f/tools/scout-explain/0.1.0-public-draft.1/TEST_RESULTS.md"
+      },
+      {
+        "id": "wit.school-contact-scout",
+        "version": "0.1.0-preview.1",
+        "source_commit": "bddae0091d1487ff18fcaa6223ec2ce811d5182f",
+        "provenance_url": "https://github.com/iJaspers/manager-os/blob/bddae0091d1487ff18fcaa6223ec2ce811d5182f/tools/school-contact-scout/0.1.0-preview.1/PROVENANCE.md",
+        "review": {
+          "privacy": "approved",
+          "license": "approved",
+          "authority": "approved",
+          "reference": "https://github.com/iJaspers/manager-os/blob/bddae0091d1487ff18fcaa6223ec2ce811d5182f/tools/school-contact-scout/0.1.0-preview.1/PROVENANCE.md",
+          "scope": "Owner-authorized sanitized source-visible preview. Exact source and archives reviewed with fictional examples and no blanket licence expansion; no production or mobile acceptance."
+        },
+        "known_failures": [],
+        "no_known_failures_declared": true,
+        "known_failures_scope": "No failures observed in the named local suites. Documented limits and unrun acceptance remain; this is not a no-bugs claim.",
+        "test_evidence_url": "https://github.com/iJaspers/manager-os/blob/bddae0091d1487ff18fcaa6223ec2ce811d5182f/tools/school-contact-scout/0.1.0-preview.1/TEST_RESULTS.md"
       }
     ],
     "contribution_events": [],

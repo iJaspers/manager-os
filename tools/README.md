@@ -1,6 +1,16 @@
 # Witburrow public tool source previews
 
-Versioned, unranked source previews and WIP packages, each separately MIT-licensed inside its own version directory. That license does not apply to the rest of this repository or any private originals.
+Versioned, unranked source previews and WIP packages. Read each version's rights notice: some directories carry a scoped MIT license, while others are published for source review without a new blanket license grant. A directory's grant does not apply to the rest of this repository or private originals.
+
+## Research previews — 23 November 2026
+
+- [WIT, Discovery and Scout public bundle and phone guide](releases/discovery-scout-2026-11-23/README.md).
+- [Scout + Explain 0.1.0-public-draft.1](scout-explain/0.1.0-public-draft.1/README.md): supplied-result ranking, evidence review, connector examples and research checkpoints.
+- [School Contact Scout 0.1.0-preview.1](school-contact-scout/0.1.0-preview.1/README.md): bounded checks of recorded public source pages, with fictional examples.
+
+These two tools are source-visible previews with separate provenance and test records. No new blanket MIT grant or outside contribution intake is added. Phone instructions use the existing public starter in the user's own AI host; Python attachments are not a native phone installation.
+
+## Existing scoped-MIT previews
 
 - [Invoice Reference Review](invoice-reference-review/0.1.2/README.md)
 - [Pretax Role Comparison](pretax-role-comparison/0.1.2/README.md)
@@ -8,7 +18,7 @@ Versioned, unranked source previews and WIP packages, each separately MIT-licens
 
 Use the exact public ID, version, source and test evidence. Similar private catalogue numbers are not identity or verification evidence. None posts accounting entries, contacts employers, sends money or automatically executes on the public library page.
 
-You may fork, modify and redistribute these licensed directories. Pull-request intake is open only for the nine listed public tool IDs, under the privacy, license and isolated-manual-test gates in CONTRIBUTING.md. No automatic execution or merging is enabled. Broader framework and security-sensitive intake remain closed. Older version directories and ZIPs are historical; current repository CONTRIBUTING.md governs intake. The public tool board is not a ranking or endorsement system.
+You may fork, modify and redistribute the directories carrying their own MIT grants under those notices. Pull-request intake is open only for the nine listed public tool IDs, under the privacy, license and isolated-manual-test gates in CONTRIBUTING.md. No automatic untrusted execution or merging is enabled. Broader framework and security-sensitive intake remain closed. Older version directories and ZIPs are historical; current repository CONTRIBUTING.md governs intake. The public tool board is not a ranking or endorsement system.
 
 Live catalogue: https://www.ijaspers.com/post/witburrow-tools
 

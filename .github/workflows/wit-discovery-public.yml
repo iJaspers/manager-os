@@ -1,0 +1,40 @@
+name: WIT public Discovery and Scout previews
+
+# Maintainer-reviewed source only. No pull_request trigger, secrets or install step.
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - release/public-discovery-school-scout-20261123
+    paths:
+      - 'tools/scout-explain/**'
+      - 'tools/school-contact-scout/**'
+      - 'tools/CATALOGUE.json'
+      - 'site/catalogue/**'
+      - '.github/workflows/wit-discovery-public.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  offline-regressions:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Check out reviewed source
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Record runtimes
+        run: |
+          python3 --version
+          node --version
+      - name: Scout Python regressions
+        run: python3 -m unittest discover -s tools/scout-explain/0.1.0-public-draft.1 -p 'test_*.py' -q
+      - name: Scout JavaScript regressions
+        run: node --test tools/scout-explain/0.1.0-public-draft.1/test_github_host_runtime.mjs
+      - name: School Contact Scout offline self-tests
+        run: python3 tools/school-contact-scout/0.1.0-preview.1/school_contact_scout.py --self-test
+      - name: Public catalogue regression checks
+        run: node --test site/catalogue/tests/*.test.mjs
