@@ -1,6 +1,6 @@
 """Durable, append-safe opportunity record store. Offline, stdlib only."""
+import hashlib
 import json
-import os
 import sqlite3
 from pathlib import Path
 from opportunity import evaluate
@@ -37,25 +37,60 @@ class Store:
         output = []
         for item in items:
             record = evaluate(item, set())
+            # Bind source text and evaluated controls without storing another raw copy.
+            # Age in fractional days changes on every read. Its policy effect is in "stale".
+            observation = {
+                "evaluation": record,
+                "source": {key: item.get(key) for key in
+                           ("source_text", "source_created_at", "source_author")},
+            }
+            encoded = json.dumps(observation, sort_keys=True, separators=(",", ":")).encode()
+            fingerprint = hashlib.sha256(encoded).hexdigest()
             with self.db:
-                row = self.db.execute("SELECT payload FROM opportunities WHERE id=?", (record["id"],)).fetchone()
-                if row:
-                    prior = json.loads(row[0])
-                    # Repeated observations never erase feedback, review state or history.
-                    self.db.execute("UPDATE opportunities SET last_seen=CURRENT_TIMESTAMP WHERE id=?", (record["id"],))
+                self.db.execute("BEGIN IMMEDIATE")
+                row = self.db.execute(
+                    "SELECT payload FROM opportunities WHERE id=?", (record["id"],)
+                ).fetchone()
+                prior = json.loads(row[0]) if row else None
+                if prior is not None and prior.get("observation_sha256") == fingerprint:
+                    self.db.execute(
+                        "UPDATE opportunities SET last_seen=CURRENT_TIMESTAMP WHERE id=?",
+                        (record["id"],),
+                    )
                     output.append(dict(prior, duplicate_observation=True))
+                    continue
+
+                record["observation_sha256"] = fingerprint
+                if prior is None:
+                    kind = "INGEST"
+                    self.db.execute(
+                        "INSERT INTO opportunities(id,url,payload) VALUES (?,?,?)",
+                        (record["id"], record["url"], json.dumps(record, sort_keys=True)),
+                    )
                 else:
-                    self.db.execute("INSERT INTO opportunities(id,url,payload) VALUES (?,?,?)",
-                                    (record["id"],record["url"],json.dumps(record,sort_keys=True)))
-                    self.db.execute("INSERT INTO events(opportunity_id,kind,detail) VALUES (?,?,?)",
-                                    (record["id"],"INGEST",json.dumps({"gate":record["gate"]})))
-                    output.append(record)
+                    # A changed or previously unbound observation needs a new review.
+                    # Keep earlier feedback only in the historical event it describes.
+                    kind = "OBSERVATION_CHANGED"
+                    record["gate"] = "NEEDS_REVIEW"
+                    record["decision"] = "BLOCKED"
+                    record["gate_reasons"].append("changed observation requires review")
+                    self.db.execute(
+                        "UPDATE opportunities SET payload=?,last_seen=CURRENT_TIMESTAMP WHERE id=?",
+                        (json.dumps(record, sort_keys=True), record["id"]),
+                    )
+                detail = {"current": record, "prior": prior, "gate": record["gate"]}
+                self.db.execute(
+                    "INSERT INTO events(opportunity_id,kind,detail) VALUES (?,?,?)",
+                    (record["id"], kind, json.dumps(detail, sort_keys=True)),
+                )
+                output.append(record)
         return output
 
     def feedback(self, ident, verdict, note=""):
         if verdict not in ("GOOD","BAD","UNSURE"):
             raise ValueError("Invalid feedback")
         with self.db:
+            self.db.execute("BEGIN IMMEDIATE")
             row = self.db.execute("SELECT payload FROM opportunities WHERE id=?", (ident,)).fetchone()
             if not row:
                 raise KeyError(ident)

@@ -1,3 +1,4 @@
+import json
 import tempfile
 import unittest
 from pathlib import Path
@@ -30,6 +31,53 @@ class StoreTests(unittest.TestCase):
         s.close()
     def test_duplicate_in_batch(self):
         s=Store(self.path);out=s.ingest([self.item,self.item]);self.assertTrue(out[1]["duplicate_observation"]);s.close()
+    def test_changed_status_invalidates_old_review_and_preserves_history(self):
+        original = dict(self.item, status_checked=True, rules_checked=True, freshness_checked=True)
+        store = Store(self.path)
+        first, = store.ingest([original])
+        self.assertEqual(first["gate"], "PASS")
+        store.feedback(first["id"], "GOOD")
+        closed, = store.ingest([dict(original, removed=True)])
+        self.assertEqual(closed["decision"], "BLOCKED")
+        self.assertIn("removed", closed["gate_reasons"])
+        self.assertNotIn("feedback", closed)
+        previous = json.loads(store.db.execute(
+            "SELECT detail FROM events WHERE kind='OBSERVATION_CHANGED'"
+        ).fetchone()[0])["prior"]
+        self.assertEqual(previous["feedback"]["verdict"], "GOOD")
+        store.close()
+        store = Store(self.path)
+        duplicate, = store.ingest([dict(original, removed=True)])
+        self.assertTrue(duplicate["duplicate_observation"])
+        self.assertEqual(store.event_count(), 3)
+        replay, = store.ingest([original])
+        self.assertEqual(replay["gate"], "NEEDS_REVIEW")
+        self.assertFalse(replay["human_approved"])
+        store.close()
+
+    def test_text_revision_changes_identity_but_clock_drift_does_not(self):
+        store = Store(self.path)
+        first, = store.ingest([dict(self.item, source_text="first", freshness_days=8)])
+        duplicate, = store.ingest([dict(self.item, source_text="first", freshness_days=9)])
+        changed, = store.ingest([dict(self.item, source_text="second", freshness_days=9)])
+        self.assertTrue(duplicate["duplicate_observation"])
+        self.assertNotEqual(first["observation_sha256"], changed["observation_sha256"])
+        self.assertEqual(store.event_count(), 2)
+        store.close()
+
+    def test_unbound_legacy_record_requires_one_review(self):
+        store = Store(self.path)
+        previous, = store.ingest([self.item])
+        previous.pop("observation_sha256")
+        with store.db:
+            store.db.execute("UPDATE opportunities SET payload=?", (json.dumps(previous),))
+        bound, = store.ingest([self.item])
+        self.assertIn("changed observation requires review", bound["gate_reasons"])
+        replay, = store.ingest([self.item])
+        self.assertTrue(replay["duplicate_observation"])
+        self.assertEqual(store.event_count(), 2)
+        store.close()
+
     def test_bad_input(self):
         s=Store(self.path)
         with self.assertRaises(ValueError):s.ingest({})
