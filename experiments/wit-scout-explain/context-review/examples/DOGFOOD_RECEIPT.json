@@ -1,0 +1,57 @@
+{
+  "schema": "wit.context-review-dogfood-receipt.v1",
+  "observed_at": "2026-11-24T03:51:37+00:00",
+  "base_commit": "a2789ef29a7a34b7709c01beb5d92600cb1f35c6",
+  "incognide_commit": "5f302fd4a8bbd2beffb6301608bed7acde0e619d",
+  "mode": "Actual host connector reads replayed offline; no model inference or live deployed host",
+  "host_transfer_sha256": "9d4ebcad358da6909c63c2ccc805302f900d9d95fd00332a9776c0f3843097e4",
+  "source_count": 5,
+  "proposal_count": 5,
+  "verdict": "REVIEW_REQUIRED",
+  "proposal_verdicts": {
+    "pattern-1": "REVIEW_REQUIRED",
+    "pattern-2": "REVIEW_REQUIRED",
+    "pattern-3": "REVIEW_REQUIRED",
+    "pattern-4": "REVIEW_REQUIRED",
+    "pattern-5": "REVIEW_REQUIRED"
+  },
+  "owner_confirmation": "NOT_VERIFIED",
+  "fresh_process_restore_identical": true,
+  "checkpoint_sha256": "7ba099f11d2140785cbf76ad05e8c4b616b95b43b2db92d531d054fbbe247fe7",
+  "forged_approval_rejected": true,
+  "changed_completion_claim": "HOLD / INPUTS_CHANGED",
+  "html_sha256": "7b100a681ba48b2630cc2d0898c4540550e103651d9d397da914fb06cf908912",
+  "sources": [
+    {
+      "url": "https://github.com/NPC-Worldwide/incognide/blob/5f302fd4a8bbd2beffb6301608bed7acde0e619d/src/renderer/components/MemoryManagement.tsx",
+      "sha256": "104a668817d68a96d07a3018d29f71d51ca88ff628ea3940c1ccb18742ca9b56",
+      "retained_utf8_bytes": 21091
+    },
+    {
+      "url": "https://github.com/NPC-Worldwide/incognide/blob/5f302fd4a8bbd2beffb6301608bed7acde0e619d/src/renderer/components/ContextFilesPanel.tsx",
+      "sha256": "0540e0b4428cef6c87b920ba54e208d3e7e60990ab43c1aaa0d191bd53f938a5",
+      "retained_utf8_bytes": 9838
+    },
+    {
+      "url": "https://github.com/iJaspers/manager-os/blob/a2789ef29a7a34b7709c01beb5d92600cb1f35c6/tools/scout-explain/0.1.0-public-draft.1/research_checkpoint.py",
+      "sha256": "ec57c3c474e2da966b35cbea6fec078d8dc3d497f2583ec28d093fc9cb869551",
+      "retained_utf8_bytes": 11111
+    },
+    {
+      "url": "https://github.com/NPC-Worldwide/incognide/blob/5f302fd4a8bbd2beffb6301608bed7acde0e619d/src/renderer/utils/contextUsage.ts",
+      "sha256": "2ca781c32ab9054393f6c32266d35c80eb99a7ce55659186f0d757cfc836a7f5",
+      "retained_utf8_bytes": 4215
+    },
+    {
+      "url": "https://github.com/NPC-Worldwide/incognide/blob/5f302fd4a8bbd2beffb6301608bed7acde0e619d/src/npc_team/jinxes/kg/knowledge_approve.jinx",
+      "sha256": "c255aa75783e5f95acd1f0f2f3b7699a9c5e0c0055fa76180b26f4f7789e5dac",
+      "retained_utf8_bytes": 902
+    }
+  ],
+  "limits": [
+    "No independent factual or semantic acceptance",
+    "No Incognide installation or runtime testing",
+    "No memory write, approval mutation or action dispatch",
+    "Rendered-browser and physical-device acceptance separate"
+  ]
+}

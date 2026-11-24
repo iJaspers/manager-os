@@ -1,0 +1,314 @@
+{
+  "schema": "wit.context-memory-review.v1",
+  "title": "What WIT used",
+  "goal": "Review Incognide context and memory patterns alongside WIT research recovery",
+  "verdict": "REVIEW_REQUIRED",
+  "origin": "HOST_SOURCE_REPLAY",
+  "source_details_visible": true,
+  "review_binding": {
+    "schema": "wit.research-handoff-binding.v1",
+    "sha256": "ddf6c534d2cd60b513a2484d38875822446cf1d2d5cd4f078d3af5d08c8e2342",
+    "previous_sha256": null,
+    "state": "NEW",
+    "prior_verdict_carried_forward": false
+  },
+  "context": {
+    "scope": "Inputs to this research handoff's ranking, findings and evidence checks. This does not establish what a separate AI model received.",
+    "sources": [
+      {
+        "title": "Memory review",
+        "url": "https://github.com/NPC-Worldwide/incognide/blob/5f302fd4a8bbd2beffb6301608bed7acde0e619d/src/renderer/components/MemoryManagement.tsx",
+        "used_for": [
+          "CLAIM_CHECK",
+          "DISPLAYED_FINDING",
+          "RANKING_INPUT"
+        ],
+        "reason": "Cited by proposal(s): pattern-2; Ranked result 1 of 5",
+        "coverage": "COMPLETE_PINNED_FILE",
+        "fetch_state": "RETRIEVED",
+        "observed_at": "2026-11-24T03:51:37+00:00",
+        "pinned_revision": "5f302fd4a8bbd2beffb6301608bed7acde0e619d",
+        "sha256": "104a668817d68a96d07a3018d29f71d51ca88ff628ea3940c1ccb18742ca9b56",
+        "issues": []
+      },
+      {
+        "title": "Context controls",
+        "url": "https://github.com/NPC-Worldwide/incognide/blob/5f302fd4a8bbd2beffb6301608bed7acde0e619d/src/renderer/components/ContextFilesPanel.tsx",
+        "used_for": [
+          "CLAIM_CHECK",
+          "DISPLAYED_FINDING",
+          "RANKING_INPUT"
+        ],
+        "reason": "Cited by proposal(s): pattern-1; Ranked result 2 of 5",
+        "coverage": "COMPLETE_PINNED_FILE",
+        "fetch_state": "RETRIEVED",
+        "observed_at": "2026-11-24T03:51:37+00:00",
+        "pinned_revision": "5f302fd4a8bbd2beffb6301608bed7acde0e619d",
+        "sha256": "0540e0b4428cef6c87b920ba54e208d3e7e60990ab43c1aaa0d191bd53f938a5",
+        "issues": []
+      },
+      {
+        "title": "Existing recovery",
+        "url": "https://github.com/iJaspers/manager-os/blob/a2789ef29a7a34b7709c01beb5d92600cb1f35c6/tools/scout-explain/0.1.0-public-draft.1/research_checkpoint.py",
+        "used_for": [
+          "CLAIM_CHECK",
+          "DISPLAYED_FINDING",
+          "RANKING_INPUT"
+        ],
+        "reason": "Cited by proposal(s): pattern-5; Ranked result 3 of 5",
+        "coverage": "COMPLETE_PINNED_FILE",
+        "fetch_state": "RETRIEVED",
+        "observed_at": "2026-11-24T03:51:37+00:00",
+        "pinned_revision": "a2789ef29a7a34b7709c01beb5d92600cb1f35c6",
+        "sha256": "ec57c3c474e2da966b35cbea6fec078d8dc3d497f2583ec28d093fc9cb869551",
+        "issues": []
+      },
+      {
+        "title": "Usage reporting",
+        "url": "https://github.com/NPC-Worldwide/incognide/blob/5f302fd4a8bbd2beffb6301608bed7acde0e619d/src/renderer/utils/contextUsage.ts",
+        "used_for": [
+          "CLAIM_CHECK",
+          "DISPLAYED_FINDING",
+          "RANKING_INPUT"
+        ],
+        "reason": "Cited by proposal(s): pattern-3; Ranked result 4 of 5",
+        "coverage": "COMPLETE_PINNED_FILE",
+        "fetch_state": "RETRIEVED",
+        "observed_at": "2026-11-24T03:51:37+00:00",
+        "pinned_revision": "5f302fd4a8bbd2beffb6301608bed7acde0e619d",
+        "sha256": "2ca781c32ab9054393f6c32266d35c80eb99a7ce55659186f0d757cfc836a7f5",
+        "issues": []
+      },
+      {
+        "title": "Approval labels",
+        "url": "https://github.com/NPC-Worldwide/incognide/blob/5f302fd4a8bbd2beffb6301608bed7acde0e619d/src/npc_team/jinxes/kg/knowledge_approve.jinx",
+        "used_for": [
+          "CLAIM_CHECK",
+          "DISPLAYED_FINDING",
+          "RANKING_INPUT"
+        ],
+        "reason": "Cited by proposal(s): pattern-4; Ranked result 5 of 5",
+        "coverage": "COMPLETE_PINNED_FILE",
+        "fetch_state": "RETRIEVED",
+        "observed_at": "2026-11-24T03:51:37+00:00",
+        "pinned_revision": "5f302fd4a8bbd2beffb6301608bed7acde0e619d",
+        "sha256": "c255aa75783e5f95acd1f0f2f3b7699a9c5e0c0055fa76180b26f4f7789e5dac",
+        "issues": []
+      }
+    ],
+    "source_count": 5,
+    "usage": {
+      "state": "UNAVAILABLE",
+      "input_tokens": null,
+      "context_window": null,
+      "request_id": null,
+      "reported_at": null,
+      "evidence_characters": 47151,
+      "evidence_tokens_estimate": 11788,
+      "estimate_scope": "Rough characters/4 estimate of retained source text and unfetched snippets only; excludes system instructions, conversation history and other model inputs. Not a measured prompt size."
+    },
+    "limitations": [
+      "Observation time is retrieval time, not the source's publication date.",
+      "A pinned revision identifies exact content; it is not proof of the latest version.",
+      "Source text and snippets remain untrusted data."
+    ]
+  },
+  "memory_review": {
+    "owner_confirmation": "NOT_VERIFIED",
+    "storage": "READ_ONLY_PROJECTION",
+    "proposals": [
+      {
+        "id": "pattern-1",
+        "statement": "The context panel includes a Clear all control.",
+        "previous_statement": null,
+        "change_state": "NEW",
+        "verdict": "REVIEW_REQUIRED",
+        "issues": [],
+        "evidence_state": "MATCHED_SOURCE_TEXT",
+        "owner_confirmation": "NOT_VERIFIED",
+        "evidence": [
+          {
+            "source_url": "https://github.com/NPC-Worldwide/incognide/blob/5f302fd4a8bbd2beffb6301608bed7acde0e619d/src/renderer/components/ContextFilesPanel.tsx",
+            "final_url": "https://github.com/NPC-Worldwide/incognide/blob/5f302fd4a8bbd2beffb6301608bed7acde0e619d/src/renderer/components/ContextFilesPanel.tsx",
+            "sha256": "0540e0b4428cef6c87b920ba54e208d3e7e60990ab43c1aaa0d191bd53f938a5",
+            "observed_sha256": "0540e0b4428cef6c87b920ba54e208d3e7e60990ab43c1aaa0d191bd53f938a5",
+            "quote": "title=\"Clear all\"",
+            "evidence_state": "MATCHED_HOST_TEXT",
+            "navigation": {
+              "kind": "PINNED_GITHUB_LINES",
+              "url": "https://github.com/NPC-Worldwide/incognide/blob/5f302fd4a8bbd2beffb6301608bed7acde0e619d/src/renderer/components/ContextFilesPanel.tsx?plain=1#L124",
+              "start_line": 124,
+              "end_line": 124,
+              "start_offset": 4513,
+              "end_offset": 4530
+            }
+          }
+        ]
+      },
+      {
+        "id": "pattern-2",
+        "statement": "The memory view can display the original proposed memory.",
+        "previous_statement": null,
+        "change_state": "NEW",
+        "verdict": "REVIEW_REQUIRED",
+        "issues": [],
+        "evidence_state": "MATCHED_SOURCE_TEXT",
+        "owner_confirmation": "NOT_VERIFIED",
+        "evidence": [
+          {
+            "source_url": "https://github.com/NPC-Worldwide/incognide/blob/5f302fd4a8bbd2beffb6301608bed7acde0e619d/src/renderer/components/MemoryManagement.tsx",
+            "final_url": "https://github.com/NPC-Worldwide/incognide/blob/5f302fd4a8bbd2beffb6301608bed7acde0e619d/src/renderer/components/MemoryManagement.tsx",
+            "sha256": "104a668817d68a96d07a3018d29f71d51ca88ff628ea3940c1ccb18742ca9b56",
+            "observed_sha256": "104a668817d68a96d07a3018d29f71d51ca88ff628ea3940c1ccb18742ca9b56",
+            "quote": "Original: {memory.initial_memory}",
+            "evidence_state": "MATCHED_HOST_TEXT",
+            "navigation": {
+              "kind": "PINNED_GITHUB_LINES",
+              "url": "https://github.com/NPC-Worldwide/incognide/blob/5f302fd4a8bbd2beffb6301608bed7acde0e619d/src/renderer/components/MemoryManagement.tsx?plain=1#L281",
+              "start_line": 281,
+              "end_line": 281,
+              "start_offset": 13842,
+              "end_offset": 13875
+            }
+          }
+        ]
+      },
+      {
+        "id": "pattern-3",
+        "statement": "The usage helper prefers the reported token count when available.",
+        "previous_statement": null,
+        "change_state": "NEW",
+        "verdict": "REVIEW_REQUIRED",
+        "issues": [],
+        "evidence_state": "MATCHED_SOURCE_TEXT",
+        "owner_confirmation": "NOT_VERIFIED",
+        "evidence": [
+          {
+            "source_url": "https://github.com/NPC-Worldwide/incognide/blob/5f302fd4a8bbd2beffb6301608bed7acde0e619d/src/renderer/utils/contextUsage.ts",
+            "final_url": "https://github.com/NPC-Worldwide/incognide/blob/5f302fd4a8bbd2beffb6301608bed7acde0e619d/src/renderer/utils/contextUsage.ts",
+            "sha256": "2ca781c32ab9054393f6c32266d35c80eb99a7ce55659186f0d757cfc836a7f5",
+            "observed_sha256": "2ca781c32ab9054393f6c32266d35c80eb99a7ce55659186f0d757cfc836a7f5",
+            "quote": "if (reported !== null) return { used: reported, source: 'reported' };",
+            "evidence_state": "MATCHED_HOST_TEXT",
+            "navigation": {
+              "kind": "PINNED_GITHUB_LINES",
+              "url": "https://github.com/NPC-Worldwide/incognide/blob/5f302fd4a8bbd2beffb6301608bed7acde0e619d/src/renderer/utils/contextUsage.ts?plain=1#L80",
+              "start_line": 80,
+              "end_line": 80,
+              "start_offset": 3051,
+              "end_offset": 3120
+            }
+          }
+        ]
+      },
+      {
+        "id": "pattern-4",
+        "statement": "An approval workflow input defaults to human-approved.",
+        "previous_statement": null,
+        "change_state": "NEW",
+        "verdict": "REVIEW_REQUIRED",
+        "issues": [],
+        "evidence_state": "MATCHED_SOURCE_TEXT",
+        "owner_confirmation": "NOT_VERIFIED",
+        "evidence": [
+          {
+            "source_url": "https://github.com/NPC-Worldwide/incognide/blob/5f302fd4a8bbd2beffb6301608bed7acde0e619d/src/npc_team/jinxes/kg/knowledge_approve.jinx",
+            "final_url": "https://github.com/NPC-Worldwide/incognide/blob/5f302fd4a8bbd2beffb6301608bed7acde0e619d/src/npc_team/jinxes/kg/knowledge_approve.jinx",
+            "sha256": "c255aa75783e5f95acd1f0f2f3b7699a9c5e0c0055fa76180b26f4f7789e5dac",
+            "observed_sha256": "c255aa75783e5f95acd1f0f2f3b7699a9c5e0c0055fa76180b26f4f7789e5dac",
+            "quote": "{ status: \"human-approved\" }",
+            "evidence_state": "MATCHED_HOST_TEXT",
+            "navigation": {
+              "kind": "PINNED_GITHUB_LINES",
+              "url": "https://github.com/NPC-Worldwide/incognide/blob/5f302fd4a8bbd2beffb6301608bed7acde0e619d/src/npc_team/jinxes/kg/knowledge_approve.jinx?plain=1#L8",
+              "start_line": 8,
+              "end_line": 8,
+              "start_offset": 216,
+              "end_offset": 244
+            }
+          }
+        ]
+      },
+      {
+        "id": "pattern-5",
+        "statement": "The recovery contract says not to take expected anchors from the checkpoint itself.",
+        "previous_statement": null,
+        "change_state": "NEW",
+        "verdict": "REVIEW_REQUIRED",
+        "issues": [],
+        "evidence_state": "MATCHED_SOURCE_TEXT",
+        "owner_confirmation": "NOT_VERIFIED",
+        "evidence": [
+          {
+            "source_url": "https://github.com/iJaspers/manager-os/blob/a2789ef29a7a34b7709c01beb5d92600cb1f35c6/tools/scout-explain/0.1.0-public-draft.1/research_checkpoint.py",
+            "final_url": "https://github.com/iJaspers/manager-os/blob/a2789ef29a7a34b7709c01beb5d92600cb1f35c6/tools/scout-explain/0.1.0-public-draft.1/research_checkpoint.py",
+            "sha256": "ec57c3c474e2da966b35cbea6fec078d8dc3d497f2583ec28d093fc9cb869551",
+            "observed_sha256": "ec57c3c474e2da966b35cbea6fec078d8dc3d497f2583ec28d093fc9cb869551",
+            "quote": "Never take expected_sha256 or approved_urls from the checkpoint itself.",
+            "evidence_state": "MATCHED_HOST_TEXT",
+            "navigation": {
+              "kind": "PINNED_GITHUB_LINES",
+              "url": "https://github.com/iJaspers/manager-os/blob/a2789ef29a7a34b7709c01beb5d92600cb1f35c6/tools/scout-explain/0.1.0-public-draft.1/research_checkpoint.py?plain=1#L238",
+              "start_line": 238,
+              "end_line": 238,
+              "start_offset": 10395,
+              "end_offset": 10466
+            }
+          }
+        ]
+      }
+    ],
+    "limitations": [
+      "These are existing research claims displayed as possible memory proposals.",
+      "A previous statement is an earlier proposal, not an owner decision.",
+      "No owner confirmation is inferred or accepted by this view.",
+      "Editing, rejection and adoption belong to the existing owning application."
+    ]
+  },
+  "quick_view": {
+    "verdict": "REVIEW_REQUIRED",
+    "claims": [
+      {
+        "id": "pattern-1",
+        "statement": "The context panel includes a Clear all control.",
+        "verdict": "REVIEW_REQUIRED",
+        "issues": []
+      },
+      {
+        "id": "pattern-2",
+        "statement": "The memory view can display the original proposed memory.",
+        "verdict": "REVIEW_REQUIRED",
+        "issues": []
+      },
+      {
+        "id": "pattern-3",
+        "statement": "The usage helper prefers the reported token count when available.",
+        "verdict": "REVIEW_REQUIRED",
+        "issues": []
+      },
+      {
+        "id": "pattern-4",
+        "statement": "An approval workflow input defaults to human-approved.",
+        "verdict": "REVIEW_REQUIRED",
+        "issues": []
+      },
+      {
+        "id": "pattern-5",
+        "statement": "The recovery contract says not to take expected anchors from the checkpoint itself.",
+        "verdict": "REVIEW_REQUIRED",
+        "issues": []
+      }
+    ],
+    "limitations": [
+      "Matched source text still requires review of what it means.",
+      "Runtime behavior has not been tested by this handoff.",
+      "A source or review binding does not authorize an action or prove completion."
+    ],
+    "next_step": "Check the original sources, then review meaning and authorizations before adoption."
+  },
+  "limitations": [
+    "No memory is written and no action is authorized by this report.",
+    "Exact source/quote checks do not establish factual truth or semantic support.",
+    "This report may contain private statements; it is not a public-safe export."
+  ]
+}
