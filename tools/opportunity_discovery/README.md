@@ -19,6 +19,15 @@ python -m unittest discover -v
 python opportunity.py < input.json > scored.json
 ```
 
+Optional `fit_requirements` records name up to 12 **required** capabilities.
+Each row has a unique short lowercase `id`, a reviewer-supplied `status`,
+and `evidence_index`: a zero-based position in the existing `evidence_urls`
+for `SUPPORTED` or `NOT_MET`, or `null` for `UNKNOWN`. Use generic IDs,
+not private names or raw snippets. A pointer does not prove what its source
+says. Any unknown or unmet requirement blocks advancement regardless of score;
+all supported requirements still cannot bypass existing fit, freshness, rules,
+or authority gates. Omitting the field preserves the original output shape.
+
 To persist records from another Python program:
 ```python
 from store import Store
