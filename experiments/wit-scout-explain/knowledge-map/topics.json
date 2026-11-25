@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "records": [
+    {"id": "scout evidence", "aliases": ["scout", "result ranking", "research evidence"], "state": "documented", "source": "tools/scout-explain/0.1.0-public-draft.1/README.md"},
+    {"id": "context review", "aliases": ["scout", "source coverage", "proposed memories"], "state": "experimental", "source": "experiments/wit-scout-explain/context-review/README.md"},
+    {"id": "general inquiries", "aliases": ["phone research setup", "general discovery"], "state": "documented", "source": "tools/releases/discovery-scout-2026-11-23/GENERAL_INQUIRIES.md"}
+  ]
+}
