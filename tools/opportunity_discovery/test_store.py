@@ -78,6 +78,27 @@ class StoreTests(unittest.TestCase):
         self.assertEqual(store.event_count(), 2)
         store.close()
 
+    def test_requirement_change_holds_and_retains_prior_review(self):
+        row = dict(id="local-use", status="SUPPORTED", evidence_index=0)
+        original = dict(self.item, fit_requirements=[row])
+        store = Store(self.path)
+        first, = store.ingest([original])
+        store.feedback(first["id"], "GOOD")
+        revised = dict(original, fit_requirements=[dict(row, status="UNKNOWN", evidence_index=None)])
+        updated, = store.ingest([revised])
+        self.assertEqual(updated["decision"], "BLOCKED")
+        self.assertIn("changed observation requires review", updated["gate_reasons"])
+        self.assertNotIn("feedback", updated)
+        history = json.loads(store.db.execute(
+            "SELECT detail FROM events WHERE kind='OBSERVATION_CHANGED'"
+        ).fetchone()[0])
+        self.assertEqual(history["prior"]["feedback"]["verdict"], "GOOD")
+        store.close()
+        store = Store(self.path)
+        self.assertTrue(store.ingest([revised])[0]["duplicate_observation"])
+        self.assertEqual(store.event_count(), 3)
+        store.close()
+
     def test_bad_input(self):
         s=Store(self.path)
         with self.assertRaises(ValueError):s.ingest({})
