@@ -14,3 +14,9 @@ coverage, missing evidence, usage limits and proposed memories. It is a read-onl
 review candidate, not a new memory store or stable release. Its implementation,
 tests, actual-source replay, source attribution and rendered Chrome results and physical-device
 acceptance limits are recorded together in that directory.
+
+## Topic navigation
+
+The optional [Scout knowledge map](knowledge-map/README.md) routes a few declared
+questions to existing Scout documentation and keeps ambiguous or unknown topics
+explicit. It does not search or verify sources.
