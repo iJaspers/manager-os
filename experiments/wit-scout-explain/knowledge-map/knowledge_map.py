@@ -1,6 +1,7 @@
 """Read-only, one-hop topic routing. No search, fetching, or source execution."""
 import argparse
 import json
+import unicodedata
 from pathlib import Path, PurePosixPath
 
 MAX_BYTES = 64 * 1024
@@ -10,14 +11,25 @@ STATES = {"documented", "experimental"}
 def _norm(value):
     if not isinstance(value, str):
         raise ValueError("not text")
-    value = " ".join(value.casefold().split())
+    if any(unicodedata.category(ch).startswith("C") for ch in value):
+        raise ValueError("invalid control or invisible format character")
+    value = " ".join(unicodedata.normalize("NFC", value.casefold()).split())
     if not value or len(value) > 120:
         raise ValueError("invalid text length")
     return value
 
 
+def _strict_object(pairs):
+    result = {}
+    for key, value in pairs:
+        if key in result:
+            raise ValueError("duplicate map key")
+        result[key] = value
+    return result
+
+
 def resolve(raw, topic):
-    index = json.loads(raw)
+    index = json.loads(raw, object_pairs_hook=_strict_object)
     if not isinstance(index, dict) or set(index) != {"schema", "records"} or type(index["schema"]) is not int or index["schema"] != 1:
         raise ValueError("unsupported map schema")
     records = index["records"]
@@ -57,7 +69,7 @@ def main():
         if len(raw) > MAX_BYTES:
             raise ValueError("map byte limit exceeded")
         output = resolve(raw, args.topic)
-    except (OSError, ValueError, TypeError):
+    except (OSError, ValueError, TypeError, RecursionError):
         print(json.dumps({"status": "HOLD", "matches": []}))
         return 2
     print(json.dumps(output, sort_keys=True))
