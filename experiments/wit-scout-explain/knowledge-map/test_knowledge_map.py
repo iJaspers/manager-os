@@ -67,6 +67,27 @@ class RoutingTests(unittest.TestCase):
         self.map.write_text(json.dumps(data))
         self.assertEqual(self.cli("source coverage")[0], 2)
 
+    def test_duplicate_keys_at_top_and_nested_hold(self):
+        original = self.map.read_text()
+        for text in (original.replace('"schema": 1', '"schema": 2, "schema": 1'),
+                     original.replace('"id": "scout evidence"',
+                                      '"id": "wrong", "id": "scout evidence"')):
+            with self.subTest(text=text):
+                self.assertNotEqual(text, original)
+                self.map.write_text(text)
+                self.assertEqual(self.cli("source coverage"),
+                                 (2, {"status": "HOLD", "matches": []}))
+
+    def test_normalizes_unicode_and_rejects_invisible_format(self):
+        data = json.loads(self.map.read_text())
+        data["records"][0]["aliases"].append("caf\u00e9")
+        self.map.write_text(json.dumps(data))
+        self.assertEqual(self.cli("CAFE\u0301")[1]["status"], "ROUTED")
+        self.assertEqual(self.cli("source\u200b coverage")[0], 2)
+        data["records"][0]["id"] += "\u202e"
+        self.map.write_text(json.dumps(data))
+        self.assertEqual(self.cli("source coverage")[0], 2)
+
 
 if __name__ == "__main__":
     unittest.main()
