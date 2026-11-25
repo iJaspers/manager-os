@@ -52,6 +52,19 @@ No automatic execution of untrusted pull requests and no auto-merge are enabled 
 
 Before merge, record what was reviewed, the exact test scope, known limitations, approval and rollback. Release a new tool version, preserve prior source/ZIP history and hashes, then update the public catalogue, download links and agreed contributor credit. Verify saved source and published bytes/links. A maintainer may request changes, decline, or park a contribution; publication does not mean someone must maintain it forever.
 
+### Public-facing design acceptance
+
+Apply this check to changed public entry points, walkthroughs and catalogue or website handoffs. Record each item as **PASS**, **FAIL**, **UNVERIFIED** or **NOT APPLICABLE**, with the inspected revision or URL, method, date and one observation. Do not treat unverified items as passes or silently waive a release requirement.
+
+1. **Outcome:** A new reader can say what this is, who it is for and what result to expect.
+2. **Primary action:** One clear next action leads to a complete first task. Keep optional setup and previews secondary; name the required host or runtime.
+3. **Proof:** Follow the actual route to the example, source or download. Check that the reader can inspect the result and tell a draft from verified completion.
+4. **Capability limits:** Clearly distinguish what works now, what is experimental and what is planned. Do not imply that publication installs a tool, grants permission or adds automatic memory.
+5. **Publication parity:** Check the affected landing, guide and catalogue entries against the canonical release and pinned download/source links; do not duplicate an existing call to action.
+6. **Usability:** Check narrow-screen reflow and legibility, descriptive links, keyboard focus and order, and text contrast in a rendered view. Text-only readback can verify copy and link destinations, not visual or interaction behavior.
+
+Record the smallest correction and retest the affected route. Keep site edits and release approval in the existing owner workflow. This original rubric takes conceptual inspiration from [UI UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/tree/8db36338810d0942567b97ce439affd1619fcf31) (brief-to-check mapping) and [Taste Skill](https://github.com/Leonxlnx/taste-skill/tree/d1a2bb41d927083ac7118f60cfc9cdf711810ea0) (hierarchy and restraint). No upstream instructions, code, data or assets are incorporated.
+
 A small internal documentation-only canary exercises this route. It is not an outsider contribution, independent security review, production integration or community adoption.
 
 
