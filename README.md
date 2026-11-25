@@ -47,6 +47,8 @@ Start with the compact TXT starter or matching PDF handbook. They introduce the 
 
 **Nerd-rules** covers dates/times, versions, naming, filing, sorting, indexing, retrieval and organizational efficiency. **Combo-breaker** is its upkeep and consolidation component: crunch repeated summaries without losing evidence, combine compatible work under existing owners, use bounded resources and stop when another pass adds no material value.
 
+For a proposed upgrade, add one line to the existing decision record: **claim → disconfirming observation → cheapest permitted test**. State what improvement is expected, what observable result would rule it out, and the smallest allowed check that could produce that result. Check the current source or owner record before building. If the capability already exists, reuse it; if the test needs missing evidence or permission, record HOLD and name the prerequisite. An inconclusive check does not prove the claim. Keep the current owner, routing and approval gates.
+
 Authorized session work can save material updates; existing daily or weekly owners can catch missed handoffs and stale state when configured. A loop definition is not an enabled schedule, and a successful run is not proof of project progress. Setup selects local storage, owners, permissions and tools. This public package grants no private access or inherited authority.
 
 The reference is a sanitized specification, not a copy of a live installation. Its generic missing-upstream/intake conditions describe unconfigured installations; this manifest supplies current public download locations. Cryptographic signing and private inbound reporting are not supplied. Behavior-changing adoption still requires local operator approval.
