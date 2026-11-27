@@ -4,7 +4,7 @@ Witburrow is a portable set of operating rules and project records for keeping o
 
 It is not a separate AI model. Witburrow supplies the operating rules around the model: canonical state, authority boundaries, work states, recovery, update governance, regression checks, safe tool use, and compact context management.
 
-**First visit?** [Try one research question in your chat or run Scout from the downloaded ZIP](tools/DISCOVERY_QUICK_START.md).
+**Start with one task.** [Open the Witburrow Workshop](https://headless-fcinjvilnab-thatianguy-140a.wix-site-host.com/) to search the tool library or try a browser demo. [Use Scout in your own AI](tools/DISCOVERY_QUICK_START.md) for a research question. [Open The Wrong Arcade](https://headless-ahvukxjxnqc-thatianguy-140a.wix-site-host.com/) to play the games. Each opens independently. The [WIT home page](https://www.ijaspers.com/post/manager-os) links back to both sites.
 
 ## Name transition - October 22, 2026
 
